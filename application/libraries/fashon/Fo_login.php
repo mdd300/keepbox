@@ -97,21 +97,27 @@ class Fo_login
 
                 if ($userdata->user_status == ENABLED) { // Se o usuário está ativo
 
-                    if (self::check_password($user_pass, $userdata->user_pass)) {
+                    if($userdata->user_type == 1) {
 
-                        $Result['success'] = true;
-                        $Result['type'] = 'success';
-                        $Result['text'] = "Login efetuado com sucesso!";
-                        $Result['href'] = base_url('manager/users');
+                        if (self::check_password($user_pass, $userdata->user_pass)) {
 
-                        $CI->session->set_userdata(self::$session_name, [
-                            'user_id' => $checkedUser->user_id
-                        ]);
+                            $Result['success'] = true;
+                            $Result['type'] = 'success';
+                            $Result['text'] = "Login efetuado com sucesso!";
+                            $Result['href'] = base_url('manager/users');
 
-                    } else {
-                        $Result['text'] = "Usuário ou senha incorretos!";
+                            $CI->session->set_userdata(self::$session_name, [
+                                'user_id' => $checkedUser->user_id
+                            ]);
+
+                        } else {
+                            $Result['text'] = "Usuário ou senha incorretos!";
+                        }
+                    }else{
+                        $Result['success'] = false;
+                        $Result['type'] = 'error';
+                        $Result['text'] = "Usuário não tem acesso ao sistema";
                     }
-
                 } else { // Se não está ativo
                     $Result['success'] = false;
                     $Result['type'] = 'error';
