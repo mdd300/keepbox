@@ -41,9 +41,9 @@ class Clientes_model extends CI_Model
 
         $this->load->library('fo_login');
 
-        $this->db->insert('tb_user_cliente', $Data);
+        $this->db->insert('tb_users', $Data);
 
-        $passTocrypt = $cnpj."nccinco"."123";
+        $passTocrypt = "nccinco"."123";
 
         var_dump($passTocrypt);
 
@@ -53,9 +53,10 @@ class Clientes_model extends CI_Model
             "user_id_fk" => $this->db->insert_id(),
             "user_pass" =>  $pass,
             "user_name" => $Data['user_email'],
+            "user_type" => '2',
             "user_status" => "1"
     );
-        return $this->db->insert('tb_user_cliente_data', $DataPass);
+        return $this->db->insert('tb_users_data', $DataPass);
 
     }
 

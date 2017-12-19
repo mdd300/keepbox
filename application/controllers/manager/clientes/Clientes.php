@@ -98,7 +98,7 @@ class Clientes extends CI_Controller
 
     }
 
-        $ResultLogin = $this->Clientes_model->createUserCliente($User, $cnpj)->result();
+        $ResultLogin = $this->Clientes_model->createUserCliente($User, $cnpj);
 
 
         if ($Output == true) {
