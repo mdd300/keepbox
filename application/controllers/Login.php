@@ -21,4 +21,17 @@ class Login extends CI_Controller {
 
     }
 
+    public function do_login2 () {
+
+        $this->load->library(['fashon/fo_login']);
+
+        $post = $this->input->post();
+
+        $Response = Fo_login::do_login2($post);
+
+        $this->output->set_content_type('application/json');
+        $this->output->set_output(json_encode($Response));
+
+    }
+
 }
