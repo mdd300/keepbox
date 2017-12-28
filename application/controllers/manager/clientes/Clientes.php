@@ -61,7 +61,6 @@ class Clientes extends CI_Controller
         $Response['numPages'] = $numPaginas;
 
 
-
         if ($Output == true) {
             echo json_encode($Response);
         } else {
@@ -90,13 +89,14 @@ class Clientes extends CI_Controller
         foreach ($Result as $row) {
 
             $User = array(
-            "user_login" => $row->cliente_email,
-            "user_email" => $row->cliente_email
-        );
-        $cnpj = $row->cliente_cnpj;
+                "user_login" => $row->cliente_email,
+                "user_email" => $row->cliente_email,
+                "user_cliente" => $Response
+            );
+            $cnpj = $row->cliente_cnpj;
 
 
-    }
+        }
 
         $ResultLogin = $this->Clientes_model->createUserCliente($User, $cnpj);
 
