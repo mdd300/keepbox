@@ -177,6 +177,7 @@ class Fo_login
                             $Result['type'] = 'success';
                             $Result['text'] = "Login efetuado com sucesso!";
                             $Result['href'] = base_url('manager/users');
+                            $Result['id'] = $checkedUser->user_cliente;
 
                             $CI->session->set_userdata(self::$session_name, [
                                 'user_id' => $checkedUser->user_id
