@@ -139,4 +139,24 @@ class Clientes extends CI_Controller
 
     }
 
+    public function changePass($Data = null)
+    {
+
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $Response = $this->Clientes_model->ChangeModel($Data)->result();
+
+        if ($Output == true) {
+            echo json_encode($Response);
+        } else {
+            return $Response;
+        }
+
+    }
+
 }
