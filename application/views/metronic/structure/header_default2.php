@@ -50,6 +50,8 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- map css-->
     <link href="<?= base_url('public/assets/metronic/custom/css/manager/comercial/map.css') ?>" rel="stylesheet"
           type="text/css"/>
+    <link href="<?= base_url('public/assets/metronic/app/Alert/toastr.css') ?>" rel="stylesheet"
+          type="text/css"/>
     <!-- Usuários -->
     <link href="<?= base_url('public/assets/metronic/custom/css/manager/users/users.css') ?>" rel="stylesheet"
           type="text/css"/>
@@ -74,7 +76,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <img style="    max-width: 80px;" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/Logo.png">
                             </a>
                             <h3 class="m-header__title">
-                                Apps
+                                NC Cinco
                             </h3>
                         </div>
                         <div class="m-stack__item m-stack__item--middle m-brand__tools">
@@ -114,22 +116,6 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div id="m_header_menu"
                          class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-light m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light ">
                         <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
-                            <li class="m-menu__item">
-                                <a href="<?= base_url('manager/clientes/clientes') ?>" class="m-menu__link">
-                                    <span class="m-menu__item-here"></span>
-                                    <span class="m-menu__link-text">
-                                                Clientes
-                                            </span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item">
-                                <a href="<?= base_url('manager/users') ?>" class="m-menu__link">
-                                    <span class="m-menu__item-here"></span>
-                                    <span class="m-menu__link-text">
-                                                Usuários
-                                            </span>
-                                </a>
-                            </li>
 
                         </ul>
                     </div>

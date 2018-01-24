@@ -33,7 +33,6 @@ class Fo_users
 
         $CI = &get_instance();
 
-        $CI->db->select('user_id'); // Por questão de desempenho, selecionando apenas o id, para ver se existe, então depois, com o id que verificamos a existência, podemos fazer o resto
         $CI->db->from('tb_users');
         $CI->db->where('user_login', $user_login);
         $CI->db->or_where('user_email', $user_login);

@@ -95,16 +95,19 @@ class Fo_login
 
                 $userdata = $CI->db->get()->result()[0]; // Buscando novametne o usuário, porém agora trazendo todos os dados
 
+
                 if ($userdata->user_status == ENABLED) { // Se o usuário está ativo
 
-                    if($userdata->user_type == 1) {
 
                         if (self::check_password($user_pass, $userdata->user_pass)) {
 
                             $Result['success'] = true;
                             $Result['type'] = 'success';
                             $Result['text'] = "Login efetuado com sucesso!";
-                            $Result['href'] = base_url('manager/users');
+                            $Result['href'] = base_url('manager/clientes/clientes');
+                            $Result['href2'] = base_url('manager/comercial/map/index2?id=').$checkedUser->user_cliente;
+                            $Result['user'] = $checkedUser->user_cliente;
+                            $Result['user_type'] = $userdata->user_type;
 
                             $CI->session->set_userdata(self::$session_name, [
                                 'user_id' => $checkedUser->user_id
@@ -113,11 +116,7 @@ class Fo_login
                         } else {
                             $Result['text'] = "Usuário ou senha incorretos!";
                         }
-                    }else{
-                        $Result['success'] = false;
-                        $Result['type'] = 'error';
-                        $Result['text'] = "Usuário não tem acesso ao sistema";
-                    }
+
                 } else { // Se não está ativo
                     $Result['success'] = false;
                     $Result['type'] = 'error';
