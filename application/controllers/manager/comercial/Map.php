@@ -10,6 +10,12 @@ class Map extends CI_Controller
         $this->load->view('metronic/manager/comercial/map');
         $this->load->view('metronic/structure/footer_default');
     }
+    public function index2()
+    {
+        $this->load->view('metronic/structure/header_default2');
+        $this->load->view('metronic/manager/comercial/map');
+        $this->load->view('metronic/structure/footer_default');
+    }
 
     public function getFiles($Data = null)
     {
@@ -81,6 +87,35 @@ class Map extends CI_Controller
 
     }
 
+
+
+    public function saveFolder($Data = null)
+    {
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+
+
+                $this->load->model("comercial/map_model");
+
+                $Response = $this->map_model->createFolderModel($Data);
+
+
+
+
+        if ($Output == true) {
+            echo json_encode($Response);
+        } else {
+            return $Response;
+        }
+
+    }
+
+
     public function deleteProd($Data = null){
         if ($Data == null) {
             $Output = true;
@@ -92,6 +127,49 @@ class Map extends CI_Controller
         $this->load->model("comercial/map_model");
 
         $Response = $this->map_model->deleteFileModel($Data['id']);
+
+        if ($Output == true) {
+            echo json_encode($Response);
+        } else {
+            return $Response;
+        }
+
+
+    }
+
+    public function deleteFolder($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $this->load->model("comercial/map_model");
+
+        $Response = $this->map_model->deleteFolderModel($Data['id']);
+
+        if ($Output == true) {
+            echo json_encode($Response);
+        } else {
+            return $Response;
+        }
+
+
+    }
+
+    public function getPasta($Data = null){
+
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $this->load->model("comercial/map_model");
+
+        $Response = $this->map_model->getPastaModel($Data)->result();
 
         if ($Output == true) {
             echo json_encode($Response);

@@ -8,11 +8,16 @@ class Login extends CI_Controller {
         $this->load->view('metronic/login/login');
     }
 
-    public function do_login () {
+    public function do_login ($post = null) {
 
         $this->load->library(['fashon/fo_login']);
 
-        $post = $this->input->post();
+        if ($post == null) {
+            $Output = true;
+            $post = $this->input->post();
+        } else {
+            $Output = false;
+        }
 
         $Response = Fo_login::do_login($post);
 
