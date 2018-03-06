@@ -3,7 +3,7 @@ angular.module("app_fashon").controller("Clientes_crud", function ($scope, $http
     var base_url = $(".baseUrl").val();
 
 
-    $scope.titulo_open = "Clientes";
+    $scope.titulo_open = "CLIENTES";
 
     $scope.pesquisa = "";
 

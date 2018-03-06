@@ -1,36 +1,32 @@
  <div class="m-grid__item m-grid__item--fluid m-wrapper" ng-controller="Lista_map">
-    <div class="m-subheader-search">
-        <h2 class="m-subheader-search__title">
-            MAP
-            <span class="m-subheader-search__desc">Material de Apoio</span>
-        </h2>
-        <form class="m-form">
-            <div class="m-input-icon m-input-icon--fixed m-input-icon--fixed-large m-input-icon--right">
-                <input type="text" class="form-control form-control-lg m-input m-input--pill"
-                       placeholder="Pesquisar" ng-model="mysearch" ng-keyup="$event.keyCode == 13 ? search(mysearch) : null" >
-                <span class="m-input-icon__icon m-input-icon__icon--right">
-									<span>
-										<i class="la la-search"></i>
-									</span>
-								</span>
-            </div>
-            <div class="m--margin-top-20 m--visible-tablet-and-mobile"></div>
-            <button type="button" class="btn m-btn--pill m-subheader-search__submit-btn"  ng-click="search(mysearch)">
-                Buscar
-            </button>
+    <div class="m-subheader-search " id="header-map">
 
-            <div class="btn-add-file-content">
-                <button type="button" class="btn btn-add-file m-subheader-search__submit-btn" data-toggle="modal"
+        <form class="m-form">
+
+            <div class="content-data-cliente">
+                <div class="content-nome">{{dataCliente.cliente_nomefantasia}}</div>
+                <div class="content-tipo">Empresa: {{dataCliente.cliente_plano}}</div>
+                <div class="content-data">
+                        Status: {{status[dataCliente.cliente_status]}}
+                    </div>
+                <div class="content-status"></div>
+            </div>
+<div id="content-btn">
+            <div class="btn-add-file-content" style="padding: 0px 5px;">
+                <button type="button" class="btn btn-add-file m-subheader-search__submit-btn"   data-toggle="modal"
                         data-target="#m_modal_file_cadastrar"">
-                    <i class="m-subheader-search__title font-add-more">+</i>
+                <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/save.png">
+
                 </button>
             </div>
-            <div class="btn-add-file-content">
+            <div class="btn-add-file-content" style="padding: 0px 5px;">
                 <button type="button" class="btn btn-add-file m-subheader-search__submit-btn" data-toggle="modal"
-                        data-target="#m_modal_folder_cadastrar" style="width: auto ; height: auto;     margin: 10px; border-radius: 0%">
-                    <i class="m-subheader-search__title" style="padding: 10px; font-size: 1.5rem">Nova Pasta</i>
+                        data-target="#m_modal_folder_cadastrar"">
+                <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/folder.png">
+
                 </button>
             </div>
+</div>
         </form>
     </div>
     <div class="m-content content-list-files">

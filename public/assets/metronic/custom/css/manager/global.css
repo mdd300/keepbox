@@ -1,0 +1,56 @@
+.header-content-color{
+ background-color: 	#F5F5F5;
+}
+#content-clientes{
+    height: 100%;
+    padding: 0;
+}
+.content-all{
+    background-color: white;
+}
+.content-user-right{
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.content-img-user{
+    max-width: 50px;
+}
+.text-th{
+    color: #696969;
+}
+.text-td{
+    color: #808080;
+ }
+.content-pesquisa{
+    padding: 0;
+    border-bottom: 1px solid #808080;
+    height: 130px;
+    margin-bottom: 0;
+}
+#header-map{
+    background-color: white;
+    border-bottom: 1px solid #808080;
+    height: 160px;
+    margin: 0;
+    padding: 10px 30px;
+}
+.content-data-cliente{
+    float: left;
+}
+#content-btn{
+    float: right;
+}
+.content-nome{
+    font-size: 1.5rem;
+}
+.content-left-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid;
+    height: 100px;
+}
+.content-users{
+    padding: 0 !important;
+}
