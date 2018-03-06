@@ -110,7 +110,7 @@
         </div>
     </div>
     
-    <div class="modal fade" id="m_modal_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="m_modal_cadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <form name="usersForm" class='form-horizontal m-form'>
                 <div class="modal-content">
