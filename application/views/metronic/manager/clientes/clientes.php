@@ -1,11 +1,11 @@
-<div class="m-grid__item m-grid__item--fluid m-wrapper" ng-controller="Clientes_crud">
+<div class="m-grid__item m-grid__item--fluid m-wrapper content-all" ng-controller="Clientes_crud">
     <input type="hidden" value="<?= base_url() ?>" class="baseUrl">
 
 
-    <div class="m-content">
+    <div class="m-content " id="content-clientes">
         <div class="m-portlet">
 
-            <div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30">
+            <div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30 content-pesquisa">
                 <div class="row align-items-center">
                     <div class="col-xl-8 order-2 order-xl-1">
                         <div class="form-group m-form__group row align-items-center" style="padding: 19px;">
@@ -36,7 +36,7 @@
             <div class="row m-row--no-padding m-row--col-separator-xl">
 
                 <!-- lista clientes -->
-                <div class="col-xl-10 col-md-10">
+                <div style="    flex: 100%;">
                     <div class="col-xl-12 col-md-12">
                         <div class="titulo-maior-cabecalho">
                             {{titulo_open}}
@@ -48,49 +48,36 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th>
+                                    <th class="text-th">
                                         Nome
                                     </th>
-                                    <th>
+                                    <th class="text-th">
                                         CNPJ
                                     </th>
-                                    <th>
-                                        Estado
+                                    <th class="text-th">
+                                        Plano
                                     </th>
-                                    <th>
-                                        Endereço
-                                    </th>
-                                    <th>
-                                        plano
-                                    </th>
-                                    <th>
+                                    <th class="text-th">
                                         Status
                                     </th>
-                                    <th>
-                                        Ação
+                                    <th class="text-th">
+                                        Editar
                                     </th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr ng-repeat="dados in list_clientes ">
-                                    <td>
+                                    <td class="text-td">
                                         {{dados.cliente_nomefantasia}}
                                     </td>
-                                    <td>
-                                        <input type="text" value="{{dados.cliente_cnpj}}"
+                                    <td >
+                                        <input type="text" class="text-td" value="{{dados.cliente_cnpj}}"
                                                style="border-width:0px;border:none; width: 100%" disabled>
                                     </td>
-                                    <td>
-                                        {{dados.cliente_estado}}
-                                    </td>
-                                    <td>
-                                        {{dados.cliente_endereco}}, {{dados.cliente_numero}}
-                                        {{dados.cliente_complemento}}
-                                    </td>
-                                    <td>
+                                    <td class="text-td">
                                         {{dados.cliente_plano}}
                                     </td>
-                                    <td ng-class="{'m--font-success' : dados.cliente_status == 1 ,'m--font-warning' : dados.cliente_status == 0 }">
+                                    <td class="text-td" ng-class="{'m--font-success' : dados.cliente_status == 1 ,'m--font-warning' : dados.cliente_status == 0 }">
                                         {{status[dados.cliente_status]}}
 
                                     </td>
@@ -98,9 +85,9 @@
                                                 <span style="overflow: visible; width: 110px;">
 
                                                           <a href="<?= base_url()?>manager/comercial/map?id={{dados.cliente_id}}"
-                                                             class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill"
+
                                                              title="Edit details">
-                                                              <i class="la 	la-clipboard"></i>
+                                                              <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/vertical-grid-layout.png">
                                                           </a>
                                                 </span>
                                     </td>

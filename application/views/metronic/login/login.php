@@ -60,7 +60,11 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- begin:: Page -->
 <div class="m-grid m-grid--hor m-grid--root m-page" ng-controller="loginCtrl">
 
-    <div class="content-login">
+    <div class="content-login" style="background-image: url('<?= base_url('public/assets/metronic/')?>app/media/img/icons/LOGIN-BG.jpg'); background-size: cover">
+
+        <div class="content-img-login">
+            <img class="img-login" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/Logo.png">
+        </div>
 
         <div class="content-modal-login">
 

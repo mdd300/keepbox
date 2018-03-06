@@ -1,33 +1,111 @@
 <!-- END: Subheader -->
-<div class="m-content" ng-controller="UserList">
+<div class="m-content content-users" ng-controller="UserList">
 
     <div class="row">
         <div class="col-xl-12">
             <div class="m-portlet m-portlet--mobile">
-                <div class="m-portlet__head">
-                    <div class="m-portlet__head-caption">
-                        <div class="m-portlet__head-title">
-                            <h3 class="m-portlet__head-text">
-                                Listagem de usuários
-                            </h3>
+                <div class="m-form m-form--label-align-right m--margin-top-20 m--margin-bottom-30 content-pesquisa">
+                    <div class="row align-items-center">
+                        <div class="col-xl-8 order-2 order-xl-1">
+                            <div class="form-group m-form__group row align-items-center" style="padding: 19px;">
+                                <div class="col-md-4">
+                                    <div class="m-input-icon m-input-icon--left">
+                                        <input type="text" class="form-control m-input m-input--solid" ng-model="mysearch"
+                                               ng-keyup="$event.keyCode == 13 ? search(mysearch) : null"
+                                               placeholder="Pesquisar" id="generalSearch">
+                                        <span class="m-input-icon__icon m-input-icon__icon--left">
+															<span>
+																<i class="la la-search"></i>
+															</span>
+														</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="m-portlet__head-tools">
-                        <div class="agrupamento-drop" data-toggle="modal" data-target="#m_modal_1" ng-click="getData()">
-                            <div class="btn m-btn--pill m-btn--air btn-warning circ-button">
+
+                        <div class="agrupamento-drop">
+                            <div class="btn m-btn--pill m-btn--air btn-warning circ-button" data-toggle="modal"
+                                 data-target="#m_modal_cadastro" style="margin-right: 45px">
                                 <i class="fa fa-plus"></i>
                             </div>
-                            <div class="btn m-btn--pill m-btn--air btn-warning menu-button-circ">
-                                Novo usuário
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="m-portlet__body">
-                    <!--begin: Datatable -->
-                    <div class="m_datatable" id="m_datatable_users"></div>
-                    <!--end: Datatable -->
+                <div style="    flex: 100%;">
+                    <div class="col-xl-12 col-md-12">
+                        <div class="titulo-maior-cabecalho">
+                            USUÁRIOS
+
+                        </div>
+                    </div>
+                    <div class="m-widget1">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th class="text-th">
+                                        Nome
+                                    </th>
+                                    <th class="text-th">
+                                        E-mail
+                                    </th>
+                                    <th class="text-th">
+                                        Editar
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr ng-repeat="dados in list ">
+                                    <td class="text-td">
+                                        {{dados.user_name }}
+                                    </td>
+                                    <td class="text-td">
+                                        {{dados.user_email
+                                        }}
+                                    </td>
+                                    <td>
+                                                <span style="overflow: visible; width: 110px;">
+<a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-danger m-btn--icon m-btn--icon-only m-btn--pill" title="Remover" data-toggle="modal" data-target="#m_modal_3" ng-click="getData(dados.user_id)">
+                                 <i class="la la-trash"></i>
+                             </a>
+
+                                                         <a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="Exibir" data-toggle="modal" data-target="#m_modal_2" ng-click="getData(dados.user_id)">
+                                <i class="la la-ellipsis-h"></i>
+                             </a>
+                             <a href="#" class="m-portlet__nav-link btn m-btn m-btn--hover-accent m-btn--icon m-btn--icon-only m-btn--pill" title="Editar" data-toggle="modal" data-target="#m_modal_1" ng-click="getData(dados.user_id)">
+                                 <i class="la la-edit"></i>
+                             </a>
+                                                </span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tr>
+                                    <td colspan="7">
+                                        <!--paginação de indice-->
+                                        <ul class="pagination sem-bottom">
+                                            <li href="" ng-click="moveIndice(false)"><a class="indice-s left"
+                                                                                        ng-click="backPage()"><i
+                                                            class="fa fa-angle-left"></i></a></li>
+
+                                            <li style="display: flex;"
+                                                ng-repeat="indice  in listadeIndices | limitTo: limiteDeIndice : inicioDoIndice"
+                                                ng-click="changepage(indice.indice)" class="indice-{{indice.indice}}"><a
+                                                        class="indice"
+                                                >{{indice.indice}}</a>
+                                            </li>
+
+                                            <li href="" ng-click="moveIndice(true)"><a class="indice-s right"
+                                                                                       ng-click="nextPage()"><i
+                                                            class="fa fa-angle-right"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
                 </div>
+                <!-- Fim lista clientes-->
             </div>
         </div>
     </div>

@@ -1,6 +1,4 @@
 .content-login{
-
-    background-color: #0a6aa1;
     width: 100%;
     height: 100%;
     display: flex;
@@ -40,4 +38,17 @@
     background-color: #0a6aa1;
     border: 0;
     color: white;
+}
+.content-img-login{
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.img-login{
+    max-width: 300px;
+    max-height: 300px;
+    right: 0;
+    margin-right: 20%;
 }

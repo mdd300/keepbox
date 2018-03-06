@@ -15,10 +15,36 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
         $scope.pesquisa = "";
 
         $scope.list_files = [];
+        $scope.dataCliente;
+        $scope.status=["Inativo","Ativo"];
+
+
+        $scope.dls = 1;
+//numero de registros da paginação inicial
+        $scope.pagina = 10;
+        //limite de indices a mostra
+        $scope.limiteDeIndice = 5;
 
         var url = new URL(window.location.href );
 
         $scope.idCliente = url.searchParams.get("id");
+
+
+        $http({
+
+            method: 'POST',
+            url: base_url + "manager/clientes/clientes/getClientes",
+            data: $.param({limite: $scope.limiteDeIndice, pagina: $scope.dls, like: $scope.pesquisa, where :{'cliente_id': $scope.idCliente}}),
+            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+        }).then(function (response) {
+
+                console.log(response.data['clientes'][0]);
+                $scope.dataCliente = response.data['clientes'][0];
+
+            }
+        );
+
 
         $http({
 
