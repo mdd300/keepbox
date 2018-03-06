@@ -75,8 +75,8 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'http://localhost',
-	'username' => 'web',
+	'hostname' => 'localhost',
+	'username' => 'root',
 	'password' => 'nccinco123',
 	'database' => 'nccinco_bd_nc',
 	'dbdriver' => 'mysqli',
