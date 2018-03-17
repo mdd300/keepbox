@@ -31,8 +31,8 @@
     </div>
     <div class="m-content content-list-files">
 
-        <div >
-            <img ng-click="folderBack()" src="https://cdn3.iconfinder.com/data/icons/line/36/arrow_left-512.png" style="    max-height: 70px;
+        <div ng-hide="firstPage == false" style="cursor: pointer">
+            <img ng-click="folderBack()" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/back.png" style="    max-height: 70px;
     max-width: 70px;     margin: 12px;">
         </div>
         <!--Listagem de documentos-->
@@ -41,8 +41,8 @@
 
 
             <!-- pastas -->
-            <div class="col-md-2 content-list-folder" ng-repeat=" pasta in pastas" >
-                <div class="m-portlet m-portlet--bordered-semi m-portlet--full-height "  id='{{pasta.id_pasta}}'>
+            <div class="col-md-2 content-list-folder" ng-repeat=" pasta in list_folders" id='{{pasta.id_pasta}}'>
+                <div class="m-portlet m-portlet--bordered-semi m-portlet--full-height content-map"  >
                     <!--          Head documento-->
                     <div class="m-portlet__head">
                         <div class="m-portlet__head-caption">
@@ -90,7 +90,7 @@
                     <div class="m-portlet__body" ng-click="folder(pasta.id_pasta)">
                         <div class="m-card-profile__pic img-align-icon">
                             <div class="m-card-profile__pic-wrapper">
-                                <img class="img-file-icon" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/pasta.png" alt=""/>
+                                <img class="img-file-icon" style="cursor:pointer;" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/folder.png" alt=""/>
                             </div>
                         </div>
                     </div>
@@ -102,8 +102,8 @@
 
 
             <!--    Documento-->
-            <div class="col-md-2" ng-repeat=" file in list_files" >
-                <div class="m-portlet m-portlet--bordered-semi m-portlet--full-height " id='{{file.file_id}}'>
+            <div class="col-md-2" ng-repeat=" file in list_files" id='{{file.file_id}}'>
+                <div class="m-portlet m-portlet--bordered-semi m-portlet--full-height content-map" >
                     <!--          Head documento-->
                     <div class="m-portlet__head">
                         <div class="m-portlet__head-caption">
@@ -163,7 +163,9 @@
                     <div class="m-portlet__body">
                         <div class="m-card-profile__pic img-align-icon">
                             <div class="m-card-profile__pic-wrapper">
+                                <a href="<?=base_url('public/assets/metronic/') . "app/media/img/uploads/"?>{{file.file_link}}" >
                                 <img class="img-file-icon" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/{{file.file_icon}}" alt=""/>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -247,7 +249,7 @@
                              <label for="recipient-name" class="form-control-label">
                                  Nome da Pasta:
                              </label>
-                             <input type="text" class="form-control" id="nome-pasta"
+                             <input type="text" class="form-control" ng-model="newFolder" id="nome-pasta"
                                     name="nome-pasta">
                          </div>
 

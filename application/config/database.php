@@ -76,10 +76,10 @@ $query_builder = TRUE;
 $db['default'] = array(
 
     'dsn'	=> '',
-    'hostname' => 'http://localhost',
-    'username' => 'web',
-    'password' => 'nccinco123',
-    'database' => 'nccinco_bd_nc',
+    'hostname' => 'localhost',
+    'username' => 'root',
+    'password' => '',
+    'database' => 'bd_nc',
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,

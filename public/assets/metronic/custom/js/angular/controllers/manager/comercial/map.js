@@ -15,8 +15,12 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
         $scope.pesquisa = "";
 
         $scope.list_files = [];
+        $scope.list_folders = [];
         $scope.dataCliente;
         $scope.status=["Inativo","Ativo"];
+        $scope.firstPage = false;
+        $scope.folderKnow = 0;
+        $scope.newFolder;
 
 
         $scope.dls = 1;
@@ -59,6 +63,22 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
 
                 $scope.list_files = response.data.files;
                 $scope.idCliente = response.data.cliente;
+
+            }
+        );
+
+        $http({
+
+            method: 'POST',
+            url: base_url + "manager/comercial/map/getPasta",
+            data: $.param({like: $scope.pesquisa, id: $scope.idCliente})
+
+
+        }).then(function (response) {
+
+                console.log(response.data)
+
+                $scope.list_folders = response.data;
 
             }
         );
@@ -116,6 +136,26 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
 
         }
 
+        $scope.deleteFolder = function (id) {
+
+            $http({
+
+                method: 'POST',
+                url: base_url + "manager/comercial/map/deleteFolder",
+                data: $.param({id: id}),
+
+
+            }).then(function (response) {
+
+                    var file = $(".content-list-files").find("#" + id);
+
+
+                    file.fadeOut(1000);
+                }
+            );
+
+        }
+
         $scope.search = function (search) {
 
             $scope.pesquisa = search;
@@ -126,7 +166,7 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
 
                 method: 'POST',
                 url: base_url + "manager/comercial/map/getFiles",
-                data: $.param({like: $scope.pesquisa}),
+                data: $.param({like: $scope.pesquisa, id: $scope.idCliente}),
 
 
             }).then(function (response) {
@@ -137,6 +177,100 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
                 }
             );
 
+
+        }
+
+        $scope.folder = function (id) {
+
+            $scope.list_files = [];
+            $scope.list_folders = [];
+            $scope.firstPage = true;
+            $scope.folderKnow = id;
+
+            $http({
+
+                method: 'POST',
+                url: base_url + "manager/comercial/map/getFiles",
+                data: $.param({pasta: id, id: $scope.idCliente, like: $scope.pesquisa,}),
+
+
+            }).then(function (response) {
+
+
+                    $scope.list_files = response.data.files;
+
+                }
+            );
+
+            $http({
+
+                method: 'POST',
+                url: base_url + "manager/comercial/map/getPasta",
+                data: $.param({pasta: id, id: $scope.idCliente})
+
+
+            }).then(function (response) {
+
+                    $scope.list_folders = response.data;
+
+                }
+            );
+
+        }
+
+        $scope.folderBack = function(){
+
+            $scope.list_files = [];
+            $scope.list_folders = [];
+            $scope.firstPage = false;
+            $scope.folderKnow = 0;
+
+            $http({
+
+                method: 'POST',
+                url: base_url + "manager/comercial/map/getFiles",
+                data: $.param({id: $scope.idCliente, like: $scope.pesquisa,}),
+
+
+            }).then(function (response) {
+
+
+                    $scope.list_files = response.data.files;
+
+                }
+            );
+
+            $http({
+
+                method: 'POST',
+                url: base_url + "manager/comercial/map/getPasta",
+                data: $.param({id: $scope.idCliente})
+
+
+            }).then(function (response) {
+
+                    $scope.list_folders = response.data;
+
+                }
+            );
+
+        }
+
+        $scope.save_folder = function(){
+
+            $http({
+
+                method: 'POST',
+                url: base_url + "manager/comercial/map/saveFolder",
+                data: $.param({folder: $scope.folderKnow,nome: $scope.newFolder, id: $scope.idCliente}),
+
+
+            }).then(function (response) {
+
+                    $scope.list_folders.push(response.data);
+
+                }
+            );
 
         }
     });
