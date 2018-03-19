@@ -77,9 +77,9 @@ $db['default'] = array(
 
     'dsn'	=> '',
     'hostname' => 'localhost',
-    'username' => 'web',
-    'password' => 'nccinco123',
-    'database' => 'nccinco_bd_nc',
+    'username' => 'root',
+    'password' => '',
+    'database' => 'bd_nc',
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,

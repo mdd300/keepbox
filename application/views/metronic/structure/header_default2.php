@@ -47,10 +47,10 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- pre cadastro css-->
     <link href="<?= base_url('public/assets/metronic/custom/css/manager/comercial/pre_cad.css') ?>" rel="stylesheet"
           type="text/css"/>
+    <link href="<?= base_url('public/assets/metronic/custom/css/manager/global.css') ?>" rel="stylesheet"
+          type="text/css"/>
     <!-- map css-->
     <link href="<?= base_url('public/assets/metronic/custom/css/manager/comercial/map.css') ?>" rel="stylesheet"
-          type="text/css"/>
-    <link href="<?= base_url('public/assets/metronic/app/Alert/toastr.css') ?>" rel="stylesheet"
           type="text/css"/>
     <!-- Usuários -->
     <link href="<?= base_url('public/assets/metronic/custom/css/manager/users/users.css') ?>" rel="stylesheet"
@@ -69,7 +69,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="m-container m-container--fluid m-container--full-height">
             <div class="m-stack m-stack--ver m-stack--desktop">
                 <!-- BEGIN: Brand -->
-                <div class="m-stack__item m-brand  m-brand--skin-light " style="    background: #6495ED;">
+                <div class="m-stack__item m-brand  m-brand--skin-light " style="     padding: 0;   background: #F5F5F5;">
                     <div class="m-stack m-stack--ver m-stack--general">
                         <div class="m-stack__item m-stack__item--middle m-brand__logo">
                             <a href="<?= base_url() ?>" class="m-brand__logo-wrapper">
@@ -102,7 +102,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                 </div>
                 <!-- END: Brand -->
-                <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
+                <div class="m-stack__item m-stack__item--fluid m-header-head header-content-color" id="m_header_nav">
                     <div class="m-header__title">
                         <h3 class="m-header__title-text">
                             NC Cinco
@@ -123,6 +123,17 @@ License: You must have a valid license purchased only from themeforest(the above
                     <!-- BEGIN: Topbar -->
 
                     <!-- END: Topbar -->
+
+                    <div class="content-user-right">
+                        <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/user.png">
+                        <div style="font-size: 0.8rem;">
+                            <a data-toggle="modal"
+                               data-target="#m_modal_folder_cadastrar"">
+                            Trocar a senha
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -136,11 +147,52 @@ License: You must have a valid license purchased only from themeforest(the above
         </button>
         <div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-light ">
             <!-- BEGIN: Aside Menu -->
-            <di
+            <div class="content-left-menu">
+                <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/emgrenagem@2x.png">
+            </div>
             <!-- END: Aside Menu -->
         </div>
         <!-- END: Left Aside -->
-        <div class="m-grid__item m-grid__item--fluid m-wrapper">
+        <div class="m-grid__item m-grid__item--fluid m-wrapper content-all">
 
 
+            <!--Modal de Cadastras arquivo-->
+            <div class="modal fade" id="m_modal_folder_cadastrar" tabindex="-1" role="dialog"
+                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Coloque sua nova senha
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">
+												&times;
+											</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-cadastro-folder">
+                                <div class="form-group">
+                                    <label for="recipient-name" class="form-control-label">
+                                        Senha:
+                                    </label>
+                                    <input type="text" class="form-control" ng-model="newFolder" id="nome-senha"
+                                           name="nome-senha">
+                                </div>
 
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                Fechar
+                            </button>
+                            <button type="button" class="btn btn-primary" ng-click="teste()"
+                                    data-dismiss="modal">
+                                Salvar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>

@@ -185,5 +185,9 @@ angular.module("app_fashon").controller("Clientes_crud", function ($scope, $http
 
     }
 
+    $scope.teste = function(){
+        console.log('teste')
+    }
+
 
 });

@@ -16,9 +16,17 @@ angular.module("app_fashon").controller("loginCtrl", ['$scope', 'loginService', 
             if (Response.data.success) {
                 $scope.loginForm.msg.success = Response.data.text;
 
-                $timeout(function(){
-                    window.location.href = Response.data.href;
-                }, 300);
+                    console.log(Response.data)
+
+                if(Response.data.user_type == 1) {
+                    $timeout(function () {
+                        window.location.href = Response.data.href;
+                    }, 300);
+                }   else {
+                    $timeout(function () {
+                        window.location.href = Response.data.href2;
+                    }, 300);
+                }
 
             }
             else {
