@@ -29,7 +29,7 @@ class Map extends CI_Controller
 
         $this->load->model("comercial/Map_model");
 
-        $Response['files'] = $this->map_model->getfilesModel($Data)->result();
+        $Response['files'] = $this->Map_model->getfilesModel($Data)->result();
         $Response['cliente'] = $Data['id'];
 
         if ($Output == true) {
@@ -72,7 +72,7 @@ class Map extends CI_Controller
 
                 $this->load->model("comercial/map_model");
 
-                $Response = $this->map_model->createFileModel($Data, $nomeFile, $ext);
+                $Response = $this->Map_model->createFileModel($Data, $nomeFile, $ext);
 
             }
         } else {
@@ -103,7 +103,7 @@ class Map extends CI_Controller
 
                 $this->load->model("comercial/Map_model");
 
-                $Response = $this->map_model->createFolderModel($Data);
+                $Response = $this->Map_model->createFolderModel($Data);
 
 
 
@@ -127,7 +127,7 @@ class Map extends CI_Controller
 
         $this->load->model("comercial/Map_model");
 
-        $Response = $this->map_model->deleteFileModel($Data['id']);
+        $Response = $this->Map_model->deleteFileModel($Data['id']);
 
         if ($Output == true) {
             echo json_encode($Response);
@@ -148,7 +148,7 @@ class Map extends CI_Controller
 
         $this->load->model("comercial/Map_model");
 
-        $Response = $this->map_model->deleteFolderModel($Data['id']);
+        $Response = $this->Map_model->deleteFolderModel($Data['id']);
 
         if ($Output == true) {
             echo json_encode($Response);
@@ -170,7 +170,7 @@ class Map extends CI_Controller
 
         $this->load->model("comercial/Map_model");
 
-        $Response = $this->map_model->getPastaModel($Data)->result();
+        $Response = $this->Map_model->getPastaModel($Data)->result();
 
         if ($Output == true) {
             echo json_encode($Response);
