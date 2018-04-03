@@ -50,6 +50,7 @@ class Map extends CI_Controller
         }
 
         $nomeFile = rand();
+        $this->load->model("comercial/map_model");
 
         $config['upload_path'] = './public/assets/metronic/app/media/img/uploads';
         $config['allowed_types'] = 'pdf|docx|ppt|avi';
