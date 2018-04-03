@@ -1,6 +1,7 @@
 angular.module("app_fashon").controller("UserList", function ($scope, $http, $compile){
 
     $scope.list_clientes = [];
+    $scope.acao = "Cadastrar";
     $scope.listadeIndices = [
         {
             'indice': '1'
