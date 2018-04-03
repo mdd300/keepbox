@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class map_model extends CI_Model
+class Map_model extends CI_Model
 {
     public function __construct()
     {

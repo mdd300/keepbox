@@ -27,7 +27,7 @@ class Map extends CI_Controller
             $Output = false;
         }
 
-        $this->load->model("comercial/map_model");
+        $this->load->model("comercial/Map_model");
 
         $Response['files'] = $this->map_model->getfilesModel($Data)->result();
         $Response['cliente'] = $Data['id'];
@@ -50,7 +50,7 @@ class Map extends CI_Controller
         }
 
         $nomeFile = rand();
-        $this->load->model("comercial/map_model");
+        $this->load->model("comercial/Map_model");
 
         $config['upload_path'] = './public/assets/metronic/app/media/img/uploads';
         $config['allowed_types'] = 'pdf|docx|ppt|avi';
@@ -101,7 +101,7 @@ class Map extends CI_Controller
 
 
 
-                $this->load->model("comercial/map_model");
+                $this->load->model("comercial/Map_model");
 
                 $Response = $this->map_model->createFolderModel($Data);
 
@@ -125,7 +125,7 @@ class Map extends CI_Controller
             $Output = false;
         }
 
-        $this->load->model("comercial/map_model");
+        $this->load->model("comercial/Map_model");
 
         $Response = $this->map_model->deleteFileModel($Data['id']);
 
@@ -146,7 +146,7 @@ class Map extends CI_Controller
             $Output = false;
         }
 
-        $this->load->model("comercial/map_model");
+        $this->load->model("comercial/Map_model");
 
         $Response = $this->map_model->deleteFolderModel($Data['id']);
 
@@ -168,7 +168,7 @@ class Map extends CI_Controller
             $Output = false;
         }
 
-        $this->load->model("comercial/map_model");
+        $this->load->model("comercial/Map_model");
 
         $Response = $this->map_model->getPastaModel($Data)->result();
 
