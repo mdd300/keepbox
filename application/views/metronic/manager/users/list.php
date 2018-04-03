@@ -155,7 +155,7 @@
                         <div class="form-group m-form__group">
                             <label for="user_pass">Senha<span ng-show="acao=='Cadastrar'">*</span>: </label> 
                             <span ng-if="acao == 'Cadastrar'">
-                                <input type="password" name="user_pass" class="form-control m-input" ng-model="user.user_pass" ng-required="acao == 'Cadastrar'">
+                                <input type="password" name="user_pass" class="form-control m-input" ng-model="user.user_pass" ng-required="acao != 'Editar'">
                             </span>
                             <span ng-if="acao == 'Editar'">
                                 <input type="password" name="user_pass" class="form-control m-input" ng-model="user.user_pass" placeholder="********" ng-required="acao == 'Cadastrar'">
