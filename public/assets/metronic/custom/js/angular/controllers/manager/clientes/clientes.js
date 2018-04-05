@@ -20,6 +20,7 @@ angular.module("app_fashon").controller("Clientes_crud", function ($scope, $http
     //indices da paginação
     $scope.listadeIndices = [];
     $scope.status=["Inativo","Ativo"];
+    $scope.editArray = [];
 
 
     $http({
@@ -147,6 +148,13 @@ angular.module("app_fashon").controller("Clientes_crud", function ($scope, $http
 
             }
         );}
+
+    }
+
+    $scope.edit = function ( id ) {
+
+        $scope.editArray = $scope.list_clientes[$scope.list_clientes.findIndex(i => i.cliente_id === id)]
+        console.log($scope.editArray)
 
     }
 

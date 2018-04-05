@@ -102,7 +102,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                 </div>
                 <!-- END: Brand -->
-                <div class="m-stack__item m-stack__item--fluid m-header-head header-content-color" id="m_header_nav">
+                <div class="m-stack__item m-stack__item--fluid m-header-head header-content-color" style="    background-color: #87CEFA;" id="m_header_nav">
                     <div class="m-header__title">
                         <h3 class="m-header__title-text">
                             NC Cinco

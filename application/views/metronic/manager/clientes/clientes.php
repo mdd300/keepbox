@@ -70,27 +70,40 @@
                                     <td class="text-td">
                                         {{dados.cliente_nomefantasia}}
                                     </td>
-                                    <td >
+                                    <td>
                                         <input type="text" class="text-td" value="{{dados.cliente_cnpj}}"
                                                style="border-width:0px;border:none; width: 100%" disabled>
                                     </td>
                                     <td class="text-td">
                                         {{dados.cliente_plano}}
                                     </td>
-                                    <td class="text-td" ng-class="{'m--font-success' : dados.cliente_status == 1 ,'m--font-warning' : dados.cliente_status == 0 }">
+                                    <td class="text-td"
+                                        ng-class="{'m--font-success' : dados.cliente_status == 1 ,'m--font-warning' : dados.cliente_status == 0 }">
                                         {{status[dados.cliente_status]}}
 
                                     </td>
                                     <td>
                                                 <span style="overflow: visible; width: 110px;">
 
-                                                          <a href="<?= base_url()?>manager/comercial/map?id={{dados.cliente_id}}"
+                                                          <a href="<?= base_url() ?>manager/comercial/map?id={{dados.cliente_id}}"
 
                                                              title="Edit details">
-                                                              <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/vertical-grid-layout.png">
+                                                              <img class="content-img-user"
+                                                                   src="<?= base_url('public/assets/metronic/') ?>app/media/img/icons/vertical-grid-layout.png">
+                                                          </a>
+                                                </span>
+                                        <span style="overflow: visible; width: 110px; padding: 0px 2px">
+
+                                                          <a ng-click="edit(dados.cliente_id)"
+                                                             data-toggle="modal"
+                                                             data-target="#m_modal_editar"
+                                                             title="Edit details">
+                                                              <img class="content-img-user"
+                                                                   src="<?= base_url('public/assets/metronic/') ?>app/media/img/icons/edit.png">
                                                           </a>
                                                 </span>
                                     </td>
+
                                 </tr>
                                 </tbody>
                                 <tr>
@@ -232,6 +245,123 @@
                                 <button type="button" class="btn btn-primary" ng-click="cadastro_cliente()"
                                         data-dismiss="modal">
                                     Cadastrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end::Modal-->
+
+
+                <div class="modal fade" id="m_modal_editar" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Adicionar novo cliente
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">
+												&times;
+											</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-cadastro">
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">
+                                            Nome:
+                                        </label>
+                                        <input type="text" value="{{editArray.cliente_nomefantasia}}" class="form-control" id="nome-cliente"
+                                               name="cliente_nomefantasia" required="true" ng-required="required">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">
+                                            E-mail:
+                                        </label>
+                                        <input type="text" value="{{editArray.cliente_email}}" class="form-control" id="email-cliente"
+                                               name="cliente_email" required="true" ng-required="required">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">
+                                            Telefone:
+                                        </label>
+                                        <input type="text" value="{{editArray.cliente_telefone}}" class="form-control" id="telefone-cliente"
+                                               name="cliente_telefone">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">
+                                            CNPJ:
+                                        </label>
+                                        <input type="text" value="{{editArray.cliente_cnpj}}" maxlength="18" class="form-control" id="cnpj-cliente"
+                                               name="cliente_cnpj" onkeypress='mascaraMutuario(this,cpfCnpj)'
+                                               onblur='clearTimeout()' required="true" ng-required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">
+                                            Endereço:
+                                        </label>
+                                        <input type="text" value="{{editArray.cliente_endereco}}" class="form-control" id="endereco-cliente"
+                                               name="cliente_endereco">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">
+                                            Numero:
+                                        </label>
+                                        <input type="text" value="{{editArray.cliente_numero}}" class="form-control" id="numero-cliente"
+                                               name="cliente_numero">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">
+                                            Complemento:
+                                        </label>
+                                        <input type="text" value="{{editArray.cliente_complemento}}" class="form-control" id="complemento-cliente"
+                                               name="cliente_complemento">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">
+                                            Estado:
+                                        </label>
+                                        <input type="text" value="{{editArray.cliente_estado}}" class="form-control" id="estado-cliente"
+                                               name="cliente_estado">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">
+                                            Status:
+                                        </label>
+                                        <select id="status-cliente" value="{{editArray.cliente_plano}}" name="cliente_plano">
+                                            <option value="MEI"> MEI</option>
+                                            <option value="Micro_Empresa"> Micro Empresa</option>
+                                            <option value="Pequeno_Porte"> Pequeno Porte</option>
+                                            <option value="Lucro_Presumido"> Lucro Presumido</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="form-control-label">
+                                            Status:
+                                        </label>
+                                        <select id="status-cliente" value="{{editArray.cliente_status}}" name="cliente_status">
+                                            <option value="1"> Ativo</option>
+                                            <option value="0"> Inativo</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Fechar
+                                </button>
+                                <button type="button" class="btn btn-primary" ng-click="editar_cliente()"
+                                        data-dismiss="modal">
+                                    Editar
                                 </button>
                             </div>
                         </div>
