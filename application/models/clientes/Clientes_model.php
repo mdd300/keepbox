@@ -69,15 +69,11 @@ class Clientes_model extends CI_Model
 
     }
 
-    public function ChangeModel($Data, $cnpj){
+    public function ChangeModel($Data){
 
         $this->load->library('fo_login');
 
-        $this->db->insert('tb_users', $Data);
-
         $passTocrypt = $Data['pass'];
-
-        var_dump($passTocrypt);
 
         $pass = $this->fo_login->encrypt_password($passTocrypt);
 
@@ -87,6 +83,10 @@ class Clientes_model extends CI_Model
         $this->db->where('data_id',$Data['id']);
         $this->db->set($DataPass);
         return $this->db->update('tb_users_data');
+
+    }
+
+    public function EditModel($Data){
 
     }
 

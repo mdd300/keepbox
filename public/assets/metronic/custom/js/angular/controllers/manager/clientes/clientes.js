@@ -194,7 +194,29 @@ angular.module("app_fashon").controller("Clientes_crud", function ($scope, $http
     }
 
     $scope.teste = function(){
-        console.log('teste')
+        var formulario = $('.form-editar');
+        var empresacnpj = formulario.find($('#cnpj-cliente')).val();
+        var email = formulario.find($('#email-cliente')).val();
+        var cnpj = empresacnpj.replace(".", "");
+        var cnpj = cnpj.replace(".", "");
+        var cnpj = cnpj.replace("/", "");
+        var cnpj = cnpj.replace("-", "");
+        formulario.find($('#cnpj-cliente')).val(cnpj);
+
+        var formularioCadastro = $('.form-editar');
+
+        if(cnpj !== "" && email !== ''){
+
+            $http({
+                method: 'POST',
+                url: base_url + "manager/clientes/clientes/editCliente",
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                data: formularioCadastro.serialize()
+            }).then(function (response) {
+
+
+                }
+            );}
     }
 
 

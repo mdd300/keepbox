@@ -268,8 +268,10 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <form class="form-cadastro">
+                                <form class="form-editar">
                                     <div class="form-group">
+                                        <input type="text" value="{{editArray.cliente_id}}" class="form-control" id="id-cliente"
+                                               name="cliente_id" required="true" ng-required="required" ng-show="false">
                                         <label for="recipient-name" class="form-control-label">
                                             Nome:
                                         </label>

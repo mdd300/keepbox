@@ -159,4 +159,22 @@ class Clientes extends CI_Controller
 
     }
 
+    public function editCliente($Data = null){
+
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $Response = $this->Clientes_model->EditModel($Data)->result();
+
+        if ($Output == true) {
+            echo json_encode($Response);
+        } else {
+            return $Response;
+        }
+    }
+
 }
