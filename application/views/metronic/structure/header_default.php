@@ -164,6 +164,14 @@ License: You must have a valid license purchased only from themeforest(the above
                 <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/emgrenagem@2x.png">
             </div>
             <!-- END: Aside Menu -->
+            <div class="btn-trocar-senha">
+                <button
+                        class="btn-senha">
+                    <a href="<?= base_url() ?>" style="text-decoration: none; color: white">
+                        Sair
+                    </a>
+                </button>
+            </div>
         </div>
         <!-- END: Left Aside -->
         <div class="m-grid__item m-grid__item--fluid m-wrapper content-all">

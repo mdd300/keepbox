@@ -96,7 +96,7 @@ class Fo_login
                 $userdata = $CI->db->get()->result()[0]; // Buscando novametne o usuário, porém agora trazendo todos os dados
 
 
-                if ($userdata->user_status == ENABLED) { // Se o usuário está ativo
+//                if ($userdata->user_status == ENABLED) { // Se o usuário está ativo
 
 
                         if (self::check_password($user_pass, $userdata->user_pass)) {
@@ -117,11 +117,11 @@ class Fo_login
                             $Result['text'] = "Usuário ou senha incorretos!";
                         }
 
-                } else { // Se não está ativo
-                    $Result['success'] = false;
-                    $Result['type'] = 'error';
-                    $Result['text'] = "Usuário bloqueado, por favor entre em contato!";
-                }
+//                } else { // Se não está ativo
+//                    $Result['success'] = false;
+//                    $Result['type'] = 'error';
+//                    $Result['text'] = "Usuário bloqueado, por favor entre em contato!";
+//                }
 
             } else { // Se não existe
                 $Result['success'] = false;

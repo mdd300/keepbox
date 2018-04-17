@@ -74,4 +74,5 @@ class Users extends CI_Controller {
     {
         $this->tb_users->delete_user($user_id);
     }
+
 }

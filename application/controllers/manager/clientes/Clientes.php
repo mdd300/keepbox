@@ -149,8 +149,10 @@ class Clientes extends CI_Controller
             $Output = false;
         }
 
-        $Response = $this->Clientes_model->ChangeModel($Data)->result();
+        $this->load->model("clientes/Clientes_model");
 
+        $Response['success'] = $this->Clientes_model->ChangeModel($Data);
+        $Response['link'] = base_url();
         if ($Output == true) {
             echo json_encode($Response);
         } else {
@@ -168,7 +170,9 @@ class Clientes extends CI_Controller
             $Output = false;
         }
 
-        $Response = $this->Clientes_model->EditModel($Data)->result();
+        $this->load->model("clientes/Clientes_model");
+
+        $Response = $this->Clientes_model->EditModel($Data);
 
         if ($Output == true) {
             echo json_encode($Response);
@@ -176,5 +180,6 @@ class Clientes extends CI_Controller
             return $Response;
         }
     }
+
 
 }

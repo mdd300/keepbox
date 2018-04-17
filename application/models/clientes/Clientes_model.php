@@ -37,6 +37,15 @@ class Clientes_model extends CI_Model
 
     }
 
+    public function EditPass($Data){
+
+        $pass = $this->fo_login->encrypt_password($Data['pass']);
+        $this->db->where('user_id_fk', $Data['id']);
+        $this->db->set($pass);
+        return $this->db->update('tb_users_data');
+
+    }
+
     public function createUserCliente($Data, $cnpj){
 
         $this->load->library('fo_login');
@@ -80,13 +89,23 @@ class Clientes_model extends CI_Model
         $DataPass = array(
             "user_pass" =>  $pass,
         );
-        $this->db->where('data_id',$Data['id']);
+
+        $this->db->select('user_id');
+        $this->db->where('user_cliente',$Data['id']);
+        $id = $this->db->get("tb_users")->result();
+
+        $this->db->where('user_id_fk',$id[0]->user_id);
         $this->db->set($DataPass);
         return $this->db->update('tb_users_data');
 
     }
 
     public function EditModel($Data){
+
+        $this->db->where('cliente_id',$Data['cliente_id']);
+        unset($Data['cliente_id']);
+        $this->db->set($Data);
+        return $this->db->update('tb_clientes');
 
     }
 

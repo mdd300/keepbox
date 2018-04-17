@@ -270,12 +270,12 @@
                             <div class="modal-body">
                                 <form class="form-editar">
                                     <div class="form-group">
-                                        <input type="text" value="{{editArray.cliente_id}}" class="form-control" id="id-cliente"
+                                        <input type="text" value="{{editArray.cliente_id}}" class="form-control" id="id"
                                                name="cliente_id" required="true" ng-required="required" ng-show="false">
                                         <label for="recipient-name" class="form-control-label">
                                             Nome:
                                         </label>
-                                        <input type="text" value="{{editArray.cliente_nomefantasia}}" class="form-control" id="nome-cliente"
+                                        <input type="text" value="{{editArray.cliente_nomefantasia}}" class="form-control" id="nome"
                                                name="cliente_nomefantasia" required="true" ng-required="required">
                                     </div>
 
@@ -283,7 +283,7 @@
                                         <label for="recipient-name" class="form-control-label">
                                             E-mail:
                                         </label>
-                                        <input type="text" value="{{editArray.cliente_email}}" class="form-control" id="email-cliente"
+                                        <input type="text" value="{{editArray.cliente_email}}" class="form-control" id="email"
                                                name="cliente_email" required="true" ng-required="required">
                                     </div>
 
@@ -291,7 +291,7 @@
                                         <label for="recipient-name" class="form-control-label">
                                             Telefone:
                                         </label>
-                                        <input type="text" value="{{editArray.cliente_telefone}}" class="form-control" id="telefone-cliente"
+                                        <input type="text" value="{{editArray.cliente_telefone}}" class="form-control" id="telefone"
                                                name="cliente_telefone">
                                     </div>
 
@@ -299,7 +299,7 @@
                                         <label for="recipient-name" class="form-control-label">
                                             CNPJ:
                                         </label>
-                                        <input type="text" value="{{editArray.cliente_cnpj}}" maxlength="18" class="form-control" id="cnpj-cliente"
+                                        <input type="text" value="{{editArray.cliente_cnpj}}" maxlength="18" class="form-control" id="cnpj"
                                                name="cliente_cnpj" onkeypress='mascaraMutuario(this,cpfCnpj)'
                                                onblur='clearTimeout()' required="true" ng-required="required">
                                     </div>
@@ -307,7 +307,7 @@
                                         <label for="recipient-name" class="form-control-label">
                                             Endereço:
                                         </label>
-                                        <input type="text" value="{{editArray.cliente_endereco}}" class="form-control" id="endereco-cliente"
+                                        <input type="text" value="{{editArray.cliente_endereco}}" class="form-control" id="endereco"
                                                name="cliente_endereco">
 
                                     </div>
@@ -315,7 +315,7 @@
                                         <label for="recipient-name" class="form-control-label">
                                             Numero:
                                         </label>
-                                        <input type="text" value="{{editArray.cliente_numero}}" class="form-control" id="numero-cliente"
+                                        <input type="text" value="{{editArray.cliente_numero}}" class="form-control" id="numero"
                                                name="cliente_numero">
 
                                     </div>
@@ -323,7 +323,7 @@
                                         <label for="recipient-name" class="form-control-label">
                                             Complemento:
                                         </label>
-                                        <input type="text" value="{{editArray.cliente_complemento}}" class="form-control" id="complemento-cliente"
+                                        <input type="text" value="{{editArray.cliente_complemento}}" class="form-control" id="complemento"
                                                name="cliente_complemento">
 
                                     </div>
@@ -331,7 +331,7 @@
                                         <label for="recipient-name" class="form-control-label">
                                             Estado:
                                         </label>
-                                        <input type="text" value="{{editArray.cliente_estado}}" class="form-control" id="estado-cliente"
+                                        <input type="text" value="{{editArray.cliente_estado}}" class="form-control" id="estado"
                                                name="cliente_estado">
 
                                     </div>

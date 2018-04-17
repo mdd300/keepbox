@@ -69,11 +69,13 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="m-container m-container--fluid m-container--full-height">
             <div class="m-stack m-stack--ver m-stack--desktop">
                 <!-- BEGIN: Brand -->
-                <div class="m-stack__item m-brand  m-brand--skin-light " style="     padding: 0;   background: #F5F5F5;">
+                <div class="m-stack__item m-brand  m-brand--skin-light "
+                     style="     padding: 0;   background: #F5F5F5;">
                     <div class="m-stack m-stack--ver m-stack--general">
                         <div class="m-stack__item m-stack__item--middle m-brand__logo">
                             <a href="<?= base_url() ?>" class="m-brand__logo-wrapper">
-                                <img style="    max-width: 80px;" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/Logo.png">
+                                <img style="    max-width: 80px;"
+                                     src="<?= base_url('public/assets/metronic/') ?>app/media/img/icons/Logo.png">
                             </a>
                             <h3 class="m-header__title">
                                 NC Cinco
@@ -102,7 +104,8 @@ License: You must have a valid license purchased only from themeforest(the above
                     </div>
                 </div>
                 <!-- END: Brand -->
-                <div class="m-stack__item m-stack__item--fluid m-header-head header-content-color" style="    background-color: #87CEFA;" id="m_header_nav">
+                <div class="m-stack__item m-stack__item--fluid m-header-head header-content-color"
+                     style="    background-color: #87CEFA;" id="m_header_nav">
                     <div class="m-header__title">
                         <h3 class="m-header__title-text">
                             NC Cinco
@@ -125,12 +128,10 @@ License: You must have a valid license purchased only from themeforest(the above
                     <!-- END: Topbar -->
 
                     <div class="content-user-right">
-                        <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/user.png">
+                        <img class="content-img-user"
+                             src="<?= base_url('public/assets/metronic/') ?>app/media/img/icons/user.png">
                         <div style="font-size: 0.8rem;">
-                            <a data-toggle="modal"
-                               data-target="#m_modal_folder_cadastrar"">
-                            Trocar a senha
-                            </a>
+
                         </div>
                     </div>
 
@@ -148,9 +149,25 @@ License: You must have a valid license purchased only from themeforest(the above
         <div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-light ">
             <!-- BEGIN: Aside Menu -->
             <div class="content-left-menu">
-                <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/emgrenagem@2x.png">
+                <img class="content-img-user"
+                     src="<?= base_url('public/assets/metronic/') ?>app/media/img/icons/emgrenagem@2x.png">
             </div>
             <!-- END: Aside Menu -->
+            <div class="btn-trocar-senha">
+                <button data-toggle="modal"
+                   data-target="#m_modal_folder_cadastrar"
+                        class="btn-senha">
+                Trocar a senha
+                </button>
+            </div>
+            <div class="btn-trocar-senha">
+                <button
+                        class="btn-senha">
+                    <a href="<?= base_url() ?>" style="text-decoration: none; color: white">
+                        Sair
+                    </a>
+                </button>
+            </div>
         </div>
         <!-- END: Left Aside -->
         <div class="m-grid__item m-grid__item--fluid m-wrapper content-all">
@@ -158,7 +175,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
             <!--Modal de Cadastras arquivo-->
             <div class="modal fade" id="m_modal_folder_cadastrar" tabindex="-1" role="dialog"
-                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 aria-labelledby="exampleModalLabel" aria-hidden="true"
+                 ng-controller="Menu_options">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -177,10 +195,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <label for="recipient-name" class="form-control-label">
                                         Senha:
                                     </label>
-                                    <input type="text" class="form-control" ng-model="newFolder" id="nome-senha"
+                                    <input type="password" class="form-control" ng-model="Password" id="nome-senha"
                                            name="nome-senha">
                                 </div>
 
+                                <div class="form-group">
+                                    <label for="recipient-name" class="form-control-label">
+                                        Confirmar senha:
+                                    </label>
+                                    <input type="password" ng-class="{'error_input': error}" class="form-control" ng-model="Password_confirmar" id="nome-senha"
+                                           name="nome-senha">
+                                    <div ng-if="error" style="color: red;">Senha incorreta, tente novamente</div>
+                                </div>
 
                             </form>
                         </div>
@@ -188,8 +214,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">
                                 Fechar
                             </button>
-                            <button type="button" class="btn btn-primary" ng-click="teste()"
-                                    data-dismiss="modal">
+                            <button type="button" class="btn btn-primary" ng-click="Senha()">
                                 Salvar
                             </button>
                         </div>

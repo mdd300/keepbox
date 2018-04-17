@@ -193,17 +193,22 @@ angular.module("app_fashon").controller("Clientes_crud", function ($scope, $http
 
     }
 
-    $scope.teste = function(){
+
+    $scope.editar_cliente = function(){
+
+        console.log($('.form-editar'))
+
         var formulario = $('.form-editar');
-        var empresacnpj = formulario.find($('#cnpj-cliente')).val();
-        var email = formulario.find($('#email-cliente')).val();
+        var empresacnpj = formulario.find($('#cnpj')).val();
+        var email = formulario.find($('#email')).val();
         var cnpj = empresacnpj.replace(".", "");
         var cnpj = cnpj.replace(".", "");
         var cnpj = cnpj.replace("/", "");
         var cnpj = cnpj.replace("-", "");
-        formulario.find($('#cnpj-cliente')).val(cnpj);
+        formulario.find($('#cnpj')).val(cnpj);
 
         var formularioCadastro = $('.form-editar');
+        var form = formularioCadastro.serialize();
 
         if(cnpj !== "" && email !== ''){
 
@@ -212,7 +217,10 @@ angular.module("app_fashon").controller("Clientes_crud", function ($scope, $http
                 url: base_url + "manager/clientes/clientes/editCliente",
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'},
                 data: formularioCadastro.serialize()
+
+                // data: $.param({form: form, id: $scope.editArray.cliente_id})
             }).then(function (response) {
+
 
 
                 }
@@ -221,3 +229,4 @@ angular.module("app_fashon").controller("Clientes_crud", function ($scope, $http
 
 
 });
+

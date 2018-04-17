@@ -17,7 +17,7 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
         $scope.list_files = [];
         $scope.list_folders = [];
         $scope.dataCliente;
-        $scope.status=["Inativo","Ativo"];
+        $scope.status = ["Inativo", "Ativo"];
         $scope.firstPage = false;
         $scope.folderKnow = 0;
         $scope.newFolder;
@@ -29,7 +29,7 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
         //limite de indices a mostra
         $scope.limiteDeIndice = 5;
 
-        var url = new URL(window.location.href );
+        var url = new URL(window.location.href);
 
         $scope.idCliente = url.searchParams.get("id");
 
@@ -38,7 +38,12 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
 
             method: 'POST',
             url: base_url + "manager/clientes/clientes/getClientes",
-            data: $.param({limite: $scope.limiteDeIndice, pagina: $scope.dls, like: $scope.pesquisa, where :{'cliente_id': $scope.idCliente}}),
+            data: $.param({
+                limite: $scope.limiteDeIndice,
+                pagina: $scope.dls,
+                like: $scope.pesquisa,
+                where: {'cliente_id': $scope.idCliente}
+            }),
             headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
 
         }).then(function (response) {
@@ -218,7 +223,7 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
 
         }
 
-        $scope.folderBack = function(){
+        $scope.folderBack = function () {
 
             $scope.list_files = [];
             $scope.list_folders = [];
@@ -256,13 +261,13 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
 
         }
 
-        $scope.save_folder = function(){
+        $scope.save_folder = function () {
 
             $http({
 
                 method: 'POST',
                 url: base_url + "manager/comercial/map/saveFolder",
-                data: $.param({folder: $scope.folderKnow,nome: $scope.newFolder, id: $scope.idCliente}),
+                data: $.param({folder: $scope.folderKnow, nome: $scope.newFolder, id: $scope.idCliente}),
 
 
             }).then(function (response) {
@@ -274,3 +279,44 @@ angular.module("app_fashon").directive("fileInput", function ($parse) {
 
         }
     });
+
+angular.module("app_fashon").controller("Menu_options", function ($scope, $http, $window) {
+
+    $scope.Senha = function () {
+
+        var url = new URL(window.location.href);
+
+        $scope.idCliente = url.searchParams.get("id");
+        $scope.Password;
+        $scope.Password_confirmar;
+        $scope.error = false;
+
+        if ($scope.Password === $scope.Password_confirmar) {
+
+            $http({
+
+                method: 'POST',
+                url: base_url + "manager/clientes/clientes/changePass",
+                data: $.param({pass: $scope.Password, id: $scope.idCliente}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+            }).then(function (response) {
+
+
+                    if (response.data.success == true) {
+                        alert('Senha alterada com sucesso');
+                        $scope.error = false;
+                        window.location = response.data.link;
+                    } else {
+                        alert("Erro ao alterar a senha, tente novamente");
+                    }
+
+                }
+            );
+
+        }else{
+            $scope.error = true;
+        }
+    }
+
+});
