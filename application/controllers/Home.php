@@ -24,7 +24,7 @@ class Home extends CI_Controller {
 		$this->load->view('metronic/examples/dashboard');
 		$this->load->view('metronic/structure/footer_default');*/
 
-        $this->load->view('metronic/login/login');
+        $this->load->view('Keep/landing_pages/homepage');
 	}
 
 

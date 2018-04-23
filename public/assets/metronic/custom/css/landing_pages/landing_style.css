@@ -1,0 +1,144 @@
+.content-landing{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content-img-background{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-modal-pre-cad{
+
+    width: 50%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #8dee01;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.content-pre-cad{
+    width: 100%;
+}
+.content-text-comming{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+.content-text-title{
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-family: Arial;
+    font-size: 3rem;
+;
+
+}
+.content-text{
+    text-align: center;
+    padding: 10px 20%;
+    color: white;
+    font-family: sans-serif;
+
+}
+.content-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7% 0% 3% 0 ;
+}
+.inpu-email{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+    border: 0 solid white;
+    width: 40%;
+    font-size: 1rem;
+    height: 40px;
+}
+.inpu-email::placeholder{
+    color: #ab4dd1;
+
+}
+.content-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-send-email-pre-cad{
+    border-radius: 8px;
+    background-color: #7e1caf;
+    border: 0 solid white;
+    box-shadow:  0 0 0 0;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1.3rem;
+}
+.content-footer{
+    bottom: 0;
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 70px;
+    width: 50%;
+    position: absolute;
+}
+.content-text-footer{
+    float: left;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 3%;
+}
+.content-icon-png-rigth{
+    width: auto;
+    height: auto;
+    float: right;
+    padding-left: 50px;
+}
+.content-icon-rede-social{
+    float: right;
+    height: 100%;
+    padding-left: 5px;
+}
+.icon-rede-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ico-rede{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+}
+.ico-label{
+    width: 100%;
+    height: 100%;
+}
+.content-logo{
+    position: absolute;
+    float: right;
+    z-index: 111;
+    width: 10%;
+    right: 0;
+    height: 11%;
+    padding-top: 2%;
+    padding-right: 5%;
+}
+.logo-background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}

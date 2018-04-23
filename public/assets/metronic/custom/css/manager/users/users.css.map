@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,2NAAyO,CACvO,UAAU,CAAE,IAAI",
-"sources": ["../../../scss/manager/users/users.scss"],
-"names": [],
-"file": "users.css"
-}
