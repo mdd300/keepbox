@@ -17,7 +17,7 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom" ng-controller="landing_ctrl">
-<base_url value="<?= base_url() ?>"></base_url>
+<input style="display: none" class="base_url"  value="<?= base_url() ?>"></input>
 
 
 <div class="content-landing">
@@ -31,10 +31,13 @@
                     para cadastrar seu email e ser notificado das próximas atualizações
                 </div>
                 <div class="content-input">
-                    <input type="text" class="inpu-email" placeholder="Seu email aqui">
+                    <input type="text" class="inpu-email" ng-model="email" placeholder="Seu email aqui">
+                </div>
+                <div class="content-text cad-text" ng-show="success" ng-class="{'cad-success': success == true}">
+                    Parabéns, seu e-mail cadastrado com sucesso!
                 </div>
                 <div class="content-btn">
-                    <button class="btn-send-email-pre-cad"><b>Cadastrar</b></button>
+                    <button class="btn-send-email-pre-cad" ng-click="cadastro()"><b>Cadastrar</b></button>
                 </div>
             </div>
 
@@ -60,8 +63,8 @@
         </div>
 
         <div class="content-logo">
-            <div class="logo-background" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/landing_pages/keepbox.png')">
-
+            <div class="logo-background"
+                 style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/landing_pages/keepbox.png')">
             </div>
         </div>
     </div>

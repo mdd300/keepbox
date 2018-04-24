@@ -1,4 +1,4 @@
-angular.module('app_pre_cadastro').service('precadastroService', [ "$http", function( $http ){
+angular.module('app_landing').service('precadastroService', [ "$http", function( $http ){
 
     var $base_element = angular.element('base_url');
     var base_url = $base_element.attr('value');

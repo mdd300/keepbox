@@ -27,5 +27,26 @@ class Home extends CI_Controller {
         $this->load->view('Keep/landing_pages/homepage');
 	}
 
+	public function pre_cadastro($Data = null){
+
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $this->load->model('landing/Landing_model');
+
+        $retorno['success'] = $this->Landing_model->pre_cad_email($Data);
+
+
+        if ($Output == true) {
+            echo json_encode($retorno);
+        } else {
+            return $retorno;
+        }
+
+    }
 
 }
