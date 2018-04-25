@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Sanseriffic";
+    src: url("/system/fonts/Sanseriffic.otf");
+
+}
+.text-font-sans{
+    font-family: sans-serif;
+}
+.text-1{
+    font-size: 1.1rem;
+}
+.text-2{
+    font-size: 1.3rem;
+}
+.text-tittle{
+    font-size: 1.8rem;
+}
+.padding-text{
+
+}
+.color-background-green{
+    background-color: #85c318;
+}
+.color-text-green{
+    color: #85c318
+}
+.color-text-grey{
+    color: #696969;
+}

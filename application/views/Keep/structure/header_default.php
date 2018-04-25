@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 
+<!--
 Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 4
 Version: 5.0.5
 Author: KeenThemes
@@ -20,8 +20,9 @@ License: You must have a valid license purchased only from themeforest(the above
         NC Cinco
     </title>
     <meta name="description" content="Latest updates and statistic charts">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--begin::Web font -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
     <script>
@@ -35,25 +36,21 @@ License: You must have a valid license purchased only from themeforest(the above
     <!--end::Web font -->
     <!--begin::Base Styles -->
     <!--begin::Page Vendors -->
-    <link href="<?= base_url('public/assets/metronic/') ?>vendors/custom/fullcalendar/fullcalendar.bundle.css"
-          rel="stylesheet" type="text/css"/>
-    <!--end::Page Vendors -->
-    <link href="<?= base_url('public/assets/metronic/') ?>vendors/base/vendors.bundle.css" rel="stylesheet"
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>KeepBox</title>
+    <!-- css -->
+
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/lib/font-awesome/font-awesome.css" rel="stylesheet"
           type="text/css"/>
-    <link href="<?= base_url('public/assets/metronic/') ?>demo/demo6/base/style.bundle.css" rel="stylesheet"
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/HomePage.css" rel="stylesheet"
           type="text/css"/>
-    <!--end::Base Styles -->
-    <link rel="shortcut icon" href="<?= base_url('public/assets/metronic/') ?>demo/demo6/media/img/logo/favicon.ico"/>
-    <!-- pre cadastro css-->
-    <link href="<?= base_url('public/assets/metronic/custom/css/manager/comercial/pre_cad.css') ?>" rel="stylesheet"
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/responsive_home.css" rel="stylesheet"
           type="text/css"/>
-    <link href="<?= base_url('public/assets/metronic/custom/css/manager/global.css') ?>" rel="stylesheet"
-          type="text/css"/>
-    <!-- map css-->
-    <link href="<?= base_url('public/assets/metronic/custom/css/manager/comercial/map.css') ?>" rel="stylesheet"
-          type="text/css"/>
-    <!-- Usuários -->
-    <link href="<?= base_url('public/assets/metronic/custom/css/manager/users/users.css') ?>" rel="stylesheet"
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Global/global.css" rel="stylesheet"
           type="text/css"/>
     <base_url value="<?= base_url() ?>"></base_url>
 
@@ -61,120 +58,57 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- end::Head -->
 <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-light m-aside-left--fixed m-aside-left--offcanvas m-aside-left--minimize m-brand--minimize m-footer--push m-aside--offcanvas-default">
 
-<!-- begin:: Page -->
-
-<div class="m-grid m-grid--hor m-grid--root m-page">
-    <!-- BEGIN: Header -->
-    <header class="m-grid__item    m-header " data-minimize-offset="200" data-minimize-mobile-offset="200">
-        <div class="m-container m-container--fluid m-container--full-height">
-            <div class="m-stack m-stack--ver m-stack--desktop">
-                <!-- BEGIN: Brand -->
-                <div class="m-stack__item m-brand  m-brand--skin-light " style="     padding: 0;   background: #F5F5F5;">
-                    <div class="m-stack m-stack--ver m-stack--general">
-                        <div class="m-stack__item m-stack__item--middle m-brand__logo">
-                            <a href="<?= base_url() ?>" class="m-brand__logo-wrapper">
-                                <img style="    max-width: 80px;" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/Logo.png">
-                            </a>
-                            <h3 class="m-header__title">
-                                NC Cinco
-                            </h3>
-                        </div>
-                        <div class="m-stack__item m-stack__item--middle m-brand__tools">
-                            <!-- BEGIN: Responsive Aside Left Menu Toggler -->
-                            <a href="javascript:;" id="m_aside_left_offcanvas_toggle"
-                               class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-tablet-and-mobile-inline-block">
-                                <span></span>
-                            </a>
-                            <!-- END -->
-                            <!-- BEGIN: Responsive Header Menu Toggler -->
-                            <a id="m_aside_header_menu_mobile_toggle" href="javascript:;"
-                               class="m-brand__icon m-brand__toggler m--visible-tablet-and-mobile-inline-block">
-                                <span></span>
-                            </a>
-                            <!-- END -->
-                            <!-- BEGIN: Topbar Toggler -->
-                            <a id="m_aside_header_topbar_mobile_toggle" href="javascript:;"
-                               class="m-brand__icon m--visible-tablet-and-mobile-inline-block">
-                                <i class="flaticon-more"></i>
-                            </a>
-                            <!-- BEGIN: Topbar Toggler -->
-                        </div>
-                    </div>
-                </div>
-                <!-- END: Brand -->
-                <div class="m-stack__item m-stack__item--fluid m-header-head header-content-color" style="    background-color: #87CEFA;" id="m_header_nav">
-                    <div class="m-header__title">
-                        <h3 class="m-header__title-text">
-                            NC Cinco
-                        </h3>
-                    </div>
-                    <!-- BEGIN: Horizontal Menu -->
-                    <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-light "
-                            id="m_aside_header_menu_mobile_close_btn">
-                        <i class="la la-close"></i>
+<head>
+    <nav class="content-header topnav" id="myTopnav">
+        <div class="header-li icon-responsive" style="font-size:15px;" onclick="myFunction()"><a href="javascript:void(0);">&#9776;</a></div>
+        <ul class="header-ul "  id="header-li-id">
+            <li class="header-li"><a href="">Compra Assistida</a></li>
+            <li class="header-li" ><a href="">Calculadora de Envio</a></li>
+            <li class="header-li" ><a href="">Ganhe Dinheiro</a></li>
+        </ul>
+    </nav>
+    <div class="content-header-menu">
+        <div class="content-align-menu">
+            <div class="content-logo-header"
+                 style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/LOGOTIPO.png')"></div>
+            <div class="content-right-menu">
+                <div class="content-btn-header-menu">
+                    <button class="btn-header-menu color-background-green"><img class="content-img-icon-menu"
+                                                                                src="<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png">Meu
+                        Acesso
                     </button>
-                    <div id="m_header_menu"
-                         class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-light m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light ">
-                        <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
-                            <li class="m-menu__item">
-                                <a href="<?= base_url('manager/clientes/clientes') ?>" class="m-menu__link">
-                                    <span class="m-menu__item-here"></span>
-                                    <span class="m-menu__link-text">
-                                                Clientes
-                                            </span>
-                                </a>
-                            </li>
-                            <li class="m-menu__item">
-                                <a href="<?= base_url('manager/users') ?>" class="m-menu__link">
-                                    <span class="m-menu__item-here"></span>
-                                    <span class="m-menu__link-text">
-                                                Usuários
-                                            </span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- END: Horizontal Menu -->
-                    <!-- BEGIN: Topbar -->
-
-                    <!-- END: Topbar -->
-
-                    <div class="content-user-right">
-                        <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/user.png">
-                        <div>
-
-                        </div>
-                    </div>
-
                 </div>
+                <nav class="content-menu">
+                    <ul class="menu-ul">
+                        <li class="menu-li color-text-green">Inicial</li>
+                        <li class="menu-li color-text-grey">Serviços</li>
+                        <li class="menu-li color-text-grey">Como Funciona</li>
+                        <li class="menu-li color-text-grey">Dúvidas</li>
+                        <li class="menu-li color-text-grey">Blog</li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </header>
-    <!-- END: Header -->
-    <!-- begin::Body -->
-    <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
-        <!-- BEGIN: Left Aside -->
-        <button class="m-aside-left-close  m-aside-left-close--skin-light " id="m_aside_left_close_btn">
-            <i class="la la-close"></i>
-        </button>
-        <div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-light ">
-            <!-- BEGIN: Aside Menu -->
-            <div class="content-left-menu">
-                <img class="content-img-user" src="<?= base_url('public/assets/metronic/')?>app/media/img/icons/emgrenagem@2x.png">
-            </div>
-            <!-- END: Aside Menu -->
-            <div class="btn-trocar-senha">
-                <button
-                        class="btn-senha">
-                    <a href="<?= base_url() ?>" style="text-decoration: none; color: white">
-                        Sair
-                    </a>
-                </button>
-            </div>
-        </div>
-        <!-- END: Left Aside -->
-        <div class="m-grid__item m-grid__item--fluid m-wrapper content-all">
+    </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            var y = document.getElementById("header-li-id");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                y.className += " responsive-line";
+            } else {
+                x.className = "topnav";
+                y.className = "header-ul-res";
+
+            }
+        }
+    </script>
+</head>
+
+
 
 
 
