@@ -6,6 +6,7 @@
 
 body{
     margin: 0;
+    overflow-x: scroll;
 }
 
 @media only screen and (max-width: 600px) {
@@ -15,6 +16,11 @@ body{
         background-repeat: no-repeat;
         background-size: contain;
         background-position-y: 15%;
+        -webkit-animation-name: show;
+        -webkit-animation-delay: 1s;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-direction: alternate;
     }
     .content-modal-pre-cad {
         width: 100%;
@@ -26,6 +32,11 @@ body{
         float: left;
         margin-top: 70%;
         padding: 7% 0;
+        -webkit-animation-name: show;
+        -webkit-animation-delay: 1s;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-direction: alternate;
     }
     .content-text-title{
         text-align: center;
@@ -97,6 +108,11 @@ body{
         background-repeat: no-repeat;
         background-size: contain;
         background-position-y: 15%;
+        -webkit-animation-name: show;
+        -webkit-animation-delay: 1s;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-direction: alternate;
     }
     .content-modal-pre-cad {
         width: 100%;
@@ -108,6 +124,11 @@ body{
         float: left;
         margin-top: 70%;
         padding: 7% 0;
+        -webkit-animation-name: show;
+        -webkit-animation-delay: 1s;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-direction: alternate;
     }
     .content-text-title{
         text-align: center;
@@ -179,6 +200,11 @@ body{
         background-repeat: no-repeat;
         background-size: contain;
         background-position-y: 15%;
+        -webkit-animation-name: show;
+        -webkit-animation-delay: 1s;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-direction: alternate;
     }
 
     .content-modal-pre-cad {
@@ -191,6 +217,11 @@ body{
         float: left;
         margin-top: 70%;
         padding: 7% 0;
+        -webkit-animation-name: show;
+        -webkit-animation-delay: 1s;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-direction: alternate;
     }
     .content-text-title{
         text-align: center;
