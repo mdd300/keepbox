@@ -42,25 +42,7 @@
             </div>
 
         </div>
-<!--        <div class="content-footer">-->
-<!--            <div class="content-text-footer"> Convidamos você a também conhecer a KeepBox nas redes sociais-->
-<!--            </div>-->
-<!--            <div class="content-icon-png-rigth">-->
-<!--                <div class="content-icon-rede-social">-->
-<!--                    <div class="icon-rede-social">-->
-<!--                        <div class="ico-rede"-->
-<!--                             style="background-image: url('--><?//= base_url() ?>/*public/assets/metronic/custom/img/landing_pages/instagram-logo.png')"></div>*/
-/*                    </div>*/
-/**/
-/*                </div>*/
-/*                <div class="content-icon-rede-social">*/
-/*                    <div class="icon-rede-social">*/
-/*                        <div class="ico-rede"*/
-/*                             style="background-image: url('*/<?//= base_url() ?>/*public/assets/metronic/custom/img/landing_pages/facebook-logo-button.png')"></div>*/
-/*                    </div>*/
-/*                </div>*/
-/*            </div>*/
-/*        </div>*/
+
 
         <div class="content-logo">
             <div class="logo-background"
