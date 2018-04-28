@@ -103,5 +103,118 @@
         </div>
     </div>
 </div>
+
+<div class="content-tutorial-module3">
+    <div class="content-align-tutorial-module3">
+        <div class="title-tutorial-module3 color-text-grey text-title">
+            Sabemos que
+            <div class="color-text-green" style="    display: initial;">Economizar Dinheiro</div>
+            é o principal motivo para você usar os serviços KeepBox
+        </div>
+    </div>
+    <div class="content-step-tutorial-module3">
+
+        <ul class="ul-tutorial">
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Economize até
+                        <div class="color-text-green" style="    display: initial;">80%</div>
+                        em
+                        fretes. Junte suas compras em um único volume e economize ainda mais dinheiro
+                    </div>
+                </div>
+            </li>
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Pague uma taxa única
+                        de serviço:
+                        <div class="color-text-green" style="    display: initial;">Apenas U$12,90</div>
+                    </div>
+                </div>
+            </li>
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Armazene suas compras
+                        por até 60 dias e aproveite todas as
+                        oportunidades de
+                        comprar nos EUA
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="ul-tutorial">
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Suporte de
+                        atendimento ao cliente em
+                        <div class="color-text-green" style="    display: initial;"><b>português</b></div>
+                    </div>
+                </div>
+            </li>
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Fotos gratuitas de
+                        pacotes recebidos
+                    </div>
+                </div>
+            </li>
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Agilidade de
+                        Entrega
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="content-btn-more-about align-center">
+        <button class="btn-config-2 color-background-roxo color-text-white text-1">
+            Confira nossos Serviços
+        </button>
+    </div>
+</div>
+
+<div class="content-sm-btn-call color-background-roxo align-center">
+    <div class="content-text-and-btn-call ">
+        <div class="text-title-sm text-font-sans color-text-white text-bold" style="float: left;">
+            Comece a economizar hoje!
+        </div>
+        <div style="float: right">
+            <button class="btn-config shadow color-background-green color-text-white text-1">
+                Inscrever-se hoje gratuitamente
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="content-simulator-module4 align-x-center">
+    <div class="content-simulator">
+        <div class="content-left-simulator">
+            <div class="color-text-roxo text-title text-bold text-font-sans">Simulador de Preços</div>
+            <div class="styled-select background-select-roxo rounded">
+                <select>
+                    <option>Here is the first option</option>
+                    <option>The second option</option>
+                    <option>The third option</option>
+                </select>
+            </div>
+        </div>
+        <div class="content-right-simulator">
+
+        </div>
+    </div>
+</div>
 </body>
 </html>
