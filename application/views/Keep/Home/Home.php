@@ -119,7 +119,7 @@
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
-                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Economize até
+                    <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Economize até
                         <div class="color-text-green" style="    display: initial;">80%</div>
                         em
                         fretes. Junte suas compras em um único volume e economize ainda mais dinheiro
@@ -130,7 +130,7 @@
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
-                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Pague uma taxa única
+                    <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Pague uma taxa única
                         de serviço:
                         <div class="color-text-green" style="    display: initial;">Apenas U$12,90</div>
                     </div>
@@ -140,7 +140,7 @@
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
-                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Armazene suas compras
+                    <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Armazene suas compras
                         por até 60 dias e aproveite todas as
                         oportunidades de
                         comprar nos EUA
@@ -153,7 +153,7 @@
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
-                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Suporte de
+                    <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Suporte de
                         atendimento ao cliente em
                         <div class="color-text-green" style="    display: initial;"><b>português</b></div>
                     </div>
@@ -163,7 +163,7 @@
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
-                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Fotos gratuitas de
+                    <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Fotos gratuitas de
                         pacotes recebidos
                     </div>
                 </div>
@@ -172,7 +172,7 @@
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
-                    <div class="content-text-tutorial text-2 text-font-sans color-text-grey-light">Agilidade de
+                    <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Agilidade de
                         Entrega
                     </div>
                 </div>
@@ -203,17 +203,65 @@
     <div class="content-simulator">
         <div class="content-left-simulator">
             <div class="color-text-roxo text-title text-bold text-font-sans">Simulador de Preços</div>
-            <div class="styled-select background-select-roxo rounded">
+            <div style="margin-top: 30px;">
+            <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat 96% 0;">
                 <select>
-                    <option>Here is the first option</option>
+                    <option>KG</option>
                     <option>The second option</option>
                     <option>The third option</option>
                 </select>
+            </div>
+            <div class="styled-select align-y-center background-select-roxo rounded" style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat 96% 0;">
+                <select>
+                    <option>KG</option>
+                    <option>The second option</option>
+                    <option>The third option</option>
+                </select>
+            </div>
             </div>
         </div>
         <div class="content-right-simulator">
 
         </div>
+    </div>
+</div>
+<div class="content-simulator-data-module4 align-center">
+    <div class="content-border-simulator-shadow">
+        <ul class="content-ul-simulator-data">
+            <li class="content-li-simulator-data">
+                <div class="text-1 text-font-sans text-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
+                    <b>Total:</b>U$15.50
+                </div>
+            </li>
+            <li class="content-li-simulator-data">
+                <div class="text-1 text-font-sans text-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
+                    <b>Total:</b>U$15.50
+                </div>
+            </li>
+            <li class="content-li-simulator-data">
+                <div class="text-1 text-font-sans text-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
+                    <b>Total:</b>U$15.50
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 </body>
