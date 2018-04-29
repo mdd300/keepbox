@@ -1,3 +1,4 @@
+
 <div class="content-img-top-home">
     <img class="img-top-home" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg">
 </div>
@@ -71,12 +72,7 @@
         <div class="step-text  color-text-roxo text-font-sans text-1 "><b>3.</b>Crie sua conta KeepBox e compre nas
             lojas online dos EUA
     </li>
-    <li class="li-step-module2">
-        <div class="step-icon"
-             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png')"></div>
-        <div class="step-text  color-text-roxo text-font-sans text-1 "><b>4.</b>Crie sua conta KeepBox e compre nas
-            lojas online dos EUA
-    </li>
+    
 </ul>
 
 <div class="content-cadastro-space-modulo2">
@@ -220,7 +216,16 @@
             </div>
             </div>
         </div>
-        <div class="content-right-simulator">
+        <div class="content-right-simulator ">
+            <div style="margin-top: 18%" class="color-text-roxo align-x-center text-1 text-font-sans">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+            <div class="slider-margin" >
+                <li class="li-step-tutorial"> 0</li>
+                <li class="li-step-tutorial" style="margin-left: 29%"> 30</li>
+                 <input type="range" class="slider"></input>
+               
+            </div>
+
+           
 
         </div>
     </div>
@@ -264,5 +269,181 @@
         </ul>
     </div>
 </div>
+
+<div>
+    <div class="limit-text-cadastro text-bold step-text color-text-roxo text-font-sans text-title-md content-align-tutorial-module3">Alguma dúvida?</div><br><br>
+        
+
+        <div class="content-align-tutorial-module3" style="height: 200px">
+          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-left.png')" class="step-icon-2" onclick="plusDivs(-1)"></span>
+
+          
+          <div class="mySlides ">
+               <li class="content-li-info-data">
+                 <div class=" color-text-green color-text-green text-bold text-font-sans">
+                    Como saber se vocês receberam minha compra?
+                </div>
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+               
+            </li>
+            <li class="content-li-info-data">
+                <div class=" color-text-green color-text-green text-bold text-font-sans">
+                    Como eu pago pelo serviço e o frete?
+                </div>
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                
+            </li>
+          </div>
+          
+           <div class="mySlides">
+               <li class="content-li-info-data">
+                <div class=" color-text-green color-text-green text-bold text-font-sans">
+                        <b>Slide 2</b>
+                    </div>
+                    
+                    <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    </div>
+                    
+                </li>
+                <li class="content-li-info-data">
+                    <div class=" color-text-green color-text-green text-bold text-font-sans">
+                        <b>Slide 2</b>
+                    </div>
+                    
+                    <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    </div>
+                    
+                </li>
+          </div>
+           <div class="mySlides">
+               <li class="content-li-info-data">
+                 <div class=" color-text-green color-text-green text-bold text-font-sans">
+                    <b>Slide 3</b>
+                </div>
+                
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+               
+            </li>
+            <li class="content-li-info-data">
+                <div class=" color-text-green color-text-green text-bold text-font-sans">
+                    <b>Slide 3</b>
+                </div>
+                
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                
+            </li>
+          </div>
+          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-right.png')" class="step-icon-2" onclick="plusDivs(1)"></span>
+        </div>
+          
+ </div>
+
+<div>
+    <div class="limit-text-cadastro step-text color-text-grey-light text-font-sans text-title-sm content-align-tutorial-module3">Outras Dúvidas?  &nbsp;  
+        <button class="btn-config-2 color-background-roxo color-text-white text-1">Confira Aqui</button>
+    </div> <br>
+</div>
+<div>
+          
+        <div class="content-module-2-sm color-background-green ">  
+        </div>
+
+        <div class="content-news-banner" >
+            <div  class="color-text-green text-title text-font-san"> FIQUE POR DENTRO! </div><br>
+            <div  class="text-title-sm color-text-white"  > Veja as últimas notícias sobre os segredos </div>
+            <div  class="text-title-sm color-text-white"  >das importações no Youtube da KeepBox </div>
+            <br>
+            <button class="btn-config-2 color-background-roxo color-text-white text-1" >Venha conhecer </button>
+        </div>
+
+        <div class="content-video-module2-2 color-background-white" style="background-color: red">
+            <!---->
+            <!--Video aqui-->
+            <!---->
+        </div>              
+</div>
+
+
+<div style="padding-top: 45%">
+    
+    <div class="content-simulator-data-module4 align-center">
+   
+        <ul class="content-ul-simulator-data">
+            <li class="content-li-simulator-data">
+                <div class="text-1 text-font-sans text-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
+                    Ler mais
+                </div>
+            </li>
+            <li class="content-li-simulator-data">
+                <div class="text-1 text-font-sans text-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
+                    Ler mais
+                </div>
+            </li>
+            <li class="content-li-simulator-data">
+                <div class="text-1 text-font-sans text-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </div>
+                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
+                    Ler mais
+                </div>
+            </li>
+        </ul>
+
+</div >
+<br>
+<div class="align-x-center" >
+    <button class="btn-config-2 color-background-green color-text-white text-1 " >Mais dicas Keepbox</button>
+</div>
+<br>
+
+</div>
+
+
+<script>
+//Slider Alguma duvida
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
 </body>
 </html>
