@@ -12,64 +12,43 @@
         
     </ul>
 
-<div style="padding-top: 20% " class="text-font-sans">
+<div style="padding-top: 20% " class="text-font-sans content-li-info-data-cf ">
 
      <ul class="content-ul-simulator-data">
         <li>
-           <div class="color-text-green">1.Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
+           <div class="color-text-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
         </li>
     </ul>
 
     <ul class="content-ul-simulator-data">
         <li>
-           <div class="color-text-green">2.Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
-           <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
+           <div class="color-text-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
+           <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        
+        </div> 
         </li>
     </ul>
 
     <ul class="content-ul-simulator-data">
         <li>
-           <div class="color-text-green">3.Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
+           <div class="color-text-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
         </li>
     </ul>
 
-    <ul class="content-ul-simulator-data">
-        <li>
-           <div class="color-text-green">4.Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
-           <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
-        </li>
-    </ul>
-
-    <ul class="content-ul-simulator-data">
-        <li>
-           <div class="color-text-green">5.Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
-           <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
-        </li>
-    </ul>
-    
 
 </div>
 
- 
+<div class="align-x-center" style="padding-top: 10%">
+    <button class="btn-config-2 color-background-roxo color-text-white text-1">Envio de encomendas Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </button>
 
-  <div style="padding-top: 10%" class="text-font-sans text-title-sm content-align-tutorial-module3">
-     <div class="color-text-grey-light">QUEM SOMOS?
-     </div>
-</div>
+ </div>
 
-<div class="content-li-info-data-cf">
-    <div class="text-2 text-font-sans color-text-grey-light padding-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum
-    </div>
-    
-</div>
-<br>
+  
 
 <div class="content-simulator-module4 align-x-center">
     <div class="content-simulator">
