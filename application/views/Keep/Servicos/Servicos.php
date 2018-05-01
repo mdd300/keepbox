@@ -10,28 +10,28 @@
 </div>
    
         
-<div style="padding-top: 20% " class="text-font-sans content-li-info-data-cf ">
+<div class="text-font-sans content-li-center-vert ">
 
-     <ul class="content-ul-simulator-data">
+     <ul class="content-ul-data-serv">
         <li>
            <div class="color-text-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
         </li>
     </ul>
 
-    <ul class="content-ul-simulator-data">
+    <ul class="content-ul-data-serv">
         <li>
            <div class="color-text-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
                                         
-        </div> 
+        
         </li>
     </ul>
 
-    <ul class="content-ul-simulator-data">
+    <ul class="content-ul-data-serv">
         <li>
            <div class="color-text-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
            <div class="color-text-grey" >Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
@@ -162,20 +162,20 @@
         </ul>
     </div>
 </div>
-<br>
+
 <div class="align-x-center" >
    <div class="content-li-info-data-serv">
     <div class="text-2 text-font-sans color-text-grey-light padding-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
  
-    </div><br>
+    </div>
      <div class="text-2 text-font-sans color-text-grey-light padding-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud
         
-    </div><br>
+    </div>
 </div>
-<br>
+
 
 </div>
 
