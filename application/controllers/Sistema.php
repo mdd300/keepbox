@@ -28,7 +28,12 @@ class Sistema extends CI_Controller
         } else {
             $Output = false;
         }
-        $this->load->view('Keep/Sistema/Sistema_home', $Data['data']);
+
+        $this->load->model('Home_model');
+
+        $Data = $this->Home_model->getData_model($Data['id']);
+
+        $this->load->view('Keep/Sistema/Sistema_home', $Data);
     }
 
     public function getData($Data = null)
@@ -40,15 +45,10 @@ class Sistema extends CI_Controller
             $Output = false;
         }
 
-        $this->load->model('Home_model');
+        $this->load->helper('url');
+        redirect('/Sistema/system/', $Data['id']);
 
-        $retorno = $this->Home_model->getData_model($Data['id']);
 
-        if ($Output == true) {
-            echo json_encode($retorno);
-        } else {
-            return $retorno;
-        }
     }
 
 }

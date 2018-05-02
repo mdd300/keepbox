@@ -1,4 +1,4 @@
-<div style="width: 1270px;">
+
 <div class="content-img-top-home">
     <img class="img-top-home" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg">
 </div>
@@ -71,12 +71,6 @@
              style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png')"></div>
         <div class="step-text  color-text-roxo text-font-sans text-1 "><b>3.</b>Crie sua conta KeepBox e compre nas
             lojas online dos EUA
-    </li>
-    <li class="li-step-module2">
-        <div class="step-icon"
-             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png')"></div>
-        <div class="step-text  color-text-roxo text-font-sans text-1 "><b>4.</b>Mande entregar suas compras no seu
-            endereço KeepBox
     </li>
     
 </ul>
@@ -359,12 +353,12 @@
         <button class="btn-config-2 color-background-roxo color-text-white text-1">Confira Aqui</button>
     </div> <br>
 </div>
-<div>
+<div >
           
         <div class="content-module-2-sm color-background-green ">  
         </div>
 
-        <div class="content-news-banner" >
+        <div class="content-news-banner " style="padding-top: 7%" >
             <div  class="color-text-green text-title text-font-san"> FIQUE POR DENTRO! </div><br>
             <div  class="text-title-sm color-text-white"  > Veja as últimas notícias sobre os segredos </div>
             <div  class="text-title-sm color-text-white"  >das importações no Youtube da KeepBox </div>
@@ -429,7 +423,7 @@
 
 </div>
 
-</div>
+
 <script>
 //Slider Alguma duvida
 var slideIndex = 1;

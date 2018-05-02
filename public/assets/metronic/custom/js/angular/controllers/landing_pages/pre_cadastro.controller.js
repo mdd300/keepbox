@@ -1,4 +1,4 @@
-angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$location', function ($scope, $http,$location) {
+angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', function ($scope, $http) {
 
     var url = new URL(window.location.href);
 
@@ -31,6 +31,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$lo
             if ($scope.dataCad.user_senha.length > 5) {
                 if ($scope.dataCad.user_senha == $scope.dataCad.user_confirmar_senha) {
 
+
                     if ($scope.dataCad.user_endereco !== "" && $scope.dataCad.user_numero !== "" && $scope.dataCad.user_login !== ""
                         && $scope.dataCad.user_senha !== "") {
 
@@ -47,13 +48,13 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$lo
 
                             }
                         );
-                    }else{
+                    } else {
 
                     }
-                }else{
+                } else {
 
                 }
-            }else{
+            } else {
 
             }
         }
@@ -85,7 +86,6 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$lo
 
                     }
                 );
-
             }
         }
     }
@@ -101,34 +101,21 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$lo
 
         }).then(function (response) {
 
-                if(response.data.success){
+                if (response.data.success) {
                     var id = response.data.id;
                     console.log(response.data.id)
                     $http({
 
                         method: 'POST',
                         url: base_url + "Sistema/getData",
-                        data: $.param({id:parseInt(id)}),
+                        data: $.param({id: parseInt(id)}),
                         headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
 
-                    }).then(function (response) {
-
-                            if(response.data.success == true){
-
-                                $scope.dataUser = response.data.data;
-                                $location.url(base_url + "Sistema/system").search({data: $scope.dataUser});
-                            }
-
-                        }
-                    );
+                    })
                 }
 
             }
         );
     }
-}]);
-angular.module('app_landing').controller('login_ctrl', ['$scope', '$http', 'precadastroService', function ($scope, $http) {
-
-
 }]);
 
