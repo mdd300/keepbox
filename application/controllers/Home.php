@@ -25,7 +25,7 @@ class Home extends CI_Controller {
 		$this->load->view('metronic/structure/footer_default');*/
 
         $this->load->view('Keep/structure/header_default');
-        $this->load->view('Keep/Cadastro/Cadastro_1_step');
+        $this->load->view('Keep/Como_Funciona/Como_Funciona');
         $this->load->view('Keep/structure/footer_default');
 
     }

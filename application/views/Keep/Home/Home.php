@@ -359,12 +359,12 @@
         <button class="btn-config-2 color-background-roxo color-text-white text-1">Confira Aqui</button>
     </div> <br>
 </div>
-<div>
+<div >
           
         <div class="content-module-2-sm color-background-green ">  
         </div>
 
-        <div class="content-news-banner" >
+        <div class="content-news-banner " style="padding-top: 7%" >
             <div  class="color-text-green text-title text-font-san"> FIQUE POR DENTRO! </div><br>
             <div  class="text-title-sm color-text-white"  > Veja as últimas notícias sobre os segredos </div>
             <div  class="text-title-sm color-text-white"  >das importações no Youtube da KeepBox </div>
