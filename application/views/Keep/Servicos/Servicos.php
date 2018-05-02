@@ -10,7 +10,7 @@
 </div>
    
         
-<div class="text-font-sans content-li-center-vert ">
+<div class="text-font-sans content-li-center-vert" >
 
      <ul class="content-ul-data-serv">
         <li>
@@ -125,7 +125,7 @@
 <div class="content-simulator-module4-serv ">
   
         <div class="color-text-roxo text-title-md text-font-sans">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
-        <div class="color-text-roxo text-1 text-font-sans" style="padding-left: 13%"> Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+        <div class="color-text-roxo text-1 text-font-sans" > Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
 
 </div>
 
