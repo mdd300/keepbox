@@ -1,4 +1,4 @@
-
+<div style="width: 1270px;">
 <div class="content-img-top-home">
     <img class="img-top-home" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg">
 </div>
@@ -71,6 +71,12 @@
              style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png')"></div>
         <div class="step-text  color-text-roxo text-font-sans text-1 "><b>3.</b>Crie sua conta KeepBox e compre nas
             lojas online dos EUA
+    </li>
+    <li class="li-step-module2">
+        <div class="step-icon"
+             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png')"></div>
+        <div class="step-text  color-text-roxo text-font-sans text-1 "><b>4.</b>Mande entregar suas compras no seu
+            endereço KeepBox
     </li>
     
 </ul>
@@ -423,7 +429,7 @@
 
 </div>
 
-
+</div>
 <script>
 //Slider Alguma duvida
 var slideIndex = 1;
