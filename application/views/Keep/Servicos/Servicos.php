@@ -1,10 +1,10 @@
 
-<div class="content-img-top-serv">
-    <img class="img-top-serv" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_servicos.jpg">
+<div class="content-img-top-serv ">
+    <img class="img-top-serv " src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_servicos.jpg">
 </div>
 
-<div class="content-text-banner-serv">
-    <div class="color-text-white text-title text-font-sans" style="position: relative">
+<div class="content-text-banner-serv ">
+    <div class="color-text-white text-title text-font-sans align-center" style="position: relative">
         SERVIÇOS E PREÇOS
     </div>
 </div>
@@ -14,14 +14,14 @@
 
      <ul class="content-ul-data-serv">
         <li>
-           <div class="color-text-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
+           <div class="color-text-green text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing </div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
         </li>
     </ul>
 
     <ul class="content-ul-data-serv">
         <li>
-           <div class="color-text-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
+           <div class="color-text-green text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing</div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -33,7 +33,7 @@
 
     <ul class="content-ul-data-serv">
         <li>
-           <div class="color-text-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
+           <div class="color-text-green text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing </div> 
            <div class="color-text-grey" >Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
         </li>
     </ul>
