@@ -20,7 +20,7 @@
 <script src="<?= base_url('public/assets/metronic/custom/js/lib/angular.min.js')?>"></script>
 
 
-<script src="<?= base_url('public/assets/metronic/custom/js/angular/modules/fashon.module.js') ?>"
+<script src="<?= base_url('public/assets/metronic/custom/js/angular/modules/Keepbox.module.js') ?>"
         type="text/javascript"></script>
 <script src="<?= base_url('public/assets/metronic/custom/js/angular/constants/config.constant.js') ?>"
         type="text/javascript"></script>

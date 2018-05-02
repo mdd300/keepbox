@@ -10,7 +10,7 @@ class Login extends CI_Controller {
 
     public function do_login ($post = null) {
 
-        $this->load->library(['fashon/fo_login']);
+        $this->load->library(['Keepbox/fo_login']);
 
         if ($post == null) {
             $Output = true;
@@ -28,7 +28,7 @@ class Login extends CI_Controller {
 
     public function do_login2 () {
 
-        $this->load->library(['fashon/fo_login']);
+        $this->load->library(['Keepbox/fo_login']);
 
         $post = $this->input->post();
 

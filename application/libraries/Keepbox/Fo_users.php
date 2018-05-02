@@ -14,7 +14,7 @@ class Fo_users
             if (self::$userdata === false) {
                 $CI = & get_instance();
                 $user_id = Fo_login::get()['user_id'];
-                $CI->db->from('tb_users');
+                $CI->db->from('tb_user');
                 $CI->db->where('user_id', $user_id);
                 $user_id = $CI->db->get()->result();
                 self::$userdata = $user_id[0];
@@ -33,7 +33,7 @@ class Fo_users
 
         $CI = &get_instance();
 
-        $CI->db->from('tb_users');
+        $CI->db->from('tb_user');
         $CI->db->where('user_login', $user_login);
         $CI->db->or_where('user_email', $user_login);
         $User = $CI->db->get()->result();

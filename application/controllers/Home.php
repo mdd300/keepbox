@@ -25,10 +25,11 @@ class Home extends CI_Controller {
 		$this->load->view('metronic/structure/footer_default');*/
 
         $this->load->view('Keep/structure/header_default');
-        $this->load->view('Keep/Cadastro/Cadastro_1_step');
+        $this->load->view('Keep/Home/Home');
         $this->load->view('Keep/structure/footer_default');
 
     }
+
 
 	public function pre_cadastro($Data = null){
 
@@ -62,7 +63,40 @@ class Home extends CI_Controller {
 
         $this->load->model('Home_model');
 
-        $retorno['success'] = $this->Home_model->Cadastro_model($Data['Data']);
+        $retorno = $this->Home_model->Cadastro_model($Data['Data']);
+        $this->load->library('Fo_api');
+        if(Fo_api::sendEmail($Data['Data']['user_email'], $retorno['code'],$retorno['id']))
+        $retorno['success'] = true;
+        if ($Output == true) {
+            echo json_encode($retorno);
+        } else {
+            return $retorno;
+        }
+
+    }
+
+
+    public function cadastroFinal()
+    {
+
+        $this->load->view('Keep/structure/header_default');
+        $this->load->view('Keep/Cadastro/Cadastro_1_step');
+        $this->load->view('Keep/structure/footer_default');
+
+    }
+    public function cadastroFinalizar($Data = null)
+    {
+
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $this->load->model('Home_model');
+
+        $retorno = $this->Home_model->Cadastro_final_model($Data['id'],$Data['Data']);
 
         if ($Output == true) {
             echo json_encode($retorno);
@@ -72,61 +106,26 @@ class Home extends CI_Controller {
 
     }
 
-    public function EnviarEmail()
+    public function Login($Data = null)
     {
-        // the message
-        $msg = "
-        
-        <html>
-<head>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-    <title>Enviando emails com a library nativa do CodeIgniter</title>
-</head>
-<body>
-<table cellspacing='0' cellpadding='0' border='0' width='100%'>
-    <tr>
-        <td class='navbar navbar-inverse' align='center'>
-            <!-- This setup makes the nav background stretch the whole width of the screen. -->
-            <table width='650px' cellspacing='0' cellpadding='3' class='container'>
-                <tr class='navbar navbar-inverse'>
-                    <td>teste</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <tr>
-        <td bgcolor='#FFFFFF' align='center'>
-            <table width='650px' cellspacing='0' cellpadding='3' class='container'>
-                <tr>
-                    <td><Teste</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <tr>
-        <td bgcolor='#FFFFFF' align='center'>
-            <table width='650px' cellspacing='0' cellpadding='3' class='container'>
-                <tr>
-                    <td>
-                        <hr>
-                        <p>&copy; Universidade CodeIgniter - 2016</p>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-</body>
-</html>
-        
-        ";
 
-// use wordwrap() if lines are longer than 70 characters
-        $msg = wordwrap($msg,70);
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
 
-// send email
-        mail("victor.za.oshiro5@gmail.com","My subject",$msg);
+        $this->load->library('Keepbox/Fo_login');
+
+        $retorno = Fo_login::do_login($Data);
+
+        if ($Output == true) {
+            echo json_encode($retorno);
+        } else {
+            return $retorno;
+        }
+
     }
-
 }
 

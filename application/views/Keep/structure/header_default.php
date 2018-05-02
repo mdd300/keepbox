@@ -23,7 +23,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!--begin::Base Styles -->
     <!--begin::Page Vendors -->
     <!-- css -->
-    <meta name="viewport" content="width=1024px, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=1024px, initial-scale=1.0, maximum-scale=1.0">
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/HomePage.css" rel="stylesheet"
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Global/global.css" rel="stylesheet"
@@ -34,9 +34,9 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </head>
 <!-- end::Head -->
-<body>
+<body ng-controller="landing_ctrl">
 
-<head>
+<head ng-controller="login_ctrl">
     <nav class="content-header topnav" id="myTopnav">
         <ul class="header-ul "  id="header-li-id">
             <li class="header-li"><a href="">Compra Assistida</a></li>
@@ -50,7 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
                  style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/LOGOTIPO.png')"></div>
             <div class="content-right-menu">
                 <div class="content-btn-header-menu">
-                    <button class="btn-header-menu color-background-green"><img class="content-img-icon-menu"
+                    <button class="btn-header-menu color-background-green" ng-click="login_press = true"><img class="content-img-icon-menu"
                                                                                 src="<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png">Meu
                         Acesso
                     </button>
@@ -66,6 +66,20 @@ License: You must have a valid license purchased only from themeforest(the above
                 </nav>
             </div>
         </div>
+    </div>
+
+    <div class="modal-login" ng-show="login_press">
+        <div class="text-font-sans text-title-sm color-text-green text-bold " style="margin: 20px;">Meu Acesso</div>
+        <div class="content-login">
+            <div class="text-bold text-font-sans color-text-grey-light text-2">Usuário</div>
+            <input class="input" type="text" ng-model="singIn.user_login" style="margin-top: 10px !important;" placeholder="Usuário">
+        </div>
+        <div class="content-login">
+            <div class="text-bold text-font-sans color-text-grey-light text-2">Senha</div>
+            <input class="input" type="password" ng-model="singIn.user_senha" style="margin-top: 10px !important;" placeholder="Senha">
+        </div>
+        <button class="btn-config-login color-background-green color-text-white text-bold text-font-sans text-2" ng-click="login()"> Entrar </button>
+        <button class="btn-config-new color-background-roxo color-text-white text-bold text-font-sans text-2"> Novo acesso </button>
     </div>
 
 
