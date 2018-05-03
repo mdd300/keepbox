@@ -524,3 +524,40 @@ body{
     margin-left: 20%;
     margin-top: 16%
 }
+.modal-login{
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+    float: right;
+    right: 0;
+    position: absolute;
+    margin-right: 200px;
+    top: 0;
+    margin-top: 65px;
+    z-index:  11111;
+    box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
+}
+.content-login{
+    margin: 20px;
+}
+.input-login{
+    border: 1.5px solid #9C9C9C;
+    height: 34px;
+    margin-top: 5px;
+    width: 300px;
+}
+.btn-config-login{
+    border: 0 solid white;
+    border-radius: 12px;
+    padding: 5px 30px;
+    margin-left: 20px;
+}
+.btn-config-new{
+    border: 0 solid white;
+    border-radius: 12px;
+    padding: 5px 140px;
+    margin-left: 20px;
+    display: block;
+    margin-top: 10px;
+}
