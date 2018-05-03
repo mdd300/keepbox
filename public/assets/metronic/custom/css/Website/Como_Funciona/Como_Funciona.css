@@ -2,6 +2,7 @@
     width: 1270px;
     height: 586px;
     position: absolute;
+    
 }
 
 .img-top-cf{
@@ -68,5 +69,17 @@
     float: left;
     margin-left:22%;
    
+}
+
+.content-ul-assist-cf{
+    list-style-type: none !important;
+    width: 800px;
+    -webkit-padding-start: 0px;
+    height: auto;
+    display:  flex;
+    justify-content:  center;
+    padding-top: 32px;
+    text-align: left;
+    margin-left: 260px;
 }
 

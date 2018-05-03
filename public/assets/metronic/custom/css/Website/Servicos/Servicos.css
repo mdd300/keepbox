@@ -45,8 +45,9 @@ height: 1270px;
     -webkit-padding-start: 0px;
     height: 20%;
     display:  flex;
-    justify-content:  center;
+    justify-content:  left;
     padding-top: 5%;
+   
 
 }
 
@@ -65,8 +66,20 @@ height: 1270px;
 .content-li-center-vert{
     text-decoration: none !important;
     list-style-type: none !important;
-    padding-top: 139px;
-    padding-left: 368px;
+    padding-top: 132px;
+    padding-left: 399px;
+    width: 80%;
+    height: 100%;
+    font-family: sans-serif;
+    margin:0 auto;
+    text-align: left;
+}
+
+.content-li-center-vert-less-pad{
+    text-decoration: none !important;
+    list-style-type: none !important;
+    padding-top: 25px;
+    padding-left: 389px;
     width: 80%;
     height: 100%;
     font-family: sans-serif;
