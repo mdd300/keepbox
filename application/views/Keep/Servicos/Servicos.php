@@ -137,7 +137,7 @@
     
     <div class=" align-center">
     <div class="content-border-simulator-shadow">
-        <ul class="content-ul-simulator-data">
+        <ul class="content-ul-assist-data">
             <li class="content-li-simulator-data">
                  <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
                     U$7.90
