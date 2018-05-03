@@ -85,7 +85,7 @@
 </div>
 <div class="content-simulator-data-module4 align-center">
     <div class="content-border-simulator-shadow">
-        <ul class="content-ul-simulator-data">
+        <ul class="content-ul-assist-data">
             <li class="content-li-simulator-data">
                 <div class="text-1 text-font-sans text-bold">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,

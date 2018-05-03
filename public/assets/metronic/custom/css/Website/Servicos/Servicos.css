@@ -1,20 +1,20 @@
 
 .content-img-top-serv{
     
-    height:100%;
-    position: absolute;
+height: 1270px;
+    
+position: absolute;
 }
 
 .img-top-serv{
-    width: 100% !important;
+    width: 1270px;
     height: auto;
 }
 .content-text-banner-serv{
-    /* padding: 8% 20%; */
-    padding-top:  15%;
-    height: auto;
+    padding: 8% 20%;
+    /* padding-top:  15%; */
+    /* height: auto; */
     width: 70%;
-    
 }
 
 .content-align-tutorial-module3-serv{
@@ -58,13 +58,22 @@
 .content-li-center-vert{
     text-decoration: none !important;
     list-style-type: none !important;
-    padding-top: 17%;
-    padding-left: 29%;
+    padding-top: 139px;
+    padding-left: 368px;
     width: 60%;
     height: 100%;
     font-family: sans-serif;
     margin:0 auto;
-    text-align: center
-
+    text-align: center;
 }
 
+
+.content-ul-assist-data {
+    list-style-type: none !important;
+    
+    -webkit-padding-start: 0px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
