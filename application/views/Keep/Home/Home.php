@@ -375,14 +375,14 @@
           
  </div>
 
-<div class="step-text">
+<div class="step-text" >
     <div class="limit-text-cadastro step-text color-text-grey-light text-font-sans text-title-sm content-align-tutorial-module3">Outras Dúvidas?  &nbsp;  
         <button class="btn-config-2 color-background-roxo color-text-white text-1">Confira Aqui</button>
     </div> <br>
 </div>
 <div >
           
-        <div class="content-module-2-sm color-background-green ">  
+        <div class="content-module-2-sm color-background-green " style="margin-bottom: 25px">  
         </div>
 
         <div class="content-news-banner " style="padding-top: 92px" >
@@ -400,55 +400,6 @@
         </div>              
 </div>
 
-
-<div style="padding-top: 45%">
-    
-    <div class="content-simulator-data-module4 align-center">
-   
-        <ul class="content-ul-simulator-data">
-            <li class="content-li-simulator-data">
-                <div class="text-1 text-font-sans text-bold">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                </div>
-                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    Ler mais
-                </div>
-            </li>
-            <li class="content-li-simulator-data">
-                <div class="text-1 text-font-sans text-bold">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                </div>
-                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    Ler mais
-                </div>
-            </li>
-            <li class="content-li-simulator-data">
-                <div class="text-1 text-font-sans text-bold">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                </div>
-                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    Ler mais
-                </div>
-            </li>
-        </ul>
-
-</div >
-<br>
-<div class="align-x-center" >
-    <button class="btn-config-2 color-background-green color-text-white text-1 " >Mais dicas Keepbox</button>
-</div>
-<br>
-
-</div>
 
 
 <script>
