@@ -46,11 +46,7 @@
     </div>
 </div>
 
-<div class="content-video-module2 color-background-white" style="background-color: red">
-    <!---->
-    <!--Video aqui-->
-    <!---->
-</div>
+    <iframe width="560" height="315" class="content-video-module2 " src="https://www.youtube.com/embed/BT3z50zcA-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <div class="content-text-module2">
     <div class="color-text-roxo text-title text-font-sans text-bold">
@@ -401,11 +397,9 @@
             <button class="btn-config-2 color-background-roxo color-text-white text-1" >Venha conhecer </button>
         </div>
 
-        <div class="content-video-module2-2 color-background-white" style="background-color: red">
-            <!---->
-            <!--Video aqui-->
-            <!---->
-        </div>              
+
+    <iframe width="560" height="315" class="content-video-module2-2 " src="https://www.youtube.com/embed/BT3z50zcA-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 </div>
 
 <!---->
