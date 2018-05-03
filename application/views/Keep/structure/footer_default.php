@@ -1,5 +1,28 @@
 
 
+<div class="content-footer width_padrao">
+    <div class="content-footer-left " style="background-color: #1d1d1d">
+        <a href="<?= base_url()?>">
+
+            <div class="content-logo-footer"
+                 style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/LOGOTIPO.png')"></div>
+        </a>
+    </div>
+    <div class="content-footer-right  color-background-grey">
+
+        <div class="text-bold text-font-sans text-title-sm color-text-white" style="padding-top: 77px;
+    padding-left: 110px;">
+            Siga a KeepBox
+        </div>
+
+        <ul class="content-ul-footer">
+            <li class="content-li-footer text-font-sans text-bold color-text-white"><img src="<?=base_url()?>public/assets/metronic/custom/img/icon/instagram.png" style="padding-right: 10px">@KeepBox</li>
+
+        </ul>
+    </div>
+</div>
+
+
 <!-- begin::Scroll Top -->
 <div class="m-scroll-top m-scroll-top--skin-top" data-toggle="m-scroll-top" data-scroll-offset="500"
      data-scroll-speed="300">

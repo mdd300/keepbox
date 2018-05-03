@@ -1,6 +1,4 @@
-html, body{
-    width: 1270px;
-}
+
 body{
     margin: 0;
     padding: 0;
@@ -44,7 +42,6 @@ body{
 
 
 .content-header-menu{
-    width: 1270px;
     height: 85px;
     display: flex;
     align-items: center;
@@ -121,11 +118,10 @@ body{
 
 .content-img-top-home{
 
-width: 1270px;
 
-height: 850px;
+    height: 850px;
 
-position: absolute;
+    position: absolute;
 }
 
 .img-top-home{
@@ -136,19 +132,19 @@ position: absolute;
     /* padding: 8% 20%; */
     padding-top:  8%;
     height: auto;
-    width: 550px;
-    padding-left: 20%;
+    display:  flex;
+    justify-content: center;
 }
 .content-text-banner-2{
-    padding: 30px 13%;
+    padding: 30px 0;
     height: 80px;
-    width: 750px;
     position:  relative;
 }
 .content-text-banner-3{
-    padding: 0% 20%;
+    /* padding: 0% 20%; */
     height: 80px;
-    width: 750px;
+    display:  flex;
+    justify-content:  center;
 }
 
 .content-more-about-text{
@@ -165,14 +161,12 @@ position: absolute;
     margin: 50px 0;
 }
 .content-module-2{
-    width: 1270px;
-    height: 1180px;
+    height: 1252px;
     position: absolute;
     margin-top: 220px;
 }
 
 .content-module-2-sm{
-    width: 1270px;
     height: 300px;
     position: absolute;
     margin-top: 220px;
@@ -180,14 +174,14 @@ position: absolute;
 .content-video-module2{
     position: absolute;
     border-radius: 30px;
-    width: 573px;
-    height: 307px;
+    /*width: 673px;*/
+    /*height: 357px;*/
     float: right;
     /* right:  0; */
     /* top: 0; */
     margin-right: 38px;
     margin-left: 660px;
-    margin-top: 687px;
+    margin-top: 771px;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
 
@@ -206,7 +200,7 @@ position: absolute;
 .content-text-module2{
     position:  absolute;
     float:  left;
-    margin-top: 833px;
+    margin-top: 890px;
     margin-left: 261px;
     /* height: 117px; */
     width: 236px;
@@ -216,11 +210,12 @@ position: absolute;
     position:  absolute;
     display: inline-flex;
     float:  left;
-    margin-top: 1035px;
+    margin-top: 1120px;
     /* margin-left: 210px; */
     width: auto;
     height: 300px;
     list-style-type: none !important;
+    justify-content: center;
 }
 .li-step-module2{
     text-decoration: none !important;
@@ -236,7 +231,7 @@ position: absolute;
 .li-step-module2:last-child {
 }
 .step-icon{
-    width: 175px;
+    width: 100%;
     height: 40%;
     background-repeat:  no-repeat;
     background-size:  contain;
@@ -259,12 +254,10 @@ position: absolute;
 
 .content-cadastro-space-modulo2{
     width: 100%;
-    height: 1400px;
+    height: 1470px;
     /* background-color: red; */
     position: relative;
-
     z-index:  -11;
-
 }
 
 .content-cadastro-email-modulo3{
@@ -331,7 +324,7 @@ position: absolute;
 .content-align-tutorial-module3{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 91%;
 }
 .title-tutorial-module3{
     width: 65%;
@@ -463,7 +456,6 @@ position: absolute;
 }
 .content-ul-simulator-data{
     list-style-type: none !important;
-    width: 1270px;
     -webkit-padding-start: 0px;
     height: auto;
     display:  flex;
@@ -535,7 +527,7 @@ position: absolute;
     border-radius: 20px;
     background-color: white;
     float: right;
-    /* right: 0; */
+    right: 0;
     position: absolute;
     margin-left: 700px;
     top: 0;
@@ -565,4 +557,51 @@ position: absolute;
     margin-left: 20px;
     display: block;
     margin-top: 10px;
+}
+.content-footer{
+    height: 500px;
+    position:  absolute;
+    /* bottom:  0; */
+    /* left:  0; */
+    margin-top: 520px;
+}
+.content-footer-left{
+    height: 100%;
+    width: 30%;
+    float: left;
+}
+.content-footer-right{
+    height: 100%;
+    width: 70%;
+    float: right;
+}
+.content-logo-footer{
+    float: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 118px;
+    height: 80px;
+    margin-top: 100px;
+    margin-left: 220px;
+}
+.content-ul-footer{
+    list-style-type: none !important;
+    -webkit-padding-start: 0px;
+    height: auto;
+    /* display:  flex; */
+    /* justify-content:  center; */
+    /* padding-top: 80px; */
+    padding-left: 100px;
+}
+.content-li-footer{
+    /* text-decoration: none !important; */
+    /* width: 24%; */
+    /* height: 100%; */
+    padding: 20px 0px;
+    font-family: sans-serif;
+    /* float: left; */
+    padding: 0px 15px;
+    display:  flex;
+    padding-top: 30px;
+    align-items:  center;
 }

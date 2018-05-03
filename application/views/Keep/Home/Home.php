@@ -1,21 +1,21 @@
 
-<div class="content-img-top-home">
+<div class="content-img-top-home width_padrao">
     <img class="img-top-home" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg">
 </div>
 
-<div class="content-text-banner">
-    <div class="color-text-green text-title text-font-sans" style="position: relative; text-align: center;">
+<div class="content-text-banner width_padrao">
+    <div class="color-text-green text-title text-font-sans" style="position: relative; text-align: center; width: 40%">
         COMPRE NAS LOJAS ONLINE DOS <b>ESTADOS UNIDOS</b>
     </div>
 </div>
 
-<div class="content-text-banner-2">
+<div class="content-text-banner-2 width_padrao">
     <div class="color-text-white  text-font-sans" style="position: relative; font-size: 2.4em; text-align: center">
         A KeepBox envia para você no Brasil
     </div>
 </div>
 
-<div class="content-text-banner-3">
+<div class="content-text-banner-3 width_padrao">
     <a href="<?= base_url('home/cadastroPage' )?>">
     <button class="color-background-roxo color-text-white text-2 btn-config text-font-sans"  style="position: relative">
         Clique para garantir seu endereço nos EUA
@@ -23,7 +23,7 @@
     </a>
 </div>
 
-<div class="content-module-2 color-background-green">
+<div class="content-module-2 color-background-green width_padrao">
 
 </div>
 
@@ -37,17 +37,16 @@
         A KeepBox recebe e envia tudo para você!
     </div>
     <div class="content-btn-more-about">
+        <a href="<?= base_url('home/funcionamento' )?>">
+
         <button class="btn-config color-background-green color-text-white text-1">
             Veja mais sobre nós
         </button>
+        </a>
     </div>
 </div>
 
-<div class="content-video-module2 color-background-white" style="background-color: red">
-    <!---->
-    <!--Video aqui-->
-    <!---->
-</div>
+    <iframe width="560" height="315" class="content-video-module2 " src="https://www.youtube.com/embed/BT3z50zcA-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <div class="content-text-module2">
     <div class="color-text-roxo text-title text-font-sans text-bold">
@@ -55,7 +54,7 @@
     </div>
 </div>
 
-<ul class="ul-step-module2">
+<ul class="ul-step-module2 width_padrao">
     <li class="li-step-module2">
         <div class="step-icon"
              style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/compra_online.png')"></div>
@@ -192,9 +191,11 @@
         </ul>
     </div>
     <div class="content-btn-more-about align-center">
+        <a href="<?= base_url('home/servico' )?>">
         <button class="btn-config-2 color-background-roxo color-text-white text-1">
             Confira nossos Serviços
         </button>
+        </a>
     </div>
 </div>
 
@@ -204,9 +205,11 @@
             Comece a economizar hoje!
         </div>
         <div style="float: right">
+            <a href="<?= base_url('home/cadastroPage' )?>">
             <button class="btn-config shadow color-background-green color-text-white text-1">
                 Inscrever-se hoje gratuitamente
             </button>
+            </a>
         </div>
     </div>
 </div>
@@ -230,7 +233,7 @@
             </div>
         </div>
         <div class="content-right-simulator ">
-            <div style="margin-top: 18%" class="color-text-roxo align-x-center text-1 text-font-sans">Em baixo de cada modalidade de frete:</div>
+            <div class="color-text-roxo align-x-center text-1 text-font-sans">Em baixo de cada modalidade de frete:</div>
             <div class="slider-margin" >
                 <li class="li-step-tutorial"> {{range_simulator_home}}</li>
                 <li class="li-step-tutorial" style="margin-left: 29%"> 66</li>
@@ -288,13 +291,8 @@
         
 
         <div class="content-align-tutorial-module3 step-text" style="height: 300px">
-          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-right.jpg');
-                  -moz-transform: scaleX(-1);
-                  -o-transform: scaleX(-1);
-                  -webkit-transform: scaleX(-1);
-                  transform: scaleX(-1);
-                  filter: FlipH;
-                  -ms-filter: "FlipH";" class="step-icon-2" onclick="plusDivs(-1)" ></span>
+          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-left.png');
+                  " class="step-icon-2" onclick="plusDivs(-1)" ></span>
 
           
           <div class="mySlides slide-content-width" >
@@ -368,7 +366,13 @@
                 
             </li>
           </div>
-          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-right.jpg')" class="step-icon-2" onclick="plusDivs(1)"></span>
+          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-left.png');
+                  -moz-transform: scaleX(-1);
+                  -o-transform: scaleX(-1);
+                  -webkit-transform: scaleX(-1);
+                  transform: scaleX(-1);
+                  filter: FlipH;
+                  -ms-filter: FlipH;" class="step-icon-2" onclick="plusDivs(1)"></span>
         </div>
     </div>
 
@@ -382,10 +386,11 @@
 </div>
 <div >
           
-        <div class="content-module-2-sm color-background-green " style="margin-bottom: 25px">  
+        <div class="content-module-2-sm width_padrao color-background-green ">
+
         </div>
 
-        <div class="content-news-banner " style="padding-top: 92px" >
+        <div class="content-news-banner width_padrao" style="padding-top: 92px" >
             <div  class="color-text-green text-title text-font-san"> FIQUE POR DENTRO! </div><br>
             <div  class="text-title-sm color-text-white"  > Veja as últimas notícias sobre os segredos </div>
             <div  class="text-title-sm color-text-white"  >das importações no Youtube da KeepBox </div>
@@ -393,14 +398,60 @@
             <button class="btn-config-2 color-background-roxo color-text-white text-1" >Venha conhecer </button>
         </div>
 
-        <div class="content-video-module2-2 color-background-white" style="background-color: red">
-            <!---->
-            <!--Video aqui-->
-            <!---->
-        </div>              
+
+    <iframe width="560" height="315" class="content-video-module2-2 " src="https://www.youtube.com/embed/BT3z50zcA-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 </div>
 
-
+<!---->
+<!--<div style="padding-top: 45%">-->
+<!--    -->
+<!--    <div class="content-simulator-data-module4 align-center">-->
+<!--   -->
+<!--        <ul class="content-ul-simulator-data">-->
+<!--            <li class="content-li-simulator-data">-->
+<!--                <div class="text-1 text-font-sans text-bold">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--                </div>-->
+<!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--                </div>-->
+<!--                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">-->
+<!--                    Ler mais-->
+<!--                </div>-->
+<!--            </li>-->
+<!--            <li class="content-li-simulator-data">-->
+<!--                <div class="text-1 text-font-sans text-bold">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--                </div>-->
+<!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--                </div>-->
+<!--                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">-->
+<!--                    Ler mais-->
+<!--                </div>-->
+<!--            </li>-->
+<!--            <li class="content-li-simulator-data">-->
+<!--                <div class="text-1 text-font-sans text-bold">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--                </div>-->
+<!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--                </div>-->
+<!--                <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">-->
+<!--                    Ler mais-->
+<!--                </div>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!---->
+<!--</div >-->
+<!--<br>-->
+<!--<div class="align-x-center" >-->
+<!--    <button class="btn-config-2 color-background-green color-text-white text-1 " >Mais dicas Keepbox</button>-->
+<!--</div>-->
+<!--<br>-->
+<!---->
+<!--</div>-->
 
 <script>
 //Slider Alguma duvida

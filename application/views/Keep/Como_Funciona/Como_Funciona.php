@@ -1,5 +1,5 @@
 
-<div class="content-img-top-cf">
+<div class="content-img-top-cf width_padrao">
     <img class="img-top-cf" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_como_funciona.jpg">
 </div>
 
@@ -14,20 +14,33 @@
 
 <div class="text-font-sans content-li-center-vert" >
 
+<<<<<<< HEAD
     <ul class="content-ul-data-serv">
+=======
+     <ul class="content-ul-simulator-data width_padrao">
+>>>>>>> abf202bc598c4dc7e065cbbf8c51afe860f0a6d1
         <li>
            <div class="color-text-green text-title-sm step-text">Como comprar com a KeepBox</div> 
             
         </li>
     </ul>
+<<<<<<< HEAD
      <ul class="content-ul-data-serv">
+=======
+
+    <ul class="content-ul-simulator-data width_padrao">
+>>>>>>> abf202bc598c4dc7e065cbbf8c51afe860f0a6d1
         <li>
             
            <div class="color-text-grey-light" style="padding-top: 10px">1 -  Crie sua conta KeepBox gratuitamente e compre nas lojas online dos EUA. </div> 
         </li>
     </ul>
 
+<<<<<<< HEAD
     <ul class="content-ul-data-serv">
+=======
+    <ul class="content-ul-simulator-data width_padrao">
+>>>>>>> abf202bc598c4dc7e065cbbf8c51afe860f0a6d1
         <li>
             
            <div class="color-text-grey-light" style="padding-top: 10px"
@@ -38,7 +51,11 @@
         </li>
     </ul>
 
+<<<<<<< HEAD
     <ul class="content-ul-data-serv">
+=======
+    <ul class="content-ul-simulator-data width_padrao">
+>>>>>>> abf202bc598c4dc7e065cbbf8c51afe860f0a6d1
         <li>
             
            <div class="color-text-grey-light"style="padding-top: 10px" >3 – Recebemos e juntamos suas encomendas em uma única caixa, sem custo adicional
@@ -47,7 +64,11 @@
         </li>
     </ul>
 
+<<<<<<< HEAD
     <ul class="content-ul-data-serv">
+=======
+    <ul class="content-ul-simulator-data width_padrao">
+>>>>>>> abf202bc598c4dc7e065cbbf8c51afe860f0a6d1
         <li>
             
            <div class="color-text-grey-light"style="padding-top: 10px" >4 – Enviamos para você, onde quiser, pelos melhores preços 
@@ -58,11 +79,8 @@
 
 </div>
 
- <div class="content-video-module2-cf color-background-white" style="background-color: red">
-            <!---->
-            <!--Video aqui-->
-            <!---->
- </div> 
+<iframe width="560" height="315" class="content-video-module2-cf " src="https://www.youtube.com/embed/BT3z50zcA-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 
  <div style="padding-top: 33%" class="text-font-sans text-title-sm content-align-tutorial-module3">

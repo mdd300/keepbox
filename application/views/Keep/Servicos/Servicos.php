@@ -1,6 +1,6 @@
 
-<div class="content-img-top-serv ">
-    <img class="img-top-serv " src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_servicos.jpg">
+<div class="content-img-top-serv width_padrao">
+    <img class="img-top-serv width_padrao" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_servicos.jpg">
 </div>
 
 <div class="content-text-banner-serv ">
@@ -51,100 +51,84 @@
 
  </div>
 
-  
+
 
 <div class="content-simulator-module4 align-x-center">
     <div class="content-simulator">
         <div class="content-left-simulator">
             <div class="color-text-roxo text-title text-bold text-font-sans">Simulador de Preços</div>
             <div style="margin-top: 30px;">
-            <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat 96% 0;">
-                <select>
-                    <option>KG</option>
-                    <option>The second option</option>
-                    <option>The third option</option>
-                </select>
-            </div>
-            <div class="styled-select align-y-center background-select-roxo rounded" style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat 96% 0;">
-                <select>
-                    <option>KG</option>
-                    <option>The second option</option>
-                    <option>The third option</option>
-                </select>
-            </div>
+                <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat ;">
+                    <select>
+                        <option>Lbs</option>
+                    </select>
+                </div>
+                <div class="styled-select align-y-center background-select-roxo rounded" style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat 96% 0;">
+                    <select>
+                        <option>Brasil</option>
+
+                    </select>
+                </div>
             </div>
         </div>
         <div class="content-right-simulator ">
-            <div style="margin-top: 5%" class="color-text-roxo align-x-center text-1 text-font-sans">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+            <div class="color-text-roxo align-x-center text-1 text-font-sans">Em baixo de cada modalidade de frete:</div>
             <div class="slider-margin" >
-                <li class="li-step-tutorial"> 0</li>
-                <li class="li-step-tutorial" style="margin-left: 29%"> 30</li>
-                 <input type="range" class="slider"></input>
-               
+                <li class="li-step-tutorial"> {{range_simulator_home}}</li>
+                <li class="li-step-tutorial" style="margin-left: 29%"> 66</li>
+                <input type="range" max="66" ng-model="range_simulator_home" ng-change="changeValue()" class="slider"></input>
+
             </div>
 
-           
+
 
         </div>
     </div>
 </div>
 <div class="content-simulator-data-module4 align-center">
     <div class="content-border-simulator-shadow">
-        <ul class="content-ul-assist-data">
+        <ul class="content-ul-simulator-data">
             <li class="content-li-simulator-data">
                 <div class="text-1 text-font-sans text-bold">
-                    *Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    Priority Mail Express International™
+
                 </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Taxa US Closer. US$12,00
-                </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Taxa Paypal. US$8,72
-                </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Envio. US$173,45
-                </div>
+                <!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
+                <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+                <!--                </div>-->
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b>US$77,38
+                    <b>Total:</b>R$ {{valor_plano_1}}
+
                 </div>
             </li>
             <li class="content-li-simulator-data">
                 <div class="text-1 text-font-sans text-bold">
-                    *Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    LPriority Mail International®
                 </div>
-                 <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Taxa US Closer. US$12,00
-                </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Taxa Paypal. US$8,72
-                </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Envio. US$173,45
-                </div>
+                <!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
+                <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+                <!--                </div>-->
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b>US$77,38
+                    <b>Total:</b>R$ {{valor_plano_2}}
+
                 </div>
             </li>
-            <li class="content-li-simulator-data">
+            <li class="content-li-simulator-data" ng-show="range_simulator_home < 5">
                 <div class="text-1 text-font-sans text-bold">
-                    *Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    First-Class Package International Service™
+
                 </div>
-                  <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Taxa US Closer. US$12,00
-                </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Taxa Paypal. US$8,72
-                </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Envio. US$173,45
-                </div>
+                <!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
+                <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+                <!--                </div>-->
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b>US$77,38
+                    <b>Total:</b>R$ {{valor_plano_3}}
                 </div>
             </li>
         </ul>
     </div>
 </div>
+
 <div class="content-simulator-module4-serv ">
   
         <div class="color-text-roxo text-title-md text-font-sans">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>

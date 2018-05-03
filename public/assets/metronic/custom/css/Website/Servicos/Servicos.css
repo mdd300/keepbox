@@ -1,20 +1,8 @@
 
-.content-img-top-serv{
-
-    
-height: 1270px;
-    
-
-
-    
-    position: absolute;
-    z-index: -11;
-
-}
+.content-img-top-serv{height: 52%;position: absolute;}
 
 .img-top-serv{
-    width: 1270px;
-    height: auto;
+    height: 100%;
 }
 .content-text-banner-serv{
     padding: 8% 20%;
@@ -90,7 +78,7 @@ height: 1270px;
 
 .content-ul-assist-data {
     list-style-type: none !important;
-    
+
     -webkit-padding-start: 0px;
     height: auto;
     display: flex;

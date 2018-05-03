@@ -1,5 +1,5 @@
 <div class="content-img-top-serv ">
-    <img class="img-top-serv " src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_servicos.jpg">
+    <img class="img-top-serv width_padrao" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_servicos.jpg">
 </div>
 
 <div class="content-text-banner-serv ">
@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<div class="content-duvidas">
+<div class="content-duvidas width_padrao">
 
     <div class="content-pergunta-duvidas text-title-sm color-text-grey text-font-sans text-bold" ng-click="openDuvida(0)">
         Como faço para comprar nos EUA?

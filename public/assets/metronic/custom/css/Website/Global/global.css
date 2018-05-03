@@ -47,6 +47,9 @@ a {
 .color-background-grey{
     background-color: #9C9C9C;
 }
+.color-background-grey-light{
+    background-color: #696969;
+}
 .color-text-green{
     color: #a9d046
 }
@@ -156,4 +159,16 @@ a {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+@media screen and (max-width: 2000px) {
+    .width_padrao {
+        width: 1960px;
+
+    }
+}
+@media screen and (max-width: 1350px) {
+    .width_padrao {
+        width: 1240px;
+
+    }
 }
