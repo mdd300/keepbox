@@ -200,7 +200,7 @@
         <div class="content-left-simulator">
             <div class="color-text-roxo text-title text-bold text-font-sans">Simulador de Preços</div>
             <div style="margin-top: 30px;">
-            <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat 96% 0;">
+            <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat ;">
                 <select>
                     <option>KG</option>
                     <option>The second option</option>
@@ -271,20 +271,20 @@
 </div>
 
 <div>
-    <div class="limit-text-cadastro text-bold step-text color-text-roxo text-font-sans text-title-md content-align-tutorial-module3">Alguma dúvida?</div><br><br>
+    <div class="text-bold step-text color-text-roxo text-font-sans text-title-md content-align-tutorial-module3">Alguma dúvida?</div>
         
 
-        <div class="content-align-tutorial-module3" style="height: 200px">
+        <div class="content-align-tutorial-module3 step-text" style="height: 300px">
           <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-left.png')" class="step-icon-2" onclick="plusDivs(-1)"></span>
 
           
-          <div class="mySlides ">
+          <div class="mySlides slide-content-width" >
                <li class="content-li-info-data">
                  <div class=" color-text-green color-text-green text-bold text-font-sans">
                     Como saber se vocês receberam minha compra?
                 </div>
                 <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    A loja que você comprou deverá lhe enviar a comprovação de envio assim como o número de rastreamento. Você pode acompanhar e saberá quando recebemos. Após recebermos cada cauxa sua lhe enviaremos um e-mail informando sobre o recebimento, vai ser pesado, tirado uma foto e adicionado a sua suíte, não se preocupe, avisamos no mesmo dia que sua caixa chegar.
                 </div>
                
             </li>
@@ -293,13 +293,13 @@
                     Como eu pago pelo serviço e o frete?
                 </div>
                 <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    Após as encomendas serem recebidas ficarão à disposição do cliente em seu estoque para fazer o envio, o valor do frete com nossa taxa de serviço fica a disposição do cliente diretamente no procedimento do envio pelo site. Esse valor pode ser pago por depósito / trasnferência  no Banco do Brasil ou PayPal, após pago sua caixa é enviada em até 24 horas úteis.
                 </div>
                 
             </li>
           </div>
           
-           <div class="mySlides">
+           <div class="mySlides slide-content-width">
                <li class="content-li-info-data">
                 <div class=" color-text-green color-text-green text-bold text-font-sans">
                         <b>Slide 2</b>
@@ -321,7 +321,7 @@
                     
                 </li>
           </div>
-           <div class="mySlides">
+           <div class="mySlides slide-content-width">
                <li class="content-li-info-data">
                  <div class=" color-text-green color-text-green text-bold text-font-sans">
                     <b>Slide 3</b>
@@ -345,6 +345,8 @@
           </div>
           <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-right.png')" class="step-icon-2" onclick="plusDivs(1)"></span>
         </div>
+    </div>
+
           
  </div>
 

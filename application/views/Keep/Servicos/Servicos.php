@@ -131,14 +131,14 @@
 
         
 
-<div style="padding-left: 10%">
+<div >
     
     <div class=" align-center">
     <div class="content-border-simulator-shadow">
         <ul class="content-ul-simulator-data">
             <li class="content-li-simulator-data">
                  <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    U$15.50
+                    U$7.90
                 </div>
                 <div class="text-1 color-text-green text-font-sans text-bold">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -151,7 +151,7 @@
             </li>
             <li class="content-li-simulator-data">
                  <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    U$15.50
+                    U$7.90
                 </div>
                 <div class="text-1 color-text-green text-font-sans text-bold">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
