@@ -379,7 +379,7 @@
           
  </div>
 
-<div class="step-text">
+<div class="step-text" >
     <div class="limit-text-cadastro step-text color-text-grey-light text-font-sans text-title-sm content-align-tutorial-module3">Outras Dúvidas?  &nbsp;  
         <button class="btn-config-2 color-background-roxo color-text-white text-1">Confira Aqui</button>
     </div> <br>
@@ -387,6 +387,7 @@
 <div >
           
         <div class="content-module-2-sm width_padrao color-background-green ">
+
         </div>
 
         <div class="content-news-banner width_padrao" style="padding-top: 92px" >
@@ -451,7 +452,6 @@
 <!--<br>-->
 <!---->
 <!--</div>-->
-
 
 <script>
 //Slider Alguma duvida

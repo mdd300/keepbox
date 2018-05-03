@@ -12,20 +12,25 @@
         
 <div class="text-font-sans content-li-center-vert" >
 
+    <ul class="content-ul-data-serv">
+        <li>
+           <div class="color-text-green text-title-sm">SERVIÇOS BÁSICOS</div> 
+            
+        </li>
+    </ul>
      <ul class="content-ul-data-serv">
         <li>
-           <div class="color-text-green text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing </div> 
-           <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
+           <div class="color-text-green text-bold">Recebimento de Encomendas (GRÁTIS) </div> 
+           <div class="color-text-grey-light" style="padding-top: 10px">A KeepBox nã cobra por pacotes recebidos. Fique à vontade para comprar o quanto quiser nas diversas lojas onlines dos EUA.</div> 
         </li>
     </ul>
 
     <ul class="content-ul-data-serv">
         <li>
-           <div class="color-text-green text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing</div> 
-           <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
+           <div class="color-text-green text-bold" >Armazenamento de Encomendas (GRÁTIS)</div> 
+           <div class="color-text-grey-light" style="padding-top: 10px"
+>A Keepbox recebe e armazena suas compras por até 60 dias completamente grátis. Se precisar de mais 30 dias, contrate o Armazenamento Extra (Taxa fixa: US$5 + US$1 por dia)
+           Após 90 dias, as encomendas serão vendidas, doadas ou descartadas .</div> 
                                         
         
         </li>
@@ -33,8 +38,8 @@
 
     <ul class="content-ul-data-serv">
         <li>
-           <div class="color-text-green text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing </div> 
-           <div class="color-text-grey" >Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
+           <div class="color-text-green text-bold" >Empacotamento de Encomendas (GRÁTIS) </div> 
+           <div class="color-text-grey-light"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div> 
         </li>
     </ul>
 
@@ -42,7 +47,7 @@
 </div>
 
 <div class="align-x-center" style="padding-top: 10%">
-    <button class="btn-config-2 color-background-roxo color-text-white text-1">Envio de encomendas Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </button>
+    <button class="btn-config-2 color-background-roxo color-text-white text-1">Envio de encomendas &nbsp; &nbsp; Taxa KeepBox: Apenas US$12,90  &nbsp;  &nbsp;Taxa KeepBox: Apenas US$12,90 </button>
 
  </div>
 
@@ -86,12 +91,14 @@
             <li class="content-li-simulator-data">
                 <div class="text-1 text-font-sans text-bold">
                     Priority Mail Express International™
+
                 </div>
                 <!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
                 <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
                 <!--                </div>-->
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
                     <b>Total:</b>R$ {{valor_plano_1}}
+
                 </div>
             </li>
             <li class="content-li-simulator-data">
@@ -103,11 +110,13 @@
                 <!--                </div>-->
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
                     <b>Total:</b>R$ {{valor_plano_2}}
+
                 </div>
             </li>
             <li class="content-li-simulator-data" ng-show="range_simulator_home < 5">
                 <div class="text-1 text-font-sans text-bold">
                     First-Class Package International Service™
+
                 </div>
                 <!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
                 <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
@@ -123,19 +132,19 @@
 <div class="content-simulator-module4-serv ">
   
         <div class="color-text-roxo text-title-md text-font-sans">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
-        <div class="color-text-roxo text-1 text-font-sans" > Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+        <div class="color-text-roxo text-1 text-font-sans" > Vamos às compras para você</div>
 
 </div>
     
     <div class=" align-center">
     <div class="content-border-simulator-shadow">
-        <ul class="content-ul-simulator-data">
+        <ul class="content-ul-assist-data">
             <li class="content-li-simulator-data">
                  <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
                     U$7.90
                 </div>
                 <div class="text-1 color-text-green text-font-sans text-bold">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    +7% das compras (até US$1.000)
                 </div>
                 
                
@@ -148,7 +157,7 @@
                     U$7.90
                 </div>
                 <div class="text-1 color-text-green text-font-sans text-bold">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    +6% das compras (até US$1.000)
                 </div>
                 
                
@@ -159,13 +168,12 @@
 
 <div class="align-x-center" >
    <div class="content-li-info-data-serv">
-    <div class="text-2 text-font-sans color-text-grey-light padding-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+    <div class="text-1 text-font-sans color-text-grey-light padding-text">
+        Pensando em seu conforto, se preferir, realizamos as compras para você! Basta nos enviar os links dos produtos desejados. 
  
     </div>
-     <div class="text-2 text-font-sans color-text-grey-light padding-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud
+     <div class="text-1 text-font-sans color-text-grey-light padding-text step-text">
+        A Compra Assistida é o método preferido dos clientes que ainda não possuem cartão de crédito internacional ou têm dificuldades com o inglês e/ou com os sites internacionais ou, simplesmente não querem perder tempo com as pesquisas e burocracias das compras.
         
     </div>
 </div>
