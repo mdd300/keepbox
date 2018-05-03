@@ -35,7 +35,7 @@
     display:  flex;
     justify-content:  left;
     padding-top: 5%;
-   
+
 
 }
 
@@ -55,7 +55,7 @@
     text-decoration: none !important;
     list-style-type: none !important;
     padding-top: 132px;
-    padding-left: 399px;
+    /* padding-left: 399px; */
     width: 80%;
     height: 100%;
     font-family: sans-serif;
@@ -67,7 +67,7 @@
     text-decoration: none !important;
     list-style-type: none !important;
     padding-top: 25px;
-    padding-left: 389px;
+    /* padding-left: 389px; */
     width: 80%;
     height: 100%;
     font-family: sans-serif;

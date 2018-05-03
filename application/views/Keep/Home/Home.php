@@ -54,7 +54,7 @@
     </div>
 </div>
 
-<ul class="ul-step-module2 width_padrao">
+<ul class="ul-step-module2 width_padrao" style="padding: 0;">
     <li class="li-step-module2">
         <div class="step-icon"
              style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/compra_online.png')"></div>

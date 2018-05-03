@@ -20,15 +20,15 @@
     </ul>
      <ul class="content-ul-data-serv">
         <li>
-           <div class="color-text-green text-bold">Recebimento de Encomendas (GRÁTIS) </div> 
-           <div class="color-text-grey-light" style="padding-top: 10px">A KeepBox nã cobra por pacotes recebidos. Fique à vontade para comprar o quanto quiser nas diversas lojas onlines dos EUA.</div> 
+           <div class="color-text-green text-bold text-2 text-font-sans">Recebimento de Encomendas (GRÁTIS) </div>
+           <div class="color-text-grey-light text-2 text-font-sans" style="padding-top: 10px">A KeepBox nã cobra por pacotes recebidos. Fique à vontade para comprar o quanto quiser nas diversas lojas onlines dos EUA.</div>
         </li>
     </ul>
 
     <ul class="content-ul-data-serv">
         <li>
-           <div class="color-text-green text-bold" >Armazenamento de Encomendas (GRÁTIS)</div> 
-           <div class="color-text-grey-light" style="padding-top: 10px"
+           <div class="color-text-green text-bold text-2 text-font-sans" >Armazenamento de Encomendas (GRÁTIS)</div>
+           <div class="color-text-grey-light text-2 text-font-sans" style="padding-top: 10px"
 >A Keepbox recebe e armazena suas compras por até 60 dias completamente grátis. Se precisar de mais 30 dias, contrate o Armazenamento Extra (Taxa fixa: US$5 + US$1 por dia)
            Após 90 dias, as encomendas serão vendidas, doadas ou descartadas .</div> 
                                         
@@ -38,8 +38,8 @@
 
     <ul class="content-ul-data-serv">
         <li>
-           <div class="color-text-green text-bold" >Empacotamento de Encomendas (GRÁTIS) </div> 
-           <div class="color-text-grey-light"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div> 
+           <div class="color-text-green text-bold text-2 text-font-sans" >Empacotamento de Encomendas (GRÁTIS) </div>
+           <div class="color-text-grey-light text-2 text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
         </li>
     </ul>
 
@@ -47,7 +47,7 @@
 </div>
 
 <div class="align-x-center" style="padding-top: 10%">
-    <button class="btn-config-2 color-background-roxo color-text-white text-1">Envio de encomendas &nbsp; &nbsp; Taxa KeepBox: Apenas US$12,90  &nbsp;  &nbsp;Taxa KeepBox: Apenas US$12,90 </button>
+    <button class="btn-config-2 color-background-roxo color-text-white text-font-sans text-1">Envio de encomendas &nbsp; &nbsp; Taxa KeepBox: Apenas US$12,90  &nbsp;  &nbsp;Taxa KeepBox: Apenas US$12,90 </button>
 
  </div>
 
@@ -168,11 +168,11 @@
 
 <div class="align-x-center" >
    <div class="content-li-info-data-serv">
-    <div class="text-1 text-font-sans color-text-grey-light padding-text">
+    <div class="text-1 text-font-sans color-text-grey-light text-2 padding-text">
         Pensando em seu conforto, se preferir, realizamos as compras para você! Basta nos enviar os links dos produtos desejados. 
  
     </div>
-     <div class="text-1 text-font-sans color-text-grey-light padding-text step-text">
+     <div class="text-1 text-font-sans text-2 color-text-grey-light padding-text step-text">
         A Compra Assistida é o método preferido dos clientes que ainda não possuem cartão de crédito internacional ou têm dificuldades com o inglês e/ou com os sites internacionais ou, simplesmente não querem perder tempo com as pesquisas e burocracias das compras.
         
     </div>
