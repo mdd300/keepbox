@@ -20,20 +20,15 @@ class Sistema extends CI_Controller
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
 
-    public function system($Data = null)
+    public function system()
     {
-        if ($Data == null) {
-            $Output = true;
-            $Data = $this->input->post();
-        } else {
-            $Output = false;
-        }
 
         $this->load->model('Home_model');
 
-        $Data = $this->Home_model->getData_model($Data['id']);
 
-        $this->load->view('Keep/Sistema/Sistema_home', $Data);
+        $data = $this->Home_model->getData_model($_SESSION['fashon_session']['user_id']);
+
+        $this->load->view('Keep/Sistema/Sistema_home',$data);
     }
 
     public function getData($Data = null)
