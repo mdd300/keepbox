@@ -3,6 +3,9 @@
     src: url("/system/fonts/Sanseriffic.otf");
 
 }
+a {
+    text-decoration: none;
+}
 .text-font-sans{
     font-family: sans-serif;
 }
@@ -23,7 +26,7 @@
     line-height: 60px;
 }
 .text-title{
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 80px;
 }
 .text-bold{
@@ -40,6 +43,9 @@
 }
 .color-background-white{
     background-color: white;
+}
+.color-background-grey{
+    background-color: #9C9C9C;
 }
 .color-text-green{
     color: #a9d046
@@ -122,4 +128,32 @@
     position:  relative;
     display:  -webkit-box;
 
+}
+.loader-roxo {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #7d1daf;
+    border-bottom: 8px solid #7d1daf;
+    width: 5px;
+    height: 5px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+}
+.loader-green {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #a9d046;
+    border-bottom: 8px solid #a9d046;
+    width: 5px;
+    height: 5px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    display: inline-block;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

@@ -128,10 +128,6 @@
         <div class="color-text-roxo text-1 text-font-sans" > Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
 
 </div>
-
-        
-
-<div >
     
     <div class=" align-center">
     <div class="content-border-simulator-shadow">

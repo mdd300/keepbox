@@ -13,17 +13,22 @@ class Home_model extends CI_Model {
 
     public function Cadastro_model($Data){
 
-        $this->db->set($Data);
-        $this->db->insert('tb_user');
-        $result['id'] = $this->db->insert_id();
+        $this->db->where('user_email', $Data['user_email']);
+        if($this->db->get("tb_user")->num_rows() > 0) {
+            return false;
+        }else {
+            $this->db->set($Data);
+            $this->db->insert('tb_user');
+            $result['id'] = $this->db->insert_id();
 
-        $result['code']  = 1000+$result['id'] ;
+            $result['code'] = 1000 + $result['id'];
 
-        $this->db->where('user_id', $result['id']);
-        $this->db->set('user_suite', $result['code'] );
-        if ($this->db->update("tb_user")) {
-            $result['code']  = 1000+$result['id']. " ".$Data['user_nome']. " ". $Data['user_sobrenome'] ;
-            return $result;
+            $this->db->where('user_id', $result['id']);
+            $this->db->set('user_suite', $result['code']);
+            if ($this->db->update("tb_user")) {
+                $result['code'] = 1000 + $result['id'] . " " . $Data['user_nome'] . " " . $Data['user_sobrenome'];
+                return $result;
+            }
         }
     }
 

@@ -4,21 +4,23 @@
 </div>
 
 <div class="content-text-banner">
-    <div class="color-text-green text-title text-font-sans" style="position: relative">
+    <div class="color-text-green text-title text-font-sans" style="position: relative; text-align: center;">
         COMPRE NAS LOJAS ONLINE DOS <b>ESTADOS UNIDOS</b>
     </div>
 </div>
 
 <div class="content-text-banner-2">
-    <div class="color-text-grey text-title-sm text-font-sans" style="position: relative">
+    <div class="color-text-white  text-font-sans" style="position: relative; font-size: 2.4em; text-align: center">
         A KeepBox envia para você no Brasil
     </div>
 </div>
 
 <div class="content-text-banner-3">
-    <button class="color-background-roxo color-text-white text-2 btn-config text-font-sans" style="position: relative">
+    <a href="<?= base_url('home/cadastroPage' )?>">
+    <button class="color-background-roxo color-text-white text-2 btn-config text-font-sans"  style="position: relative">
         Clique para garantir seu endereço nos EUA
     </button>
+    </a>
 </div>
 
 <div class="content-module-2 color-background-green">
@@ -79,7 +81,9 @@
 
 </div>
 <div class="content-cadastro-email-modulo3">
-    <div class="content-text-cadastro-module3">
+    <div class="text-font-sans text-bold text-title color-text-green" style="margin: 80px" ng-show="finishCad">Obrigado por se cadastre, olhe seu E-mail para verificar suas informações!</div>
+
+    <div class="content-text-cadastro-module3" ng-show="step1">
         <div class="limit-text-cadastro text-bold step-text color-text-roxo text-font-sans text-title-md">Pronto Para
             Obter Seu endereço nos EUA?
         </div>
@@ -87,14 +91,17 @@
             abaixo você já garante seu endereço e o primeiro passo para economizar!
         </div>
         <div class="content-two-inputs">
-            <input class="input-cadastro-mini text-2 text-font-sans" placeholder="Nome">
-            <input class="input-cadastro-mini text-2 text-font-sans" placeholder="Sobrenome">
+            <input class="input-cadastro-mini text-2 text-font-sans" ng-class="{'error_cad': dataCadError.user_nome_error }" placeholder="Nome" ng-model="dataCad.user_nome"
+                   >
+            <input class="input-cadastro-mini text-2 text-font-sans" ng-class="{'error_cad': dataCadError.user_sobrenome_error  }" ng-model="dataCad.user_sobrenome"
+                    placeholder="Sobrenome">
         </div>
-        <input class="input-cadastro text-2 text-font-sans" placeholder="Digite seu e-mail">
+        <input class="input-cadastro text-2 text-font-sans" placeholder="Digite seu e-mail" ng-class="{'error_cad': dataCadError.user_email_error }" type="email" ng-model="dataCad.user_email">
+        <div ng-show="dataCad_error.user_email_exist" style="color: red;">Esse E-mail já esta cadastro!</div>
 
         <div class="content-btn-more-about">
-            <button class="btn-config-2 color-background-roxo color-text-white text-1">
-                Garanta seu endereço!
+            <button class="btn-config-2 color-background-roxo color-text-white text-1" ng-click="cadastro()"><div class="loader-green" ng-show="loader_cad1"></div><div ng-show="!loader_cad">
+                    Garanta seu endereço!</div>
             </button>
         </div>
     </div>
@@ -202,16 +209,13 @@
             <div style="margin-top: 30px;">
             <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat ;">
                 <select>
-                    <option>KG</option>
-                    <option>The second option</option>
-                    <option>The third option</option>
+                    <option>Lbs</option>
                 </select>
             </div>
             <div class="styled-select align-y-center background-select-roxo rounded" style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat 96% 0;">
                 <select>
-                    <option>KG</option>
-                    <option>The second option</option>
-                    <option>The third option</option>
+                    <option>Brasil</option>
+
                 </select>
             </div>
             </div>
@@ -219,9 +223,9 @@
         <div class="content-right-simulator ">
             <div style="margin-top: 18%" class="color-text-roxo align-x-center text-1 text-font-sans">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
             <div class="slider-margin" >
-                <li class="li-step-tutorial"> 0</li>
-                <li class="li-step-tutorial" style="margin-left: 29%"> 30</li>
-                 <input type="range" class="slider"></input>
+                <li class="li-step-tutorial"> {{range_simulator_home}}</li>
+                <li class="li-step-tutorial" style="margin-left: 29%"> 66</li>
+                 <input type="range" max="66" ng-model="range_simulator_home" ng-change="changeValue()" class="slider"></input>
                
             </div>
 
@@ -235,35 +239,38 @@
         <ul class="content-ul-simulator-data">
             <li class="content-li-simulator-data">
                 <div class="text-1 text-font-sans text-bold">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    Priority Mail Express International™
                 </div>
                 <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 </div>
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b>U$15.50
+                    <b>Total:</b>R$ {{valor_plano_1}}
                 </div>
             </li>
             <li class="content-li-simulator-data">
                 <div class="text-1 text-font-sans text-bold">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    LPriority Mail International®
                 </div>
                 <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 </div>
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b>U$15.50
+                    <b>Total:</b>R$ {{valor_plano_2}}
                 </div>
             </li>
-            <li class="content-li-simulator-data">
+            <li class="content-li-simulator-data" ng-show="range_simulator_home < 5">
                 <div class="text-1 text-font-sans text-bold">
+                    First-Class Package International Service™
+                </div>
+                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 </div>
                 <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 </div>
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b>U$15.50
+                    <b>Total:</b>R$ {{valor_plano_3}}
                 </div>
             </li>
         </ul>

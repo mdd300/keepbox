@@ -1,8 +1,8 @@
 
 .content-img-top-serv{
-    
     height:100%;
     position: absolute;
+    z-index: -11;
 }
 
 .img-top-serv{
@@ -14,11 +14,11 @@
     padding-top:  15%;
     height: auto;
     width: 70%;
-    
+
 }
 
 .content-align-tutorial-module3-serv{
-    
+
     justify-content: center;
     width: 100%;
 }
@@ -26,10 +26,10 @@
 .content-simulator-module4-serv{
     padding-top: 10%;
     width: 100%;
-    
+
     text-align: center
 
-    
+
 }
 
 .content-ul-data-serv{
@@ -40,7 +40,7 @@
     display:  flex;
     justify-content:  center;
     padding-top: 5%;
-    
+
 }
 
 .content-li-info-data-serv{
@@ -53,7 +53,7 @@
     font-family: sans-serif;
     display: block;
     margin:0 auto;
-       
+
 }
 .content-li-center-vert{
     text-decoration: none !important;

@@ -23,7 +23,7 @@
         <div class="content-data-user">
             <div class="content-data-name-user text-font-sans text-2 color-text-grey-light text-bold">Victor oshiro
             </div>
-            <div class="content-data-exit text-font-sans text-2 color-text-roxo">Sair</div>
+            <div class="content-data-exit text-font-sans text-2 color-text-roxo" ng-click="logout()"><div class="loader-roxo" ng-show="loader_exit"></div>Sair</div>
         </div>
     </div>
 
@@ -80,7 +80,7 @@
     <div class="content-data-endereco-right">
         <ul class="ul-data">
             <li class="li-data text-font-sans text-2 text-bold color-text-green">Seu endereço nos EUA</li>
-            <li class="li-data text-font-sans text-2"><b>Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $data->user_suite." ".$data->user_nome." ".$data->user_sobrenome ?></div></li>
+            <li class="li-data text-font-sans text-2"><b>Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $user_suite." ".$user_nome." ".$user_sobrenome ?></div></li>
             <li class="li-data text-font-sans text-2"><b>Street: </b><div class="color-text-grey-light" style="display: inline-block">591 Lakeview Drive</div></li>
             <li class="li-data text-font-sans text-2"><b>City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
             <li class="li-data text-font-sans text-2"><b>State: </b><div class="color-text-grey-light" style="display: inline-block">Florida (FL)</div></li>
