@@ -36,13 +36,13 @@
     border-left: 1px solid #CFCFCF;
 }
 .content-bem-vindo{
-    padding: 80px 150px;
+    padding: 80px 6%;
 }
 .content-text-produtos{
-    padding: 0px 150px;
+    padding: 0px 6%;
 }
 .content-table-produtos{
-    padding-left: 150px;
+    padding-left: 6%;
     padding-top: 30px;
 }
 .content-header-table{

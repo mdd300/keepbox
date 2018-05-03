@@ -1,5 +1,5 @@
 
-<div class="content-img-top-cf">
+<div class="content-img-top-cf width_padrao">
     <img class="img-top-cf" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_como_funciona.jpg">
 </div>
 
@@ -14,35 +14,35 @@
 
 <div style="padding-top: 20% " class="text-font-sans">
 
-     <ul class="content-ul-simulator-data">
+     <ul class="content-ul-simulator-data width_padrao">
         <li>
            <div class="color-text-green">1.Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
         </li>
     </ul>
 
-    <ul class="content-ul-simulator-data">
+    <ul class="content-ul-simulator-data width_padrao">
         <li>
            <div class="color-text-green">2.Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
         </li>
     </ul>
 
-    <ul class="content-ul-simulator-data">
+    <ul class="content-ul-simulator-data width_padrao">
         <li>
            <div class="color-text-green">3.Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
         </li>
     </ul>
 
-    <ul class="content-ul-simulator-data">
+    <ul class="content-ul-simulator-data width_padrao">
         <li>
            <div class="color-text-green">4.Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
         </li>
     </ul>
 
-    <ul class="content-ul-simulator-data">
+    <ul class="content-ul-simulator-data width_padrao">
         <li>
            <div class="color-text-green">5.Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 
            <div class="color-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div> 

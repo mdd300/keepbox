@@ -30,23 +30,17 @@ class Home extends CI_Controller {
         $this->load->view('Keep/Home/Home');
         $this->load->view('Keep/structure/footer_default');
 
-<<<<<<< HEAD
-        $this->load->view('Keep/Servicos/Servicos');
-=======
     }
 
     public function cadastroPage(){
 
         $data['selection'] = 0;
 
-        $this->load->view('Keep/structure/header_default', $data);
         $this->load->view('Keep/Cadastro/Cadastro_1_step');
-        $this->load->view('Keep/structure/footer_default');
 
     }
 
     public function duvidas(){
->>>>>>> 1d352a327e0700dff9c181cc9c26fc393df1d836
 
         $data['selection'] = 4;
 
@@ -129,9 +123,7 @@ class Home extends CI_Controller {
     public function cadastroFinal()
     {
 
-        $this->load->view('Keep/structure/header_default');
         $this->load->view('Keep/Cadastro/Cadastro_1_step');
-        $this->load->view('Keep/structure/footer_default');
 
     }
     public function cadastroFinalizar($Data = null)
@@ -176,6 +168,26 @@ class Home extends CI_Controller {
             return $retorno;
         }
 
+    }
+    public function verifySession($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        if(isset($_SESSION['fashon_session']['user_id'])){
+            $retorno['success'] = true;
+        }else{
+            $retorno['success'] = false;
+        }
+
+        if ($Output == true) {
+            echo json_encode($retorno);
+        } else {
+            return $retorno;
+        }
     }
 
 }

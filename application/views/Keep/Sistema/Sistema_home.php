@@ -1,4 +1,4 @@
-<html ng-app="app_landing">
+<html class="width_padrao" ng-app="app_landing">
 <head>
     <title>
         KeepBox
@@ -45,7 +45,7 @@
                     Data
                 </th>
                 <th class="content-header-table text-bold text-font-sans text-2 color-text-white">
-                    Nr.Pedido
+                    Num.Pedido
                 </th>
                 <th class="content-header-table text-bold text-font-sans text-2 color-text-white">
                     Status do Pedido

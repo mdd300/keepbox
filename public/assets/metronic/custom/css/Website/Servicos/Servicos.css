@@ -1,30 +1,15 @@
 
-.content-img-top-serv{
-<<<<<<< HEAD
-    
-height: 1270px;
-    
-position: absolute;
-=======
-    height:100%;
-    position: absolute;
-    z-index: -11;
->>>>>>> 1d352a327e0700dff9c181cc9c26fc393df1d836
-}
+.content-img-top-serv{height: 52%;position: absolute;}
 
 .img-top-serv{
-    width: 1270px;
-    height: auto;
+    height: 100%;
 }
 .content-text-banner-serv{
     padding: 8% 20%;
     /* padding-top:  15%; */
     /* height: auto; */
     width: 70%;
-<<<<<<< HEAD
-=======
 
->>>>>>> 1d352a327e0700dff9c181cc9c26fc393df1d836
 }
 
 .content-align-tutorial-module3-serv{
@@ -80,7 +65,7 @@ position: absolute;
 
 .content-ul-assist-data {
     list-style-type: none !important;
-    
+
     -webkit-padding-start: 0px;
     height: auto;
     display: flex;

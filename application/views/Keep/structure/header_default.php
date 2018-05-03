@@ -12,7 +12,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
 License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
 -->
-<html lang="en" ng-app="app_landing">
+<html class="width_padrao" lang="en" ng-app="app_landing">
 <!-- begin::Head -->
 <head>
     <meta charset="utf-8"/>
@@ -69,7 +69,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <li class="header-li" ><a href="">Ganhe Dinheiro</a></li>
         </ul>
     </nav>
-    <div class="content-header-menu">
+    <div class="content-header-menu width_padrao">
         <div class="content-align-menu">
             <a href="<?= base_url()?>">
 
@@ -78,9 +78,9 @@ License: You must have a valid license purchased only from themeforest(the above
             </a>
             <div class="content-right-menu">
                 <div class="content-btn-header-menu">
-                    <button class="btn-header-menu color-background-green" ng-click="login_press = true"><img class="content-img-icon-menu"
-                                                                                src="<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png">Meu
-                        Acesso
+                    <button class="btn-header-menu color-background-green" ng-click="verifySession()"><div class="loader-roxo" ng-show="loader_access"></div><img ng-show="!loader_access" class="content-img-icon-menu"
+                                                                                src="<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png">
+                        Meu Acesso
                     </button>
                 </div>
                 <nav class="content-menu">
@@ -97,8 +97,8 @@ License: You must have a valid license purchased only from themeforest(the above
     </div>
 
     <div class="modal-login" ng-show="login_press">
-        <div class="text-font-sans text-title-sm color-text-green text-bold " style="float: left;    display: contents;margin: 20px;">Meu Acesso</div>
-        <div class="color-text-roxo text-bold, text-font-sans" style="float: right;   cursor: pointer;  margin: 35px;" ng-click="closeModal()">X</div>
+        <div class="text-font-sans text-title-sm color-text-green text-bold " style="float: left; width: 70%;margin: 20px;">Meu Acesso</div>
+        <div class="color-text-roxo text-bold, text-font-sans" style="float: right;   cursor: pointer;  margin: 35px;" ng-click="login_press = false">X</div>
         <div class="content-login">
             <div class="text-bold text-font-sans color-text-grey-light text-2">Usuário</div>
             <input class="input" type="text" ng-model="singIn.user_login" style="margin-top: 10px !important;" placeholder="Digite seu usuário ou E-mail">
