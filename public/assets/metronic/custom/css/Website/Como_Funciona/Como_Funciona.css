@@ -1,6 +1,6 @@
 .content-img-top-cf{
-    width: 100% !important;
-    height: 100%;
+    width: 1226px;
+    height: 586px;
     position: absolute;
 }
 
@@ -10,17 +10,17 @@
 }
 .content-text-banner-cf{
     /* padding: 8% 20%; */
-    padding-top:  15%;
-    height: auto;
-    width: 70%;
-    padding-left: 40%;
+    padding-top: 190px;
+    /* height: auto; */
+    /* width: 70%; */
+    padding-left: 507px;
 }
 
 .content-video-module2-cf{
     position: absolute;
     border-radius: 30px;
-    width: 45%;
-    height: 50%;
+    width: 551px;
+    height: 293px;
     float: left;
     left:  0;
     /* top: 0; */
