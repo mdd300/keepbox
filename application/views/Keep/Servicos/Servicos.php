@@ -12,6 +12,12 @@
         
 <div class="text-font-sans content-li-center-vert" >
 
+    <ul class="content-ul-data-serv">
+        <li>
+           <div class="color-text-green text-title-sm">SERVIÇOS BÁSICOS</div> 
+            
+        </li>
+    </ul>
      <ul class="content-ul-data-serv">
         <li>
            <div class="color-text-green text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing </div> 
