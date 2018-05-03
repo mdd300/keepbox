@@ -357,7 +357,7 @@
           
  </div>
 
-<div>
+<div class="step-text">
     <div class="limit-text-cadastro step-text color-text-grey-light text-font-sans text-title-sm content-align-tutorial-module3">Outras Dúvidas?  &nbsp;  
         <button class="btn-config-2 color-background-roxo color-text-white text-1">Confira Aqui</button>
     </div> <br>
