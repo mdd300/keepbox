@@ -276,5 +276,10 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
         $scope.duvidas[num] = $scope.duvidas[num] ? false : true;
         console.log($scope.duvidas[num]);
     }
+
+    $scope.closeModal = function () {
+        $scope.login_press = false;
+
+    }
 }]);
 

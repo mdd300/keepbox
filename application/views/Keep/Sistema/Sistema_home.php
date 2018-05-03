@@ -63,13 +63,13 @@
                 </thead>
                 <tbody>
                 <tr>
-
-                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">29/05/2018</td>
-                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">04654320</td>
-                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">Aguardando Pagamento</td>
-                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">Iphone</td>
-                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">Best Buy</td>
-                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">192 gramas</td>
+<!---->
+<!--                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">29/05/2018</td>-->
+<!--                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">04654320</td>-->
+<!--                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">Aguardando Pagamento</td>-->
+<!--                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">Iphone</td>-->
+<!--                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">Best Buy</td>-->
+<!--                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">192 gramas</td>-->
 
                 </tr>
                 </tbody>

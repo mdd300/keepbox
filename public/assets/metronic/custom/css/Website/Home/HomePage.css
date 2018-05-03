@@ -214,7 +214,7 @@ body{
     display: inline-flex;
     float:  left;
     margin-top: 1035px;
-    margin-left: 210px;
+    /* margin-left: 210px; */
     width: auto;
     height: 300px;
     list-style-type: none !important;
@@ -233,10 +233,10 @@ body{
 .li-step-module2:last-child {
 }
 .step-icon{
-    width: 200px;
+    width: 175px;
     height: 40%;
-    background-repeat:  no-repeat ;
-    background-size:  contain ;
+    background-repeat:  no-repeat;
+    background-size:  contain;
     padding: 0px;
     margin-top: 25px;
     background-position:  center;

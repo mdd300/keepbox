@@ -29,11 +29,12 @@
 
 <div class="content-more-about-text ">
     <div class="text-2 text-font-sans color-text-grey-light padding-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum
+        Pesquisas apontam o crescente desejo dos brasileiros em comprar em lojas online dos EUA. Prova disso é que os turistas do Brasil já ocupam o 3. lugar na lista dos países que mais consumem na América.
+        O fato é que muitas lojas online dos EUA não entregam compras no Brasil.
+        A KeepBox surge para solucionar esta questão!
+        Viabilizamos para quem mora no Brasil a oportunidade de aproveitar todas as vantagens do mercado americano e receber suas compras onde quiser com amplo conforto, economia e segurança.
+        Compre o que desejar em qualquer loja online dos EUA.
+        A KeepBox recebe e envia tudo para você!
     </div>
     <div class="content-btn-more-about">
         <button class="btn-config color-background-green color-text-white text-1">
@@ -57,21 +58,26 @@
 <ul class="ul-step-module2">
     <li class="li-step-module2">
         <div class="step-icon"
-             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png')"></div>
-        <div class="step-text color-text-roxo text-font-sans text-1 "><b>1.</b>Crie sua conta KeepBox e compre nas lojas
-            online dos EUA
+             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/compra_online.png')"></div>
+        <div class="step-text color-text-roxo text-font-sans text-1 "><b>1.</b>Crie sua conta KeepBox gratuitamente e compre nas lojas online dos EUA.
         </div>
     </li>
     <li class="li-step-module2">
         <div class="step-icon"
-             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png')"></div>
-        <div class="step-text color-text-roxo text-font-sans text-1"><b>2.</b>Mande entregar suas compras no seu
-            endereço KeepBox
+             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/pacotes_eua.png')"></div>
+        <div class="step-text color-text-roxo text-font-sans text-1"><b>2.</b>Mande entregar suas compras no endereço da sua conta KeepBox
     </li>
     <li class="li-step-module2">
         <div class="step-icon"
-             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png')"></div>
-        <div class="step-text  color-text-roxo text-font-sans text-1 "><b>3.</b>Crie sua conta KeepBox e compre nas
+             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/uma_caixa.png')"></div>
+        <div class="step-text  color-text-roxo text-font-sans text-1 "><b>3.</b>Recebemos e juntamos suas encomendas em uma única caixa, sem custo adicional
+
+    </li>
+
+    <li class="li-step-module2">
+        <div class="step-icon"
+             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/aviao_entrega.png')"></div>
+        <div class="step-text  color-text-roxo text-font-sans text-1 "><b>4.</b>Enviamos para você, onde quiser, pelos melhores preços
             lojas online dos EUA
     </li>
     
@@ -121,7 +127,7 @@
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
-                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/wallet.png'>
                     <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Economize até
                         <div class="color-text-green" style="    display: initial;">80%</div>
                         em
@@ -132,17 +138,7 @@
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
-                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
-                    <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Pague uma taxa única
-                        de serviço:
-                        <div class="color-text-green" style="    display: initial;">Apenas U$12,90</div>
-                    </div>
-                </div>
-            </li>
-            <li class="li-step-tutorial">
-                <div class="content-border-shadow-li-tutorial">
-                    <img class="content-icon-tutorial"
-                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/armazenar.png'>
                     <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Armazene suas compras
                         por até 60 dias e aproveite todas as
                         oportunidades de
@@ -150,22 +146,23 @@
                     </div>
                 </div>
             </li>
-        </ul>
-        <ul class="ul-tutorial">
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
-                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/atendimento_em_pt.png'>
                     <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Suporte de
                         atendimento ao cliente em
                         <div class="color-text-green" style="    display: initial;"><b>português</b></div>
                     </div>
                 </div>
             </li>
+        </ul>
+        <ul class="ul-tutorial">
+
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
-                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/fotos.png'>
                     <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Fotos gratuitas de
                         pacotes recebidos
                     </div>
@@ -174,9 +171,21 @@
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
-                         src='<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg'>
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/agillidade_de_envio.png'>
                     <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Agilidade de
                         Entrega
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/cartao_taxa_unica.png'>
+                    <div class="content-text-tutorial text-1 text-font-sans color-text-grey-light">Pague uma taxa única
+                        de serviço:
+                        <div class="color-text-green" style="    display: initial;">Apenas U$12,90</div>
                     </div>
                 </div>
             </li>
@@ -221,7 +230,7 @@
             </div>
         </div>
         <div class="content-right-simulator ">
-            <div style="margin-top: 18%" class="color-text-roxo align-x-center text-1 text-font-sans">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+            <div style="margin-top: 18%" class="color-text-roxo align-x-center text-1 text-font-sans">Em baixo de cada modalidade de frete:</div>
             <div class="slider-margin" >
                 <li class="li-step-tutorial"> {{range_simulator_home}}</li>
                 <li class="li-step-tutorial" style="margin-left: 29%"> 66</li>
@@ -241,9 +250,9 @@
                 <div class="text-1 text-font-sans text-bold">
                     Priority Mail Express International™
                 </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                </div>
+<!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--                </div>-->
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
                     <b>Total:</b>R$ {{valor_plano_1}}
                 </div>
@@ -252,9 +261,9 @@
                 <div class="text-1 text-font-sans text-bold">
                     LPriority Mail International®
                 </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                </div>
+<!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--                </div>-->
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
                     <b>Total:</b>R$ {{valor_plano_2}}
                 </div>
@@ -263,12 +272,9 @@
                 <div class="text-1 text-font-sans text-bold">
                     First-Class Package International Service™
                 </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                </div>
+<!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+<!--                </div>-->
                 <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans">
                     <b>Total:</b>R$ {{valor_plano_3}}
                 </div>
@@ -282,25 +288,34 @@
         
 
         <div class="content-align-tutorial-module3 step-text" style="height: 300px">
-          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-left.png')" class="step-icon-2" onclick="plusDivs(-1)"></span>
+          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-right.jpg');
+                  -moz-transform: scaleX(-1);
+                  -o-transform: scaleX(-1);
+                  -webkit-transform: scaleX(-1);
+                  transform: scaleX(-1);
+                  filter: FlipH;
+                  -ms-filter: "FlipH";" class="step-icon-2" onclick="plusDivs(-1)" ></span>
 
           
           <div class="mySlides slide-content-width" >
                <li class="content-li-info-data">
                  <div class=" color-text-green color-text-green text-bold text-font-sans">
-                    Como saber se vocês receberam minha compra?
+                     O endereço KeepBox é um P.O. box (similar a caixa postal do Brasil)?
                 </div>
                 <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    A loja que você comprou deverá lhe enviar a comprovação de envio assim como o número de rastreamento. Você pode acompanhar e saberá quando recebemos. Após recebermos cada cauxa sua lhe enviaremos um e-mail informando sobre o recebimento, vai ser pesado, tirado uma foto e adicionado a sua suíte, não se preocupe, avisamos no mesmo dia que sua caixa chegar.
+                    O “seu endereço KeepBox” é uma suíte física e real em nosso armazém dedicada às suas encomendas, ou seja, o seu endereço KeepBox não é um P.O. box.
+                    Observação: Muitas lojas não enviam para P.O. box, por isso o seu endereço KeepBox não poderia ser um P.O. box.
+
+
                 </div>
                
             </li>
             <li class="content-li-info-data">
                 <div class=" color-text-green color-text-green text-bold text-font-sans">
-                    Como eu pago pelo serviço e o frete?
+                    O método utilizado pela KeepBox é legal?
                 </div>
                 <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Após as encomendas serem recebidas ficarão à disposição do cliente em seu estoque para fazer o envio, o valor do frete com nossa taxa de serviço fica a disposição do cliente diretamente no procedimento do envio pelo site. Esse valor pode ser pago por depósito / trasnferência  no Banco do Brasil ou PayPal, após pago sua caixa é enviada em até 24 horas úteis.
+                    Sim! A KeepBox funciona como um amigo ou parente que mora nos EUA e envia encomendas para você — ou seja, é totalmente legal. Utilizamos o Serviço Postal Nacional dos Estados Unidos (USPS) para o frete das mercadorias ao Brasil por serem extremamente seguros e por praticarem as melhores tarifas de envio do mercado americano.
                 </div>
                 
             </li>
@@ -309,21 +324,21 @@
            <div class="mySlides slide-content-width">
                <li class="content-li-info-data">
                 <div class=" color-text-green color-text-green text-bold text-font-sans">
-                        <b>Slide 2</b>
+                        <b>Como efetuo meu cadastro na KeepBox?</b>
                     </div>
                     
                     <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        Para se cadastrar gratuitamente na KeepBox é muito fácil. Clique aqui e preencha seu Nome, Sobrenome e e-mail. Simples assim!
                     </div>
                     
                 </li>
                 <li class="content-li-info-data">
                     <div class=" color-text-green color-text-green text-bold text-font-sans">
-                        <b>Slide 2</b>
+                        <b>Pago alguma taxa para me cadastrar na KeepBox?</b>
                     </div>
                     
                     <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        O cadastro é totalmente gratuito! Registre-se agora e receba seu endereço KeepBox nos EUA imediatamente!
                     </div>
                     
                 </li>
@@ -331,26 +346,29 @@
            <div class="mySlides slide-content-width">
                <li class="content-li-info-data">
                  <div class=" color-text-green color-text-green text-bold text-font-sans">
-                    <b>Slide 3</b>
+                    <b>Tenho que pagar alguma taxa mensal ou anual à KeepBox depois que me inscrevo?
+                    </b>
                 </div>
                 
                 <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    Não! Não cobramos taxa de inscrição, mensalidade ou anuidade.
+                    Além disso, seus dados de cartão de crédito não são exigidos para sua inscrição. Quando decidir enviar suas encomendas ao Brasil, você pagará apenas uma taxa única e reduzida pelos serviços da KeepBox.
                 </div>
                
             </li>
             <li class="content-li-info-data">
                 <div class=" color-text-green color-text-green text-bold text-font-sans">
-                    <b>Slide 3</b>
+                    <b>Como funciona os serviços da KeepBox?</b>
                 </div>
                 
                 <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    A KeepBox disponibiliza um endereço nos EUA para você armazenar suas compras realizadas nas lojas online do EUA. Posteriormente juntamos tudo e enviamos suas encomendas para o endereço que você nos indicar.
+                    Tudo isso sem que você precise sair da sua casa e por uma taxa KeepBox única e reduzida.
                 </div>
                 
             </li>
           </div>
-          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-right.png')" class="step-icon-2" onclick="plusDivs(1)"></span>
+          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-right.jpg')" class="step-icon-2" onclick="plusDivs(1)"></span>
         </div>
     </div>
 

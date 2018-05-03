@@ -97,7 +97,8 @@ License: You must have a valid license purchased only from themeforest(the above
     </div>
 
     <div class="modal-login" ng-show="login_press">
-        <div class="text-font-sans text-title-sm color-text-green text-bold " style="margin: 20px;">Meu Acesso</div>
+        <div class="text-font-sans text-title-sm color-text-green text-bold " style="float: left;    display: contents;margin: 20px;">Meu Acesso</div>
+        <div class="color-text-roxo text-bold, text-font-sans" style="float: right;   cursor: pointer;  margin: 35px;" ng-click="closeModal()">X</div>
         <div class="content-login">
             <div class="text-bold text-font-sans color-text-grey-light text-2">Usuário</div>
             <input class="input" type="text" ng-model="singIn.user_login" style="margin-top: 10px !important;" placeholder="Digite seu usuário ou E-mail">
