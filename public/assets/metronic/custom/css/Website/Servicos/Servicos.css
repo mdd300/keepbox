@@ -1,9 +1,15 @@
 
 .content-img-top-serv{
+<<<<<<< HEAD
     
 height: 1270px;
     
 position: absolute;
+=======
+    height:100%;
+    position: absolute;
+    z-index: -11;
+>>>>>>> 1d352a327e0700dff9c181cc9c26fc393df1d836
 }
 
 .img-top-serv{
@@ -15,10 +21,14 @@ position: absolute;
     /* padding-top:  15%; */
     /* height: auto; */
     width: 70%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1d352a327e0700dff9c181cc9c26fc393df1d836
 }
 
 .content-align-tutorial-module3-serv{
-    
+
     justify-content: center;
     width: 100%;
 }
@@ -26,10 +36,10 @@ position: absolute;
 .content-simulator-module4-serv{
     padding-top: 10%;
     width: 100%;
-    
+
     text-align: center
 
-    
+
 }
 
 .content-ul-data-serv{
@@ -40,7 +50,7 @@ position: absolute;
     display:  flex;
     justify-content:  center;
     padding-top: 5%;
-    
+
 }
 
 .content-li-info-data-serv{
@@ -53,7 +63,7 @@ position: absolute;
     font-family: sans-serif;
     display: block;
     margin:0 auto;
-       
+
 }
 .content-li-center-vert{
     text-decoration: none !important;

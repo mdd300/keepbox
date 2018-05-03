@@ -1,0 +1,13 @@
+.content-duvidas{
+    width: 1270px;
+    z-index:  111111;
+}
+.content-pergunta-duvidas{
+    padding: 30px;
+    z-index:  11111111;
+}
+.content-resposta-duvida{
+    padding: 0px 30px;
+    width: 800px;
+    text-align: justify;
+}

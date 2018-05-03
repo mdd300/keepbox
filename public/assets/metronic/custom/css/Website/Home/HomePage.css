@@ -4,6 +4,7 @@ html, body{
 body{
     margin: 0;
     padding: 0;
+    /* width: 1024px; */
 }
 .container {
     width: 1024px;
@@ -43,7 +44,7 @@ body{
 
 
 .content-header-menu{
-    width: 100%;
+    width: 1270px;
     height: 85px;
     display: flex;
     align-items: center;
@@ -119,9 +120,12 @@ body{
 }
 
 .content-img-top-home{
-    width: 1167px;
-    height: 850px;
-    position: absolute;
+
+width: 1270px;
+
+height: 850px;
+
+position: absolute;
 }
 
 .img-top-home{
@@ -136,7 +140,7 @@ body{
     padding-left: 20%;
 }
 .content-text-banner-2{
-    padding: 50px 20%;
+    padding: 30px 13%;
     height: 80px;
     width: 750px;
     position:  relative;
@@ -161,14 +165,14 @@ body{
     margin: 50px 0;
 }
 .content-module-2{
-    width: 100%;
+    width: 1270px;
     height: 1180px;
     position: absolute;
     margin-top: 220px;
 }
 
 .content-module-2-sm{
-    width: 1164px;
+    width: 1270px;
     height: 300px;
     position: absolute;
     margin-top: 220px;
@@ -176,13 +180,14 @@ body{
 .content-video-module2{
     position: absolute;
     border-radius: 30px;
-    width: 45%;
-    height: 50%;
+    width: 573px;
+    height: 307px;
     float: right;
-    right:  0;
+    /* right:  0; */
     /* top: 0; */
-    margin-right: 8%;
-    margin-top: 44%;
+    margin-right: 38px;
+    margin-left: 660px;
+    margin-top: 687px;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
 
@@ -201,7 +206,7 @@ body{
 .content-text-module2{
     position:  absolute;
     float:  left;
-    margin-top: 763px;
+    margin-top: 833px;
     margin-left: 261px;
     /* height: 117px; */
     width: 236px;
@@ -212,14 +217,14 @@ body{
     display: inline-flex;
     float:  left;
     margin-top: 1035px;
-    margin-left: 210px;
+    /* margin-left: 210px; */
     width: auto;
     height: 300px;
     list-style-type: none !important;
 }
 .li-step-module2{
     text-decoration: none !important;
-    width: 18%;
+    width: 223px;
     height: 100%;
     display: block !important;
     color: #878889;
@@ -231,10 +236,10 @@ body{
 .li-step-module2:last-child {
 }
 .step-icon{
-    width: 200px;
+    width: 175px;
     height: 40%;
-    background-repeat:  no-repeat ;
-    background-size:  contain ;
+    background-repeat:  no-repeat;
+    background-size:  contain;
     padding: 0px;
     margin-top: 25px;
     background-position:  center;
@@ -242,7 +247,7 @@ body{
 
 .step-icon-2{
     width: 200px;
-    
+
     background-repeat:  no-repeat !important;
     background-size:  50px 50px  !important;
     padding: 0px;
@@ -530,9 +535,9 @@ body{
     border-radius: 20px;
     background-color: white;
     float: right;
-    right: 0;
+    /* right: 0; */
     position: absolute;
-    margin-right: 200px;
+    margin-left: 700px;
     top: 0;
     margin-top: 65px;
     z-index:  11111;
