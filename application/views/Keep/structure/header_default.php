@@ -106,6 +106,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <div class="content-login">
             <div class="text-bold text-font-sans color-text-grey-light text-2">Senha</div>
             <input class="input" type="password" ng-model="singIn.user_senha" style="margin-top: 10px !important;" placeholder="Digite sua senha">
+            <div ng-show="Error_login">{{TextError_Login}}</div>
         </div>
         <button class="btn-config-login color-background-green color-text-white text-bold text-font-sans text-2" ng-click="login()"><div class="loader-roxo" ng-show="loader_login"></div> Entrar </button>
         <a href="<?= base_url('home/cadastroPage' )?>">

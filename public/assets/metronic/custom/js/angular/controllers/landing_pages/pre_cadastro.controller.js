@@ -135,18 +135,19 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
                                             );
                                         } else {
                                             $scope.dataCadError.user_senha_conf = true;
+                                            $scope.loader_login = false;
                                         }
                                     } else {
                                         $scope.dataCadError.user_senha_length = true;
-
+                                        $scope.loader_login = false;
                                     }
                                 } else {
                                     $scope.dataCadError.user_senha_error = true;
-
+                                    $scope.loader_login = false;
                                 }
                             } else {
                                 $scope.dataCadError.user_login_error = true;
-
+                                $scope.loader_login = false;
                             }
                         } else {
                             $scope.dataCadError.user_estado_error = true;
@@ -240,10 +241,13 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
                 $scope.loader_login = false;
 
                 if (response.data.success) {
-                    var id = response.data.id;
-                    console.log(response.data.id)
+
 
                     window.location.href = base_url + "Sistema/system";
+                }else{
+
+                    $scope.Error_login = true;
+                    $scope.TextError_Login = response.data.text
                 }
 
             }

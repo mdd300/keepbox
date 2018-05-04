@@ -57,18 +57,18 @@
 <ul class="ul-step-module2 width_padrao" style="padding: 0;">
     <li class="li-step-module2">
         <div class="step-icon"
-             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/compra_online.png')"></div>
+             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/online-shop.png')"></div>
         <div class="step-text color-text-roxo text-font-sans text-1 "><b>1.</b>Crie sua conta KeepBox gratuitamente e compre nas lojas online dos EUA.
         </div>
     </li>
     <li class="li-step-module2">
         <div class="step-icon"
-             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/pacotes_eua.png')"></div>
+             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/packages.png')"></div>
         <div class="step-text color-text-roxo text-font-sans text-1"><b>2.</b>Mande entregar suas compras no endereço da sua conta KeepBox
     </li>
     <li class="li-step-module2">
         <div class="step-icon"
-             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/uma_caixa.png')"></div>
+             style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/package.png')"></div>
         <div class="step-text  color-text-roxo text-font-sans text-1 "><b>3.</b>Recebemos e juntamos suas encomendas em uma única caixa, sem custo adicional
 
     </li>
@@ -89,8 +89,8 @@
     <div class="text-font-sans text-bold text-title color-text-green" style="margin: 80px" ng-show="finishCad">Obrigado por se cadastre, olhe seu E-mail para verificar suas informações!</div>
 
     <div class="content-text-cadastro-module3" ng-show="step1">
-        <div class="limit-text-cadastro text-bold step-text color-text-roxo text-font-sans text-title-md">Pronto Para
-            Obter Seu endereço nos EUA?
+        <div class="limit-text-cadastro text-bold step-text color-text-roxo text-font-sans text-title-md">Pronto para
+            obter seu endereço nos EUA?
         </div>
         <div class="limit-text-cadastro2 step-text text-font-sans text-2 color-text-grey-light">Apenas com os dados
             abaixo você já garante seu endereço e o primeiro passo para economizar!
