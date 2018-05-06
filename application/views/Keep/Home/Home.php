@@ -4,20 +4,20 @@
 </div>
 
 <div class="content-text-banner width_padrao">
-    <div class="color-text-green text-title text-font-sans" style="position: relative; text-align: center; width: 40%">
+    <div class="color-text-green text-title text-font-sans shadow-text" style="position: relative; text-align: center;     width: 56%;">
         COMPRE NAS LOJAS ONLINE DOS <b>ESTADOS UNIDOS</b>
     </div>
 </div>
 
 <div class="content-text-banner-2 width_padrao">
-    <div class="color-text-white  text-font-sans" style="position: relative; font-size: 2.4em; text-align: center">
+    <div class="color-text-white  text-font-sans shadow-text" style="position: relative; font-size: 2.4em; text-align: center">
         A KeepBox envia para você no Brasil
     </div>
 </div>
 
 <div class="content-text-banner-3 width_padrao">
     <a href="<?= base_url('home/cadastroPage' )?>">
-    <button class="color-background-roxo color-text-white text-2 btn-config text-font-sans"  style="position: relative">
+    <button class="color-background-roxo color-text-white text-2 btn-config text-font-sans shadow"  style="position: relative">
         Clique para garantir seu endereço nos EUA
     </button>
     </a>
@@ -46,10 +46,10 @@
     </div>
 </div>
 
-    <iframe width="560" height="315" class="content-video-module2 " src="https://www.youtube.com/embed/BT3z50zcA-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe class="content-video-module2 " src="https://www.youtube.com/embed/BT3z50zcA-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <div class="content-text-module2">
-    <div class="color-text-roxo text-title text-font-sans text-bold">
+    <div class="color-text-roxo text-font-sans text-bold" style="font-size: 4rem">
         Como a Keepbox funciona?
     </div>
 </div>
@@ -85,7 +85,10 @@
 <div class="content-cadastro-space-modulo2">
 
 </div>
-<div class="content-cadastro-email-modulo3">
+<div class="content-cadastro-email-modulo3" >
+<!--  style="     background-repeat: no-repeat;
+        background-size: 900px 900px;
+        background-position-x: right; background-image: url('public/assets/metronic/custom/img/photo/img_back_cad.jpg')"  -->
     <div class="text-font-sans text-bold text-title color-text-green" style="margin: 80px" ng-show="finishCad">Obrigado por se cadastre, olhe seu E-mail para verificar suas informações!</div>
 
     <div class="content-text-cadastro-module3" ng-show="step1">
@@ -295,12 +298,13 @@
                   " class="step-icon-2" onclick="plusDivs(-1)" ></span>
 
           
-          <div class="mySlides slide-content-width" >
+          <div class="mySlides slide-content-width" style="    display: flex;
+    justify-content: center;">
                <li class="content-li-info-data">
-                 <div class=" color-text-green color-text-green text-bold text-font-sans">
+                 <div class=" color-text-green color-text-green text-bold text-font-sans text-2">
                      O endereço KeepBox é um P.O. box (similar a caixa postal do Brasil)?
                 </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                <div class="text-1 text-font-sans color-text-grey text-1" style="padding-top: 20px">
                     O “seu endereço KeepBox” é uma suíte física e real em nosso armazém dedicada às suas encomendas, ou seja, o seu endereço KeepBox não é um P.O. box.
                     Observação: Muitas lojas não enviam para P.O. box, por isso o seu endereço KeepBox não poderia ser um P.O. box.
 
@@ -309,57 +313,59 @@
                
             </li>
             <li class="content-li-info-data">
-                <div class=" color-text-green color-text-green text-bold text-font-sans">
+                <div class=" color-text-green color-text-green text-bold text-font-sans text-2">
                     O método utilizado pela KeepBox é legal?
                 </div>
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                <div class="text-1 text-font-sans color-text-grey text-1" style="padding-top: 20px">
                     Sim! A KeepBox funciona como um amigo ou parente que mora nos EUA e envia encomendas para você — ou seja, é totalmente legal. Utilizamos o Serviço Postal Nacional dos Estados Unidos (USPS) para o frete das mercadorias ao Brasil por serem extremamente seguros e por praticarem as melhores tarifas de envio do mercado americano.
                 </div>
                 
             </li>
           </div>
           
-           <div class="mySlides slide-content-width">
+           <div class="mySlides slide-content-width" style="        display: flex;
+    justify-content: center;">
                <li class="content-li-info-data">
-                <div class=" color-text-green color-text-green text-bold text-font-sans">
+                <div class=" color-text-green color-text-green text-bold text-font-sans text-2">
                         <b>Como efetuo meu cadastro na KeepBox?</b>
                     </div>
                     
-                    <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    <div class="text-1 text-font-sans color-text-grey text-1" style="padding-top: 20px">
                         Para se cadastrar gratuitamente na KeepBox é muito fácil. Clique aqui e preencha seu Nome, Sobrenome e e-mail. Simples assim!
                     </div>
                     
                 </li>
                 <li class="content-li-info-data">
-                    <div class=" color-text-green color-text-green text-bold text-font-sans">
+                    <div class=" color-text-green color-text-green text-bold text-font-sans text-2 text-font-sans">
                         <b>Pago alguma taxa para me cadastrar na KeepBox?</b>
                     </div>
                     
-                    <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                    <div class="text-1 text-font-sans color-text-grey text-1" text-2 style="padding-top: 20px">
                         O cadastro é totalmente gratuito! Registre-se agora e receba seu endereço KeepBox nos EUA imediatamente!
                     </div>
                     
                 </li>
           </div>
-           <div class="mySlides slide-content-width">
+           <div class="mySlides slide-content-width" style="     display: flex;
+    justify-content: center;">
                <li class="content-li-info-data">
-                 <div class=" color-text-green color-text-green text-bold text-font-sans">
+                 <div class=" color-text-green color-text-green text-bold text-font-sans text-2">
                     <b>Tenho que pagar alguma taxa mensal ou anual à KeepBox depois que me inscrevo?
                     </b>
                 </div>
                 
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                <div class="text-1 text-font-sans color-text-grey text-1" style="padding-top: 20px">
                     Não! Não cobramos taxa de inscrição, mensalidade ou anuidade.
                     Além disso, seus dados de cartão de crédito não são exigidos para sua inscrição. Quando decidir enviar suas encomendas ao Brasil, você pagará apenas uma taxa única e reduzida pelos serviços da KeepBox.
                 </div>
                
             </li>
             <li class="content-li-info-data">
-                <div class=" color-text-green color-text-green text-bold text-font-sans">
+                <div class=" color-text-green color-text-green text-bold text-font-sans text-2" >
                     <b>Como funciona os serviços da KeepBox?</b>
                 </div>
                 
-                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">
+                <div class="text-1 text-font-sans color-text-grey text-1" style="padding-top: 20px">
                     A KeepBox disponibiliza um endereço nos EUA para você armazenar suas compras realizadas nas lojas online do EUA. Posteriormente juntamos tudo e enviamos suas encomendas para o endereço que você nos indicar.
                     Tudo isso sem que você precise sair da sua casa e por uma taxa KeepBox única e reduzida.
                 </div>
@@ -380,7 +386,7 @@
  </div>
 
 <div class="step-text" >
-    <div class="limit-text-cadastro step-text color-text-grey-light text-font-sans text-title-sm content-align-tutorial-module3">Outras Dúvidas?  &nbsp;  
+    <div class="limit-text-cadastro step-text color-text-grey-light text-font-sans text-title-sm content-align-tutorial-module3" style="    margin-top: 200px;">Outras Dúvidas?  &nbsp;
         <button class="btn-config-2 color-background-roxo color-text-white text-1">Confira Aqui</button>
     </div> <br>
 </div>
@@ -470,7 +476,7 @@ function showDivs(n) {
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "flex";
 }
 </script>
 

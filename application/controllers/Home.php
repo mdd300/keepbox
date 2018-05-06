@@ -20,16 +20,12 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		/*$this->load->view('metronic/structure/header_default');
-		$this->load->view('metronic/examples/dashboard');
-		$this->load->view('metronic/structure/footer_default');*/
+        $data['selection'] = 4;
 
-		$data['selection'] = 1;
 
-        $this->load->view('Keep/structure/header_default',$data);
+        $this->load->view('Keep/structure/header_default', $data);
         $this->load->view('Keep/Home/Home');
         $this->load->view('Keep/structure/footer_default');
-
     }
 
     public function cadastroPage(){

@@ -1,13 +1,4 @@
-@font-face {
-    font-family: "Sanseriffic";
-    src: url("/system/fonts/Sanseriffic.otf");
 
-}
-@font-face {
-    font-family: Circe;
-    src: url("/system/fonts/CRC55.otf") format("opentype");
-
-}
 a {
     text-decoration: none;
 }
@@ -159,7 +150,10 @@ a {
     animation: spin 2s linear infinite;
     display: inline-block;
 }
+.shadow-text{
+    text-shadow: 1px 0px 1px #696969;
 
+}
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
