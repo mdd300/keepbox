@@ -20,7 +20,7 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-        $data['selection'] = 4;
+        $data['selection'] = 1;
 
 
         $this->load->view('Keep/structure/header_default', $data);

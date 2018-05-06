@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: Circe;
+    src: url('/system/fonts/CRC55.otf');
+}
 a {
     text-decoration: none;
 }
@@ -6,23 +9,23 @@ a {
     font-family: Circe;
 }
 .text-1{
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 25px;
 }
 .text-2{
-    font-size: 1.5em;
+    font-size: 1.6em;
     line-height: 40px;
 }
 .text-title-sm{
-    font-size: 1.9rem;
+    font-size: 2rem;
     line-height: 80px;
 }
 .text-title-md{
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     line-height: 60px;
 }
 .text-title{
-    font-size: 3rem;
+    font-size: 3.1rem;
     line-height: 80px;
 }
 .text-bold{
