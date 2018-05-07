@@ -1,24 +1,41 @@
 
 
 <div class="content-footer width_padrao">
-    <div class="content-footer-left " style="background-color: #1d1d1d">
+    <div class="content-footer-left " style="    background-color: #313131;">
         <a href="<?= base_url()?>">
 
             <div class="content-logo-footer"
                  style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/LOGOTIPO.png')"></div>
         </a>
     </div>
-    <div class="content-footer-right  color-background-grey">
+    <div class="content-footer-right " style="background-color: #626363">
 
-        <div class="text-bold text-font-sans text-title-sm color-text-white" style="padding-top: 77px;
+        <div class="content-footer-data">
+        <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 77px;
     padding-left: 110px;">
-            Siga a KeepBox
+            Mapa do Site
         </div>
 
         <ul class="content-ul-footer">
-            <li class="content-li-footer text-font-sans text-bold color-text-white"><img src="<?=base_url()?>public/assets/metronic/custom/img/icon/instagram.png" style="padding-right: 10px">@KeepBox</li>
+            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Quem somos</li>
+            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Termos e Condições</li>
+            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Privacidade e Segurança</li>
+            <li class="content-li-footer text-font-sans text-1-sm  color-text-white">Contato</li>
 
         </ul>
+        </div>
+
+        <div class="content-footer-data">
+            <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 77px;
+    padding-left: 110px;">
+                Siga a KeepBox
+            </div>
+
+            <ul class="content-ul-footer">
+                <li class="content-li-footer text-font-sans text-1-sm text-bold color-text-white"><img src="<?=base_url()?>public/assets/metronic/custom/img/icon/instagram.png" style="padding-right: 10px">@KeepBox</li>
+
+            </ul>
+        </div>
     </div>
 </div>
 

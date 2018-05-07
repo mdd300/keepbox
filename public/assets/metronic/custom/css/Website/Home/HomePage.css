@@ -127,6 +127,7 @@ body{
 .img-top-home{
     width: 100%;
     height: 100%;
+    filter: brightness(0.6);
 }
 .content-text-banner{
     /* padding: 8% 20%; */
@@ -136,7 +137,7 @@ body{
     justify-content: center;
 }
 .content-text-banner-2{
-    padding: 30px 0;
+    padding: 10px 0;
     height: 80px;
     position:  relative;
 }
@@ -145,6 +146,8 @@ body{
     height: 80px;
     display:  flex;
     justify-content:  center;
+    align-items:  center;
+    margin-top: 10px;
 }
 
 .content-more-about-text{
@@ -152,11 +155,11 @@ body{
     background-color: white;
     padding: 55px 135px 0 135px;
     border-radius: 30px;
-    width: 70%;
-    min-width: 876px;
+    width: 1000px;
+    /* min-width: 676px; */
     height: auto;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
-    margin: 71px 38px;
+    margin: 71px 0px 0px 200px;
 }
 .content-btn-more-about{
     margin: 50px 0;
@@ -175,26 +178,26 @@ body{
 .content-video-module2{
     position: absolute;
     border-radius: 30px;
-    width: 1000px;
-    height: 600px;
+    width: 950px;
+    height: 500px;
     float: right;
     /* right:  0; */
     /* top: 0; */
     margin-right: 38px;
-    margin-left: 660px;
-    margin-top: 478px;
+    margin-left: 860px;
+    margin-top: 415px;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
 
 .content-video-module2-2{
     position: absolute;
     border-radius: 30px;
-    width: 491px;
-    height: 261px;
+    width: 607px;
+    height: 351px;
     float: left;
     left:  0;
     /* top: 0; */
-    margin-left: 87px;
+    margin-left: 187px;
     margin-top: 110px;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
@@ -220,7 +223,7 @@ body{
 }
 .li-step-module2{
     text-decoration: none !important;
-    width: 223px;
+    width: 250px;
     height: 100%;
     display: block !important;
     color: #878889;
@@ -245,8 +248,8 @@ body{
     width: 200px;
     background-repeat:  no-repeat !important;
     background-size:  50px 50px  !important;
-    padding: 0px;
-    margin-top: 25px;
+    background-position-y: center !important;
+    /* margin-top: 125px; */
     /* margin-left: 56px; */
     background-position:  center;
 }
@@ -268,19 +271,19 @@ body{
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
 .content-text-cadastro-module3{
-    padding-left: 5%;
-    padding-top: 2%;
+    padding-left: 405px;
+    padding-top: 20px;
     padding-bottom: 10px;
 }
 
 .content-news-banner{
     position: absolute;
-    margin-left: 622px;
+    margin-left: 900px;
     margin-top: 22px;
     /* height:  auto; */
 }
 .limit-text-cadastro{
-    width: 600px;
+    width: 500px;
 }
 .limit-text-cadastro2{
     width: 500px;
@@ -293,27 +296,29 @@ body{
 .input-cadastro-mini{
     border: 2px solid #7d1daf;
     border-radius: 30px;
-    width: 280px;
+    width: 205px;
     height: 50px;
     float: left;
-    padding-left: 25px;
+    padding-left: 35px;
     margin-right: 20px;
     margin-top: 50px;
 }
 .input-cadastro::placeholder{
     color: #7d1daf;
+    opacity: 0.5;
 
 }
 .input-cadastro-mini::placeholder{
     color: #7d1daf;
+    opacity: 0.5;
 
 }
 .input-cadastro{
     border: 2px solid #7d1daf;
     border-radius: 30px;
-    width: 480px;
+    width: 470px;
     height: 50px;
-    padding-left: 25px;
+    padding-left: 35px;
     margin-right: 20px;
     margin-top: 50px;
     position:  relative;
@@ -328,7 +333,7 @@ body{
     width: 100%;
 }
 .title-tutorial-module3{
-    width: 65%;
+    width: 730px;
     padding-top: 50px;
     text-align: center;
 }
@@ -358,10 +363,11 @@ body{
     font-family: sans-serif;
     float: left;
     padding: 0px 15px;
+    background-color: white;
 }
 .content-border-shadow-li-tutorial{
     border-radius: 20px;
-    box-shadow: 0px 5px 46px -10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 60px -10px rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 90%;
     display:  flex;
@@ -369,27 +375,31 @@ body{
     align-items:  center;
 }
 .content-icon-tutorial{
-    width: 25%;
+    height: 100px;
+    width: 100px;
     float:  left;
+    padding: 10px;
 }
 .content-text-tutorial{
     width: 60%;
     float: right;
     padding-left: 22px;
-    line-height: 25px !important;
 }
 .content-sm-btn-call{
     width: 100%;
     height: 120px;
 }
 .content-text-and-btn-call{
-    width: 70%;
+    width: 900px;
     height: 100%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    display:  flex;
+    align-items:  center;
 }
 .content-simulator-module4{
     width: 100%;
     height: auto;
+    background-color:  white;
 }
 .content-simulator{
     width: 70%;
@@ -406,9 +416,8 @@ body{
 .content-right-simulator{
     float: right;
     height: 300px;
-    width: 50%;
+    width: 36%;
     /*background-color: blue;*/
-
 }
 
 .styled-select {
@@ -418,7 +427,7 @@ body{
     background-color: #0a6aa1;
     height: 45px;
     overflow: hidden;
-    width: 200px;
+    width: 350px;
     background-position-y:  center;
 }
 .select-mini {
@@ -433,9 +442,8 @@ body{
     font-size: 14px;
     height: 29px;
     margin-left: 10px; /* If you add too much padding here, the options won't show in IE */
-    width: 268px;
+    width: 368px;
     color: #7d1daf;
-
 }
 .rounded {
     -webkit-border-radius: 20px;
@@ -449,11 +457,11 @@ body{
     height: auto;
 }
 .content-border-simulator-shadow{
-    width: 80%;
+    background-color:  white;
+    width: 75%;
     height: 100%;
     border-radius: 20px;
     box-shadow: 0px 5px 46px -10px rgba(0, 0, 0, 0.3);
-
 }
 .content-ul-simulator-data{
     list-style-type: none !important;
@@ -461,7 +469,7 @@ body{
     height: auto;
     display:  flex;
     justify-content:  center;
-    padding-top: 32px;
+    background-color: white;
 }
 .content-li-simulator-data{
     text-decoration: none !important;
@@ -486,12 +494,13 @@ body{
     display: block;
     margin-left: 78px;
     float: left;
+    background-color:  white;
 }
 
 .slider {
     margin-top: 5%;
     -webkit-appearance: none;
-    width: 70%;
+    width: 100%;
     height: 15px;
     border-radius: 5px;
     background: #383838;
@@ -519,8 +528,9 @@ body{
     cursor: pointer;
 }
 .slider-margin{
-    margin-left: 20%;
-    margin-top: 16%
+    /* margin-left: 20%; */
+    margin-top: 47px;
+    width: 500px;
 }
 .modal-login{
     width: 450px;
@@ -603,42 +613,51 @@ body{
     /* float: left; */
     padding: 0px 15px;
     display:  flex;
-    padding-top: 30px;
+    padding-top: 20px;
     align-items:  center;
 }
 
-@media screen and (max-width: 2000px) {
-    .content-video-module2{
-        position: absolute;
-        border-radius: 30px;
-        width: 1000px;
-        height: 600px;
-        float: right;
-        /* right: 0; */
-        /* top: 0; */
-        margin-right: 38px;
-        margin-left: 660px;
-        margin-top: 400px;
-        box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
-    }
-
+.content-outras-duvidas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
 }
-@media screen and (max-width: 1350px) {
-    .content-video-module2{
-
-        position: absolute;
-        border-radius: 30px;
-        width: 600px;
-        height: 400px;
-        float: right;
-        /* right: 0; */
-        /* top: 0; */
-        margin-right: 38px;
-        margin-left: 559px;
-        margin-top: 478px;
-        box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
-    }
-
-
-
+.content-footer-data{
+    display: inline-grid;
 }
+
+/*@media screen and (max-width: 2000px) {*/
+/*.content-video-module2{*/
+/*position: absolute;*/
+/*border-radius: 30px;*/
+/*width: 950px;*/
+/*height: 550px;*/
+/*float: right;*/
+/*!* right: 0; *!*/
+/*!* top: 0; *!*/
+/*margin-right: 38px;*/
+/*margin-left: 760px;*/
+/*margin-top: 400px;*/
+/*box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);*/
+/*}*/
+
+/*}*/
+/*@media screen and (max-width: 1350px) {*/
+/*.content-video-module2{*/
+
+/*position: absolute;*/
+/*border-radius: 30px;*/
+/*width: 600px;*/
+/*height: 400px;*/
+/*float: right;*/
+/*!* right: 0; *!*/
+/*!* top: 0; *!*/
+/*margin-right: 38px;*/
+/*margin-left: 559px;*/
+/*margin-top: 478px;*/
+/*box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);*/
+/*}*/
+
+
+/*}*/
