@@ -2,6 +2,10 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
 
     var url = new URL(window.location.href);
 
+    var screenSize = $( window ).width() / 1920 * 100
+
+    $('html').css({zoom: screenSize/100})
+
     $scope.range_simulator_home = 33;
     var valueP = parseFloat($scope.range_simulator_home) * 4.45;
     $scope.valor_plano_1 = 84.45 + valueP;

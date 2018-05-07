@@ -16,6 +16,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- begin::Head -->
 <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=1960">
     <title>
         KeepBox
     </title>
@@ -36,7 +37,6 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <title>KeepBox</title>
     <!-- css -->
-    <meta name="viewport" content="width=1024px, initial-scale=1.0, maximum-scale=1.0">
 
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/lib/font-awesome/font-awesome.css" rel="stylesheet"
           type="text/css"/>
@@ -63,7 +63,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <head>
     <nav class="content-header topnav" id="myTopnav">
-        <ul class="header-ul "  id="header-li-id">
+        <ul class="header-ul text-font-sans"  id="header-li-id">
             <li class="header-li"><a href="">Compra Assistida</a></li>
             <li class="header-li" ><a href="">Calculadora de Envio</a></li>
             <li class="header-li" ><a href="">Ganhe Dinheiro</a></li>
@@ -78,17 +78,17 @@ License: You must have a valid license purchased only from themeforest(the above
             </a>
             <div class="content-right-menu">
                 <div class="content-btn-header-menu">
-                    <button class="btn-header-menu color-background-green" ng-click="verifySession()"><div class="loader-roxo" ng-show="loader_access"></div><img ng-show="!loader_access" class="content-img-icon-menu"
+                    <button class="btn-header-menu color-background-green text-font-sans text-1-sm text-font-sans" ng-click="verifySession()"><div class="loader-roxo" ng-show="loader_access"></div><img ng-show="!loader_access" class="content-img-icon-menu"
                                                                                 src="<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png">
                         Meu Acesso
                     </button>
                 </div>
                 <nav class="content-menu">
                     <ul class="menu-ul">
-                        <li class="menu-li " ><a  ng-class="{'color-text-green': <?=$selection?> == 1, 'color-text-grey': <?=$selection?> !== 1} " href="<?= base_url()?>">Inicial</a></li>
-                        <li class="menu-li " ><a  ng-class="{'color-text-green': <?=$selection?> == 2, 'color-text-grey': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços</a></li>
-                        <li class="menu-li " ><a  ng-class="{'color-text-green': <?=$selection?> == 3, 'color-text-grey': <?=$selection?> !== 3}"  href="<?= base_url('home/funcionamento')?>">Como Funciona</a></li>
-                        <li class="menu-li " ><a  ng-class="{'color-text-green': <?=$selection?> == 4, 'color-text-grey': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
+                        <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 1, 'color-text-grey': <?=$selection?> !== 1} " href="<?= base_url()?>">Inicial</a></li>
+                        <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 2, 'color-text-grey': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços</a></li>
+                        <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 3, 'color-text-grey': <?=$selection?> !== 3}"  href="<?= base_url('home/funcionamento')?>">Como Funciona</a></li>
+                        <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 4, 'color-text-grey': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
                     </ul>
                 </nav>
             </div>

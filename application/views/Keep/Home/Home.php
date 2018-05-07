@@ -42,7 +42,7 @@
     <div class="content-btn-more-about">
         <a href="<?= base_url('home/funcionamento' )?>">
 
-        <button class="btn-config color-background-green color-text-white text-1">
+        <button class="btn-config color-background-green  color-text-white text-1">
             Veja mais sobre nós
         </button>
         </a>
@@ -105,7 +105,7 @@
             obter seu endereço nos EUA?
         </div>
         <div style="    padding-top: 20px;
-    width: 420px;" class="text-font-sans text-1 color-text-grey-light">Apenas com os dados
+    width: 420px;" class="text-font-sans text-1-sm color-text-grey-light">Apenas com os dados
             abaixo você já garante seu endereço e o primeiro passo para economizar!
         </div>
         <div class="content-two-inputs">

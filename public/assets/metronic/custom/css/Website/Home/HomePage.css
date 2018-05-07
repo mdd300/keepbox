@@ -1,4 +1,10 @@
-
+@viewport {
+    width: 1960px !important;
+    zoom: 1 !important;
+}
+html{
+    zoom: calc(100% - 1960px);
+}
 body{
     margin: 0;
     padding: 0;
@@ -17,7 +23,7 @@ body{
     list-style-type: none !important;
     margin: 0;
     overflow: hidden;
-    padding-right: 19%;
+    padding-right: 183px;
 }
 
 .header-ul-res {
@@ -101,9 +107,9 @@ body{
     border-radius: 30px;
     color: white;
     font-family: sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 0.8rem;
-    padding: 12px 19px;
+    padding: 8px 19px;
     border: 0 solid white;
     text-align: center;
     display: flex;
@@ -271,7 +277,7 @@ body{
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
 .content-text-cadastro-module3{
-    padding-left: 405px;
+    padding-left: 390px;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -354,7 +360,7 @@ body{
 .li-step-tutorial{
     text-decoration: none !important;
     list-style-type: none !important;
-    width: 24%;
+    width: 470px;
     height: 100%;
     /* display: block !important; */
     color: #878889;
