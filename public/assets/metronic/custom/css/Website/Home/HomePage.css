@@ -48,13 +48,13 @@ body{
 }
 
 .img-menu-superior{
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
+    width: 35px;
+    height: 35px;
 }
 
 .content-header-menu{
     height: 95px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +151,7 @@ body{
     display:  flex;
     justify-content:  center;
     align-items:  center;
-    margin-top: 10px;
+    margin-top: 80px;
 }
 
 .content-more-about-text{
@@ -163,15 +163,16 @@ body{
     /* min-width: 676px; */
     height: auto;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
-    margin: 191px 0px 0px 200px;
+    margin: 102px 0px 0px 200px;
 }
 .content-btn-more-about{
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 .content-module-2{
     height: 1252px;
     position: absolute;
-    margin-top: 320px;
+    margin-top: 200px;
 }
 
 .content-module-2-sm{
@@ -209,7 +210,7 @@ body{
     position:  absolute;
     float:  left;
     margin-top: 710px;
-    margin-left: 400px;
+    margin-left: 330px;
     /* height: 117px; */
     width: 336px;
 }
@@ -232,7 +233,7 @@ body{
     display: block !important;
     color: #878889;
     text-align: center;
-    padding: 14px 28px;
+    padding: 14px 54px;
     font-family: sans-serif;
     float: left;
 }
@@ -249,7 +250,7 @@ body{
 }
 
 .step-icon-2{
-    width: 200px;
+    width: 150px;
     background-repeat:  no-repeat !important;
     background-size:  50px 50px  !important;
     background-position-y: center !important;
@@ -275,7 +276,7 @@ body{
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
 .content-text-cadastro-module3{
-    padding-left: 390px;
+    padding-left: 324px;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -329,7 +330,7 @@ body{
 }
 .content-tutorial-module3{
     width: 100%;
-    height: 1100px;
+    height: 920px;
 }
 .content-align-tutorial-module3{
     display: flex;
@@ -366,7 +367,7 @@ body{
     padding: 20px 0px;
     font-family: sans-serif;
     float: left;
-    padding: 0px 15px;
+    padding: 0px 30px;
     background-color: white;
 }
 .content-border-shadow-li-tutorial{
@@ -406,7 +407,7 @@ body{
     background-color:  white;
 }
 .content-simulator{
-    width: 70%;
+    width: 63%;
     height: auto;
     margin-top: 80px;
 }
@@ -477,12 +478,12 @@ body{
 }
 .content-li-simulator-data{
     text-decoration: none !important;
-    width: 24%;
+    width: 27%;
     height: 100%;
     padding: 20px 0px;
     font-family: sans-serif;
     float: left;
-    padding: 0px 15px;
+    padding-left: 0px 13px;
 }
 .slide-content-width{
     width: 1000px;

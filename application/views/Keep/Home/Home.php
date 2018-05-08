@@ -1,6 +1,6 @@
 
 <div class="content-img-top-home width_padrao">
-    <img class="img-top-home" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal-keep.png">
+    <div class="img-top-home" data-parallax="scroll" data-image-src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal-keep.png""></div>
 </div>
 
 <div class="content-text-banner width_padrao">

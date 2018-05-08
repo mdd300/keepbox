@@ -49,6 +49,77 @@
     </div>
 </div>
 
+
+
+<div class="text-font-sans content-li-center-vert" style="    margin: 0;">
+
+    <ul class="content-ul-data-serv align-center width-padrao">
+        <li>
+            <div class="text-font-sans text-title-xl" style=" color: #84c135;">SERVIÇOS EXTRAS</div>
+
+        </li>
+    </ul>
+    <div style="    margin-left: 350px;
+    margin-top: 50px;
+    width: 1300px;">
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans">Adesivar toda a Caixa / Proteção completa (US$2,00) </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans" style="padding-top: 10px">Previne que suas mercadorias se molhem e que a caixa se danifique durante a viagem.</div>
+            </li>
+        </ul>
+
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans" >Acomodar itens frágeis em plástico bolha (US$1,00)
+                </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans" style="padding-top: 10px"
+                >Evita prejuízos, afinal sua caixa passará por muitos caminhos até chegar ao seu destino.</div>
+
+
+            </li>
+        </ul>
+
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans" >Seguro KeepBox (3% do valor declarado) </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Mais segurança às suas compras e garantia de cobertura do valor declarado.</div>
+            </li>
+        </ul>
+
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans" >Retirar preços das etiquetas - GRÁTIS </div>
+            </li>
+        </ul>
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans" >Remover inserções, anúncios e extras da loja - GRÁTIS </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Reduz o peso da sua caixa, tornando o frete mais econômico.</div>
+            </li>
+        </ul>
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans" >Retirar caixas originais - GRÁTIS </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Também reduz o peso do frete além de facilitar a acomodação de demais itens.</div>
+            </li>
+        </ul>
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans" >Retirar fatura original (Invoice) - GRÁTIS </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Retirar a fatura, poupará espaço na sua caixa e não lhe trará nenhum problema, afinal, este é o mesmo documento que você recebe da loja online no momento da compra</div>
+            </li>
+        </ul>
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans" >Seguro Básico - GRÁTIS  </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Este seguro cobre apenas caixas com valor declarado de até US$200,00 (Seguro oferecido pela USPS)</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
 <div class="align-x-center" style="padding-top: 10%">
     <button style="        padding: 40px 180px;
     display: flex;
