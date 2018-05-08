@@ -90,7 +90,12 @@
 <div class="content-cadastro-space-modulo2">
 
 </div>
-<div style="width: auto; height: auto;  background-image: url('public/assets/metronic/custom/img/photo/aviao_branco.png')">
+<div style="width: auto; height: auto;  background-image: url('public/assets/metronic/custom/img/photo/aviao_branco.png');-moz-transform: scaleX(-1);
+                  -o-transform: scaleX(-1);
+                  -webkit-transform: scaleX(-1);
+                  transform: scaleX(-1);
+                  filter: FlipH;
+                  -ms-filter: FlipH;">
 <div class="content-cadastro-email-modulo3" style="     background-repeat: no-repeat;
         background-size: cover;
             background-color: white;

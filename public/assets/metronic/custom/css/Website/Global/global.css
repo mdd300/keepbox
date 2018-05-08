@@ -131,10 +131,13 @@ a {
 }
 .input::placeholder{
     color: #7d1daf;
+    opacity: 0.5;
+
 
 }
 .input-mini::placeholder{
     color: #7d1daf;
+    opacity: 0.5;
 
 }
 .input{

@@ -97,21 +97,28 @@ License: You must have a valid license purchased only from themeforest(the above
     </div>
 
     <div class="modal-login" ng-show="login_press">
-        <div class="text-font-sans text-title-sm color-text-green text-bold " style="float: left; width: 70%;margin: 20px;">Meu Acesso</div>
-        <div class="color-text-roxo text-bold, text-font-sans" style="float: right;   cursor: pointer;  margin: 35px;" ng-click="login_press = false">X</div>
+        <div class="text-font-sans text-title-sm color-text-green text-bold " style="float: left; width: 66%;margin: 20px;">Meu Acesso</div>
+        <div class="color-text-roxo text-bold, text-font-sans" style="border-radius: 200px;
+    float: right;
+    cursor: pointer;
+    margin: 35px;
+    border: 1px solid;
+    padding: 7px 11px;" ng-click="login_press = false">X</div>
         <div class="content-login">
-            <div class="text-bold text-font-sans color-text-grey-light text-2">Usuário</div>
+            <div class="text-bold text-font-sans color-text-grey-light text-1">Usuário</div>
             <input class="input" type="text" ng-model="singIn.user_login" style="margin-top: 10px !important;" placeholder="Digite seu usuário ou E-mail">
         </div>
         <div class="content-login">
-            <div class="text-bold text-font-sans color-text-grey-light text-2">Senha</div>
+            <div class="text-bold text-font-sans color-text-grey-light text-1">Senha</div>
             <input class="input" type="password" ng-model="singIn.user_senha" style="margin-top: 10px !important;" placeholder="Digite sua senha">
             <div ng-show="Error_login">{{TextError_Login}}</div>
         </div>
-        <button class="btn-config-login color-background-green color-text-white text-bold text-font-sans text-1-sm" ng-click="login()"><div class="loader-roxo" ng-show="loader_login"></div> Entrar </button>
+        <div style="    margin-left: 20px;">
+        <button class="btn-config color-background-green color-text-white text-bold text-font-sans text-1-sm" ng-click="login()"><div class="loader-roxo" ng-show="loader_login"></div> Entrar </button>
         <a href="<?= base_url('home/cadastroPage' )?>">
-            <button class="btn-config-new color-background-roxo color-text-white text-bold text-font-sans text-1-sm"> Novo acesso </button>
+            <button class="btn-config color-background-roxo color-text-white text-bold text-font-sans text-1-sm"> Novo acesso </button>
         </a>
+        </div>
     </div>
 
 
