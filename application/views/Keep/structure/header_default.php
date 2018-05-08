@@ -64,9 +64,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <head>
     <nav class="content-header topnav" id="myTopnav">
         <ul class="header-ul text-font-sans"  id="header-li-id">
-            <li class="header-li"><a href="">Compra Assistida</a></li>
-            <li class="header-li" ><a href="">Calculadora de Envio</a></li>
-            <li class="header-li" ><a href="">Ganhe Dinheiro</a></li>
+            <li class="header-li"><a href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_cart.png">Compra Assistida</a></li>
+            <li class="header-li" ><a href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_calculadora.png">Calculadora de Envio</a></li>
+            <li class="header-li" ><a href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_money.png">Ganhe Dinheiro</a></li>
         </ul>
     </nav>
     <div class="content-header-menu width_padrao">
@@ -74,7 +74,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <a href="<?= base_url()?>">
 
             <div class="content-logo-header"
-                 style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/LOGOTIPO.png')"></div>
+                 style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/KEEPBOX.png')"></div>
             </a>
             <div class="content-right-menu">
                 <div class="content-btn-header-menu">
@@ -85,10 +85,10 @@ License: You must have a valid license purchased only from themeforest(the above
                 </div>
                 <nav class="content-menu">
                     <ul class="menu-ul">
-                        <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 1, 'color-text-grey': <?=$selection?> !== 1} " href="<?= base_url()?>">Inicial</a></li>
-                        <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 2, 'color-text-grey': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a></li>
-                        <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 3, 'color-text-grey': <?=$selection?> !== 3}"  href="<?= base_url('home/funcionamento')?>">Como Funciona</a></li>
-                        <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 4, 'color-text-grey': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
+                        <li class="menu-li text-1-sm text-font-sans text-bold color-text-grey-light" ><a  ng-class="{'color-text-green': <?=$selection?> == 1, 'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>">Inicial</a></li>
+                        <li class="menu-li text-1-sm text-font-sans text-bold color-text-grey-light" ><a  ng-class="{'color-text-green': <?=$selection?> == 2, 'color-text-grey-light': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a></li>
+                        <li class="menu-li text-1-sm text-font-sans text-bold color-text-grey-light" ><a  ng-class="{'color-text-green': <?=$selection?> == 3, 'color-text-grey-light': <?=$selection?> !== 3}"  href="<?= base_url('home/funcionamento')?>">Como Funciona</a></li>
+                        <li class="menu-li text-1-sm text-font-sans text-bold color-text-grey-light" ><a  ng-class="{'color-text-green': <?=$selection?> == 4, 'color-text-grey-light': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
                     </ul>
                 </nav>
             </div>
