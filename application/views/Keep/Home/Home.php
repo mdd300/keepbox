@@ -138,7 +138,7 @@
         <ul class="ul-tutorial">
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
-                    <img class="content-icon-tutorial"
+                    <img class="content-icon-tutorial" style="    width: 90px !important;height: 95px !important;"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/icon/wallet.png'>
                     <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">Economize até
                         <div class="color-text-green" style="    display: initial;">80%</div>
@@ -306,7 +306,7 @@
     <div class="text-bold step-text color-text-roxo text-font-sans text-title content-align-tutorial-module3">Alguma dúvida?</div>
         
 
-        <div class="content-align-tutorial-module3 step-text" style="    height: auto;">
+        <div class="content-align-tutorial-module3" style="    padding-top: 80px;    height: auto;">
           <span style=" cursor: pointer; background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-left.png');
                   " class="step-icon-2" onclick="plusDivs(-1)" ></span>
 

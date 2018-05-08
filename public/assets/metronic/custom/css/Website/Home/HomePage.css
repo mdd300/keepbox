@@ -330,7 +330,7 @@ body{
 }
 .content-tutorial-module3{
     width: 100%;
-    height: 920px;
+    height: 950px;
 }
 .content-align-tutorial-module3{
     display: flex;
@@ -339,7 +339,7 @@ body{
 }
 .title-tutorial-module3{
     width: 730px;
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
 }
 .content-step-tutorial-module3{
@@ -460,6 +460,7 @@ body{
 .content-simulator-data-module4{
     width: 100%;
     height: auto;
+    background: linear-gradient(#f9f9f9 50%, #ffffff 50%);
 }
 .content-border-simulator-shadow{
     background-color:  white;
@@ -624,7 +625,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 60px;
 }
 .content-footer-data{
     display: inline-grid;
