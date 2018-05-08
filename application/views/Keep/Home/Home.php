@@ -302,8 +302,8 @@
     </div>
 </div>
 
-<div style="    padding-top: 120px;">
-    <div class="text-bold step-text color-text-roxo text-font-sans text-title-md content-align-tutorial-module3">Alguma dúvida?</div>
+<div style="       padding-top: 75px;">
+    <div class="text-bold step-text color-text-roxo text-font-sans text-title content-align-tutorial-module3">Alguma dúvida?</div>
         
 
         <div class="content-align-tutorial-module3 step-text" style="    height: auto;">
