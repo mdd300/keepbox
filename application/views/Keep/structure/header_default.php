@@ -86,7 +86,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <nav class="content-menu">
                     <ul class="menu-ul">
                         <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 1, 'color-text-grey': <?=$selection?> !== 1} " href="<?= base_url()?>">Inicial</a></li>
-                        <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 2, 'color-text-grey': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços</a></li>
+                        <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 2, 'color-text-grey': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a></li>
                         <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 3, 'color-text-grey': <?=$selection?> !== 3}"  href="<?= base_url('home/funcionamento')?>">Como Funciona</a></li>
                         <li class="menu-li text-font-sans" ><a  ng-class="{'color-text-green': <?=$selection?> == 4, 'color-text-grey': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
                     </ul>

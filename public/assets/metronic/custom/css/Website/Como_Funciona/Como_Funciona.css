@@ -1,7 +1,7 @@
 .content-img-top-cf{
     height: 586px;
     position: absolute;
-    
+
 }
 
 .img-top-cf{
@@ -19,8 +19,8 @@
 .content-video-module2-cf{
     position: absolute;
     border-radius: 30px;
-    width: 551px;
-    height: 293px;
+    width: 1209px;
+    height: 693px;
     float: left;
     left:  0;
     /* top: 0; */
@@ -43,7 +43,7 @@
 }
 
 .logo-size{
-    width:15%; 
+    width:15%;
     height:15%;
 }
 
@@ -54,9 +54,9 @@
     padding-top: 5%;
     font-family: sans-serif;
     display: block;
-    
+
     margin-left:22%;
-   
+
 }
 .content-li-info-data-sm-cf{
     text-decoration: none !important;
@@ -67,7 +67,7 @@
     display: block;
     float: left;
     margin-left:22%;
-   
+
 }
 
 .content-ul-assist-cf{

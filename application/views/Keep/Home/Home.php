@@ -1,6 +1,6 @@
 
 <div class="content-img-top-home width_padrao">
-    <img class="img-top-home" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/1567603064.jpg">
+    <img class="img-top-home" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal-keep.png">
 </div>
 
 <div class="content-text-banner width_padrao">
@@ -9,15 +9,15 @@
     </div>
 </div>
 
-<div class="content-text-banner-2 width_padrao">
-    <div class="color-text-white  text-font-sans text-title-xl" style="position: relative; text-align: center">
-        A KeepBox envia para você no Brasil
+<div class="content-text-banner-2 width_padrao align-x-center">
+    <div class="color-text-white text-font-sans text-title-xl align-x-center" style="position: relative; text-align: center; display: inline-flex">
+        A<div class="color-text-green" >&nbsp;KeepBox&nbsp;</div>envia para você no Brasil
     </div>
 </div>
 
 <div class="content-text-banner-3 width_padrao">
     <a href="<?= base_url('home/cadastroPage' )?>">
-    <button class="color-background-roxo color-text-white text-1 btn-config text-font-sans shadow"  style="position: relative">
+    <button class="color-background-roxo color-text-white text-1-sm btn-config text-font-sans shadow"  style="position: relative">
         Clique para garantir seu endereço nos EUA
     </button>
     </a>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="content-more-about-text ">
-    <div class="text-1-sm text-font-sans color-text-grey-light padding-text">
+    <div class="text-1-sm text-font-sans color-text-grey-light padding-text" style="    text-align: justify;">
         Pesquisas apontam o crescente desejo dos brasileiros em comprar em lojas online dos EUA. Prova disso é que os turistas do Brasil já ocupam o 3. lugar na lista dos países que mais consumem na América.
         O fato é que muitas lojas online dos EUA não entregam compras no Brasil.
         A KeepBox surge para solucionar esta questão!
@@ -42,7 +42,7 @@
     <div class="content-btn-more-about">
         <a href="<?= base_url('home/funcionamento' )?>">
 
-        <button class="btn-config color-background-green  color-text-white text-1">
+        <button class="btn-config color-background-green  color-text-white text-1-sm">
             Veja mais sobre nós
         </button>
         </a>
@@ -285,7 +285,8 @@
                     <b>Total:</b>R$ {{valor_plano_2}}
                 </div>
             </li>
-            <li class="content-li-simulator-data" ng-show="range_simulator_home < 5">
+            <li class="content-li-simulator-data">
+                <div  ng-show="range_simulator_home < 5">
                 <div class="text-1-sm text-font-sans text-bold color-text-grey"">
                     First-Class Package International Service™
                 </div>
@@ -295,6 +296,7 @@
                 <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
                     <b>Total:</b>R$ {{valor_plano_3}}
                 </div>
+</div>
             </li>
         </ul>
     </div>

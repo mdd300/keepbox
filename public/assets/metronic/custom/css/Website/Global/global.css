@@ -13,9 +13,8 @@ a {
 }
 .text-1-sm{
     font-size: 1.3em;
-    line-height: 30px;
+    line-height: 25px;
     font-family: Circe;
-
 }
 .text-1{
     font-size: 1.9em;
@@ -41,9 +40,8 @@ a {
 }
 .text-title{
     font-size: 3.13rem;
-    line-height: 80px;
+    line-height: 60px;
     font-family: Circe;
-
 }
 .text-title-xl{
     font-size: 3.8rem;
@@ -101,7 +99,7 @@ a {
 .btn-config{
     border: 0 solid white;
     border-radius: 50px;
-    padding: 16px 30px;
+    padding: 23px 40px;
     font-weight: bold;
 }
 .align-x-center{
@@ -187,14 +185,14 @@ a {
     100% { transform: rotate(360deg); }
 }
 /*@media screen and (max-width: 2000px) {*/
-    /*.width_padrao {*/
-        /*width: 1960px;*/
+/*.width_padrao {*/
+/*width: 1960px;*/
 
-    /*}*/
+/*}*/
 /*}*/
 /*@media screen and (max-width: 1350px) {*/
-    /*.width_padrao {*/
-        /*width: 1240px;*/
+/*.width_padrao {*/
+/*width: 1240px;*/
 
-    /*}*/
+/*}*/
 /*}*/

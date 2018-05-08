@@ -12,58 +12,65 @@
         
     </ul>
 
-<div class="text-font-sans content-li-center-vert width_padrao" >
+
+<div class="text-font-sans content-li-center-vert width_padrao" style="    margin-top: 350px;">
 
 
      <ul class="content-ul-simulator-data width_padrao" >
         <li>
-           <div class="color-text-green text-title-sm step-text">Como comprar com a KeepBox</div> 
-            
+           <div class="color-text-green text-title-sm step-text">Como comprar com a KeepBox</div>
+
         </li>
     </ul>
 
 
-    <ul class="content-ul-simulator-data width_padrao" style="justify-content: normal !important;">
-        <li>
-            
-           <div class="color-text-grey-light text-font-sans text-2" style="padding-top: 10px;  width: 60%;  padding-left: 200px;">1 -  Crie sua conta KeepBox gratuitamente e compre nas lojas online dos EUA. </div>
-        </li>
-    </ul>
 
-    <ul class="content-ul-simulator-data width_padrao" style="justify-content: normal !important;">
-        <li>
-            
-           <div class="color-text-grey-light text-font-sans text-2" style="padding-top: 10px; width: 60%;   padding-left: 200px;"
->2 – Mande entregar suas compras no endereço da sua conta KeepBox 
-           </div> 
-                                        
-        
-        </li>
-    </ul>
+    <div class="content-step-tutorial-module3" >
 
+        <ul class="ul-tutorial">
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/wallet.png'>
+                    <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">1 -  Crie sua conta KeepBox gratuitamente e compre nas lojas online dos EUA.
+                    </div>
+                </div>
+            </li>
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/armazenar.png'>
+                    <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">2 – Mande entregar suas compras no endereço da sua conta KeepBox
+                    </div>
+                </div>
+            </li>
 
-    <ul class="content-ul-simulator-data width_padrao" style="justify-content: normal !important;">
-        <li>
-            
-           <div class="color-text-grey-light text-font-sans text-2"style="padding-top: 10px;  width: 60%;  padding-left: 200px;" >3 – Recebemos e juntamos suas encomendas em uma única caixa, sem custo adicional
-*(Assim, você paga um único frete e pode economizar até 80% no valor de envio)
-</div> 
-        </li>
-    </ul>
+        </ul>
+        <ul class="ul-tutorial">
 
-
-    <ul class="content-ul-simulator-data width_padrao" style="justify-content: normal !important;">
-        <li>
-            
-           <div class="color-text-grey-light text-font-sans text-2"style="padding-top: 10px;  width: 60%;  padding-left: 200px;" >4 – Enviamos para você, onde quiser, pelos melhores preços
-</div> 
-        </li>
-    </ul>
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/fotos.png'>
+                    <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">3 – Recebemos e juntamos suas encomendas em uma única caixa, sem custo adicional
+                        *(Assim, você paga um único frete e pode economizar até 80% no valor de envio)
+                    </div>
+            </li>
+            <li class="li-step-tutorial">
+                <div class="content-border-shadow-li-tutorial">
+                    <img class="content-icon-tutorial"
+                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/agillidade_de_envio.png'>
+                    <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">4 – Enviamos para você, onde quiser, pelos melhores preços
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 
 
 </div>
 
-<iframe width="560" height="315" class="content-video-module2-cf " src="https://www.youtube.com/embed/BT3z50zcA-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe  class="content-video-module2-cf " src="https://www.youtube.com/embed/BT3z50zcA-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 
@@ -76,8 +83,8 @@
 
  <div class="content-simulator-module4-serv width_padrao">
   
-        <div class="color-text-roxo text-title-md text-font-sans">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
-        <div class="color-text-roxo text-2 text-font-sans" > Me ajude nas compras</div>
+        <div class="color-text-roxo text-title-md text-1 text-font-sans">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
+        <div class="color-text-roxo text-1-sm text-font-sans" > Me ajude nas compras</div>
 
 </div>
 
