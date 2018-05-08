@@ -408,12 +408,12 @@
 
         </div>
 
-        <div class="content-news-banner " style="padding-top: 92px" >
+        <div class="content-news-banner " style="    padding-top: 110px;" >
             <div  class="color-text-green text-title text-bold text-font-san"> FIQUE POR DENTRO! </div><br>
             <div  class="text-1 color-text-white"  style="    padding-top: 50px;
         width: 700px;" > Veja as últimas notícias sobre os segredos das importações no Youtube da KeepBox </div>
 
-            <button style="    margin-top: 40px;" class="btn-config-2 color-background-roxo color-text-white text-1-sm" >Venha conhecer </button>
+            <button style="margin-top: 18px;" class="btn-config-2 color-background-roxo color-text-white text-1-sm" >Venha conhecer </button>
         </div>
 
 

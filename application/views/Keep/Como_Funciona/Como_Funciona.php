@@ -30,16 +30,13 @@
         <ul class="ul-tutorial">
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
-                    <img class="content-icon-tutorial"
-                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/wallet.png'>
                     <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">1 -  Crie sua conta KeepBox gratuitamente e compre nas lojas online dos EUA.
                     </div>
                 </div>
             </li>
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
-                    <img class="content-icon-tutorial"
-                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/armazenar.png'>
+
                     <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">2 – Mande entregar suas compras no endereço da sua conta KeepBox
                     </div>
                 </div>
@@ -50,16 +47,14 @@
 
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
-                    <img class="content-icon-tutorial"
-                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/fotos.png'>
+
                     <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">3 – Recebemos e juntamos suas encomendas em uma única caixa, sem custo adicional
                         *(Assim, você paga um único frete e pode economizar até 80% no valor de envio)
                     </div>
             </li>
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
-                    <img class="content-icon-tutorial"
-                         src='<?= base_url() ?>public/assets/metronic/custom/img/icon/agillidade_de_envio.png'>
+
                     <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">4 – Enviamos para você, onde quiser, pelos melhores preços
                     </div>
                 </div>
