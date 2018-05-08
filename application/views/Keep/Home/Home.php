@@ -271,7 +271,7 @@
 <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
 <!--                </div>-->
                 <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
-                    <b>TOTAL:</b>R$ {{valor_plano_1}}
+                    <b>Total:</b> {{valor_plano_1}}
                 </div>
             </li>
             <li class="content-li-simulator-data">
@@ -282,7 +282,7 @@
 <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
 <!--                </div>-->
                 <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b>R$ {{valor_plano_2}}
+                    <b>Total:</b> {{valor_plano_2}}
                 </div>
             </li>
             <li class="content-li-simulator-data">
@@ -294,7 +294,7 @@
 <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
 <!--                </div>-->
                 <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b>R$ {{valor_plano_3}}
+                    <b>Total:</b> {{valor_plano_3}}
                 </div>
 </div>
             </li>

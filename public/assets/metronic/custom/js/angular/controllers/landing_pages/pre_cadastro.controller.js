@@ -13,42 +13,51 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
         $('html').css({zoom: screenSize/100})
     }
 
-    $scope.range_simulator_home = 33;
-    var valueP = parseFloat($scope.range_simulator_home) * 4.45;
-    $scope.valor_plano_1 = 84.45 + valueP;
-    var valueP2 = parseFloat($scope.range_simulator_home) * 3.7;
-    $scope.valor_plano_2 = 44.95 + valueP2
-    $scope.valor_plano_2 = Number(($scope.valor_plano_2).toFixed(2));
+    $scope.range_simulator_home = 0;
+    function formataDinheiro(n) {
+        return "R$ " + n.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
+    }
     $scope.changeValue = function () {
         if ($scope.range_simulator_home < 6) {
             var value1 = parseFloat($scope.range_simulator_home) * 4.35;
             $scope.valor_plano_1 = 67.05 + value1;
             $scope.valor_plano_1 = Number(($scope.valor_plano_1).toFixed(2));
+            $scope.valor_plano_1 =formataDinheiro($scope.valor_plano_1)
         }
         else {
             var value1 = parseFloat($scope.range_simulator_home) * 4.45;
             $scope.valor_plano_1 = 84.45 + value1;
             $scope.valor_plano_1 = Number(($scope.valor_plano_1).toFixed(2));
+            $scope.valor_plano_1 =formataDinheiro($scope.valor_plano_1)
+
         }
         if ($scope.range_simulator_home < 11) {
             var value2 = parseFloat($scope.range_simulator_home) * 3.7;
             $scope.valor_plano_2 = 44.95 + value2
             $scope.valor_plano_2 = Number(($scope.valor_plano_2).toFixed(2));
+            $scope.valor_plano_2 =formataDinheiro($scope.valor_plano_2)
+
         } else {
             var value2 = parseFloat($scope.range_simulator_home) * 4.05;
             $scope.valor_plano_2 = 44.95 + value2
             $scope.valor_plano_2 = Number(($scope.valor_plano_2).toFixed(2));
+            $scope.valor_plano_2 =formataDinheiro($scope.valor_plano_2)
+
 
         }
         if ($scope.range_simulator_home < 3) {
             $scope.valor_plano_3 = 23.50
+            $scope.valor_plano_3 =formataDinheiro($scope.valor_plano_3)
+
         } else {
             if ($scope.range_simulator_home == 3) {
                 $scope.valor_plano_3 = 34.75
+                $scope.valor_plano_3 =formataDinheiro($scope.valor_plano_3)
+
 
             } else {
                 $scope.valor_plano_3 = 51.50
-
+                $scope.valor_plano_3 =formataDinheiro($scope.valor_plano_3)
             }
         }
     }
