@@ -38,14 +38,13 @@
 .content-li-info-data-serv{
     text-decoration: none !important;
     list-style-type: none !important;
-    width: 60%;
+    width: 61%;
     height: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
     font-family: sans-serif;
     display: block;
     margin:0 auto;
-
 }
 .content-li-center-vert{
     text-decoration: none !important;
@@ -81,6 +80,7 @@
     padding-top: 12px;
 }
 .content-li-serv{
-    width: 550px !important;
+    width: 580px !important;
     height: 270px !important;
+    padding-left:  0 !important;
 }

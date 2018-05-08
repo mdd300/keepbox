@@ -167,7 +167,7 @@ body{
 }
 .content-btn-more-about{
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .content-module-2{
     height: 1252px;
@@ -209,7 +209,7 @@ body{
 .content-text-module2{
     position:  absolute;
     float:  left;
-    margin-top: 710px;
+    margin-top: 610px;
     margin-left: 330px;
     /* height: 117px; */
     width: 336px;
@@ -219,7 +219,7 @@ body{
     position:  absolute;
     display: inline-flex;
     float:  left;
-    margin-top: 1117px;
+    margin-top: 1027px;
     /* margin-left: 210px; */
     width: auto;
     height: 300px;
@@ -277,7 +277,7 @@ body{
 }
 .content-text-cadastro-module3{
     padding-left: 324px;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 10px;
 }
 
@@ -404,7 +404,7 @@ body{
 .content-simulator-module4{
     width: 100%;
     height: auto;
-    background-color:  white;
+    background-color:  #f9f9f9;
 }
 .content-simulator{
     width: 63%;
@@ -481,7 +481,6 @@ body{
     width: 27%;
     height: 100%;
     padding: 20px 0px;
-    font-family: sans-serif;
     float: left;
     padding-left: 50px;
 }
@@ -495,7 +494,6 @@ body{
     width: 50%;
     height: 100%;
     padding: 20px 0px;
-    font-family: sans-serif;
     display: block;
     margin-left: 78px;
     float: left;
@@ -563,13 +561,13 @@ body{
 .btn-config-login{
     border: 0 solid white;
     border-radius: 12px;
-    padding: 5px 30px;
+    padding: 10px 30px;
     margin-left: 20px;
 }
 .btn-config-new{
     border: 0 solid white;
     border-radius: 12px;
-    padding: 5px 140px;
+    padding: 10px 140px;
     margin-left: 20px;
     display: block;
     margin-top: 10px;

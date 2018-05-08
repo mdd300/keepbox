@@ -117,7 +117,7 @@
         <input class="input-cadastro text-1-sm text-font-sans" placeholder="Digite seu e-mail" ng-class="{'error_cad': dataCadError.user_email_error }" type="email" ng-model="dataCad.user_email">
         <div ng-show="dataCad_error.user_email_exist" style="color: red;">Esse E-mail já esta cadastro!</div>
 
-        <div class="content-btn-more-about">
+        <div class="content-btn-more-about" >
             <button class="btn-config-2 color-background-roxo color-text-white text-1-sm" ng-click="cadastro()"><div class="loader-green" ng-show="loader_cad1"></div><div ng-show="!loader_cad">
                     Garanta seu endereço!</div>
             </button>
@@ -249,8 +249,8 @@
         <div class="content-right-simulator ">
             <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans">Em baixo de cada modalidade de frete:</div>
             <div class="slider-margin" >
-                <li class="li-step-tutorial" style="padding: 0px 0px; width: auto"> {{range_simulator_home}}</li>
-                <li class="li-step-tutorial" style="float: right; padding: 0px 0px; width: auto"> 66</li>
+                <li class="li-step-tutorial" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
+                <li class="li-step-tutorial" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
                  <input type="range" max="66" ng-model="range_simulator_home" ng-change="changeValue()" class="slider"></input>
                
             </div>
@@ -307,7 +307,7 @@
         
 
         <div class="content-align-tutorial-module3 step-text" style="    height: auto;">
-          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-left.png');
+          <span style=" cursor: pointer; background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-left.png');
                   " class="step-icon-2" onclick="plusDivs(-1)" ></span>
 
           
@@ -317,7 +317,7 @@
                  <div class=" color-text-green color-text-green text-bold text-font-sans text-1">
                      O endereço KeepBox é um P.O. box (similar a caixa postal do Brasil)?
                 </div>
-                <div class=" text-font-sans color-text-grey text-1-sm" style="    padding-top: 50px;">
+                <div class=" text-font-sans color-text-grey text-1-sm" style="     line-height: 30px !important;   padding-top: 50px;">
                     O “seu endereço KeepBox” é uma suíte física e real em nosso armazém dedicada às suas encomendas, ou seja, o seu endereço KeepBox não é um P.O. box.
                     Observação: Muitas lojas não enviam para P.O. box, por isso o seu endereço KeepBox não poderia ser um P.O. box.
 
@@ -329,7 +329,7 @@
                 <div class=" color-text-green color-text-green text-bold text-font-sans text-1">
                     O método utilizado pela KeepBox é legal?
                 </div>
-                <div class=" text-font-sans color-text-grey text-1-sm" style="    padding-top: 50px;">
+                <div class=" text-font-sans color-text-grey text-1-sm" style="      line-height: 30px !important;  padding-top: 50px;">
                     Sim! A KeepBox funciona como um amigo ou parente que mora nos EUA e envia encomendas para você — ou seja, é totalmente legal. Utilizamos o Serviço Postal Nacional dos Estados Unidos (USPS) para o frete das mercadorias ao Brasil por serem extremamente seguros e por praticarem as melhores tarifas de envio do mercado americano.
                 </div>
                 
@@ -343,7 +343,7 @@
                         <b>Como efetuo meu cadastro na KeepBox?</b>
                     </div>
                     
-                    <div class=" text-font-sans color-text-grey text-1-sm" style="    padding-top: 50px;">
+                    <div class=" text-font-sans color-text-grey text-1-sm" style="     line-height: 30px !important;   padding-top: 50px;">
                         Para se cadastrar gratuitamente na KeepBox é muito fácil. Clique aqui e preencha seu Nome, Sobrenome e e-mail. Simples assim!
                     </div>
                     
@@ -353,7 +353,7 @@
                         <b>Pago alguma taxa para me cadastrar na KeepBox?</b>
                     </div>
                     
-                    <div class="text-font-sans color-text-grey text-1-sm" style="    padding-top: 50px;">
+                    <div class="text-font-sans color-text-grey text-1-sm" style="     line-height: 30px !important;   padding-top: 50px;">
                         O cadastro é totalmente gratuito! Registre-se agora e receba seu endereço KeepBox nos EUA imediatamente!
                     </div>
                     
@@ -367,7 +367,7 @@
                     </b>
                 </div>
                 
-                <div class="text-font-sans color-text-grey text-1-sm" style="    padding-top: 50px;">
+                <div class="text-font-sans color-text-grey text-1-sm" style="      line-height: 30px !important;  padding-top: 50px;">
                     Não! Não cobramos taxa de inscrição, mensalidade ou anuidade.
                     Além disso, seus dados de cartão de crédito não são exigidos para sua inscrição. Quando decidir enviar suas encomendas ao Brasil, você pagará apenas uma taxa única e reduzida pelos serviços da KeepBox.
                 </div>
@@ -378,14 +378,15 @@
                     <b>Como funciona os serviços da KeepBox?</b>
                 </div>
                 
-                <div class="text-font-sans color-text-grey text-1-sm" style="    padding-top: 50px;">
+                <div class="text-font-sans color-text-grey text-1-sm" style="    line-height: 30px !important;    padding-top: 50px;">
                     A KeepBox disponibiliza um endereço nos EUA para você armazenar suas compras realizadas nas lojas online do EUA. Posteriormente juntamos tudo e enviamos suas encomendas para o endereço que você nos indicar.
                     Tudo isso sem que você precise sair da sua casa e por uma taxa KeepBox única e reduzida.
                 </div>
                 
             </li>
           </div>
-          <span style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-left.png');
+          <span style=" cursor: pointer;
+                  background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/arrow-left.png');
                   -moz-transform: scaleX(-1);
                   -o-transform: scaleX(-1);
                   -webkit-transform: scaleX(-1);

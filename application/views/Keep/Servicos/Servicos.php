@@ -18,9 +18,9 @@
             
         </li>
     </ul>
-    <div style="    margin-left: 350px;
-    margin-top: 50px;
-    width: 1300px;">
+    <div style="     margin-left: 365px;
+    width: 61%;
+    margin-top: 50px;">
      <ul class="content-ul-data-serv">
         <li>
            <div class="color-text-green text-bold text-1 text-font-sans">Recebimento de Encomendas (GRÁTIS) </div>
@@ -59,9 +59,9 @@
             <div class="text-font-sans text-1-sm color-text-grey-light" style="padding: 35px 20% 0px 20%;">Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
         </li>
     </ul>
-    <div style="    margin-left: 350px;
-    margin-top: 50px;
-    width: 1300px;">
+    <div style="margin-left: 365px;
+    width: 61%;
+    margin-top: 50px;">
         <ul class="content-ul-data-serv">
             <li>
                 <div class="color-text-green text-bold text-1 text-font-sans">Adesivar toda a Caixa / Proteção completa (US$2,00) </div>
@@ -130,7 +130,6 @@
 
 
 
-
 <div class="content-simulator-module4 align-x-center">
     <div class="content-simulator">
         <div class="content-left-simulator">
@@ -188,15 +187,17 @@
         <b>Total:</b>R$ {{valor_plano_2}}
     </div>
     </li>
-    <li class="content-li-simulator-data" ng-show="range_simulator_home < 5">
-        <div class="text-1-sm text-font-sans text-bold color-text-grey"">
-        First-Class Package International Service™
-</div>
-<!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
-<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                </div>-->
-<div class="text-1 color-text-green color-text-green text-bold text-font-sans">
-    <b>Total:</b>R$ {{valor_plano_3}}
+    <li class="content-li-simulator-data">
+        <div  ng-show="range_simulator_home < 5">
+            <div class="text-1-sm text-font-sans text-bold color-text-grey"">
+            First-Class Package International Service™
+        </div>
+        <!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
+        <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
+        <!--                </div>-->
+        <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
+            <b>Total:</b>R$ {{valor_plano_3}}
+        </div>
 </div>
 </li>
 </ul>
@@ -268,8 +269,8 @@
 <div class="text-font-sans content-li-center-vert" style="    margin: 0;">
 
 
-    <div style="    margin-left: 350px;
-    width: 1300px;">
+    <div style="     margin-left: 381px;
+    width: 61%;">
         <ul class="content-ul-data-serv">
             <li>
                 <div class="color-text-green text-bold text-1 text-font-sans">Retirada de Encomendas em nosso armazém - US$3,00 por pacote recebido </div>
