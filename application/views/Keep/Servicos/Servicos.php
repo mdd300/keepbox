@@ -54,9 +54,9 @@
 <div class="text-font-sans content-li-center-vert" style="    margin: 0;">
 
     <ul class="content-ul-data-serv align-center width-padrao">
-        <li>
+        <li style="text-align: center">
             <div class="text-font-sans text-title-xl" style=" color: #84c135;">SERVIÇOS EXTRAS</div>
-
+            <div class="text-font-sans text-1-sm color-text-grey-light" style="padding: 35px 20% 0px 20%;">Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
         </li>
     </ul>
     <div style="    margin-left: 350px;
@@ -120,7 +120,7 @@
 </div>
 
 
-<div class="align-x-center" style="padding-top: 10%">
+<div class="align-x-center" style="    padding-top: 7%;">
     <button style="        padding: 40px 180px;
     display: flex;
     align-items: center;
@@ -205,8 +205,8 @@
 
 <div class="content-simulator-module4-serv ">
   
-        <div class="color-text-roxo text-title text-font-sans">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
-        <div class="color-text-roxo text-1-sm text-font-sans" > Vamos às compras para você</div>
+        <div class="color-text-roxo text-title text-font-sans text-bold">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
+        <div class="color-text-roxo text-1 text-font-sans" style="    padding-top: 20px;"> Vamos às compras para você</div>
 
 </div>
     
@@ -262,6 +262,36 @@
 </div>
 
 
+</div>
+
+
+<div class="text-font-sans content-li-center-vert" style="    margin: 0;">
+
+
+    <div style="    margin-left: 350px;
+    width: 1300px;">
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans">Retirada de Encomendas em nosso armazém - US$3,00 por pacote recebido </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans" style="padding-top: 10px">Você pode retirar suas compras pessoalmente em nosso endereço (Florida, USA) até 60 dias após o recebimento da primeira encomenda. Assim, você pode começar suas compras antes de viajar e retira-las com segurança ao chegar nos EUA. Muitos hotéis não recebem compras de hóspedes, e quando recebem, cobram caro por este serviço.
+                </div>
+            </li>
+        </ul>
+
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans" >Entregamos em seu hotel - Consulte-nos disponibilidade e valores</div>
+            </li>
+        </ul>
+
+        <ul class="content-ul-data-serv">
+            <li>
+                <div class="color-text-green text-bold text-1 text-font-sans" >Empacotamento de Encomendas (GRÁTIS) </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
+            </li>
+        </ul>
+
+    </div>
 </div>
 
 
