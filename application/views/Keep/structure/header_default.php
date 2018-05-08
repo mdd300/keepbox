@@ -85,10 +85,10 @@ License: You must have a valid license purchased only from themeforest(the above
                 </div>
                 <nav class="content-menu">
                     <ul class="menu-ul">
-                        <li class="menu-li text-1-sm text-font-sans text-bold color-text-grey-light" ><a  ng-class="{'color-text-green': <?=$selection?> == 1, 'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>">Inicial</a></li>
-                        <li class="menu-li text-1-sm text-font-sans text-bold color-text-grey-light" ><a  ng-class="{'color-text-green': <?=$selection?> == 2, 'color-text-grey-light': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a></li>
-                        <li class="menu-li text-1-sm text-font-sans text-bold color-text-grey-light" ><a  ng-class="{'color-text-green': <?=$selection?> == 3, 'color-text-grey-light': <?=$selection?> !== 3}"  href="<?= base_url('home/funcionamento')?>">Como Funciona</a></li>
-                        <li class="menu-li text-1-sm text-font-sans text-bold color-text-grey-light" ><a  ng-class="{'color-text-green': <?=$selection?> == 4, 'color-text-grey-light': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
+                        <li class="menu-li text-1-sm " ><a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>">Inicial</a></li>
+                        <li class="menu-li text-1-sm " ><a  ng-class="{'color-text-green': <?=$selection?> == 2,'text-bold': <?=$selection?> == 2 , 'color-text-grey-light': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a></li>
+                        <li class="menu-li text-1-sm " ><a  ng-class="{'color-text-green': <?=$selection?> == 3,'text-bold': <?=$selection?> == 3 , 'color-text-grey-light': <?=$selection?> !== 3}"  href="<?= base_url('home/funcionamento')?>">Como Funciona</a></li>
+                        <li class="menu-li text-1-sm " ><a  ng-class="{'color-text-green': <?=$selection?> == 4,'text-bold': <?=$selection?> == 4 , 'color-text-grey-light': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
                     </ul>
                 </nav>
             </div>
