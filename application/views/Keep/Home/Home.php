@@ -1,6 +1,6 @@
 
 <div class="content-img-top-home width_padrao">
-    <div class="img-top-home" data-parallax="scroll" data-image-src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal.png""></div>
+    <div class="img-top-home"  style=" background-image:  url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal.png')"></div>
 </div>
 
 <div class="content-text-banner width_padrao">
@@ -104,8 +104,7 @@
         <div class="limit-text-cadastro text-bold color-text-roxo text-font-sans text-title">Pronto para
             obter seu endereço nos EUA?
         </div>
-        <div style="    padding-top: 20px;
-    width: 420px;" class="text-font-sans text-1-sm color-text-grey-light">Apenas com os dados
+        <div style="    padding-top: 20px;    width: 500px;" class="text-font-sans text-1-sm color-text-grey-light">Apenas com os dados
             abaixo você já garante seu endereço e o primeiro passo para economizar!
         </div>
         <div class="content-two-inputs">
@@ -138,7 +137,7 @@
         <ul class="ul-tutorial">
             <li class="li-step-tutorial">
                 <div class="content-border-shadow-li-tutorial">
-                    <img class="content-icon-tutorial" style="    width: 90px !important;height: 95px !important;"
+                    <img class="content-icon-tutorial" style="    width: 85px !important;height: 95px !important;"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/icon/wallet.png'>
                     <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">Economize até
                         <div class="color-text-green" style="    display: initial;">80%</div>
@@ -320,7 +319,7 @@
           <div class="mySlides slide-content-width" style="    display: flex;
     justify-content: center;">
                <li class="content-li-info-data">
-                 <div class=" color-text-green justify color-text-green text-bold text-font-sans text-1">
+                 <div class=" color-text-green  color-text-green text-bold text-font-sans text-1">
                      O endereço KeepBox é um P.O. box (similar a caixa postal do Brasil)?
                 </div>
                 <div class=" text-font-sans justify color-text-grey text-1-sm" style="     line-height: 30px !important;   padding-top: 50px;">
@@ -331,8 +330,8 @@
                 </div>
                
             </li>
-            <li class="content-li-info-data">
-                <div class=" color-text-green justify color-text-green text-bold text-font-sans text-1">
+            <li class="content-li-info-data" style="    margin-left: 78px;">
+                <div class=" color-text-green  color-text-green text-bold text-font-sans text-1">
                     O método utilizado pela KeepBox é legal?
                 </div>
                 <div class=" text-font-sans justify color-text-grey text-1-sm" style="      line-height: 30px !important;  padding-top: 50px;">
@@ -345,7 +344,7 @@
            <div class="mySlides slide-content-width" style="        display: flex;
     justify-content: center;">
                <li class="content-li-info-data">
-                <div class=" justify color-text-green text-bold text-font-sans text-1">
+                <div class="  color-text-green text-bold text-font-sans text-1">
                         <b>Como efetuo meu cadastro na KeepBox?</b>
                     </div>
                     
@@ -354,8 +353,8 @@
                     </div>
                     
                 </li>
-                <li class="content-li-info-data">
-                    <div class=" color-text-green justify color-text-green text-bold text-font-sans text-1 text-font-sans">
+                <li class="content-li-info-data" style="    margin-left: 78px;">
+                    <div class=" color-text-green  color-text-green text-bold text-font-sans text-1 text-font-sans">
                         <b>Pago alguma taxa para me cadastrar na KeepBox?</b>
                     </div>
                     
@@ -368,7 +367,7 @@
            <div class="mySlides slide-content-width" style="     display: flex;
     justify-content: center;">
                <li class="content-li-info-data">
-                 <div class=" color-text-green justify color-text-green text-bold text-font-sans text-1">
+                 <div class=" color-text-green  color-text-green text-bold text-font-sans text-1">
                     <b>Tenho que pagar alguma taxa mensal ou anual à KeepBox depois que me inscrevo?
                     </b>
                 </div>
@@ -379,8 +378,8 @@
                 </div>
                
             </li>
-            <li class="content-li-info-data">
-                <div class=" color-text-green color-text-green justify text-bold text-font-sans text-1" >
+            <li class="content-li-info-data" style="    margin-left: 78px;">
+                <div class=" color-text-green color-text-green  text-bold text-font-sans text-1" >
                     <b>Como funciona os serviços da KeepBox?</b>
                 </div>
                 
