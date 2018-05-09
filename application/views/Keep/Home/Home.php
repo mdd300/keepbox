@@ -17,7 +17,7 @@
 
 <div class="content-text-banner-3 width_padrao">
     <a href="<?= base_url('home/cadastroPage' )?>">
-    <button class="color-background-roxo color-text-white text-1-sm btn-config text-font-sans shadow"  style="position: relative">
+    <button class="color-background-roxo shadow-btn-roxo color-text-white text-1-sm btn-config text-font-sans shadow"  style="position: relative">
         Clique para garantir seu endereço nos EUA
     </button>
     </a>
@@ -92,7 +92,7 @@
 </div>
 <div style="width: auto; height: auto;  background-image: url('public/assets/metronic/custom/img/photo/aviao_branco.png');">
 <div class="content-cadastro-email-modulo3" style="     background-repeat: no-repeat;
-        background-size: cover;
+            background-size: 100% 100%;
             background-color: white;
         background-position-x: right; background-image: url('public/assets/metronic/custom/img/photo/banner.png')">
 <!--  style="     background-repeat: no-repeat;
@@ -117,7 +117,7 @@
         <div ng-show="dataCad_error.user_email_exist" style="color: red;">Esse E-mail já esta cadastro!</div>
 
         <div class="content-btn-more-about" >
-            <button class="btn-config-2 color-background-roxo color-text-white text-1-sm" ng-click="cadastro()"><div class="loader-green" ng-show="loader_cad1"></div><div ng-show="!loader_cad">
+            <button class="btn-config-2 shadow-btn-roxo color-background-roxo color-text-white text-1-sm" ng-click="cadastro()"><div class="loader-green" ng-show="loader_cad1"></div><div ng-show="!loader_cad">
                     Garanta seu endereço!</div>
             </button>
         </div>
@@ -204,7 +204,7 @@
     </div>
     <div class="content-btn-more-about align-center">
         <a href="<?= base_url('home/servico' )?>">
-        <button class="btn-config color-background-roxo color-text-white text-1-sm">
+        <button class="btn-config shadow-btn-roxo color-background-roxo color-text-white text-1-sm">
             Confira nossos Serviços
         </button>
         </a>
@@ -405,7 +405,7 @@
 
 <div class="content-outras-duvidas" >
     <div style="padding-right: 30px" class="color-text-grey-light text-font-sans text-title-sm" >Outras Dúvidas?  &nbsp;
-    </div> <button class="btn-config-2 color-background-roxo color-text-white text-1-sm">Confira Aqui</button>
+    </div> <button class="btn-config-2 shadow-btn-roxo color-background-roxo color-text-white text-1-sm">Confira Aqui</button>
 </div>
 <div >
           
@@ -418,7 +418,7 @@
             <div  class="text-1 color-text-white"  style="    padding-top: 60px;
         width: 700px;" > Veja as últimas notícias sobre os segredos das importações no Youtube da KeepBox </div>
 
-            <button style="margin-top: 50px;" class="btn-config-2 color-background-roxo color-text-white text-1-sm" >Venha conhecer </button>
+            <button style="margin-top: 50px;" class="btn-config-2 shadow-btn-roxo color-background-roxo color-text-white text-1-sm" >Venha conhecer </button>
         </div>
 
 
