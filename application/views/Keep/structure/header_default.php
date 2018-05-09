@@ -78,17 +78,17 @@ License: You must have a valid license purchased only from themeforest(the above
             </a>
             <div class="content-right-menu">
                 <div class="content-btn-header-menu">
-                    <button class="btn-header-menu color-background-green text-font-sans text-1-sm text-font-sans" ng-click="verifySession()"><div class="loader-roxo" ng-show="loader_access"></div><img ng-show="!loader_access" class="content-img-icon-menu"
+                    <button ng-class="{'btn-opacity': login_press}" class="btn-header-menu color-background-green text-font-sans text-1-sm text-font-sans" ng-click="verifySession()"><div class="loader-roxo" ng-show="loader_access"></div><img ng-show="!loader_access" class="content-img-icon-menu"
                                                                                 src="<?= base_url() ?>public/assets/metronic/custom/img/icon/user_icon.png">
                         Meu Acesso
                     </button>
                 </div>
                 <nav class="content-menu">
                     <ul class="menu-ul">
-                        <li class="menu-li text-1-sm " ><a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>">Inicial</a></li>
-                        <li class="menu-li text-1-sm " ><a  ng-class="{'color-text-green': <?=$selection?> == 2,'text-bold': <?=$selection?> == 2 , 'color-text-grey-light': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a></li>
-                        <li class="menu-li text-1-sm " ><a  ng-class="{'color-text-green': <?=$selection?> == 3,'text-bold': <?=$selection?> == 3 , 'color-text-grey-light': <?=$selection?> !== 3}"  href="<?= base_url('home/funcionamento')?>">Como Funciona</a></li>
-                        <li class="menu-li text-1-sm " ><a  ng-class="{'color-text-green': <?=$selection?> == 4,'text-bold': <?=$selection?> == 4 , 'color-text-grey-light': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
+                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>">Inicial</a></li>
+                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 2,'text-bold': <?=$selection?> == 2 , 'color-text-grey-light': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a></li>
+                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 3,'text-bold': <?=$selection?> == 3 , 'color-text-grey-light': <?=$selection?> !== 3}"  href="<?= base_url('home/funcionamento')?>">Como Funciona</a></li>
+                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 4,'text-bold': <?=$selection?> == 4 , 'color-text-grey-light': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
                     </ul>
                 </nav>
             </div>
@@ -98,12 +98,11 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <div class="modal-login" ng-show="login_press">
         <div class="text-font-sans text-title-sm color-text-green text-bold " style="float: left; width: 66%;margin: 20px;">Meu Acesso</div>
-        <div class="color-text-roxo text-bold, text-font-sans" style="
+        <div class="color-text-white text-bold color-background-roxo text-font-sans" style="
     border-radius: 200px;
     float: right;
     cursor: pointer;
     margin: 35px;
-    border: 1px solid;
     padding: 7px 11px;
     display: flex;
     align-items: center;
@@ -125,6 +124,9 @@ License: You must have a valid license purchased only from themeforest(the above
             <button class="btn-config-2 color-background-roxo color-text-white text-bold text-font-sans text-1-sm"> Novo acesso </button>
             </a></div>
     </div>
+
+<div class="background-acesso-screen" ng-click="login_press = false" ng-show="login_press">
+</div>
 
 </div>
 

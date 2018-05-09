@@ -1,4 +1,4 @@
-<html class="width_padrao" ng-app="app_landing">
+<html  ng-app="app_landing">
 <head>
     <title>
         KeepBox
@@ -10,7 +10,7 @@
     <base_url value="<?= base_url() ?>"></base_url>
 
 </head>
-<body ng-controller="landing_ctrl">
+<body class="width_padrao" ng-controller="landing_ctrl">
 
 <div class="content-geral-sistema">
     <div class="content-header-sistema shadow">
@@ -21,15 +21,15 @@
             </div>
         </div>
         <div class="content-data-user">
-            <div class="content-data-name-user text-font-sans text-2 color-text-grey-light text-bold">Victor oshiro
+            <div class="content-data-name-user text-font-sans text-1-sm color-text-grey-light text-bold">Victor oshiro
             </div>
-            <div class="content-data-exit text-font-sans text-2 color-text-roxo" ng-click="logout()"><div class="loader-roxo" ng-show="loader_exit"></div>Sair</div>
+            <div class="content-data-exit text-font-sans text-1-sm color-text-roxo" ng-click="logout()"><div class="loader-roxo" ng-show="loader_exit"></div>Sair</div>
         </div>
     </div>
 
     <div class="content-sistema-left">
 
-        <div class="content-bem-vindo text-font-sans text-title color-text-grey-light">
+        <div class="content-bem-vindo text-font-sans text-title-xl color-text-grey-light">
             Olá
             <div class="color-text-green" style="display: -webkit-inline-box;">Victor</div>
         </div>
@@ -41,22 +41,22 @@
             <table>
                 <thead class="color-background-roxo">
                 <tr>
-                <th class=" content-header-table text-bold text-font-sans text-2 color-text-white">
+                <th class=" content-header-table text-bold text-font-sans text-1-sm color-text-white">
                     Data
                 </th>
-                <th class="content-header-table text-bold text-font-sans text-2 color-text-white">
+                <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
                     Num.Pedido
                 </th>
-                <th class="content-header-table text-bold text-font-sans text-2 color-text-white">
+                <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
                     Status do Pedido
                 </th>
-                    <th class="content-header-table text-bold text-font-sans text-2 color-text-white">
+                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
                         Produto
                     </th>
-                    <th class="content-header-table text-bold text-font-sans text-2 color-text-white">
+                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
                         Loja
                     </th>
-                    <th class="content-header-table text-bold text-font-sans text-2 color-text-white">
+                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
                         Peso
                     </th>
                 </tr>
@@ -79,12 +79,12 @@
     </div>
     <div class="content-data-endereco-right">
         <ul class="ul-data">
-            <li class="li-data text-font-sans text-2 text-bold color-text-green">Seu endereço nos EUA</li>
-            <li class="li-data text-font-sans text-2"><b>Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $user_suite." ".$user_nome." ".$user_sobrenome ?></div></li>
-            <li class="li-data text-font-sans text-2"><b>Street: </b><div class="color-text-grey-light" style="display: inline-block">591 Lakeview Drive</div></li>
-            <li class="li-data text-font-sans text-2"><b>City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
-            <li class="li-data text-font-sans text-2"><b>State: </b><div class="color-text-grey-light" style="display: inline-block">Florida (FL)</div></li>
-            <li class="li-data text-font-sans text-2"><b>Zip Code: </b><div class="color-text-grey-light" style="display: inline-block">33071</div></li>
+            <li class="li-data text-font-sans text-1-sm text-bold color-text-green">Seu endereço nos EUA</li>
+            <li class="li-data text-font-sans text-1-sm"><b>Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $user_suite." ".$user_nome." ".$user_sobrenome ?></div></li>
+            <li class="li-data text-font-sans text-1-sm"><b>Street: </b><div class="color-text-grey-light" style="display: inline-block">591 Lakeview Drive</div></li>
+            <li class="li-data text-font-sans text-1-sm"><b>City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
+            <li class="li-data text-font-sans text-1-sm"><b>State: </b><div class="color-text-grey-light" style="display: inline-block">Florida (FL)</div></li>
+            <li class="li-data text-font-sans text-1-sm"><b>Zip Code: </b><div class="color-text-grey-light" style="display: inline-block">33071</div></li>
         </ul>
     </div>
 

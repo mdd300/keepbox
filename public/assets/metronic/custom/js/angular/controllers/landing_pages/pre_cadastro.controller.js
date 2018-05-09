@@ -2,6 +2,8 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
 
     var url = new URL(window.location.href);
 
+    console.log($( window ).width())
+
     var screenSize = $( window ).width() / 1920 * 100
 
     $('html').css({zoom: screenSize/100})

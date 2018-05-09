@@ -1,10 +1,4 @@
-@viewport {
-    width: 1960px !important;
-    zoom: 1 !important;
-}
-html{
-    zoom: calc(100% - 1960px);
-}
+
 body{
     margin: 0;
     padding: 0;
@@ -39,7 +33,7 @@ body{
     display: flex;
     color: #878889;
     text-align: center;
-    padding: 14px 28px;
+    padding: 14px 27px;
     text-decoration: none !important;
     font-family: sans-serif;
     float: right;
@@ -71,7 +65,7 @@ body{
     width: 140px;
     height: 90PX;
     margin-top: 14px;
-    margin-left: 75px;
+    margin-left: 40px;
 }
 .content-right-menu{
     float: right;
@@ -106,7 +100,7 @@ body{
 }
 .content-btn-header-menu{
     float: right;
-    padding: 24px 10px;
+    padding: 24px 18px;
 }
 .btn-header-menu{
     border-radius: 30px;
@@ -132,6 +126,8 @@ body{
 .img-top-home{
     width: 100%;
     height: 100%;
+    margin:  0;
+    padding:  0;
 }
 .content-text-banner{
     /* padding: 8% 20%; */
@@ -157,9 +153,9 @@ body{
 .content-more-about-text{
     position: absolute;
     background-color: white;
-    padding: 55px 135px 0 135px;
+    padding: 55px 65px 0 65px;
     border-radius: 30px;
-    width: 1000px;
+    width: 1100px;
     /* min-width: 676px; */
     height: auto;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
@@ -190,7 +186,7 @@ body{
     /* top: 0; */
     margin-right: 38px;
     margin-left: 780px;
-    margin-top: 450px;
+    margin-top: 400px;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
 
@@ -209,7 +205,7 @@ body{
 .content-text-module2{
     position:  absolute;
     float:  left;
-    margin-top: 610px;
+    margin-top: 630px;
     margin-left: 330px;
     /* height: 117px; */
     width: 336px;
@@ -219,7 +215,7 @@ body{
     position:  absolute;
     display: inline-flex;
     float:  left;
-    margin-top: 1027px;
+    margin-top: 950px;
     /* margin-left: 210px; */
     width: auto;
     height: 300px;
@@ -228,12 +224,12 @@ body{
 }
 .li-step-module2{
     text-decoration: none !important;
-    width: 250px;
+    width: 300px;
     height: 100%;
     display: block !important;
     color: #878889;
     text-align: center;
-    padding: 14px 54px;
+    padding: 14px 50px;
     font-family: sans-serif;
     float: left;
 }
@@ -338,7 +334,7 @@ body{
     width: 100%;
 }
 .title-tutorial-module3{
-    width: 730px;
+    width: 750px;
     padding-top: 80px;
     text-align: center;
 }
@@ -383,12 +379,13 @@ body{
     height: 100px;
     width: 100px;
     float:  left;
-    padding: 10px;
+    /* padding: 10px; */
 }
 .content-text-tutorial{
-    width: 60%;
+    width: auto;
+    max-width: 60%;
     float: right;
-    padding-left: 22px;
+    padding-left: 32px;
 }
 .content-sm-btn-call{
     width: 100%;
