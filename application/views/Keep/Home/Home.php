@@ -137,7 +137,7 @@
         <ul class="ul-tutorial">
             <li class="li-step-tutorial align-center">
                 <div class="content-border-shadow-li-tutorial">
-                    <img class="content-icon-tutorial" style="      padding: 0px 5px;  width: 85px !important;height: 95px !important;"
+                    <img class="content-icon-tutorial" style="      padding: 0px 10px;  width: 90px !important;height: 95px !important;"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/icon/wallet.png'>
                     <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">Economize até
                         <div class="color-text-green" style="    display: initial;">80%</div>
