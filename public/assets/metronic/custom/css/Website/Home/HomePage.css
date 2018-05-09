@@ -140,6 +140,7 @@ body{
     background-repeat: no-repeat;
     background-size: 101% 101%;
     background-position-x: -4px;
+    background-position-y: 130px;
 }
 .content-text-banner{
     /* padding: 8% 20%; */
