@@ -135,9 +135,9 @@
     <div class="content-step-tutorial-module3">
 
         <ul class="ul-tutorial">
-            <li class="li-step-tutorial">
+            <li class="li-step-tutorial align-center">
                 <div class="content-border-shadow-li-tutorial">
-                    <img class="content-icon-tutorial" style="    width: 85px !important;height: 95px !important;"
+                    <img class="content-icon-tutorial" style="      padding: 0px 5px;  width: 85px !important;height: 95px !important;"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/icon/wallet.png'>
                     <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">Economize até
                         <div class="color-text-green" style="    display: initial;">80%</div>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
             </li>
-            <li class="li-step-tutorial">
+            <li class="li-step-tutorial align-center">
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/icon/armazenar.png'>
@@ -157,7 +157,7 @@
                     </div>
                 </div>
             </li>
-            <li class="li-step-tutorial">
+            <li class="li-step-tutorial align-center">
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/icon/atendimento_em_pt.png'>
@@ -170,7 +170,7 @@
         </ul>
         <ul class="ul-tutorial">
 
-            <li class="li-step-tutorial">
+            <li class="li-step-tutorial align-center">
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/icon/fotos.png'>
@@ -179,7 +179,7 @@
                     </div>
                 </div>
             </li>
-            <li class="li-step-tutorial">
+            <li class="li-step-tutorial align-center">
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/icon/agillidade_de_envio.png'>
@@ -190,7 +190,7 @@
             </li>
 
 
-            <li class="li-step-tutorial">
+            <li class="li-step-tutorial align-center">
                 <div class="content-border-shadow-li-tutorial">
                     <img class="content-icon-tutorial"
                          src='<?= base_url() ?>public/assets/metronic/custom/img/icon/cartao_taxa_unica.png'>
