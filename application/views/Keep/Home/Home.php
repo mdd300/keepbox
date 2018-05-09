@@ -1,10 +1,10 @@
 
 <div class="content-img-top-home width_padrao">
-    <div class="img-top-home" data-parallax="scroll" data-image-src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal-keep.png""></div>
+    <div class="img-top-home" data-parallax="scroll" data-image-src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal.png""></div>
 </div>
 
 <div class="content-text-banner width_padrao">
-    <div class="color-text-green text-title-xl text-font-sans " style="position: relative; text-align: center;     width: 80x%;">
+    <div class="color-text-green text-title-xl text-bold text-font-sans " style="position: relative; text-align: center;     width: 80x%;">
         COMPRE NAS LOJAS ONLINE DOS <b>ESTADOS UNIDOS</b>
     </div>
 </div>
@@ -26,7 +26,7 @@
 <div class="content-module-2 color-background-green width_padrao" style="    background-repeat: no-repeat;
     background-size: 500px 2300px;
     background-position-y: -850px;
-     background-image: url('public/assets/metronic/custom/img/photo/aviao_verde.png')"">
+     background-image: url(<?= base_url()?>'public/assets/metronic/custom/img/photo/aviao_verde.png')">
 
 </div>
 
@@ -233,13 +233,19 @@
         <div class="content-left-simulator">
             <div class="color-text-roxo text-title-xl  text-font-sans">Simulador de Preços</div>
             <div style="    margin-top: 50px;">
-            <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat ;">
-                <select>
+            <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;    background-color: white;
+    background-image: url(<?= base_url('/public/assets/metronic/custom/img/icon/icon-select.jpeg')?>);
+    background-repeat: no-repeat;
+    background-position-y: 0px;">
+                <select class="text-1-sm">
                     <option>Lbs</option>
                 </select>
             </div>
-            <div class="styled-select align-y-center background-select-roxo rounded" style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat 96% 0;">
-                <select>
+            <div class="styled-select align-y-center background-select-roxo rounded" style="    background-color: white;
+    background-image: url(<?= base_url('/public/assets/metronic/custom/img/icon/icon-select.jpeg')?>);
+    background-repeat: no-repeat;
+    background-position-y: 0px;">
+                <select class="text-1-sm">
                     <option>Brasil</option>
 
                 </select>
@@ -247,7 +253,7 @@
             </div>
         </div>
         <div class="content-right-simulator ">
-            <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans">Em baixo de cada modalidade de frete:</div>
+            <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{valor_kg}} Kg</div>
             <div class="slider-margin" >
                 <li class="li-step-tutorial" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
                 <li class="li-step-tutorial" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
@@ -410,10 +416,10 @@
 
         <div class="content-news-banner " style="    padding-top: 110px;" >
             <div  class="color-text-green text-title text-bold text-font-san"> FIQUE POR DENTRO! </div><br>
-            <div  class="text-1 color-text-white"  style="    padding-top: 50px;
+            <div  class="text-1 color-text-white"  style="    padding-top: 60px;
         width: 700px;" > Veja as últimas notícias sobre os segredos das importações no Youtube da KeepBox </div>
 
-            <button style="margin-top: 18px;" class="btn-config-2 color-background-roxo color-text-white text-1-sm" >Venha conhecer </button>
+            <button style="margin-top: 50px;" class="btn-config-2 color-background-roxo color-text-white text-1-sm" >Venha conhecer </button>
         </div>
 
 

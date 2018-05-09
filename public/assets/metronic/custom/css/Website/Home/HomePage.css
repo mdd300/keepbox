@@ -44,8 +44,16 @@ body{
 .img-menu-superior{
     width: 35px;
     height: 35px;
+    margin-right: 10px;
 }
-
+.background-acesso-screen{
+    width: 100%;
+    height: 1000px;
+    background-color: #696969;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 111;
+}
 .content-header-menu{
     height: 95px;
     background-color: white;
@@ -100,7 +108,7 @@ body{
 }
 .content-btn-header-menu{
     float: right;
-    padding: 24px 18px;
+    padding: 26px 18px;
 }
 .btn-header-menu{
     border-radius: 30px;
@@ -159,7 +167,7 @@ body{
     /* min-width: 676px; */
     height: auto;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
-    margin: 102px 0px 0px 200px;
+    margin: 102px 0px 0px 270px;
 }
 .content-btn-more-about{
     margin-top: 50px;
@@ -174,7 +182,7 @@ body{
 .content-module-2-sm{
     height: 300px;
     position: absolute;
-    margin-top: 220px;
+    margin-top: 240px;
 }
 .content-video-module2{
     position: absolute;
@@ -185,7 +193,7 @@ body{
     /* right:  0; */
     /* top: 0; */
     margin-right: 38px;
-    margin-left: 780px;
+    margin-left: 835px;
     margin-top: 400px;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
@@ -199,7 +207,7 @@ body{
     left:  0;
     /* top: 0; */
     margin-left: 187px;
-    margin-top: 110px;
+    margin-top: 70px;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
 .content-text-module2{
@@ -280,7 +288,7 @@ body{
 .content-news-banner{
     position: absolute;
     margin-left: 900px;
-    margin-top: 22px;
+    margin-top: 42px;
     /* height:  auto; */
 }
 .limit-text-cadastro{
@@ -426,31 +434,38 @@ body{
     background-position-x: right !important;
     background-size: contain !important;
     border: 1px solid #7d1daf;
-    background-color: #0a6aa1;
-    height: 45px;
+    height: 56px;
     overflow: hidden;
     width: 350px;
     background-position-y:  center;
 }
 .select-mini {
-    height: 45px;
-    width: 140px;
+    height: 56px;
+    width: 147px;
     float: left;
+
 }
 
 .styled-select select {
     background: transparent;
     border: none;
-    font-size: 14px;
     height: 29px;
-    margin-left: 10px; /* If you add too much padding here, the options won't show in IE */
-    width: 368px;
+    margin-left: 30px; /* If you add too much padding here, the options won't show in IE */
+    width: 297px;
+    color: #7d1daf;
+}
+.select-mini select {
+    background: transparent;
+    border: none;
+    height: 29px;
+    margin-left: 30px; /* If you add too much padding here, the options won't show in IE */
+    width: 97px;
     color: #7d1daf;
 }
 .rounded {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 20px;
+    border-radius: 35px;
 }
 .background-select-roxo{
 }
@@ -541,9 +556,9 @@ body{
     float: right;
     right: 0;
     position: fixed;
-    margin-right: 50px;
+    margin-right: 270px;
     top: 0;
-    margin-top: 75px;
+    margin-top: 160px;
     z-index:  11111;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }

@@ -16,10 +16,15 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
     }
 
     $scope.range_simulator_home = 0;
+    $scope.valor_kg = 0;
     function formataDinheiro(n) {
         return "R$ " + n.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
     }
     $scope.changeValue = function () {
+
+        $scope.valor_kg = $scope.range_simulator_home * 0.4536 ;
+        $scope.valor_kg = $scope.valor_kg.replace('.', ',')
+
         if ($scope.range_simulator_home < 6) {
             var value1 = parseFloat($scope.range_simulator_home) * 4.35;
             $scope.valor_plano_1 = 67.05 + value1;

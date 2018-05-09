@@ -103,7 +103,7 @@ License: You must have a valid license purchased only from themeforest(the above
     float: right;
     cursor: pointer;
     margin: 35px;
-    padding: 7px 11px;
+    padding: 7px 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,12 +117,14 @@ License: You must have a valid license purchased only from themeforest(the above
             <input class="input" type="password" ng-model="singIn.user_senha" style="margin-top: 10px !important;" placeholder="Digite sua senha">
             <div ng-show="Error_login">{{TextError_Login}}</div>
         </div>
+        <div class="align-y-center">
         <div style="    margin-left: 20px;">
-        <button class="btn-config-2 color-background-green color-text-white text-bold text-font-sans text-1-sm" ng-click="login()"><div class="loader-roxo" ng-show="loader_login"></div> Entrar </button>
+        <button style="    padding: 16px 81px !important;" class="btn-config-2 color-background-green color-text-white text-bold text-font-sans text-1-sm" ng-click="login()"><div class="loader-roxo" ng-show="loader_login"></div> Entrar </button>
         </div>
         <div style="    margin-left: 20px; margin-top: 10px"><a href="<?= base_url('home/cadastroPage' )?>">
             <button class="btn-config-2 color-background-roxo color-text-white text-bold text-font-sans text-1-sm"> Novo acesso </button>
             </a></div>
+    </div>
     </div>
 
 <div class="background-acesso-screen" ng-click="login_press = false" ng-show="login_press">
