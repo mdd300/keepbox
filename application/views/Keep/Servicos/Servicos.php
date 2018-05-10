@@ -38,18 +38,17 @@
     </div>
 </div>
 
-
+<div class="align-x-center">
+<div class="text-title-serv text-title-xl text-bold text-font-sans color-text-green">
+    Serviçoes Extras
+</div>
+</div>
 <div class="content-servi-basicos align-x-center">
-    <div class="content-title-left-serv">
-        <div class="text-title-serv text-title-xl text-bold text-font-sans color-text-green">
-            Serviçoes Extras
-        </div>
-    </div>
-    <div class="content-text-right-serv">
+    <div class="content-title-left-serv" style="margin: 100px !important;">
         <ul class="ul-serv-text">
 
             <li class="li-serv-text">
-                <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
+                <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 15px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
 
             </li>
             <li class="li-serv-text">
@@ -74,6 +73,10 @@
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Retirar preços das etiquetas - GRÁTIS </div>
             </li>
+        </ul>
+    </div>
+    <div class="content-text-right-serv">
+        <ul class="ul-serv-text">
 
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Remover inserções, anúncios e extras da loja - GRÁTIS </div>
