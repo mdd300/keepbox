@@ -23,7 +23,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
     $scope.changeValue = function () {
 
         $scope.valor_kg = $scope.range_simulator_home * 0.4536 ;
-        $scope.valor_kg = $scope.valor_kg.replace('.', ',')
+        $scope.valor_kg = $scope.valor_kg.toFixed(1);
 
         if ($scope.range_simulator_home < 6) {
             var value1 = parseFloat($scope.range_simulator_home) * 4.35;

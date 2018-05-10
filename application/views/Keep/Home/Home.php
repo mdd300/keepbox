@@ -26,13 +26,13 @@
 <div class="content-module-2 color-background-green width_padrao" style="    background-repeat: no-repeat;
     background-size: 500px 2300px;
     background-position-y: -850px;
-     background-image: url(<?= base_url()?>'public/assets/metronic/custom/img/photo/aviao_verde.png')">
+     background-image: url(<?= base_url('public/assets/metronic/custom/img/photo/aviao_verde.png')?>">
 
 </div>
 
 <div class="content-more-about-text ">
     <div class="text-1-sm text-font-sans color-text-grey-light padding-text" style="    text-align: justify;">
-        Pesquisas apontam o crescente desejo dos brasileiros em comprar em lojas online dos EUA. Prova disso é que os turistas do Brasil já ocupam o 3. lugar na lista dos países que mais consumem na América.
+        Pesquisas apontam o crescente desejo dos brasileiros em comprar em lojas online dos EUA. Prova disso é que os turistas do Brasil já ocupam o 3° lugar na lista dos países que mais consumem na América.
         O fato é que muitas lojas online dos EUA não entregam compras no Brasil.
         A KeepBox surge para solucionar esta questão!
         Viabilizamos para quem mora no Brasil a oportunidade de aproveitar todas as vantagens do mercado americano e receber suas compras onde quiser com amplo conforto, economia e segurança.
@@ -61,26 +61,26 @@
     <li class="li-step-module2">
         <div class="step-icon"
              style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/online-shop.png')"></div>
-        <div class="step-text color-text-roxo text-font-sans text-1 "><b>1.</b>Crie sua conta KeepBox gratuitamente e compre nas lojas online dos EUA.
+        <div class="step-text color-text-roxo text-font-sans text-1 "><b>1.</b> Crie sua conta KeepBox gratuitamente e compre nas lojas online dos EUA.
         </div>
     </li>
     <li class="li-step-module2">
         <div class="step-icon"
              style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/packages.png')"></div>
-        <div class="step-text color-text-roxo text-font-sans text-1"><b>2.</b>Mande entregar suas compras no endereço da sua conta KeepBox
+        <div class="step-text color-text-roxo text-font-sans text-1"><b>2.</b> Mande entregar suas compras no endereço da sua conta KeepBox
         </div>
     </li>
     <li class="li-step-module2">
         <div class="step-icon"
              style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/package.png')"></div>
-        <div class="step-text  color-text-roxo text-font-sans text-1 "><b>3.</b>Recebemos e juntamos suas encomendas em uma única caixa, sem custo adicional
+        <div class="step-text  color-text-roxo text-font-sans text-1 "><b>3.</b> Recebemos e juntamos suas encomendas em uma única caixa, sem custo adicional
         </div>
     </li>
 
     <li class="li-step-module2">
         <div class="step-icon"
              style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/aviao_entrega.png')"></div>
-        <div class="step-text  color-text-roxo text-font-sans text-1 "><b>4.</b>Enviamos para você, onde quiser, pelos melhores preços
+        <div class="step-text  color-text-roxo text-font-sans text-1 "><b>4.</b> Enviamos para você, onde quiser, pelos melhores preços
             lojas online dos EUA
         </div>
     </li>
@@ -196,7 +196,7 @@
                          src='<?= base_url() ?>public/assets/metronic/custom/img/icon/cartao_taxa_unica.png'>
                     <div class="content-text-tutorial text-1-sm text-font-sans color-text-grey-light">Pague uma taxa única
                         de serviço:
-                        <div class="color-text-green" style="    display: initial;">Apenas U$12,90</div>
+                        <div class="color-text-green" style="    display: initial;">Apenas <b>U$12,90</b></div>
                     </div>
                 </div>
             </li>
@@ -252,7 +252,7 @@
             </div>
         </div>
         <div class="content-right-simulator ">
-            <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{valor_kg}} Kg</div>
+            <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{range_simulator_home}} Lbs = {{valor_kg}} Kg</div>
             <div class="slider-margin" >
                 <li class="li-step-tutorial" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
                 <li class="li-step-tutorial" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>

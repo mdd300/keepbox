@@ -63,7 +63,7 @@ body{
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
 .content-align-menu{
-    width: 70%;
+    width: 84%;
     height: 100%;
 }
 .content-logo-header{
@@ -78,6 +78,7 @@ body{
 .content-right-menu{
     float: right;
     height: 100%;
+    margin-right: 8.5%;
 }
 .content-menu{
     height: 100%;
