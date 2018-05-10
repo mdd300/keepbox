@@ -1,123 +1,104 @@
 
 <div class="content-img-top-serv width_padrao">
-    <img class="img-top-serv width_padrao" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_servicos.jpg">
-</div>
-
-<div class="content-text-banner-serv width_padrao">
-    <div class="color-text-white text-font-sans align-center" style="position: relative;">
-        <div class="text-title">SERVIÇOS</div> &nbsp;&nbsp;<div class="text-2"> &</div> &nbsp; &nbsp;<div class="text-title"> PREÇOS</div>
+    <div class="img-top-serv" style=" background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_servicos.jpg')">
     </div>
 </div>
-   
-        
-<div class="text-font-sans content-li-center-vert" style="    margin: 0;">
+<div class="content-space-serv align-center">
+<div class="text-title-serv text-title-xl color-text-white">
+    <b>Serviçoes</b> & <b>Preçoes</b>
+</div>
+</div>
 
-    <ul class="content-ul-data-serv align-center width-padrao">
-        <li>
-           <div class="text-font-sans text-title-xl" style=" color: #84c135;">SERVIÇOS BÁSICOS</div>
-            
-        </li>
-    </ul>
-    <div style="     margin-left: 365px;
-    width: 61%;
-    margin-top: 50px;">
-     <ul class="content-ul-data-serv">
-        <li>
-           <div class="color-text-green text-bold text-1 text-font-sans">Recebimento de Encomendas (GRÁTIS) </div>
-           <div class="color-text-grey-light text-1-sm text-font-sans" style="padding-top: 10px">A KeepBox nã cobra por pacotes recebidos. Fique à vontade para comprar o quanto quiser nas diversas lojas onlines dos EUA.</div>
-        </li>
-    </ul>
+<div class="content-servi basico align-x-center">
+    <div class="content-title-left-serv">
+        <div class="text-title-serv text-title-xl text-bold text-font-sans color-text-green">
+            Serviçoes Basicos
+        </div>
+    </div>
+    <div class="content-text-right-serv">
+        <ul class="ul-serv-text">
+            <li class="li-serv-text">
+                <div class="color-text-green text-bold text-1 text-font-sans">Recebimento de Encomendas (GRÁTIS) </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans" style="padding-top: 10px">A KeepBox nã cobra por pacotes recebidos. Fique à vontade para comprar o quanto quiser nas diversas lojas onlines dos EUA.</div>
 
-    <ul class="content-ul-data-serv">
-        <li>
-           <div class="color-text-green text-bold text-1 text-font-sans" >Armazenamento de Encomendas (GRÁTIS)</div>
-           <div class="color-text-grey-light text-1-sm text-font-sans" style="padding-top: 10px"
->A Keepbox recebe e armazena suas compras por até 60 dias completamente grátis. Se precisar de mais 30 dias, contrate o Armazenamento Extra (Taxa fixa: US$5 + US$1 por dia)
-           Após 90 dias, as encomendas serão vendidas, doadas ou descartadas .</div> 
-                                        
-        
-        </li>
-    </ul>
+            </li>
 
-    <ul class="content-ul-data-serv">
-        <li>
-           <div class="color-text-green text-bold text-1 text-font-sans" >Empacotamento de Encomendas (GRÁTIS) </div>
-           <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
-        </li>
-    </ul>
+            <li class="li-serv-text">
+                <div class="color-text-green text-bold text-1 text-font-sans" >Armazenamento de Encomendas (GRÁTIS)</div>
+                <div class="color-text-grey-light text-1-sm text-font-sans" style="padding-top: 10px"
+                >A Keepbox recebe e armazena suas compras por até 60 dias completamente grátis. Se precisar de mais 30 dias, contrate o Armazenamento Extra (Taxa fixa: US$5 + US$1 por dia)
+                    Após 90 dias, as encomendas serão vendidas, doadas ou descartadas .</div>
+            </li>
+            <li class="li-serv-text">
+                <div class="color-text-green text-bold text-1 text-font-sans" >Empacotamento de Encomendas (GRÁTIS) </div>
+                <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
 
+            </li>
+        </ul>
     </div>
 </div>
 
 
+<div class="content-servi-basicos align-x-center">
+    <div class="content-title-left-serv">
+        <div class="text-title-serv text-title-xl text-bold text-font-sans color-text-green">
+            Serviçoes Extras
+        </div>
+    </div>
+    <div class="content-text-right-serv">
+        <ul class="ul-serv-text">
 
-<div class="text-font-sans content-li-center-vert" style="    margin: 0;">
+            <li class="li-serv-text">
+                <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
 
-    <ul class="content-ul-data-serv align-center width-padrao">
-        <li style="text-align: center">
-            <div class="text-font-sans text-title-xl" style=" color: #84c135;">SERVIÇOS EXTRAS</div>
-            <div class="text-font-sans text-1-sm color-text-grey-light" style="padding: 35px 20% 0px 20%;">Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
-        </li>
-    </ul>
-    <div style="margin-left: 365px;
-    width: 61%;
-    margin-top: 50px;">
-        <ul class="content-ul-data-serv">
-            <li>
+            </li>
+            <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans">Adesivar toda a Caixa / Proteção completa (US$2,00) </div>
                 <div class="color-text-grey-light text-1-sm text-font-sans" style="padding-top: 10px">Previne que suas mercadorias se molhem e que a caixa se danifique durante a viagem.</div>
             </li>
-        </ul>
 
-        <ul class="content-ul-data-serv">
-            <li>
+            <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Acomodar itens frágeis em plástico bolha (US$1,00)
                 </div>
                 <div class="color-text-grey-light text-1-sm text-font-sans" style="padding-top: 10px"
                 >Evita prejuízos, afinal sua caixa passará por muitos caminhos até chegar ao seu destino.</div>
 
-
             </li>
-        </ul>
 
-        <ul class="content-ul-data-serv">
-            <li>
+            <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Seguro KeepBox (3% do valor declarado) </div>
                 <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Mais segurança às suas compras e garantia de cobertura do valor declarado.</div>
-            </li>
-        </ul>
 
-        <ul class="content-ul-data-serv">
-            <li>
+            </li>
+
+            <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Retirar preços das etiquetas - GRÁTIS </div>
             </li>
-        </ul>
-        <ul class="content-ul-data-serv">
-            <li>
+
+            <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Remover inserções, anúncios e extras da loja - GRÁTIS </div>
                 <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Reduz o peso da sua caixa, tornando o frete mais econômico.</div>
             </li>
-        </ul>
-        <ul class="content-ul-data-serv">
-            <li>
+
+            <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Retirar caixas originais - GRÁTIS </div>
                 <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Também reduz o peso do frete além de facilitar a acomodação de demais itens.</div>
             </li>
-        </ul>
-        <ul class="content-ul-data-serv">
-            <li>
+
+            <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Retirar fatura original (Invoice) - GRÁTIS </div>
                 <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Retirar a fatura, poupará espaço na sua caixa e não lhe trará nenhum problema, afinal, este é o mesmo documento que você recebe da loja online no momento da compra</div>
             </li>
-        </ul>
-        <ul class="content-ul-data-serv">
-            <li>
+
+            <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Seguro Básico - GRÁTIS  </div>
                 <div class="color-text-grey-light text-1-sm text-font-sans"style="padding-top: 10px" >Este seguro cobre apenas caixas com valor declarado de até US$200,00 (Seguro oferecido pela USPS)</div>
             </li>
+
         </ul>
     </div>
 </div>
+
 
 
 <div class="align-x-center" style="    padding-top: 7%;">
@@ -135,13 +116,19 @@
         <div class="content-left-simulator">
             <div class="color-text-roxo text-title-xl  text-font-sans">Simulador de Preços</div>
             <div style="    margin-top: 50px;">
-                <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat ;">
-                    <select>
+                <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;    background-color: white;
+                        background-image: url(<?= base_url('/public/assets/metronic/custom/img/icon/icon-select.jpeg')?>);
+                        background-repeat: no-repeat;
+                        background-position-y: 0px;">
+                    <select class="text-1-sm">
                         <option>Lbs</option>
                     </select>
                 </div>
-                <div class="styled-select align-y-center background-select-roxo rounded" style="background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/icon-select.jpeg') no-repeat 96% 0;">
-                    <select>
+                <div class="styled-select align-y-center background-select-roxo rounded" style="    background-color: white;
+                        background-image: url(<?= base_url('/public/assets/metronic/custom/img/icon/icon-select.jpeg')?>);
+                        background-repeat: no-repeat;
+                        background-position-y: 0px;">
+                    <select class="text-1-sm">
                         <option>Brasil</option>
 
                     </select>
@@ -149,10 +136,10 @@
             </div>
         </div>
         <div class="content-right-simulator ">
-            <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans">Em baixo de cada modalidade de frete:</div>
+            <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{range_simulator_home}} Lbs = {{valor_kg}} Kg</div>
             <div class="slider-margin" >
-                <li class="li-step-tutorial" style="padding: 0px 0px; width: auto"> {{range_simulator_home}}</li>
-                <li class="li-step-tutorial" style="float: right; padding: 0px 0px; width: auto"> 66</li>
+                <li class="li-step-tutorial" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
+                <li class="li-step-tutorial" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
                 <input type="range" max="66" ng-model="range_simulator_home" ng-change="changeValue()" class="slider"></input>
 
             </div>
@@ -173,7 +160,7 @@
                 <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
                 <!--                </div>-->
                 <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
-                    <b>TOTAL:</b>R$ {{valor_plano_1}}
+                    <b>Total:</b> {{valor_plano_1}}
                 </div>
             </li>
             <li class="content-li-simulator-data">
@@ -184,7 +171,7 @@
     <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
     <!--                </div>-->
     <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
-        <b>Total:</b>R$ {{valor_plano_2}}
+        <b>Total:</b> {{valor_plano_2}}
     </div>
     </li>
     <li class="content-li-simulator-data">
@@ -196,7 +183,7 @@
         <!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
         <!--                </div>-->
         <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
-            <b>Total:</b>R$ {{valor_plano_3}}
+            <b>Total:</b> {{valor_plano_3}}
         </div>
 </div>
 </li>
@@ -214,37 +201,33 @@
     <div class=" align-center" style="margin-top: 50px;">
     <div class="">
         <ul class="content-ul-assist-data">
-            <li class=" content-li-serv content-li-simulator-data content-border-simulator-shadow" style="    text-align: center;
-    display: block;
-    justify-content: center;    margin: 0px 25px;
-    align-items: center;">
-                 <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="    margin-top: 50px;">
+            <li class=" content-li-serv left content-border-simulator-shadow" >
+                <div class="content-itens-li-serv">
+                 <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="">
                     U$7.90
                 </div>
-                <div class="text-1 color-text-green text-font-sans text-bold" style="margin-top: 20px">
+                <div class="text-1 color-text-green text-font-sans text-bold" style="    width: 109%;margin-top: 20px">
                     +7% das compras
                 </div>
                 <div class="text-1 color-text-green text-font-sans text-bold">
                      (até US$1.000)
                 </div>
-               
+                </div>
             </li>
 
-            <li class=" content-li-serv content-li-simulator-data content-border-simulator-shadow" style="    text-align: center;
-    display: block;
-    justify-content: center;
-        margin: 0px 25px;
-    align-items: center;">
-                <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="    margin-top: 50px;">
+            <li class=" content-li-serv right content-border-simulator-shadow" style="  ">
+                <div class="content-itens-li-serv">
+
+                <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="   ">
                     U$7.90
                 </div>
-                <div class="text-1 color-text-green text-font-sans text-bold" style="margin-top: 20px">
+                <div class="text-1 color-text-green text-font-sans text-bold" style="    width: 109%;margin-top: 20px">
                     +7% das compras
                 </div>
                 <div class="text-1 color-text-green text-font-sans text-bold">
                     (até US$1.000)
                 </div>
-
+                </div>
             </li>
         </ul>
     </div>

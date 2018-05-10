@@ -1,14 +1,60 @@
+.content-header-duvidas{
+    width: 100%;
+    height: 600px;
+    background-color: #f7f7f7;
+}
 .content-duvidas{
     z-index:  111111;
-    padding-top: 200px;
+    padding: 100px 16%;
 }
 .content-pergunta-duvidas{
-    padding: 30px;
+    padding: 40px 0px 20px 0px;
     z-index:  11111111;
     cursor:  pointer;
+    width: 67.5%;
+    border-bottom:  1px solid #383838;
 }
 .content-resposta-duvida{
-    padding: 0px 30px;
-    width: 800px;
+    padding: 20px 0px;
+    width: 67.5%;
     text-align: justify;
+    line-height: 40px;
+}
+.grey-text-duvidas{
+    color: #989898;
+}
+.hr-style{
+    border: 1px solid #989898;
+    width: 1200px;
+    margin-top: 50px;
+}
+.content-text-header-duvidas{
+    margin-top: 100px;
+}
+.seta-baixo:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    float: right;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid black;
+    margin-top: 30px;
+}
+.seta-cima:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    float: right;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid black;
+    margin-top: 30px;
+
 }
