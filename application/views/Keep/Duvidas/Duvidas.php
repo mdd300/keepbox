@@ -19,7 +19,7 @@
               ></span>
 
     </div>
-    <div class="content-resposta-duvida text-1-sm color-text-roxo color-text-grey text-font-sans " ng-show="duvidas[duvida.id]">
+    <div class="content-resposta-duvida text-1-sm color-text-grey-light color-text-grey text-font-sans " ng-show="duvidas[duvida.id]">
         {{duvida.resposta}}
 
     </div>
