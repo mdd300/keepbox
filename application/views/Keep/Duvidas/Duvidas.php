@@ -9,7 +9,7 @@
 </div>
 
 <div class="content-duvidas width-content">
-<div ng-repeat="duvida in perguntas | filter:searchPergunta track by $index | limitTo: limitPerguntas ">
+<div ng-repeat="duvida in perguntas | filter:searchPergunta  | limitTo: limitPerguntas track by $index">
     <div ng-mouseenter="hovering = true"
          ng-mouseleave="hovering = false"
          class="content-pergunta-duvidas text-title-sm color-text-grey text-font-sans text-bold " ng-click="openDuvida(duvida.id)">
