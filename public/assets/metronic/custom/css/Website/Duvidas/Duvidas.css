@@ -26,7 +26,8 @@
 }
 .content-resposta-duvida{
     padding: 20px 0px;
-    width: 67.5%;
+    width: 100%;
+    text-align: justify;
     line-height: 40px;
 }
 .grey-text-duvidas{
