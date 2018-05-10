@@ -626,7 +626,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
     ]
 
     $scope.hovering = false;
-    $scope.searchPergunta = "";
+    $scope.searchPergunta;
 
     $scope.limitplus  = function () {
         $scope.limitPerguntas += 8;
