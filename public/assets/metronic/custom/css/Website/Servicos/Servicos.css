@@ -51,7 +51,7 @@
     padding: 20px 0px;
 }
 .text-title-serv{
-    margin-top: 177px;
+    margin-top: 190px;
 }
 .content-ul-assist-data{
     width: 70%;
@@ -67,11 +67,11 @@
     text-decoration: none !important;
     float: left;
     width: 100%;
-    padding: 25px 80px;
+    padding: 20px 80px;
     margin: 50px 0px;
 }
 .content-li-serv.left{
-    margin-right: 35px;
+    /* margin-right: 35px; */
 }
 .content-li-serv.right{
     margin-left: 21px;
