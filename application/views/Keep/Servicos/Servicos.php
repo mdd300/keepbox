@@ -15,7 +15,7 @@
             Serviçoes Basicos
         </div>
     </div>
-    <div class="content-text-right-serv">
+    <div class="content-text-right-serv" style="    margin-right: 0 !important;">
         <ul class="ul-serv-text">
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans">Recebimento de Encomendas (GRÁTIS) </div>
@@ -243,7 +243,7 @@
             </div>
         </div>
 
-        <div class="content-li-info-data-serv ">
+        <div style="    margin-left: 45px;">
             <div class="text-font-sans color-text-grey-light text-1-sm padding-text">
                 Pensando em seu conforto, se preferir, realizamos as compras para você! Basta nos enviar os links dos produtos desejados.
 

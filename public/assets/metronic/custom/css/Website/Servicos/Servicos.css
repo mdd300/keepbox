@@ -42,12 +42,13 @@
 }
 .ul-serv-text{
     list-style-type: none !important;
-
+    margin-right: 105px;
+    margin-left:  0;
 }
 .li-serv-text{
     text-decoration: none !important;
     display: block !important;
-    padding: 20px 10px;
+    padding: 20px 0px;
 }
 .text-title-serv{
     margin-top: 177px;
