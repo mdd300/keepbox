@@ -1,4 +1,4 @@
-angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', function ($scope, $http) {
+angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$timeout', function ($scope, $http,$timeout) {
 
     var url = new URL(window.location.href);
 
@@ -332,7 +332,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
         );
     }
 
-    $scope.limitPerguntas = 8;
+    $scope.limitPerguntas = 5;
 
     $scope.perguntas = [
         {
@@ -627,10 +627,22 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http', fun
 
     $scope.hovering = false;
     $scope.searchPergunta;
+    $scope.numRowsDuvidas;
+    $scope.loaderPesquisa = false;
 
     $scope.limitplus  = function () {
-        $scope.limitPerguntas += 8;
+        $scope.limitPerguntas += 5;
     }
 
+    $scope.inputSearch = function () {
+
+        $scope.loaderPesquisa = true;
+
+
+        $timeout(function(){
+            $scope.loaderPesquisa = false;
+
+        }, 400);
+    }
 }]);
 
