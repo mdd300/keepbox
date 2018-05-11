@@ -11,7 +11,12 @@
     <div class="loader"></div>
     </div>
     <div class="align-x-center" ng-show="numRowsDuvidas.length == 0 && loaderPesquisa == false" style="padding-top: 50px">
-        <div class=" content-error-duvidas text-title text-font-sans color-text-grey"> Não encontramos um resultado para a pesquisa '{{searchPergunta}}' :( <br> Procure digitar uma palavra por vez e usar palavras chaves para otimizar sua busca e caso não encontre entre em contato conosco: yannrodrigues20@gmail.com</div>
+        <div class=" content-error-duvidas justify text-font-sans " style="    display: initial;
+"> <div class="text-title-xl color-text-grey" style="    display: initial;
+">Não encontramos um resultado</div><div style="    display: initial;
+" class="text-title color-text-grey"> para a pesquisa '{{searchPergunta}}' :( <br> Procure digitar uma palavra por vez para ver o resultado e tente usar palavras chave para otimizar o resultado da sua busca. Caso não tenha encontrado mande um email para nós e retornaremos sua dúvida:</div>
+            <div class="text-title color-text-green text-bold" style="    display: initial;
+"> yannrodrigues20@gmail.com</div></div>
     </div>
 
     <div class="content-duvidas width-content">
@@ -33,7 +38,7 @@
 
 </div>
     <div class="align-center" style="padding-top: 50px">
-        <button class="btn-config-2 color-background-roxo color-text-white" ng-click="limitplus()" ng-show="limitPerguntas < 43 && numRowsDuvidas.length > 0 && loaderPesquisa == false"> Carregar Mais</button>
+        <button class="btn-config color-background-roxo color-text-white" ng-click="limitplus()" ng-show="limitPerguntas < 43 && numRowsDuvidas.length > 0 && loaderPesquisa == false"> Carregar Mais</button>
     </div>
 </div>
 </div>

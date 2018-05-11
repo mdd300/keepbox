@@ -332,7 +332,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         );
     }
 
-    $scope.limitPerguntas = 5;
+    $scope.limitPerguntas = 8;
 
     $scope.perguntas = [
         {
