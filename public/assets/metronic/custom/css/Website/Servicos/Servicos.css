@@ -51,7 +51,7 @@
     padding: 20px 10px;
 }
 .text-title-serv{
-    margin-top: 8%;
+    margin-top: 177px;
 }
 .content-ul-assist-data{
     width: 70%;
@@ -67,7 +67,8 @@
     text-decoration: none !important;
     float: left;
     width: 100%;
-    padding: 25px 200px;
+    padding: 25px 80px;
+    margin: 50px 0px;
 }
 .content-li-serv.left{
     margin-right: 35px;
@@ -77,4 +78,8 @@
 }
 .content-itens-li-serv{
     width: 220px;
+}
+.padding-text-serv{
+    padding: 0px 22px;
+    width: 350px;
 }
