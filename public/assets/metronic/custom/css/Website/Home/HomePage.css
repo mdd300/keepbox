@@ -451,11 +451,19 @@ body{
     overflow: hidden;
     width: 290px;
     background-position-y:  center;
+
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    appearance: none
 }
+
 .select-mini {
     height: 56px;
     width: 167px;
     float: left;
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    appearance: none
 }
 
 .styled-select select {
@@ -463,16 +471,23 @@ body{
     border: none;
     height: 29px;
     margin-left: 30px; /* If you add too much padding here, the options won't show in IE */
-    width: 297px;
+    width: 289px;
     color: #7d1daf;
+    overflow: hidden;
+    moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 .select-mini select {
     background: transparent;
     border: none;
     height: 29px;
     margin-left: 30px; /* If you add too much padding here, the options won't show in IE */
-    width: 115px;
+    width: 164px;
     color: #7d1daf;
+    moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 .rounded {
     -webkit-border-radius: 20px;
