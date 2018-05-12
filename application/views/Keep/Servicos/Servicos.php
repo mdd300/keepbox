@@ -185,19 +185,19 @@
     <div style=" margin-top: 40px;" class="width-content align-x-center">
 
     <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
-        <div class="color-text-grey-light text-1 padding-text text-font-sans" style="padding-top: 10px">Você pode retirar suas compras pessoalmente em nosso endereço (Florida, USA) até 60 dias após o recebimento da primeira encomenda. Assim, você pode começar suas compras antes de viajar e retira-las com segurança ao chegar nos EUA. Muitos hotéis não recebem compras de hóspedes, e quando recebem, cobram caro por este serviço. </div>
+        <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px">Você pode retirar suas compras pessoalmente em nosso endereço (Florida, USA) até 60 dias após o recebimento da primeira encomenda. Assim, você pode começar suas compras antes de viajar e retira-las com segurança ao chegar nos EUA. Muitos hotéis não recebem compras de hóspedes, e quando recebem, cobram caro por este serviço. </div>
     </div>
     </div>
         <div style=" margin-top: 40px;" class="width-content align-x-center">
 
         <div style=" margin-top: 40px;width: 65%" class="width-content align-x-center">
-        <div class="color-text-roxo text-bold text-title text-font-sans" >Empacotamento de Encomendas (GRÁTIS) </div>
+        <div class="color-text-roxo text-bold center text-title text-font-sans" >Empacotamento de Encomendas (GRÁTIS) </div>
     </div>
         </div>
             <div style=" margin-top: 40px;" class="width-content align-x-center">
 
             <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
-        <div class="color-text-grey-light text-1 padding-text text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
+        <div class="color-text-grey-light text-1 center padding-text text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
     </div>
             </div>
                 <div style=" margin-top: 40px;" class="width-content align-x-center">
