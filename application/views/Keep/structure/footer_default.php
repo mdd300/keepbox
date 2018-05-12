@@ -32,7 +32,7 @@
             </div>
 
             <ul class="content-ul-footer">
-                <li class="content-li-footer text-font-sans text-1-sm text-bold color-text-white"><img src="<?=base_url()?>public/assets/metronic/custom/img/icon/instagram.png" style="padding-right: 10px">@KeepBox</li>
+                <li class="content-li-footer text-font-sans text-1-sm text-bold color-text-white"><img src="<?=base_url()?>public/assets/metronic/custom/img/icon/instagram.png" style="padding-right: 10px">@keepboxbr</li>
 
             </ul>
         </div>

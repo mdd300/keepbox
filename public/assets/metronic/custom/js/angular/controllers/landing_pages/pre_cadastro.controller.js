@@ -1,8 +1,17 @@
 angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$timeout', function ($scope, $http,$timeout) {
 
+
+
+    $timeout(function(){
+        document.getElementById("loading").style.display = "none";
+    }, 400);
+
     var url = new URL(window.location.href);
 
     console.log($( window ).width())
+    $scope.valor_plano_1_taxa
+    $scope.valor_plano_2_taxa
+    $scope.valor_plano_3_taxa
 
     var screenSize = $( window ).width() / 1920 * 100
 
@@ -18,7 +27,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
     $scope.range_simulator_home = 0;
     $scope.valor_kg = 0;
     function formataDinheiro(n) {
-        return "R$ " + n.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
+        return "US$ " + n.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
     }
     $scope.changeValue = function () {
 
@@ -29,44 +38,62 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
             var value1 = parseFloat($scope.range_simulator_home) * 4.35;
             $scope.valor_plano_1 = 67.05 + value1;
             $scope.valor_plano_1 = Number(($scope.valor_plano_1).toFixed(2));
-            $scope.valor_plano_1 =formataDinheiro($scope.valor_plano_1)
         }
         else {
             var value1 = parseFloat($scope.range_simulator_home) * 4.45;
             $scope.valor_plano_1 = 84.45 + value1;
             $scope.valor_plano_1 = Number(($scope.valor_plano_1).toFixed(2));
-            $scope.valor_plano_1 =formataDinheiro($scope.valor_plano_1)
 
         }
         if ($scope.range_simulator_home < 11) {
             var value2 = parseFloat($scope.range_simulator_home) * 3.7;
             $scope.valor_plano_2 = 44.95 + value2
             $scope.valor_plano_2 = Number(($scope.valor_plano_2).toFixed(2));
-            $scope.valor_plano_2 =formataDinheiro($scope.valor_plano_2)
 
         } else {
             var value2 = parseFloat($scope.range_simulator_home) * 4.05;
             $scope.valor_plano_2 = 44.95 + value2
             $scope.valor_plano_2 = Number(($scope.valor_plano_2).toFixed(2));
-            $scope.valor_plano_2 =formataDinheiro($scope.valor_plano_2)
 
 
         }
         if ($scope.range_simulator_home < 3) {
             $scope.valor_plano_3 = 23.50
-            $scope.valor_plano_3 =formataDinheiro($scope.valor_plano_3)
 
         } else {
             if ($scope.range_simulator_home == 3) {
                 $scope.valor_plano_3 = 34.75
-                $scope.valor_plano_3 =formataDinheiro($scope.valor_plano_3)
 
 
             } else {
                 $scope.valor_plano_3 = 51.50
-                $scope.valor_plano_3 =formataDinheiro($scope.valor_plano_3)
             }
         }
+
+        $scope.valor_plano_1_taxa = $scope.valor_plano_1 + 12.90;
+        var porcValor_1 = ($scope.valor_plano_1_taxa * 6) / 100;
+        $scope.valor_plano_1_taxa = $scope.valor_plano_1_taxa * porcValor_1;
+
+        $scope.valor_plano_2_taxa = $scope.valor_plano_2 + 12.90;
+        var porcValor_2 = ($scope.valor_plano_2_taxa * 6) / 100;
+        $scope.valor_plano_2_taxa = $scope.valor_plano_2_taxa *porcValor_2;
+
+        $scope.valor_plano_3_taxa = $scope.valor_plano_3 + 12.90;
+        var porcValor_3 = ($scope.valor_plano_3_taxa * 6) / 100;
+        $scope.valor_plano_3_taxa = $scope.valor_plano_3_taxa *porcValor_3;
+
+        $scope.valor_plano_1_taxa = Number(($scope.valor_plano_1_taxa).toFixed(2));
+        $scope.valor_plano_2_taxa = Number(($scope.valor_plano_2_taxa).toFixed(2));
+        $scope.valor_plano_3_taxa = Number(($scope.valor_plano_3_taxa).toFixed(2));
+
+
+        $scope.valor_plano_1 =formataDinheiro($scope.valor_plano_1)
+        $scope.valor_plano_2 =formataDinheiro($scope.valor_plano_2)
+        $scope.valor_plano_3 =formataDinheiro($scope.valor_plano_3)
+
+        $scope.valor_plano_1_taxa =formataDinheiro($scope.valor_plano_1_taxa)
+        $scope.valor_plano_2_taxa =formataDinheiro($scope.valor_plano_2_taxa)
+        $scope.valor_plano_3_taxa =formataDinheiro($scope.valor_plano_3_taxa)
     }
 
     $scope.idCliente = url.searchParams.get("id");

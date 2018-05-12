@@ -1,5 +1,6 @@
 <div class="width_padrao">
-<div class="content-header-duvidas align-center">
+
+<div class="content-header-duvidas align-center" style="    background-image: url('<?= base_url()?>public/assets/metronic/custom/img/photo/banner_duvidas.jpg') ;">
     <div class="content-text-header-duvidas">
     <div class="color-text-grey text-title-xl text-font-sans grey-text-duvidas center" style="opacity: 0.6">
         Qual sua dúvida?

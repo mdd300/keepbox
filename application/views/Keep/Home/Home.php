@@ -254,8 +254,8 @@
         <div class="content-right-simulator ">
             <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{range_simulator_home}} Lbs = {{valor_kg}} Kg</div>
             <div class="slider-margin" >
-                <li class="li-step-tutorial" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
-                <li class="li-step-tutorial" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
+                <li class="li-step-tutorial text-1" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
+                <li class="li-step-tutorial text-1" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
                  <input type="range" max="66" ng-model="range_simulator_home" ng-change="changeValue()" class="slider"></input>
                
             </div>
@@ -272,22 +272,28 @@
                 <div class="text-1-sm text-font-sans text-bold color-text-grey">
                     Priority Mail Express International™
                 </div>
-<!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
-<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                </div>-->
-                <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b> {{valor_plano_1}}
+                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+                    Taxa Keepbox: US$12,90
+                </div>
+                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                    Taxa Paypal: {{valor_plano_1_taxa}}
+                </div>
+                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                    <b>Envio:</b> {{valor_plano_1}}
                 </div>
             </li>
             <li class="content-li-simulator-data">
                 <div class="text-1-sm text-font-sans text-bold color-text-grey"">
-                    LPriority Mail International®
+                    Priority Mail International®
                 </div>
-<!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
-<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                </div>-->
-                <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b> {{valor_plano_2}}
+    <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+        Taxa Keepbox: US$12,90
+    </div>
+    <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+        Taxa Paypal: {{valor_plano_2_taxa}}
+    </div>
+                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                    <b>Envio:</b> {{valor_plano_2}}
                 </div>
             </li>
             <li class="content-li-simulator-data">
@@ -295,11 +301,14 @@
                 <div class="text-1-sm text-font-sans text-bold color-text-grey"">
                     First-Class Package International Service™
                 </div>
-<!--                <div class="text-1 text-font-sans color-text-grey" style="padding-top: 20px">-->
-<!--                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,-->
-<!--                </div>-->
-                <div class="text-1 color-text-green color-text-green text-bold text-font-sans">
-                    <b>Total:</b> {{valor_plano_3}}
+                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+                    Taxa Keepbox: US$12,90
+                </div>
+                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                    Taxa Paypal: {{valor_plano_3_taxa}}
+                </div>
+                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                    <b>Envio:</b> {{valor_plano_3}}
                 </div>
 </div>
             </li>
@@ -418,7 +427,7 @@
             <div  class="text-1 color-text-white"  style="    padding-top: 60px;
         width: 700px;" > Veja as últimas notícias sobre os segredos das importações no Youtube da KeepBox </div>
 
-            <button style="margin-top: 50px;" class="btn-config-2 shadow-btn-roxo color-background-roxo color-text-white text-1-sm" >Venha conhecer </button>
+            <button style="margin-top: 45px;" class="btn-config-2 shadow-btn-roxo color-background-roxo color-text-white text-1-sm" >Venha conhecer </button>
         </div>
 
 

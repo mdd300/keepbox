@@ -87,7 +87,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <ul class="menu-ul">
                         <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>">Inicial</a></li>
                         <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 2,'text-bold': <?=$selection?> == 2 , 'color-text-grey-light': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a></li>
-                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 3,'text-bold': <?=$selection?> == 3 , 'color-text-grey-light': <?=$selection?> !== 3}"  href="<?= base_url('home/funcionamento')?>">Como Funciona</a></li>
+<!--                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': --><?//=$selection?><!-- == 3,'text-bold': --><?//=$selection?><!-- == 3 , 'color-text-grey-light': --><?//=$selection?><!-- !== 3}"  href="--><?//= base_url('home/funcionamento')?><!--">Como Funciona</a></li>-->
                         <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 4,'text-bold': <?=$selection?> == 4 , 'color-text-grey-light': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
                     </ul>
                 </nav>
@@ -129,6 +129,11 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <div class="background-acesso-screen" ng-click="login_press = false" ng-show="login_press">
 </div>
+
+
+</div>
+
+<div class="load-inicial" id="loading">
 
 </div>
 
