@@ -471,7 +471,7 @@ body{
     border: none;
     height: 29px;
     margin-left: 30px; /* If you add too much padding here, the options won't show in IE */
-    width: 110px;
+    width: 115px;
     color: #7d1daf;
 }
 .rounded {

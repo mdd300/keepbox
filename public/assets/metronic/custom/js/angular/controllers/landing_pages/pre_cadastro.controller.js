@@ -26,14 +26,20 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 
     $scope.range_simulator_home = 0;
     $scope.valor_kg = 0;
+    $scope.range_simulator_home_kg = 0;
+    $scope.select_lbs_kg = '1';
     function formataDinheiro(n) {
         return "US$ " + n.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
     }
     $scope.changeValue = function () {
 
-        $scope.valor_kg = $scope.range_simulator_home * 0.4536 ;
-        $scope.valor_kg = $scope.valor_kg.toFixed(1);
-
+        if($scope.select_lbs_kg == 1) {
+            $scope.range_simulator_home_kg = $scope.range_simulator_home * 0.4536;
+            $scope.range_simulator_home_kg = $scope.range_simulator_home_kg.toFixed(1);
+        }else{
+            $scope.range_simulator_home = $scope.range_simulator_home_kg / 0.4536;
+            $scope.range_simulator_home = $scope.range_simulator_home.toFixed(0);
+        }
         if ($scope.range_simulator_home < 6) {
             var value1 = parseFloat($scope.range_simulator_home) * 4.35;
             $scope.valor_plano_1 = 67.05 + value1;
@@ -71,15 +77,15 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         }
 
         $scope.valor_plano_1_taxa = $scope.valor_plano_1 + 12.90;
-        var porcValor_1 = ($scope.valor_plano_1_taxa * 6) / 100;
+        var porcValor_1 = ($scope.valor_plano_1_taxa * 0.06) / 100;
         $scope.valor_plano_1_taxa = $scope.valor_plano_1_taxa * porcValor_1;
 
         $scope.valor_plano_2_taxa = $scope.valor_plano_2 + 12.90;
-        var porcValor_2 = ($scope.valor_plano_2_taxa * 6) / 100;
+        var porcValor_2 = ($scope.valor_plano_2_taxa * 0.06) / 100;
         $scope.valor_plano_2_taxa = $scope.valor_plano_2_taxa *porcValor_2;
 
         $scope.valor_plano_3_taxa = $scope.valor_plano_3 + 12.90;
-        var porcValor_3 = ($scope.valor_plano_3_taxa * 6) / 100;
+        var porcValor_3 = ($scope.valor_plano_3_taxa * 0.06) ;
         $scope.valor_plano_3_taxa = $scope.valor_plano_3_taxa *porcValor_3;
 
         $scope.valor_plano_1_taxa = Number(($scope.valor_plano_1_taxa).toFixed(2));

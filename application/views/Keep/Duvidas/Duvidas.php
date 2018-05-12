@@ -1,8 +1,8 @@
 <div class="width_padrao">
 
-<div class="content-header-duvidas align-center" style="    background-image: url('<?= base_url()?>public/assets/metronic/custom/img/photo/banner_duvidas.jpg') ;">
+<div class="content-header-duvidas align-center" style="    background-image: url('<?= base_url()?>public/assets/metronic/custom/img/photo/banner_duvidas.jpeg') ;">
     <div class="content-text-header-duvidas">
-    <div class="color-text-grey text-title-xl text-font-sans grey-text-duvidas center" style="opacity: 0.6">
+    <div class="color-text-grey text-title-xl text-font-sans grey-text-duvidas center" >
         Qual sua dúvida?
     </div>
         <input ng-keydown="inputSearch()" ng-model="searchPergunta" id="search-duvidas" class="input-duvidas text-1 text-font-sans color-text-grey-light">

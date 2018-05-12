@@ -236,8 +236,9 @@
     background-image: url(<?= base_url('/public/assets/metronic/custom/img/icon/icon-select.jpeg')?>);
     background-repeat: no-repeat;
     background-position-y: 0px;">
-                <select class="text-1-sm">
-                    <option>Lbs</option>
+                <select class="text-1-sm" ng-model="select_lbs_kg">
+                    <option value="1" selected>Lbs</option>
+                    <option value="2">Kg</option>
                 </select>
             </div>
             <div class="styled-select align-y-center background-select-roxo rounded" style="    background-color: white;
@@ -252,12 +253,15 @@
             </div>
         </div>
         <div class="content-right-simulator ">
-            <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{range_simulator_home}} Lbs = {{valor_kg}} Kg</div>
+            <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{range_simulator_home}} Lbs = {{range_simulator_home_kg}} Kg</div>
             <div class="slider-margin" >
-                <li class="li-step-tutorial text-1" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
-                <li class="li-step-tutorial text-1" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
-                 <input type="range" max="66" ng-model="range_simulator_home" ng-change="changeValue()" class="slider"></input>
-               
+                <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 1" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
+                <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 1" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
+                <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 2" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home_kg}}</li>
+                <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 2" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 30</li>
+                 <input type="range" max="66" ng-show="select_lbs_kg == 1" ng-model="range_simulator_home" ng-value="range_simulator_home" ng-change="changeValue()" class="slider"></input>
+                <input type="range" max="30" step="0.5" ng-show="select_lbs_kg == 2" ng-model="range_simulator_home_kg" ng-value="range_simulator_home_kg" ng-change="changeValue()" class="slider"></input>
+
             </div>
 
            
@@ -269,7 +273,7 @@
     <div class="content-border-simulator-shadow">
         <ul class="content-ul-simulator-data">
             <li class="content-li-simulator-data">
-                <div class="text-1-sm text-font-sans text-bold color-text-grey">
+                <div class="text-1-sm text-font-sans text-bold color-text-grey" style="    height: 80px;">
                     Priority Mail Express International™
                 </div>
                 <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
@@ -283,7 +287,7 @@
                 </div>
             </li>
             <li class="content-li-simulator-data">
-                <div class="text-1-sm text-font-sans text-bold color-text-grey"">
+                <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 80px;">
                     Priority Mail International®
                 </div>
     <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
@@ -298,7 +302,7 @@
             </li>
             <li class="content-li-simulator-data">
                 <div  ng-show="range_simulator_home < 5">
-                <div class="text-1-sm text-font-sans text-bold color-text-grey"">
+                <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 80px;">
                     First-Class Package International Service™
                 </div>
                 <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">

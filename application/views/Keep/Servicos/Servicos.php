@@ -26,7 +26,9 @@
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Armazenamento de Encomendas <b>(GRÁTIS)</b></div>
                 <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"
-                >A KeepBox recebe e armazena suas compras por até 60 dias completamente grátis. - Se precisar de mais 30 dias, contrate o Armazenamento Extra (Taxa fixa: US$5 + US$1 por dia) <br>- Após 90 dias, as encomendas serão vendidas, doadas ou descartadas.</div>
+                >A KeepBox recebe e armazena suas compras por até 60 dias completamente grátis.
+                    <br> <br> - Se precisar de mais 30 dias, contrate o Armazenamento Extra (Taxa fixa: US$5 + US$1 por dia)
+                    <br>- Após 90 dias, as encomendas serão vendidas, doadas ou descartadas.</div>
             </li>
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Empacotamento de Encomendas <b>(GRÁTIS)</b> </div>
@@ -37,7 +39,7 @@
                 <div class="color-text-green text-bold text-1 text-font-sans" >Envio de Encomendas </div>
                 <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >Taxa KeepBox: Apenas US$12,90
                     FRETE USPS: Tabela padrão da USPS (Correio Americano)
-                    Simule o preço do envio em nossa <div class="color-text-green text-bold" style="cursor: pointer;     display: initial;" id="myBtn">CALCULADORA DE ENVIO</div> <br>  Obs: Abrir uma pop-up com a CALCULADORA DE ENVIO (Tx KeepBox, Paypal e USPS) A ideia do pop-up é pra não sair da pagina dos SERVIÇOS E PREÇOS</div>
+                    Simule o preço do envio em nossa <div class="color-text-green text-bold" style="cursor: pointer;     display: initial;" id="myBtn">CALCULADORA DE ENVIO</div> </div>
 
             </li>
         </ul>
@@ -110,21 +112,21 @@
 </div>
 
 
-
-<div class="align-x-center" style="     padding-top: 100px;">
-    <button style="        padding: 40px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;" class="btn-config color-background-roxo color-text-white text-font-sans "><div class="text-2 padding-text-serv">Envio de encomendas</div><div class="text-1 padding-text-serv" style="margin-left: 100px"><b>Taxa KeepBox:</b> Apenas US$12,90</div><div style="margin-left: 100px" class="text-1 padding-text-serv">  <b>Taxa KeepBox:</b> Apenas US$12,90</div> </button>
-
- </div>
-
+<!---->
+<!--<div class="align-x-center" style="     padding-top: 100px;">-->
+<!--    <button style="        padding: 40px 100px;-->
+<!--    display: flex;-->
+<!--    align-items: center;-->
+<!--    justify-content: center;" class="btn-config color-background-roxo color-text-white text-font-sans "><div class="text-2 padding-text-serv">Envio de encomendas</div><div class="text-1 padding-text-serv" style="margin-left: 100px"><b>Taxa KeepBox:</b> Apenas US$12,90</div><div style="margin-left: 100px" class="text-1 padding-text-serv">  <b>Taxa KeepBox:</b> Apenas US$12,90</div> </button>-->
+<!---->
+<!-- </div>-->
+<!---->
 
 
 <div>
     <div style="    margin-top: 120px;">
 
-        <div class="color-text-roxo text-title text-font-sans text-bold center">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
+        <div class="color-text-roxo text-title-xl text-font-sans text-bold center">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
         <div class="color-text-roxo text-1 text-font-sans center" style="    padding-top: 20px;"> Vamos às compras para você</div>
 
     </div>
@@ -166,42 +168,43 @@
     </div>
 
     <div style=" margin-top: 40px;" class="width-content align-x-center">
-        <div style="width: 65%" class="text-font-sans center  color-text-grey-light text-1-sm padding-text">
+        <div style="width: 65%" class="text-font-sans center  color-text-grey-light text-1 padding-text">
             Pensando em seu conforto, se preferir, realizamos as compras para você! Basta nos enviar os links dos produtos desejados.
 <br><br>
             A Compra Assistida é o método preferido dos clientes que ainda não possuem cartão de crédito internacional ou têm dificuldades com o inglês e/ou com os sites internacionais ou, simplesmente, não querem perder tempo com as pesquisas e burocracias das compras.
         </div>
     </div>
-</div>
+    <div style=" margin-top: 40px;" class="width-content align-x-center">
 
-
-<div class="content-servi-basicos align-x-center">
-    <div class="content-title-left-serv" style="margin: 100px !important;">
-
-
-        <ul class="ul-serv-text" style="    margin-right: 30px !important;">
-            <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1 text-font-sans">Retirada de Encomendas em nosso armazém - US$3,00 por pacote recebido </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px">Você pode retirar suas compras pessoalmente em nosso endereço (Florida, USA) até 60 dias após o recebimento da primeira encomenda. Assim, você pode começar suas compras antes de viajar e retira-las com segurança ao chegar nos EUA. Muitos hotéis não recebem compras de hóspedes, e quando recebem, cobram caro por este serviço. </div>
-            </li>
-        </ul>
+    <div style=" margin-top: 80px;width: 65%" class="width-content align-x-center">
+        <div class="color-text-roxo center text-bold text-title text-font-sans">Retirada de Encomendas em nosso armazém - US$3,00 por pacote recebido </div>
     </div>
-    <div class="content-text-right-serv">
-
-        <ul class="ul-serv-text">
-
-
-            <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1 text-font-sans" >Empacotamento de Encomendas (GRÁTIS) </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
-            </li>
-
-            <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1 text-font-sans" >Entregamos em seu hotel - Consulte-nos disponibilidade e valores</div>
-            </li>
-
-        </ul>
     </div>
+
+    <div style=" margin-top: 40px;" class="width-content align-x-center">
+
+    <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
+        <div class="color-text-grey-light text-1 padding-text text-font-sans" style="padding-top: 10px">Você pode retirar suas compras pessoalmente em nosso endereço (Florida, USA) até 60 dias após o recebimento da primeira encomenda. Assim, você pode começar suas compras antes de viajar e retira-las com segurança ao chegar nos EUA. Muitos hotéis não recebem compras de hóspedes, e quando recebem, cobram caro por este serviço. </div>
+    </div>
+    </div>
+        <div style=" margin-top: 40px;" class="width-content align-x-center">
+
+        <div style=" margin-top: 40px;width: 65%" class="width-content align-x-center">
+        <div class="color-text-roxo text-bold text-title text-font-sans" >Empacotamento de Encomendas (GRÁTIS) </div>
+    </div>
+        </div>
+            <div style=" margin-top: 40px;" class="width-content align-x-center">
+
+            <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
+        <div class="color-text-grey-light text-1 padding-text text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
+    </div>
+            </div>
+                <div style=" margin-top: 40px;" class="width-content align-x-center">
+
+                <div style=" margin-top: 40px;width: 65%" class="width-content align-x-center">
+        <div class="color-text-roxo text-bold center text-title text-font-sans" >Entregamos em seu hotel - Consulte-nos disponibilidade e valores</div>
+    </div>
+                </div>
 </div>
 
 
@@ -214,7 +217,7 @@
         <span class="close">&times;</span>
 
         <div class="content-simulator-module4 align-x-center">
-            <div class="content-simulator" style="    width: 75% !important;">
+            <div class="content-simulator">
                 <div class="content-left-simulator">
                     <div class="color-text-roxo text-title-xl  text-font-sans">Simulador de Preços</div>
                     <div style="    margin-top: 50px;">
@@ -222,8 +225,9 @@
                                 background-image: url(<?= base_url('/public/assets/metronic/custom/img/icon/icon-select.jpeg')?>);
                                 background-repeat: no-repeat;
                                 background-position-y: 0px;">
-                            <select class="text-1-sm">
-                                <option>Lbs</option>
+                            <select class="text-1-sm" ng-model="select_lbs_kg">
+                                <option value="1" selected>Lbs</option>
+                                <option value="2">Kg</option>
                             </select>
                         </div>
                         <div class="styled-select align-y-center background-select-roxo rounded" style="    background-color: white;
@@ -238,11 +242,14 @@
                     </div>
                 </div>
                 <div class="content-right-simulator ">
-                    <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{range_simulator_home}} Lbs = {{valor_kg}} Kg</div>
+                    <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{range_simulator_home}} Lbs = {{range_simulator_home_kg}} Kg</div>
                     <div class="slider-margin" >
-                        <li class="li-step-tutorial text-1" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
-                        <li class="li-step-tutorial text-1" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
-                        <input type="range" max="66" ng-model="range_simulator_home" ng-change="changeValue()" class="slider"></input>
+                        <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 1" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
+                        <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 1" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
+                        <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 2" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home_kg}}</li>
+                        <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 2" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 30</li>
+                        <input type="range" max="66" ng-show="select_lbs_kg == 1" ng-model="range_simulator_home" ng-change="changeValue()" class="slider"></input>
+                        <input type="range" max="30" step="0.5" ng-show="select_lbs_kg == 2" ng-model="range_simulator_home_kg" ng-change="changeValue()" class="slider"></input>
 
                     </div>
 
@@ -255,7 +262,7 @@
             <div class="content-border-simulator-shadow">
                 <ul class="content-ul-simulator-data">
                     <li class="content-li-simulator-data">
-                        <div class="text-1-sm text-font-sans text-bold color-text-grey">
+                        <div class="text-1-sm text-font-sans text-bold color-text-grey" style="    height: 80px;">
                             Priority Mail Express International™
                         </div>
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
@@ -269,38 +276,38 @@
                         </div>
                     </li>
                     <li class="content-li-simulator-data">
-                        <div class="text-1-sm text-font-sans text-bold color-text-grey"">
-                        Priority Mail International®
+                        <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 80px;">
+                            Priority Mail International®
+                        </div>
+                        <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+                            Taxa Keepbox: US$12,90
+                        </div>
+                        <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                            Taxa Paypal: {{valor_plano_2_taxa}}
+                        </div>
+                        <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                            <b>Envio:</b> {{valor_plano_2}}
+                        </div>
+                    </li>
+                    <li class="content-li-simulator-data">
+                        <div  ng-show="range_simulator_home < 5">
+                            <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 80px;">
+                                First-Class Package International Service™
+                            </div>
+                            <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+                                Taxa Keepbox: US$12,90
+                            </div>
+                            <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                                Taxa Paypal: {{valor_plano_3_taxa}}
+                            </div>
+                            <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                                <b>Envio:</b> {{valor_plano_3}}
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
-                Taxa Keepbox: US$12,90
-            </div>
-            <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
-                Taxa Paypal: {{valor_plano_2_taxa}}
-            </div>
-            <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
-                <b>Envio:</b> {{valor_plano_2}}
-            </div>
-            </li>
-            <li class="content-li-simulator-data">
-                <div  ng-show="range_simulator_home < 5">
-                    <div class="text-1-sm text-font-sans text-bold color-text-grey"">
-                    First-Class Package International Service™
-                </div>
-                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
-                    Taxa Keepbox: US$12,90
-                </div>
-                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
-                    Taxa Paypal: {{valor_plano_3_taxa}}
-                </div>
-                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
-                    <b>Envio:</b> {{valor_plano_3}}
-                </div>
         </div>
-        </li>
-        </ul>
-    </div>
-</div>
     </div>
 
 </div>
