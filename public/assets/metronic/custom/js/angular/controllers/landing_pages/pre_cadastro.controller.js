@@ -85,7 +85,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         $scope.valor_plano_2_taxa = $scope.valor_plano_2_taxa *porcValor_2;
 
         $scope.valor_plano_3_taxa = $scope.valor_plano_3 + 12.90;
-        var porcValor_3 = ($scope.valor_plano_3_taxa * 0.06) ;
+        var porcValor_3 = ($scope.valor_plano_3_taxa * 0.06) / 100;
         $scope.valor_plano_3_taxa = $scope.valor_plano_3_taxa *porcValor_3;
 
         $scope.valor_plano_1_taxa = Number(($scope.valor_plano_1_taxa).toFixed(2));
