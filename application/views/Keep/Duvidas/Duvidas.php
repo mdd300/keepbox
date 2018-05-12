@@ -2,7 +2,7 @@
 
 <div class="content-header-duvidas align-center" style="    background-image: url('<?= base_url()?>public/assets/metronic/custom/img/photo/banner_duvidas.jpeg') ;">
     <div class="content-text-header-duvidas">
-    <div class="color-text-white text-title-xl text-font-sans grey-text-duvidas center" >
+    <div class="color-text-white text-title-xl text-font-sans center" >
         Qual sua dúvida?
     </div>
         <input ng-keydown="inputSearch()" ng-model="searchPergunta" id="search-duvidas" class="input-duvidas text-1 text-font-sans color-text-grey-light">
