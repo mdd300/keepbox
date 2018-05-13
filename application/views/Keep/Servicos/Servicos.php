@@ -12,7 +12,7 @@
 <div class="content-servi basico align-x-center">
     <div class="content-title-left-serv">
         <div class="text-title-serv text-title-xl text-bold text-font-sans color-text-green">
-            Serviços Basicos
+            Serviços Básicos
         </div>
     </div>
     <div class="content-text-right-serv" style="    margin-right: 0 !important;">
@@ -280,9 +280,9 @@
                 <div class="content-right-simulator ">
                     <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{range_simulator_home}} Lbs = {{range_simulator_home_kg}} Kg</div>
                     <div class="slider-margin" >
-                        <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 1" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}}</li>
+                        <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 1" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}} Lbs</li>
                         <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 1" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
-                        <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 2" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home_kg}}</li>
+                        <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 2" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home_kg}} Kg</li>
                         <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 2" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 30</li>
                         <input type="range" max="66" ng-show="select_lbs_kg == 1" ng-model="range_simulator_home" ng-value="range_simulator_home" ng-change="changeValue()" class="slider"></input>
                         <input type="range" max="30" step="0.5" ng-show="select_lbs_kg == 2" ng-model="range_simulator_home_kg" ng-value="range_simulator_home_kg" ng-change="changeValue()" class="slider"></input>
