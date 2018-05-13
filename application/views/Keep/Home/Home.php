@@ -282,8 +282,11 @@
                 <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                     Taxa Paypal: {{valor_plano_1_taxa}}
                 </div>
+                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                    Envio: {{valor_plano_1}}
+                </div>
                 <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
-                    <b>Envio:</b> {{valor_plano_1}}
+                    <b>Total:</b> {{total1}}
                 </div>
             </li>
             <li class="content-li-simulator-data">
@@ -296,8 +299,11 @@
     <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
         Taxa Paypal: {{valor_plano_2_taxa}}
     </div>
+                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                    Envio: {{valor_plano_2}}
+                </div>
                 <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
-                    <b>Envio:</b> {{valor_plano_2}}
+                    <b>Total:</b> {{total2}}
                 </div>
             </li>
             <li class="content-li-simulator-data">
@@ -311,8 +317,11 @@
                 <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                     Taxa Paypal: {{valor_plano_3_taxa}}
                 </div>
+                    <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                        Envio: {{valor_plano_3}}
+                    </div>
                 <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
-                    <b>Envio:</b> {{valor_plano_3}}
+                    <b>Total:</b> {{total3}}
                 </div>
 </div>
             </li>

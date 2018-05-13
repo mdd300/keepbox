@@ -12,7 +12,7 @@
 <div class="content-servi basico align-x-center">
     <div class="content-title-left-serv">
         <div class="text-title-serv text-title-xl text-bold text-font-sans color-text-green">
-            Serviçoes Basicos
+            Serviços Basicos
         </div>
     </div>
     <div class="content-text-right-serv" style="    margin-right: 0 !important;">
@@ -47,8 +47,8 @@
 </div>
 
 <div class="align-x-center">
-<div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 100px;">
-    Serviçoes Extras
+<div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 40px;">
+    Serviços Extras
 </div>
 </div>
 <div class="align-x-center">
@@ -57,7 +57,7 @@
 
 </div>
 <div class="content-servi-basicos align-x-center">
-    <div class="content-title-left-serv" style="margin: 100px !important;">
+    <div class="content-title-left-serv" style="margin: 60px 100px !important;">
         <ul class="ul-serv-text">
 
             <li class="li-serv-text">
@@ -124,14 +124,14 @@
 
 
 <div>
-    <div style="    margin-top: 120px;">
+    <div style="    margin-top: 100px;">
 
         <div class="color-text-roxo text-title-xl text-font-sans text-bold center">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
-        <div class="color-text-roxo text-1 text-font-sans center" style="    padding-top: 20px;"> Vamos às compras para você</div>
+        <div class="color-text-roxo text-2 text-font-sans center" style="    padding-top: 20px;"> Vamos às compras para você</div>
 
     </div>
 
-    <div class=" align-center" style="    margin-top: 100px;">
+    <div class=" align-center" style="    margin-top: 60px;">
         <div class="">
             <ul class="content-ul-assist-data">
                 <li class=" content-li-serv left content-border-simulator-shadow" >
@@ -178,34 +178,69 @@
     <div style=" margin-top: 40px;" class="width-content align-x-center">
 
     <div style=" margin-top: 80px;width: 65%" class="width-content align-x-center">
-        <div class="color-text-roxo center text-bold text-title text-font-sans">Retirada de Encomendas em nosso armazém - US$3,00 por pacote recebido </div>
+        <div class="color-text-roxo center text-bold text-title text-font-sans">Retirada de Encomendas em nosso armazém  <br>(US$3,00 por pacote recebido) </div>
     </div>
     </div>
 
-    <div style=" margin-top: 40px;" class="width-content align-x-center">
+    <div style=" margin-top: 20px;" class="width-content align-x-center">
 
     <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
         <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px">Você pode retirar suas compras pessoalmente em nosso endereço (Florida, USA) até 60 dias após o recebimento da primeira encomenda. Assim, você pode começar suas compras antes de viajar e retira-las com segurança ao chegar nos EUA. Muitos hotéis não recebem compras de hóspedes, e quando recebem, cobram caro por este serviço. </div>
     </div>
     </div>
-        <div style=" margin-top: 40px;" class="width-content align-x-center">
 
-        <div style=" margin-top: 40px;width: 65%" class="width-content align-x-center">
-        <div class="color-text-roxo text-bold center text-title text-font-sans" >Empacotamento de Encomendas (GRÁTIS) </div>
-    </div>
-        </div>
-            <div style=" margin-top: 40px;" class="width-content align-x-center">
-
-            <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
-        <div class="color-text-grey-light text-1 center padding-text text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
-    </div>
-            </div>
-                <div style=" margin-top: 40px;" class="width-content align-x-center">
+                <div style=" margin-top: 20px;" class="width-content align-x-center">
 
                 <div style=" margin-top: 40px;width: 65%" class="width-content align-x-center">
-        <div class="color-text-roxo text-bold center text-title text-font-sans" >Entregamos em seu hotel - Consulte-nos disponibilidade e valores</div>
+        <div class="color-text-roxo text-bold center text-title text-font-sans" >Entregamos em seu hotel</div>
     </div>
                 </div>
+    <div style=" margin-top: 20px;" class="width-content align-x-center">
+
+        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1 center padding-text text-font-sans"style="padding-top: 10px" >Consulte-nos disponibilidade e valores.</div>
+        </div>
+    </div>
+
+    <div class="align-center" style="padding-top: 40px">
+
+        <div class="content-step-tutorial-module3" >
+
+            <ul class="ul-tutorial">
+                <li class="li-step-tutorial-serv">
+                    <div class="content-border-shadow-li-tutorial">
+                        <div class="content-text-tutorial-serv text-1 text-font-sans color-text-grey-light">1 – Você nos envia quais itens deseja comprar, quantidade e tamanho.
+                        </div>
+                    </div>
+                </li>
+                <li class="li-step-tutorial-serv">
+                    <div class="content-border-shadow-li-tutorial">
+
+                        <div class="content-text-tutorial-serv text-1 text-font-sans color-text-grey-light">2 – Nós faremos um orçamento completo para você e lhe enviaremos para aprovação.
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <ul class="ul-tutorial">
+
+                <li class="li-step-tutorial-serv">
+                    <div class="content-border-shadow-li-tutorial">
+
+                        <div class="content-text-tutorial-serv text-1 text-font-sans color-text-grey-light">3 – Após sua aprovação, iremos às compras para você! Compraremos tudo que você pediu e cadastramos tudo em sua conta KeepBox para você conferir e acompanhar suas compras.
+
+                        </div>
+                </li>
+                <li class="li-step-tutorial-serv">
+                    <div class="content-border-shadow-li-tutorial">
+
+                        <div class="content-text-tutorial-serv text-1 text-font-sans color-text-grey-light">4 – Então, unificaremos tudo que você desejar em uma só caixa, você seleciona os serviços extras que deseja e nós enviamos tudo para seu endereço no Brasil.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 
@@ -249,8 +284,8 @@
                         <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 1" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
                         <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 2" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home_kg}}</li>
                         <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 2" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 30</li>
-                        <input type="range" max="66" ng-show="select_lbs_kg == 1" ng-model="range_simulator_home" ng-change="changeValue()" class="slider"></input>
-                        <input type="range" max="30" step="0.5" ng-show="select_lbs_kg == 2" ng-model="range_simulator_home_kg" ng-change="changeValue()" class="slider"></input>
+                        <input type="range" max="66" ng-show="select_lbs_kg == 1" ng-model="range_simulator_home" ng-value="range_simulator_home" ng-change="changeValue()" class="slider"></input>
+                        <input type="range" max="30" step="0.5" ng-show="select_lbs_kg == 2" ng-model="range_simulator_home_kg" ng-value="range_simulator_home_kg" ng-change="changeValue()" class="slider"></input>
 
                     </div>
 
@@ -272,8 +307,11 @@
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                             Taxa Paypal: {{valor_plano_1_taxa}}
                         </div>
+                        <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                            Envio: {{valor_plano_1}}
+                        </div>
                         <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
-                            <b>Envio:</b> {{valor_plano_1}}
+                            <b>Total:</b> {{total1}}
                         </div>
                     </li>
                     <li class="content-li-simulator-data">
@@ -286,8 +324,11 @@
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                             Taxa Paypal: {{valor_plano_2_taxa}}
                         </div>
+                        <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                            Envio: {{valor_plano_2}}
+                        </div>
                         <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
-                            <b>Envio:</b> {{valor_plano_2}}
+                            <b>Total:</b> {{total2}}
                         </div>
                     </li>
                     <li class="content-li-simulator-data">
@@ -301,8 +342,11 @@
                             <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                                 Taxa Paypal: {{valor_plano_3_taxa}}
                             </div>
+                            <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                                Envio: {{valor_plano_3}}
+                            </div>
                             <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
-                                <b>Envio:</b> {{valor_plano_3}}
+                                <b>Total:</b> {{total3}}
                             </div>
                         </div>
                     </li>

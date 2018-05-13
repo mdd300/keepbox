@@ -88,14 +88,27 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         var porcValor_3 = ($scope.valor_plano_3_taxa * 0.06) / 100;
         $scope.valor_plano_3_taxa = $scope.valor_plano_3_taxa *porcValor_3;
 
+
+        $scope.total1 = $scope.valor_plano_1_taxa + 12.90 + $scope.valor_plano_1;
+        $scope.total2 = $scope.valor_plano_2_taxa + 12.90 + $scope.valor_plano_2;
+        $scope.total3 = $scope.valor_plano_3_taxa + 12.90 + $scope.valor_plano_3;
+
+
         $scope.valor_plano_1_taxa = Number(($scope.valor_plano_1_taxa).toFixed(2));
         $scope.valor_plano_2_taxa = Number(($scope.valor_plano_2_taxa).toFixed(2));
         $scope.valor_plano_3_taxa = Number(($scope.valor_plano_3_taxa).toFixed(2));
 
+        $scope.total1 = Number(($scope.total1).toFixed(2));
+        $scope.total2 = Number(($scope.total2).toFixed(2));
+        $scope.total3 = Number(($scope.total3).toFixed(2));
 
         $scope.valor_plano_1 =formataDinheiro($scope.valor_plano_1)
         $scope.valor_plano_2 =formataDinheiro($scope.valor_plano_2)
         $scope.valor_plano_3 =formataDinheiro($scope.valor_plano_3)
+
+        $scope.total1 =formataDinheiro($scope.total1)
+        $scope.total2 =formataDinheiro($scope.total2)
+        $scope.total3 =formataDinheiro($scope.total3)
 
         $scope.valor_plano_1_taxa =formataDinheiro($scope.valor_plano_1_taxa)
         $scope.valor_plano_2_taxa =formataDinheiro($scope.valor_plano_2_taxa)
