@@ -57,12 +57,12 @@
             <table>
                 <thead class="color-background-roxo">
                 <tr>
-                <th class=" content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                    Data
-                </th>
                 <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
                     Num.Pedido
                 </th>
+                    <th class=" content-header-table text-bold text-font-sans text-1-sm color-text-white">
+                        Data
+                    </th>
                 <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
                     Status do Pedido
                 </th>
@@ -80,7 +80,6 @@
                 <tbody>
                 <tr class="tr-content-produtos color-background-white" ng-repeat="produto in produtosList">
 
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_data}}</td>
                     <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; "
                         ng-mouseenter="hovering = true"
                         ng-mouseleave="hovering = false">{{produto.prod_num_ped}}
@@ -90,6 +89,7 @@
                             </div>
                         </div>
                     </td>
+                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_data}}</td>
                     <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_status}}</td>
                     <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_nome}}</td>
                     <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_loja}}</td>
