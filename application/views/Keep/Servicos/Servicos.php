@@ -175,9 +175,47 @@
             A Compra Assistida é o método preferido dos clientes que ainda não possuem cartão de crédito internacional ou têm dificuldades com o inglês e/ou com os sites internacionais ou, simplesmente, não querem perder tempo com as pesquisas e burocracias das compras.
         </div>
     </div>
+
+    <div style=" margin-top: 80px;" class="width-content align-x-center">
+
+        <div style=" width: 65%" class="width-content align-x-center">
+            <div class="color-text-roxo center text-bold text-title text-font-sans">Como funciona o serviço <br> Compra Assistida (Personal Shopper)</div>
+        </div>
+    </div>
+
+    <div class="width-content align-x-center">
+        <div class="content-servi align-x-center">
+            <div class="content-title-left-serv" style="margin: 60px 100px !important;">
+                <ul class="ul-serv-text">
+                    <li class="li-serv-text">
+                        <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"><b>1 - </b>Você nos envia quais itens deseja comprar, quantidade e tamanho.</div>
+
+                    </li>
+
+                    <li class="li-serv-text">
+                        <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"><b>2 - </b>Nós faremos um orçamento completo para você e lhe enviaremos para aprovação.</div>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="content-text-right-serv" style="    margin-right: 0 !important;">
+                <ul class="ul-serv-text">
+                    <li class="li-serv-text">
+                        <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"><b>3 - </b>Após sua aprovação, iremos às compras para você! Compraremos tudo que você pediu e cadastramos tudo em sua conta KeepBox para você conferir e acompanhar suas compras.</div>
+
+                    </li>
+
+                    <li class="li-serv-text">
+                        <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"><b>4 - </b>Então, unificaremos tudo que você desejar em uma só caixa, você seleciona os serviços extras que deseja e nós enviamos tudo para seu endereço no Brasil.</div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div style=" margin-top: 40px;" class="width-content align-x-center">
 
-    <div style=" margin-top: 80px;width: 65%" class="width-content align-x-center">
+    <div style=" width: 65%" class="width-content align-x-center">
         <div class="color-text-roxo center text-bold text-title text-font-sans">Retirada de Encomendas em nosso armazém  <br>(US$3,00 por pacote recebido) </div>
     </div>
     </div>
@@ -298,10 +336,10 @@
             <div class="content-border-simulator-shadow">
                 <ul class="content-ul-simulator-data">
                     <li class="content-li-simulator-data">
-                        <div class="text-1-sm text-font-sans text-bold color-text-grey" style="    height: 80px;">
+                        <div class="text-1-sm text-font-sans text-bold color-text-grey" style="    height: 65px;">
                             Priority Mail Express International™
                         </div>
-                        <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+                        <div class="text-1-sm text-font-sans color-text-grey" style="">
                             Taxa Keepbox: US$12,90
                         </div>
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
@@ -310,15 +348,15 @@
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                             Envio: {{valor_plano_1}}
                         </div>
-                        <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                        <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
                             <b>Total:</b> {{total1}}
                         </div>
                     </li>
                     <li class="content-li-simulator-data">
-                        <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 80px;">
+                        <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 65px;">
                             Priority Mail International®
                         </div>
-                        <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+                        <div class="text-1-sm text-font-sans color-text-grey" style="">
                             Taxa Keepbox: US$12,90
                         </div>
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
@@ -327,16 +365,16 @@
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                             Envio: {{valor_plano_2}}
                         </div>
-                        <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                        <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
                             <b>Total:</b> {{total2}}
                         </div>
                     </li>
                     <li class="content-li-simulator-data">
                         <div  ng-show="range_simulator_home < 5">
-                            <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 80px;">
+                            <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 65px;">
                                 First-Class Package International Service™
                             </div>
-                            <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+                            <div class="text-1-sm text-font-sans color-text-grey" style="">
                                 Taxa Keepbox: US$12,90
                             </div>
                             <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
@@ -345,7 +383,7 @@
                             <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                                 Envio: {{valor_plano_3}}
                             </div>
-                            <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                            <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
                                 <b>Total:</b> {{total3}}
                             </div>
                         </div>
@@ -353,6 +391,7 @@
                 </ul>
             </div>
         </div>
+
     </div>
 
 </div>

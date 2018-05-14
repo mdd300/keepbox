@@ -273,10 +273,10 @@
     <div class="content-border-simulator-shadow">
         <ul class="content-ul-simulator-data">
             <li class="content-li-simulator-data">
-                <div class="text-1-sm text-font-sans text-bold color-text-grey" style="    height: 80px;">
+                <div class="text-1-sm text-font-sans text-bold color-text-grey" style="    height: 65px;">
                     Priority Mail Express International™
                 </div>
-                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+                <div class="text-1-sm text-font-sans color-text-grey" style="">
                     Taxa Keepbox: US$12,90
                 </div>
                 <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
@@ -285,15 +285,15 @@
                 <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                     Envio: {{valor_plano_1}}
                 </div>
-                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
                     <b>Total:</b> {{total1}}
                 </div>
             </li>
             <li class="content-li-simulator-data">
-                <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 80px;">
+                <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 65px;">
                     Priority Mail International®
                 </div>
-    <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+    <div class="text-1-sm text-font-sans color-text-grey" style="">
         Taxa Keepbox: US$12,90
     </div>
     <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
@@ -302,16 +302,16 @@
                 <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                     Envio: {{valor_plano_2}}
                 </div>
-                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
                     <b>Total:</b> {{total2}}
                 </div>
             </li>
             <li class="content-li-simulator-data">
                 <div  ng-show="range_simulator_home < 5">
-                <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 80px;">
+                <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 65px;">
                     First-Class Package International Service™
                 </div>
-                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 10px">
+                <div class="text-1-sm text-font-sans color-text-grey" style="">
                     Taxa Keepbox: US$12,90
                 </div>
                 <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
@@ -320,7 +320,7 @@
                     <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                         Envio: {{valor_plano_3}}
                     </div>
-                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 5px">
+                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
                     <b>Total:</b> {{total3}}
                 </div>
 </div>
