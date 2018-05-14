@@ -37,8 +37,8 @@
             </li>
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Envio de Encomendas </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >Taxa KeepBox: Apenas US$12,90
-                    FRETE USPS: Tabela padrão da USPS (Correio Americano)
+                <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >Taxa KeepBox: Apenas US$12,90<br>
+                    FRETE USPS: Tabela padrão da USPS (Correio Americano)<br>
                     Simule o preço do envio em nossa <div class="color-text-green text-bold" style="cursor: pointer;     display: initial;" id="myBtn">CALCULADORA DE ENVIO</div> </div>
 
             </li>
@@ -183,37 +183,33 @@
         </div>
     </div>
 
-    <div class="width-content align-x-center">
-        <div class="content-servi align-x-center">
-            <div class="content-title-left-serv" style="margin: 60px 100px !important;">
-                <ul class="ul-serv-text">
-                    <li class="li-serv-text">
-                        <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"><b>1 - </b>Você nos envia quais itens deseja comprar, quantidade e tamanho.</div>
+    <div style=" margin-top: 20px;" class="width-content align-x-center">
 
-                    </li>
-
-                    <li class="li-serv-text">
-                        <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"><b>2 - </b>Nós faremos um orçamento completo para você e lhe enviaremos para aprovação.</div>
-
-                    </li>
-                </ul>
-            </div>
-            <div class="content-text-right-serv" style="    margin-right: 0 !important;">
-                <ul class="ul-serv-text">
-                    <li class="li-serv-text">
-                        <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"><b>3 - </b>Após sua aprovação, iremos às compras para você! Compraremos tudo que você pediu e cadastramos tudo em sua conta KeepBox para você conferir e acompanhar suas compras.</div>
-
-                    </li>
-
-                    <li class="li-serv-text">
-                        <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"><b>4 - </b>Então, unificaremos tudo que você desejar em uma só caixa, você seleciona os serviços extras que deseja e nós enviamos tudo para seu endereço no Brasil.</div>
-
-                    </li>
-                </ul>
-            </div>
+        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>1 - </b>Você nos envia quais itens deseja comprar, quantidade e tamanho.</div>
         </div>
     </div>
-    <div style=" margin-top: 40px;" class="width-content align-x-center">
+    <div style=" margin-top: 20px;" class="width-content align-x-center">
+
+        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>2 - </b>Nós faremos um orçamento completo para você e lhe enviaremos para aprovação.</div>
+        </div>
+    </div>
+    <div style=" margin-top: 20px;" class="width-content align-x-center">
+
+        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>3 - </b>Após sua aprovação, iremos às compras para você! Compraremos tudo que você pediu e cadastramos tudo em sua conta KeepBox para você conferir e acompanhar suas compras.</div>
+        </div>
+    </div>
+    <div style=" margin-top: 20px;" class="width-content align-x-center">
+
+        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>4 - </b>Então, unificaremos tudo que você desejar em uma só caixa, você seleciona os serviços extras que deseja e nós enviamos tudo para seu endereço no Brasil.</div>
+        </div>
+    </div>
+
+
+    <div style=" margin-top: 80px;" class="width-content align-x-center">
 
     <div style=" width: 65%" class="width-content align-x-center">
         <div class="color-text-roxo center text-bold text-title text-font-sans">Retirada de Encomendas em nosso armazém  <br>(US$3,00 por pacote recebido) </div>
@@ -306,7 +302,7 @@
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                             Taxa Paypal: {{valor_plano_1_taxa}}
                         </div>
-                        <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                        <div class="text-1-sm text-font-sans color-text-grey" style="    padding-left: 1px;padding-top: 5px">
                             Envio: {{valor_plano_1}}
                         </div>
                         <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
@@ -323,7 +319,7 @@
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                             Taxa Paypal: {{valor_plano_2_taxa}}
                         </div>
-                        <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                        <div class="text-1-sm text-font-sans color-text-grey" style="    padding-left: 1px;padding-top: 5px">
                             Envio: {{valor_plano_2}}
                         </div>
                         <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
@@ -341,7 +337,7 @@
                             <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                                 Taxa Paypal: {{valor_plano_3_taxa}}
                             </div>
-                            <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
+                            <div class="text-1-sm text-font-sans color-text-grey" style="    padding-left: 1px;padding-top: 5px">
                                 Envio: {{valor_plano_3}}
                             </div>
                             <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">

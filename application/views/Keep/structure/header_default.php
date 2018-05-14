@@ -118,11 +118,11 @@ License: You must have a valid license purchased only from themeforest(the above
             <div ng-show="Error_login">{{TextError_Login}}</div>
         </div>
         <div class="align-y-center">
-        <div style="    margin-left: 20px;">
-        <button style="    padding: 16px 81px !important;" class="btn-config-2 color-background-green color-text-white text-bold text-font-sans text-1-sm" ng-click="login()"><div class="loader-roxo" ng-show="loader_login"></div> Entrar </button>
+        <div style="    margin-left: 25px;">
+        <button style="    padding: 16px 58px !important;" class="btn-config-2 color-background-green color-text-white text-bold text-font-sans text-1-sm" ng-click="login()"><div class="loader-roxo" ng-show="loader_login"></div> Entrar </button>
         </div>
-        <div style="    margin-left: 20px; margin-top: 10px"><a href="<?= base_url('home/cadastroPage' )?>">
-            <button class="btn-config-2 color-background-roxo color-text-white text-bold text-font-sans text-1-sm"> Novo acesso </button>
+        <div style="    margin-left: 10px;"><a href="<?= base_url('home/cadastroPage' )?>">
+            <button style="    padding: 16px 40px;" class="btn-config-2 color-background-roxo color-text-white text-bold text-font-sans text-1-sm"> Novo acesso </button>
             </a></div>
     </div>
     </div>

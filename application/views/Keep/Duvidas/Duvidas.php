@@ -39,7 +39,7 @@
 
 </div>
     <div class="align-center" style="padding-top: 50px">
-        <button class="btn-config color-background-roxo color-text-white" ng-click="limitplus()" ng-show="limitPerguntas < 43 && numRowsDuvidas.length > 0 && loaderPesquisa == false"> Carregar Mais</button>
+        <button class="btn-config color-background-roxo color-text-white text-1" ng-click="limitplus()" ng-show="limitPerguntas < 43 && numRowsDuvidas.length > 0 && loaderPesquisa == false"> Carregar Mais</button>
     </div>
 </div>
 </div>
