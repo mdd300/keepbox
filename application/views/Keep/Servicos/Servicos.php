@@ -240,45 +240,6 @@
         </div>
     </div>
 
-    <div class="align-center" style="padding-top: 40px">
-
-        <div class="content-step-tutorial-module3" >
-
-            <ul class="ul-tutorial">
-                <li class="li-step-tutorial-serv">
-                    <div class="content-border-shadow-li-tutorial">
-                        <div class="content-text-tutorial-serv text-1 text-font-sans color-text-grey-light">1 – Você nos envia quais itens deseja comprar, quantidade e tamanho.
-                        </div>
-                    </div>
-                </li>
-                <li class="li-step-tutorial-serv">
-                    <div class="content-border-shadow-li-tutorial">
-
-                        <div class="content-text-tutorial-serv text-1 text-font-sans color-text-grey-light">2 – Nós faremos um orçamento completo para você e lhe enviaremos para aprovação.
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-            <ul class="ul-tutorial">
-
-                <li class="li-step-tutorial-serv">
-                    <div class="content-border-shadow-li-tutorial">
-
-                        <div class="content-text-tutorial-serv text-1 text-font-sans color-text-grey-light">3 – Após sua aprovação, iremos às compras para você! Compraremos tudo que você pediu e cadastramos tudo em sua conta KeepBox para você conferir e acompanhar suas compras.
-
-                        </div>
-                </li>
-                <li class="li-step-tutorial-serv">
-                    <div class="content-border-shadow-li-tutorial">
-
-                        <div class="content-text-tutorial-serv text-1 text-font-sans color-text-grey-light">4 – Então, unificaremos tudo que você desejar em uma só caixa, você seleciona os serviços extras que deseja e nós enviamos tudo para seu endereço no Brasil.
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
 </div>
 
 
