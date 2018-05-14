@@ -147,12 +147,6 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 
 
             $scope.dataCadError = {
-                user_endereco_error: false,
-                user_numero_error: false,
-                user_cidade_error: false,
-                user_estado_error: false,
-                user_telefone_error: false,
-                user_login_error: false,
                 user_senha_error: false,
                 user_senha_length: false,
                 user_senha_conf: false
@@ -326,21 +320,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
             }
         );
     }
-    $scope.logout = function () {
-        $scope.loader_exit = true;
-        $http({
 
-            method: 'POST',
-            url: base_url + "Logout",
-            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
-
-        }).then(function (response) {
-                $scope.loader_exit = false;
-                window.location.href = base_url;
-
-            }
-        );
-    }
 
     $scope.duvidas = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
         false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
@@ -690,5 +670,148 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 
         }, 400);
     }
+
+    $scope.changePass = function () {
+
+        $scope.loader_cad2 = true;
+
+        $scope.dataChangePass= {
+            user_login: '',
+            user_senha: '',
+            user_confirmar_senha: ''
+        }
+
+        $scope.dataCadError = {
+            user_senha_error: false,
+            user_senha_length: false,
+            user_senha_conf: false
+        }
+
+        if ($scope.dataChangePass.user_senha !== "") {
+            if ($scope.dataChangePass.user_senha.length > 5) {
+                if ($scope.dataChangePass.user_senha == $scope.dataChangePass.user_confirmar_senha) {
+
+
+                    $http({
+
+                        method: 'POST',
+                        url: base_url + "home/changePass",
+                        data: $.param({id: $scope.idCliente, Data: $scope.dataChangePass.user_senha}),
+                        headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+                    }).then(function (response) {
+
+                            $scope.loader_cad2 = false;
+
+                            $scope.singIn = {
+                                user_login: $scope.dataChangePass.user_login,
+                                user_senha: $scope.dataChangePass.user_senha
+                            }
+                            $http({
+
+                                method: 'POST',
+                                url: base_url + "home/Login",
+                                data: $.param($scope.singIn),
+                                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+                            }).then(function (response) {
+                                    $scope.loader_login = false;
+
+                                    if (response.data.success) {
+
+                                        window.location.href = base_url + "Sistema/system";
+                                    }
+
+                                }
+                            );
+
+
+                        }
+                    );
+                } else {
+                    $scope.dataCadError.user_senha_conf = true;
+                    $scope.loader_login = false;
+                }
+            } else {
+                $scope.dataCadError.user_senha_length = true;
+                $scope.loader_login = false;
+            }
+        } else {
+            $scope.dataCadError.user_senha_error = true;
+            $scope.loader_login = false;
+        }
+
+    }
+
 }]);
+angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$timeout', function ($scope, $http,$timeout) {
+
+    $scope.img_show;
+
+    var screenSize = $( window ).width() / 1920 * 100
+
+    $('html').css({zoom: screenSize/100})
+
+
+    window.onresize=function() {
+        screenSize = $( window ).width() / 1920 * 100
+
+        $('html').css({zoom: screenSize/100})
+    }
+
+    $scope.produtosList;
+
+    $http({
+
+        method: 'POST',
+        url: base_url + "Sistema/getProdutos",
+        headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+    }).then(function (response) {
+
+        console.log(response.data)
+
+        $scope.produtosList = response.data;
+
+        }
+    );
+
+    $scope.logout = function () {
+        $scope.loader_exit = true;
+        $http({
+
+            method: 'POST',
+            url: base_url + "Logout",
+            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+        }).then(function (response) {
+                $scope.loader_exit = false;
+                window.location.href = base_url;
+
+            }
+        );
+    }
+
+    $scope.clickPhoto = function (img) {
+        $scope.img_show = img;
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+            modal.style.display = "block";
+    }
+    $scope.closeModal = function () {
+        var modal = document.getElementById('myModal');
+
+        modal.style.display = "none";
+
+    }
+
+
+
+}]);
+
 

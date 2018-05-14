@@ -90,15 +90,22 @@ class Fo_api
         $CI->load->library(['Fo_email']);
 
         $msg = ''
-            . '<div style="text-align:center;">'
+            . '<div style="text-align:center;">
+                <img style="height: 250px; width: 100%" src="'.base_url("public/assets/metronic/custom/img/LOGOTIPO.png").'">
+'
             . '</div>'
             . '<div style="width:100%;padding:15px;background:#a9d046;text-align:center;margin:0 auto;">'
-            . '<p style="color:#fff;font-size:23px;font-family:Multicolore;margin:0px;">Seja bem vindo a Keepbox</p>'
-            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;">Seu endereço é:</p>	'
+            . '<p style="color:#fff;font-size:23px;font-family:Multicolore;margin:0px;"><b>Seja bem vindo a Keepbox</b></p>'
+            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;"><b>Seu endereço é:</b></p>	'
             . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;">'
-            . $code.' Street: 591 Lakeview Drive City: Coral Springs State: Florida (FL) Zip Code: 33071'
+            . $code
+            .'</p>'
+            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;"> Street: 591 Lakeview Drive</p>'
+            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;"> City: Coral Springs</p>'
+            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;"> State: Florida (FL)</p>'
+            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;"> Zip Code: 33071 </p>'
             . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;">Para acessar sua conta, finalize seu cadastro clicando aqui:</p>'
-            . base_url('Home/cadastroFinal?id=').$id
+            . '<a href="'.base_url("Home/cadastroFinal?id=").$id .'">' .base_url('Home/cadastroFinal?id=').$id . ' </a> '
             . '</p></div>';
 
         $Data['to'] = $email;

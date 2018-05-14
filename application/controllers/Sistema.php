@@ -45,5 +45,22 @@ class Sistema extends CI_Controller
 
 
     }
+    public function getProdutos($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $this->load->model('Home_model');
+        $retorno = $this->Home_model->getProdutos_model($_SESSION['fashon_session']['user_id']);
+
+        if ($Output == true) {
+            echo json_encode($retorno);
+        } else {
+            return $retorno;
+        }
+    }
 
 }

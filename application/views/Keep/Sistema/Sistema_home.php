@@ -10,7 +10,23 @@
     <base_url value="<?= base_url() ?>"></base_url>
 
 </head>
-<body class="width_padrao" ng-controller="landing_ctrl">
+<body class="width_padrao" ng-controller="sistem_ctrl">
+
+<div id="myModal"  class="modal-jquery align-x-center">
+
+    <div style="position: absolute; width: 100%; height: 100%;  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */" ng-click="closeModal()">
+
+    </div>
+
+    <!-- Modal content -->
+    <div class="modal-content-jquery">
+        <span style="position: absolute;
+    right: 5%; cursor: pointer" class="close" ng-click="closeModal()">&times;</span>
+
+    <img style="width: 90%; height: 800px" src="<?= base_url('upload/produtos/img/') ?>{{img_show}}">
+
+    </div>
+</div>
 
 <div class="content-geral-sistema">
     <div class="content-header-sistema shadow">
@@ -37,7 +53,7 @@
         <div class="content-text-produtos text-font-sans text-title color-text-roxo">
             Seus Produtos
         </div>
-        <div class="content-table-produtos">
+        <div class="content-table-produtos ">
             <table>
                 <thead class="color-background-roxo">
                 <tr>
@@ -62,8 +78,27 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-<!---->
+                <tr class="tr-content-produtos color-background-white" ng-repeat="produto in produtosList">
+
+                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_data}}</td>
+                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; "
+                        ng-mouseenter="hovering = true"
+                        ng-mouseleave="hovering = false">{{produto.prod_num_ped}}
+                        <div class="pop-up-photo color-background-grey-light-2" ng-show="hovering && produto.imgs[0].length > 0">
+                            <div class="img-content-prod" id="myBtn" ng-repeat="imgProd in produto.imgs[0] ">
+                                <img class="img-prod"  ng-click="clickPhoto(imgProd.img_link)" src="<?= base_url('upload/produtos/img/') ?>{{imgProd.img_link}}">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_status}}</td>
+                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_nome}}</td>
+                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_loja}}</td>
+                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_peso}} Lbs</td>
+
+
+
+
+                    <!---->
 <!--                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">29/05/2018</td>-->
 <!--                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">04654320</td>-->
 <!--                    <td class="text-bold text-font-sans text-2 color-text-grey-light" style="text-align: center; ">Aguardando Pagamento</td>-->
@@ -104,6 +139,22 @@
 <!--end::Page Vendors -->
 <!--begin::Page Snippets -->
 
+
+<script>
+
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 <script src="<?= base_url('public/assets/metronic/custom/js/lib/jquery-3.3.1.min.js') ?>"></script>
 <script src="<?= base_url('public/assets/metronic/custom/js/lib/angular.min.js') ?>"></script>

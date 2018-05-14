@@ -25,15 +25,16 @@
 }
 
 .content-sistema-left{
-    width: 70%;
+    width: 75%;
     height: 1000px;
     float: left;
+    background-color: #F8F8FF;
 }
 .content-data-endereco-right{
     width: 25%;
     height: 1000px;
     float: right;
-    border-left: 1px solid #CFCFCF;
+    background-color: #F8F8FF;
 }
 .content-bem-vindo{
     padding: 80px 6%;
@@ -52,8 +53,58 @@
 .ul-data{
     width: auto;
     margin-top:  50px;
+    border:  1px solid;
+    border-right:  0px;
+    border-radius:  20px 0px 0px 20px;
+    padding: 20px;
+    background-color: white;
 }
 .li-data{
     display: block !important;
-    margin-top: 15px;
+}
+.pop-up-photo{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    display: inline-flex;
+    border: 1px solid #696969;
+    z-index:  111111111111;
+}
+.img-content-prod{width: 90px;height: 90px;padding: 10px 5px;z-index:  1111111;}
+.img-prod{
+    width: 90px;
+    height: 90px;
+}
+.tr-content-produtos{
+    height: 50px;
+    border-bottom: 1px solid #696969 !important;
+}
+.modal-jquery {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* padding-top: 50px; */ /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content */
+.modal-content-jquery {
+    z-index: 111111;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    margin-top: 50px;
+}
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
 }

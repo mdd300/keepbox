@@ -56,4 +56,30 @@ class Home_model extends CI_Model {
         return $this->db->get("tb_user")->result()[0];
 
         }
+        public function getProdutos_model($id){
+
+        $this->db->where("prod_user_id_fk", $id);
+        $produtos = $this->db->get("tb_produtos")->result();
+
+        foreach ($produtos as $key=>$value){
+
+            $this->db->where("img_prod_fk", $value->prod_id);
+
+            $produtos[$key]->imgs = array($this->db->get("tb_produtos_img")->result());
+
+            if($value->prod_status == 1){
+                $produtos[$key]->prod_status = "Guardado";
+            }elseif ($value->prod_status == 2){
+                $produtos[$key]->prod_status = "Processando";
+            }elseif ($value->prod_status == 3){
+                $produtos[$key]->prod_status = "Enviado";
+            }elseif ($value->prod_status == 4){
+                $produtos[$key]->prod_status = "Entregue";
+            }
+
+        }
+
+        return $produtos;
+
+        }
   }

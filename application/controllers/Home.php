@@ -31,8 +31,9 @@ class Home extends CI_Controller {
     public function cadastroPage(){
 
         $data['selection'] = 0;
-
+        $this->load->view('Keep/structure/header_default', $data);
         $this->load->view('Keep/Cadastro/Cadastro_1_step');
+        $this->load->view('Keep/structure/footer_default');
 
     }
 
@@ -118,8 +119,10 @@ class Home extends CI_Controller {
 
     public function cadastroFinal()
     {
-
+        $data['selection'] = 0;
+        $this->load->view('Keep/structure/header_default', $data);
         $this->load->view('Keep/Cadastro/Cadastro_1_step');
+        $this->load->view('Keep/structure/footer_default');
 
     }
     public function cadastroFinalizar($Data = null)
@@ -178,6 +181,23 @@ class Home extends CI_Controller {
         }else{
             $retorno['success'] = false;
         }
+
+        if ($Output == true) {
+            echo json_encode($retorno);
+        } else {
+            return $retorno;
+        }
+    }
+
+    public function changePass($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+
 
         if ($Output == true) {
             echo json_encode($retorno);
