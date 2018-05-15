@@ -64,9 +64,9 @@ License: You must have a valid license purchased only from themeforest(the above
 <div style="position: fixed; z-index: 1111">
     <nav class="content-header topnav" id="myTopnav">
         <ul class="header-ul text-font-sans"  id="header-li-id">
-            <li class="header-li"><a href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_cart.png">Compra Assistida</a></li>
-            <li class="header-li" ><a href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_calculadora.png">Calculadora de Envio</a></li>
-            <li class="header-li" ><a href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_money.png">Ganhe Dinheiro</a></li>
+            <li class="header-li"><a ng-click="scrollCom()" href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_cart.png">Compra Assistida</a></li>
+            <li class="header-li" ><a ng-click="scrollSim()" href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_calculadora.png">Calculadora de Envio</a></li>
+<!--            <li class="header-li" ><a href=""><img class="img-menu-superior" src="--><?//= base_url() ?><!--public/assets/metronic/custom/img/icon/menu_money.png">Ganhe Dinheiro</a></li>-->
         </ul>
     </nav>
     <div class="content-header-menu width_padrao">

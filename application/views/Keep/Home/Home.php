@@ -40,7 +40,7 @@
         A KeepBox recebe e envia tudo para você!
     </div>
     <div class="content-btn-more-about">
-        <a href="<?= base_url('home/funcionamento' )?>">
+        <a href="<?= base_url('home/servico' )?>">
 
         <button class="btn-config color-background-green  color-text-white text-1-sm">
             Veja mais sobre nós
@@ -227,12 +227,12 @@
     </div>
 </div>
 
-<div class="content-simulator-module4 align-x-center">
-    <div class="content-simulator">
+<div  class="content-simulator-module4 align-x-center">
+    <div class="content-simulator"  >
         <div class="content-left-simulator">
             <div class="color-text-roxo text-title-xl  text-font-sans">Simulador de Preços</div>
             <div style="    margin-top: 50px;">
-            <div class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;    background-color: white;
+            <div id="simulador-preco" class="styled-select select-mini align-y-center background-select-roxo rounded" style=" margin-right: 40px;    background-color: white;
     background-image: url(<?= base_url('/public/assets/metronic/custom/img/icon/icon-select.jpeg')?>);
     background-repeat: no-repeat;
     background-position-y: 0px;">
@@ -277,7 +277,7 @@
                     Priority Mail Express International™
                 </div>
                 <div class="text-1-sm text-font-sans color-text-grey" style="">
-                    Taxa Keepbox: US$12,90
+                    Taxa Keepbox: <a ng-show="range_simulator_home > 0">US$12,90</a>
                 </div>
                 <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                     Taxa Paypal: {{valor_plano_1_taxa}}
@@ -294,7 +294,7 @@
                     Priority Mail International®
                 </div>
     <div class="text-1-sm text-font-sans color-text-grey" style="">
-        Taxa Keepbox: US$12,90
+        Taxa Keepbox: <a ng-show="range_simulator_home > 0">US$12,90</a>
     </div>
     <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
         Taxa Paypal: {{valor_plano_2_taxa}}
@@ -312,7 +312,7 @@
                     First-Class Package International Service™
                 </div>
                 <div class="text-1-sm text-font-sans color-text-grey" style="">
-                    Taxa Keepbox: US$12,90
+                    Taxa Keepbox: <a ng-show="range_simulator_home > 0">US$12,90</a>
                 </div>
                 <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                     Taxa Paypal: {{valor_plano_3_taxa}}

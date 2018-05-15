@@ -57,7 +57,7 @@
 
 </div>
 <div class="content-servi-basicos align-x-center">
-    <div class="content-title-left-serv" style="margin: 60px 100px !important;">
+    <div class="content-title-left-serv" style="margin: 10px 100px !important;">
         <ul class="ul-serv-text">
 
             <li class="li-serv-text">
@@ -84,7 +84,7 @@
             </li>
         </ul>
     </div>
-    <div class="content-text-right-serv">
+    <div class="content-text-right-serv" style="margin-top: 10px !important;">
         <ul class="ul-serv-text">
 
             <li class="li-serv-text">
@@ -176,35 +176,39 @@
         </div>
     </div>
 
-    <div style=" margin-top: 80px;" class="width-content align-x-center">
-
+    <div style=" margin-top: 80px;"  class="width-content align-x-center">
         <div style=" width: 65%" class="width-content align-x-center">
             <div class="color-text-roxo center text-bold text-title text-font-sans">Como funciona o serviço <br> Compra Assistida (Personal Shopper)</div>
         </div>
     </div>
 
-    <div style=" margin-top: 20px;" class="width-content align-x-center">
-
+    <div style=" margin-top: 20px;"  class="width-content align-x-center">
         <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
             <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>1 - </b>Você nos envia quais itens deseja comprar, quantidade e tamanho.</div>
         </div>
     </div>
-    <div style=" margin-top: 20px;" class="width-content align-x-center">
 
+    <div style=" margin-top: 20px;" id="compra-assistida" class="width-content align-x-center">
         <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
             <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>2 - </b>Nós faremos um orçamento completo para você e lhe enviaremos para aprovação.</div>
         </div>
     </div>
-    <div style=" margin-top: 20px;" class="width-content align-x-center">
 
+    <div style=" margin-top: 20px;" class="width-content align-x-center">
         <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
             <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>3 - </b>Após sua aprovação, iremos às compras para você! Compraremos tudo que você pediu e cadastramos tudo em sua conta KeepBox para você conferir e acompanhar suas compras.</div>
         </div>
     </div>
-    <div style=" margin-top: 20px;" class="width-content align-x-center">
 
+    <div style=" margin-top: 20px;" class="width-content align-x-center">
         <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
             <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>4 - </b>Então, unificaremos tudo que você desejar em uma só caixa, você seleciona os serviços extras que deseja e nós enviamos tudo para seu endereço no Brasil.</div>
+        </div>
+    </div>
+
+    <div style=" margin-top: 20px;" class="width-content align-x-center">
+        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><a class="color-text-green text-bold" ng-click="verifySession()" style="cursor: pointer">Acesse sua conta</a> ou <a  style="cursor: pointer" class="color-text-roxo text-bold" href="<?= base_url('home/cadastroPage')?>">Cadastre-se</a> para fazer suas compras</div>
         </div>
     </div>
 
@@ -297,7 +301,7 @@
                             Priority Mail Express International™
                         </div>
                         <div class="text-1-sm text-font-sans color-text-grey" style="">
-                            Taxa Keepbox: US$12,90
+                            Taxa Keepbox: <a ng-show="range_simulator_home > 0">US$12,90</a>
                         </div>
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                             Taxa Paypal: {{valor_plano_1_taxa}}
@@ -314,7 +318,7 @@
                             Priority Mail International®
                         </div>
                         <div class="text-1-sm text-font-sans color-text-grey" style="">
-                            Taxa Keepbox: US$12,90
+                            Taxa Keepbox: <a ng-show="range_simulator_home > 0">US$12,90</a>
                         </div>
                         <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                             Taxa Paypal: {{valor_plano_2_taxa}}
@@ -332,7 +336,7 @@
                                 First-Class Package International Service™
                             </div>
                             <div class="text-1-sm text-font-sans color-text-grey" style="">
-                                Taxa Keepbox: US$12,90
+                                Taxa Keepbox: <a ng-show="range_simulator_home > 0">US$12,90</a>
                             </div>
                             <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
                                 Taxa Paypal: {{valor_plano_3_taxa}}

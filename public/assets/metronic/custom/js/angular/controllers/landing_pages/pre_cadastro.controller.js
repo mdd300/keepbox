@@ -1,12 +1,46 @@
 angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$timeout', function ($scope, $http,$timeout) {
 
+    var url = new URL(window.location.href);
+
+    $scope.scrollSim = function () {
+
+        if(url == base_url) {
+            $("#simulador-preco")[0].scrollIntoView({behavior: 'smooth'});
+        }else{
+            window.location.href = base_url + "#" ;
+
+
+        }
+
+     }
+
+    $scope.scrollCom = function () {
+
+        if(url == base_url + "home/servico") {
+            $("#compra-assistida")[0].scrollIntoView({behavior: 'smooth'});
+        }else{
+            window.location.href = base_url + "home/servico/" + "#" ;
+
+
+        }
+
+    }
 
 
     $timeout(function(){
         document.getElementById("loading").style.display = "none";
     }, 400);
 
-    var url = new URL(window.location.href);
+    if(url == base_url + "#"){
+        $timeout(function(){
+            $("#simulador-preco")[0].scrollIntoView({behavior: 'smooth'});
+        }, 2500);
+    }
+    if(url == base_url + "home/servico/#"){
+        $timeout(function(){
+            $("#compra-assistida")[0].scrollIntoView({behavior: 'smooth'});
+        }, 2500);
+    }
 
     console.log($( window ).width())
     $scope.valor_plano_1_taxa
@@ -29,7 +63,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
     $scope.range_simulator_home_kg = 0;
     $scope.select_lbs_kg = '1';
     function formataDinheiro(n) {
-        return "US$ " + n.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
+        return "US$" + n.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
     }
     $scope.changeValue = function () {
 
@@ -76,17 +110,19 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
             }
         }
 
+
+
         $scope.valor_plano_1_taxa = $scope.valor_plano_1 + 12.90;
-        var porcValor_1 = ($scope.valor_plano_1_taxa * 0.06) / 100;
-        $scope.valor_plano_1_taxa = $scope.valor_plano_1_taxa * porcValor_1;
+        var porcValor_1 = ($scope.valor_plano_1_taxa * 0.06) ;
+        $scope.valor_plano_1_taxa =  porcValor_1;
 
         $scope.valor_plano_2_taxa = $scope.valor_plano_2 + 12.90;
-        var porcValor_2 = ($scope.valor_plano_2_taxa * 0.06) / 100;
-        $scope.valor_plano_2_taxa = $scope.valor_plano_2_taxa *porcValor_2;
+        var porcValor_2 = ($scope.valor_plano_2_taxa * 0.06) ;
+        $scope.valor_plano_2_taxa =porcValor_2;
 
         $scope.valor_plano_3_taxa = $scope.valor_plano_3 + 12.90;
-        var porcValor_3 = ($scope.valor_plano_3_taxa * 0.06) / 100;
-        $scope.valor_plano_3_taxa = $scope.valor_plano_3_taxa *porcValor_3;
+        var porcValor_3 = ($scope.valor_plano_3_taxa * 0.06) ;
+        $scope.valor_plano_3_taxa = porcValor_3;
 
 
         $scope.total1 = $scope.valor_plano_1_taxa + 12.90 + $scope.valor_plano_1;
@@ -113,6 +149,17 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         $scope.valor_plano_1_taxa =formataDinheiro($scope.valor_plano_1_taxa)
         $scope.valor_plano_2_taxa =formataDinheiro($scope.valor_plano_2_taxa)
         $scope.valor_plano_3_taxa =formataDinheiro($scope.valor_plano_3_taxa)
+
+        if ($scope.range_simulator_home == 0){
+            $scope.valor_plano_1 = null;
+            $scope.valor_plano_2 = null;
+            $scope.valor_plano_3 = null;
+
+            $scope.valor_plano_1_taxa= null;
+            $scope.valor_plano_2_taxa= null;
+            $scope.valor_plano_3_taxa= null;
+
+        }
     }
 
     $scope.idCliente = url.searchParams.get("id");

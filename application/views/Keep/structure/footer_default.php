@@ -18,8 +18,8 @@
 
         <ul class="content-ul-footer">
             <li class="content-li-footer text-font-sans text-1-sm color-text-white">Quem somos</li>
-            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Termos e Condições</li>
-            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Privacidade e Segurança</li>
+<!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Termos e Condições</li>-->
+<!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Privacidade e Segurança</li>-->
             <li class="content-li-footer text-font-sans text-1-sm  color-text-white">Contato</li>
 
         </ul>
