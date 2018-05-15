@@ -47,7 +47,7 @@
 </div>
 
 <div class="align-x-center">
-<div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 40px;">
+<div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 80px;">
     Serviços Extras
 </div>
 </div>
@@ -208,12 +208,12 @@
 
     <div style=" margin-top: 20px;" class="width-content align-x-center">
         <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
-            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><a class="color-text-green text-bold" ng-click="verifySession()" style="cursor: pointer">Acesse sua conta</a> ou <a  style="cursor: pointer" class="color-text-roxo text-bold" href="<?= base_url('home/cadastroPage')?>">Cadastre-se</a> para fazer suas compras</div>
+            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><a class="color-text-green text-bold" ng-click="verifySession()" style="cursor: pointer">Acesse sua conta</a> ou <a  style="cursor: pointer" class="color-text-roxo text-bold" href="<?= base_url('home/cadastroPage')?>">Cadastre-se</a> para começar sua Compra Assistida</div>
         </div>
     </div>
 
 
-    <div style=" margin-top: 80px;" class="width-content align-x-center">
+    <div style=" margin-top: 140px;" class="width-content align-x-center">
 
     <div style=" width: 65%" class="width-content align-x-center">
         <div class="color-text-roxo center text-bold text-title text-font-sans">Retirada de Encomendas em nosso armazém  <br>(US$3,00 por pacote recebido) </div>
