@@ -5,7 +5,7 @@
     <div class="color-text-white text-title-xl text-font-sans center" >
         Qual sua dúvida?
     </div>
-        <input ng-keydown="inputSearch()" autocomplete="off" ng-model="searchPergunta" id="search-duvidas" class="input-duvidas text-1 text-font-sans color-text-white">
+        <input ng-keydown="inputSearch()" value="" autocomplete="off" ng-model="searchPergunta" id="search-duvidas" class="input-duvidas text-1 text-font-sans color-text-white">
     </div>
 </div>
     <div class="align-x-center" ng-show="loaderPesquisa" style="padding-top: 50px">
