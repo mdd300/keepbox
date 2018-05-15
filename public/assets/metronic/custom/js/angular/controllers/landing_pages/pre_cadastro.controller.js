@@ -42,23 +42,23 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         }
         if ($scope.range_simulator_home < 6) {
             var value1 = parseFloat($scope.range_simulator_home) * 4.35;
-            $scope.valor_plano_1 = 67.05 + value1;
+            $scope.valor_plano_1 = 62.7 + value1;
             $scope.valor_plano_1 = Number(($scope.valor_plano_1).toFixed(2));
         }
         else {
-            var value1 = parseFloat($scope.range_simulator_home) * 4.45;
+            var value1 = (parseFloat($scope.range_simulator_home) - 5) * 4.45;
             $scope.valor_plano_1 = 84.45 + value1;
             $scope.valor_plano_1 = Number(($scope.valor_plano_1).toFixed(2));
 
         }
         if ($scope.range_simulator_home < 11) {
             var value2 = parseFloat($scope.range_simulator_home) * 3.7;
-            $scope.valor_plano_2 = 44.95 + value2
+            $scope.valor_plano_2 = 41.25 + value2
             $scope.valor_plano_2 = Number(($scope.valor_plano_2).toFixed(2));
 
         } else {
-            var value2 = parseFloat($scope.range_simulator_home) * 4.05;
-            $scope.valor_plano_2 = 44.95 + value2
+            var value2 = (parseFloat($scope.range_simulator_home) - 10) * 4.05;
+            $scope.valor_plano_2 = 78.25 + value2
             $scope.valor_plano_2 = Number(($scope.valor_plano_2).toFixed(2));
 
 
