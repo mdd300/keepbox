@@ -59,7 +59,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <body ng-controller="landing_ctrl">
 
 
-<div style="position: fixed; z-index: 1111">
+<div style="position: fixed; z-index: 1111; width: device-width;">
     <nav class="content-header topnav" id="myTopnav">
         <ul class="header-ul text-font-sans"  id="header-li-id">
             <li class="header-li"><a ng-click="scrollCom()" href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_cart.png">Compra Assistida</a></li>

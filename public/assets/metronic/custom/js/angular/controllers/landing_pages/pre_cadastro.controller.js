@@ -42,18 +42,36 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         }, 2500);
     }
 
-    console.log($( window ).width())
     $scope.valor_plano_1_taxa
     $scope.valor_plano_2_taxa
     $scope.valor_plano_3_taxa
 
-    var screenSize = $( window ).innerWidth() / 1920 * 100
+
+    function getWindowWidth() {
+        var windowWidth = 0;
+        if (typeof(window.innerWidth) == 'number') {
+            windowWidth = window.innerWidth;
+        }
+        else {
+            if (document.documentElement && document.documentElement.clientWidth) {
+                windowWidth = document.documentElement.clientWidth;
+            }
+            else {
+                if (document.body && document.body.clientWidth) {
+                    windowWidth = document.body.clientWidth;
+                }
+            }
+        }
+        return windowWidth;
+    }
+
+    var screenSize = getWindowWidth() / 1920 * 100
 
     $('html').css({zoom: screenSize/100})
 
 
     window.onresize=function() {
-        screenSize = $( window ).width() / 1920 * 100
+        screenSize = getWindowWidth() / 1920 * 100
 
         $('html').css({zoom: screenSize/100})
     }
