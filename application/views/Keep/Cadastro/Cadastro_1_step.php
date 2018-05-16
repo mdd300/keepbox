@@ -11,7 +11,7 @@
     </div>
     <div class="content-right-cad">
         <div class="text-font-sans text-bold text-title color-text-green" style="    margin: 50px;
-    width: 50%;" ng-show="finishCad">Obrigado por se cadastrar, olhe seu 3-mail para verificar suas informações!</div>
+    width: 50%;" ng-show="finishCad">Obrigado por se cadastrar, olhe seu e-mail para verificar suas informações!</div>
 
         <form style=" padding-top: 150px" ng-show="step1">
             <div class="text-font-sans text-bold text-title color-text-green" ng-show="step1" style="    margin: 30px;"> Crie sua conta</div>

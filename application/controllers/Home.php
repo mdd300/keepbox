@@ -27,6 +27,10 @@ class Home extends CI_Controller {
         $this->load->view('Keep/Home/Home');
         $this->load->view('Keep/structure/footer_default');
     }
+    public function teste()
+    {
+        $this->load->view('email');
+    }
 
     public function cadastroPage(){
 
@@ -105,7 +109,7 @@ class Home extends CI_Controller {
         if($retorno !== false){
 
             $this->load->library('Fo_api');
-            if (Fo_api::sendEmail($Data['Data']['user_email'], $retorno['code'], $retorno['id']))
+            if (Fo_api::sendEmail($Data['Data']['user_nome'],$Data['Data']['user_email'], $retorno['code'], $retorno['id']))
                 $retorno['success'] = true;
         }
             if ($Output == true) {

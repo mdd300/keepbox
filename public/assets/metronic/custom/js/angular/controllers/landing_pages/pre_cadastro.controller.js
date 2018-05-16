@@ -47,7 +47,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
     $scope.valor_plano_2_taxa
     $scope.valor_plano_3_taxa
 
-    var screenSize = $( window ).width() / 1920 * 100
+    var screenSize = $( window ).innerWidth() / 1920 * 100
 
     $('html').css({zoom: screenSize/100})
 
@@ -809,7 +809,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         pedido_comentario: ""
     };
     $scope.TotalFinal;
-
+    $scope.plano_selected;
 
     var screenSize = $( window ).width() / 1920 * 100
 
@@ -899,6 +899,22 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         $scope.total2 = $scope.valor_plano_2_taxa + 12.90 + $scope.valor_plano_2;
         $scope.total3 = $scope.valor_plano_3_taxa + 12.90 + $scope.valor_plano_3;
 
+        if($scope.PedidoEnvio.pedido_seguro_keep == true){
+            $scope.total1 = $scope.total1 + ($scope.total1 * 0.03)
+            $scope.total2 = $scope.total2 + ($scope.total2 * 0.03)
+            $scope.total3 = $scope.total3 + ($scope.total3 * 0.03)
+
+        } if($scope.PedidoEnvio.pedido_adesivar == true){
+                $scope.total1 = $scope.total1 + 2;
+                $scope.total2 = $scope.total2 + 2;
+                $scope.total3 = $scope.total3 + 2;
+
+            } if($scope.PedidoEnvio.pedido_acomodar == true){
+            $scope.total1 = $scope.total1 + 1;
+            $scope.total2 = $scope.total2 + 1;
+            $scope.total3 = $scope.total3 + 1;
+            }
+
 
         $scope.valor_plano_1_taxa = Number(($scope.valor_plano_1_taxa).toFixed(2));
         $scope.valor_plano_2_taxa = Number(($scope.valor_plano_2_taxa).toFixed(2));
@@ -930,6 +946,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
             $scope.valor_plano_3_taxa= null;
 
         }
+        $scope.selectPlano($scope.plano_selected)
     }
 
 
@@ -1003,6 +1020,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
     $scope.solicitarEnvio = function () {
 
         $scope.showPage = 2;
+        $scope.EnvioSoli = []
 
         angular.forEach($scope.checkboxProd[0], function(value, key) {
 
@@ -1013,7 +1031,6 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         angular.forEach($scope.produtosList, function(value, key) {
             value.prod_peso = value.prod_peso.replace(',', '.')
             $scope.produtosList[key] = parseFloat(value.prod_peso);
-            console.log(value.prod_peso)
         });
 
         }
@@ -1026,7 +1043,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         angular.forEach($scope.EnvioSoli, function(value, key) {
 
 
-            if (value.quantidade_envio !== undefined && value.quantidade_envio !== null && value.quantidade_envio !== 0) {
+            if (value.quantidade_envio !== undefined && value.quantidade_envio !== null && value.quantidade_envio !== 0 && value.quantidade_envio <= value.prod_quantidade) {
                 $scope.EnvioSoli[key].errorQuant = false;
 
                 if (value.quant_decl !== undefined && value.quant_decl !== null && value.quant_decl !== 0) {
@@ -1109,6 +1126,22 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
                         $http({
 
                             method: 'POST',
+                            url: base_url + "Sistema/getCompra",
+                            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+                        }).then(function (response) {
+
+
+                                console.log(response.data)
+                                $scope.compraList = response.data;
+
+
+
+                            }
+                        );
+                        $http({
+
+                            method: 'POST',
                             url: base_url + "Sistema/getProdutos",
                             headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
 
@@ -1138,35 +1171,88 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         $scope.PedidoEnvio.pedido_plano = plano;
 
         if (plano == 1){
+            $scope.plano_selected = 1
             $scope.TotalFinal = $scope.total1;
         }else
             if(plano ==2){
+                $scope.plano_selected = 2
                 $scope.TotalFinal = $scope.total2;
             }else{
+                $scope.plano_selected = 3
                 $scope.TotalFinal = $scope.total3;
             }
 
     }
 
     $scope.compraAssistida = {
-        link:"",
-        quantidade: ""
+        link_enviado:"",
+        link_quantidade: ""
     }
     $scope.link_enviado = false;
 
     $scope.enviarLink = function () {
-        $scope.compraAssistida = {
-            link:"",
-            quantidade: ""
-        }
+
         $scope.link_enviado = true;
 
-        $timeout(function(){
-            $scope.link_enviado = false;
-        }, 3000);
+        $http({
+
+            method: 'POST',
+            url: base_url + "Sistema/MandarLink",
+            data: $.param($scope.compraAssistida),
+            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+        }).then(function (response) {
+
+            $scope.compraAssistida = {
+                link_enviado:"",
+                link_quantidade: ""
+            }
+            $timeout(function(){
+                $scope.link_enviado = false;
+            }, 3000);
+
+
+            }
+        );
 
     }
 
+        $scope.goBack = function () {
+            $scope.showPage -= 1;
+
+            $http({
+
+                method: 'POST',
+                url: base_url + "Sistema/getCompra",
+                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+            }).then(function (response) {
+
+
+                    console.log(response.data)
+                    $scope.compraList = response.data;
+
+
+
+                }
+            );
+            $http({
+
+                method: 'POST',
+                url: base_url + "Sistema/getProdutos",
+                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+            }).then(function (response) {
+
+                    console.log(response.data)
+
+                    $scope.produtosList = response.data;
+
+
+
+                }
+            );
+        }
 
 }]);
 

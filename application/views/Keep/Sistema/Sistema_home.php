@@ -21,7 +21,7 @@
     <!-- Modal content -->
     <div class="modal-content-jquery">
         <span style="position: absolute;
-    right: 5%; cursor: pointer" class="close" ng-click="closeModal()">&times;</span>
+    right: 5%; cursor: pointer" class="close pointer" ng-click="closeModal()">&times;</span>
 
     <img style="width: 90%; height: 800px" src="<?= base_url('upload/produtos/img/') ?>{{img_show}}">
 
@@ -39,7 +39,7 @@
         <div class="content-data-user">
             <div class="content-data-name-user text-font-sans text-1-sm color-text-grey-light text-bold">Victor oshiro
             </div>
-            <div class="content-data-exit text-font-sans text-1-sm color-text-roxo" ng-click="logout()"><div class="loader-roxo" ng-show="loader_exit"></div>Sair</div>
+            <div class=" pointer content-data-exit text-font-sans text-1-sm color-text-roxo" ng-click="logout()"><div class="loader-roxo" ng-show="loader_exit"></div>Sair</div>
         </div>
     </div>
 
@@ -54,7 +54,7 @@
             Seus Produtos
         </div>
         <div class="content-table-produtos ">
-            <table>
+            <table style="    min-width: 100%;">
                 <thead class="color-background-roxo">
                 <tr>
                     <th>
@@ -111,7 +111,7 @@
                 </tbody>
             </table>
 
-            <div class="align-x-center margin-top-2" style="        margin-left: 770px;">
+            <div class="align-x-center margin-top-3" style="justify-content: flex-end !important;">
                 <button class="btn-config-2 text-1 text-font-sans color-background-green color-text-white" ng-click="solicitarEnvio()">Solicitar envio</button>
             </div>
         </div>
@@ -119,10 +119,13 @@
         <div class="content-text-produtos text-font-sans text-title color-text-green margin-top-3" style="float: left">
             Compra assistida
         </div>
-        <div style="float: right; display: inline-flex" class="align-y-center margin-top-3" >
-            <input class="input text-1 " style="padding-top: 0px !important;" placeholder="Link" ng-model="compraAssistida.link">
-            <input class="input-mini text-1" ng-model="compraAssistida.quantidade" style="padding-top: 0px !important;" type="number" placeholder="Quant">
-            <button class="btn-config-2 color-background-roxo color-text-white margin-top-1" ng-click="enviarLink()">Enviar</button>
+        <div style="float: right; display: inline-flex" class="align-y-center margin-top-5" >
+            <div class="popup margin-top-1" style="    margin-right: 20px;" onclick="myFunction()"><img src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
+                <span class="popuptext" id="myPopup">Insira o link do produto que deseja comprar e a quantidade</span>
+            </div>
+            <input class="input text-1 " style="padding-top: 0px !important;" placeholder="Link" ng-model="compraAssistida.link_enviado">
+            <input class="input-mini text-1" ng-model="compraAssistida.link_quantidade" style="padding-top: 0px !important;" type="number" placeholder="Quant">
+            <button class="btn-config-2 color-background-roxo color-text-white margin-top-1 text-1-sm" ng-click="enviarLink()">Enviar</button>
         </div>
         <div style="    float: left;
     margin-bottom: 40px;
@@ -130,7 +133,7 @@
             Seu link foi enviado com sucesso, entraremos em contato em breve.
         </div>
         <div class="content-table-produtos margin-top-3">
-            <table class="margin-top-3">
+            <table class="margin-top-4" style="    min-width: 100%;">
                 <thead class="color-background-green">
                 <tr>
                     <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
@@ -303,6 +306,15 @@
                 </tbody>
             </table>
         </div>
+            <div class="back-step-envio margin-top-3 align-y-center pointer" ng-click="goBack()">
+                <img
+                        style="-moz-transform: scaleX(-1);
+                        -o-transform: scaleX(-1);
+                        -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);"
+                        src="<?= base_url('public/assets/metronic/custom/img/icon/right-arrow.png') ?>">
+                <a class="text-1 text-font-sans color-text-green" style="margin-right: 20px">Voltar </a>
+            </div>
             <div class="next-step-envio margin-top-3 align-y-center pointer" ng-click="goToStep2()">
                 <a class="text-1 text-font-sans color-text-green" style="margin-right: 20px">Próximo </a><img src="<?= base_url('public/assets/metronic/custom/img/icon/right-arrow.png') ?>">
             </div>
@@ -315,7 +327,7 @@
     <div class="content-sistema-left" ng-show="showPage == 3" style="height: 1500px">
         <div class="content-envio-caixa">
             <div class="content-step-by-step">
-                <div class="text-1-sm color-text-green">Informações dos Produtos&rarr;</div><div class="text-1-sm color-text-roxo text-bold">Envio</div>
+                <div class="text-1-sm color-text-green pointer" ng-click="goBack()">Informações dos Produtos&rarr;</div><div class="text-1-sm color-text-roxo text-bold">Envio</div>
             </div>
 
             <div class="content-planos">
@@ -329,7 +341,7 @@
 
                     <div class="content-border-simulator-shadow" ng-class="{'border-error-1': errorPlano}">
                         <ul class="content-ul-simulator-data">
-                            <li class="content-li-simulator-data" ng-click="selectPlano(1)" ng-class="{'plano-selected': PedidoEnvio.pedido_plano == 1}">
+                            <li class="content-li-simulator-data pointer" ng-click="selectPlano(1)" ng-class="{'plano-selected': PedidoEnvio.pedido_plano == 1}">
                                 <div class="text-1-sm text-font-sans text-bold color-text-grey" style="    height: 65px;">
                                     Priority Mail Express International™
                                 </div>
@@ -346,7 +358,7 @@
                                     <b>Total:</b> {{total1}}
                                 </div>
                             </li>
-                            <li class="content-li-simulator-data" ng-click="selectPlano(2)" ng-class="{'plano-selected': PedidoEnvio.pedido_plano == 2}">
+                            <li class="content-li-simulator-data pointer" ng-click="selectPlano(2)" ng-class="{'plano-selected': PedidoEnvio.pedido_plano == 2}">
                                 <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 65px;">
                                     Priority Mail International®
                                 </div>
@@ -363,7 +375,7 @@
                                     <b>Total:</b> {{total2}}
                                 </div>
                             </li>
-                            <li ng-show="range_simulator_home < 5" class="content-li-simulator-data" ng-click="selectPlano(3)" ng-class="{'plano-selected': PedidoEnvio.pedido_plano == 3}">
+                            <li ng-show="range_simulator_home < 5" class="content-li-simulator-data pointer" ng-click="selectPlano(3)" ng-class="{'plano-selected': PedidoEnvio.pedido_plano == 3}">
                                 <div  >
                                     <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 65px;">
                                         First-Class Package International Service™
@@ -392,13 +404,13 @@
                     </div>
                     <div class="content-two-inputs margin-top-2">
                         <div class="content-check-envio align-y-center text-1-sm color-text-grey">
-                            <input type="checkbox" class="checkbox-sistema" ng-model="PedidoEnvio.pedido_seguro_keep">Seguro KeepBox (3% do valor declarado)
+                            <input type="checkbox" class="checkbox-sistema" ng-change="changeValue()" ng-model="PedidoEnvio.pedido_seguro_keep">Seguro KeepBox (3% do valor declarado)
                         </div>
                         <div class="content-check-envio align-y-center text-1-sm color-text-grey">
-                            <input type="checkbox" class="checkbox-sistema " ng-model="PedidoEnvio.pedido_adesivar">Adesivar Toda  caixa/ Proteção completa (US$2,00)
+                            <input type="checkbox" class="checkbox-sistema " ng-change="changeValue()" ng-model="PedidoEnvio.pedido_adesivar">Adesivar Toda  caixa/ Proteção completa (US$2,00)
                         </div>
                         <div class="content-check-envio align-y-center text-1-sm color-text-grey">
-                            <input type="checkbox" class="checkbox-sistema" ng-model="PedidoEnvio.pedido_acomodar">Acomodar itens frágeis em plástico bolha (US$1,00)
+                            <input type="checkbox" class="checkbox-sistema" ng-change="changeValue()" ng-model="PedidoEnvio.pedido_acomodar">Acomodar itens frágeis em plástico bolha (US$1,00)
                         </div>
                     </div>
                     <div class="content-two-inputs margin-top-2">
@@ -428,8 +440,16 @@
                     <textarea class="margin-top-2 text-1-sm text-font-sans color-text-grey textarea-information-envio-caixa" ng-model="PedidoEnvio.pedido_comentario"></textarea>
                 </div>
             </div>
-
-            <div class="next-step-envio margin-top-3 align-y-center pointer" ng-click="goToStep3()">
+            <div class="back-step-envio margin-top-3 align-y-center pointer" style="    margin-bottom: 180px;"ng-click="goBack()">
+                <img
+                        style="-moz-transform: scaleX(-1);
+                        -o-transform: scaleX(-1);
+                        -webkit-transform: scaleX(-1);
+                        transform: scaleX(-1);"
+                        src="<?= base_url('public/assets/metronic/custom/img/icon/right-arrow.png') ?>">
+                <a class="text-1 text-font-sans color-text-green" style="margin-right: 20px">Voltar </a>
+            </div>
+            <div class="next-step-envio margin-top-3 align-y-center pointer" style="    margin-bottom: 180px;" ng-click="goToStep3()">
                 <a class="text-1 text-font-sans color-text-green" style="margin-right: 20px">Total: {{TotalFinal}} | Finalizar</a> <img src="<?= base_url('public/assets/metronic/custom/img/icon/right-arrow.png') ?>">
             </div>
         </div>
@@ -444,7 +464,10 @@
 
     <div class="content-data-endereco-right">
         <ul class="ul-data">
-            <li class="li-data text-font-sans text-1-sm text-bold color-text-green">Seu endereço nos EUA</li>
+            <li class="li-data  color-text-green"     style=" padding: 10px 0px;"><a class="text-font-sans text-1 text-bold">Seu endereço nos EUA</a>
+                <div class="popup margin-top-2" style="    margin-left: 20px;" onclick="myFunction1()"><img src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
+                    <span class="popuptext" id="myPopup1">Ao realizar suas compras, insira seu endereço exatamente assim.</span>
+                </div></li>
             <li class="li-data text-font-sans text-1-sm"><b>Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $user_suite." ".$user_nome." ".$user_sobrenome ?></div></li>
             <li class="li-data text-font-sans text-1-sm"><b>Street: </b><div class="color-text-grey-light" style="display: inline-block">591 Lakeview Drive</div></li>
             <li class="li-data text-font-sans text-1-sm"><b>City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
@@ -473,7 +496,7 @@
 
     <!-- Modal content -->
     <div class="modal-content-jquery">
-        <span class="close2">&times;</span>
+        <span class="close2 pointer">&times;</span>
 
         <div class="align-center text-title color-text-green text-font-sans" style="    padding: 1px 250px;">
             Seu Pedido de envio foi solicitado com sucesso, entraremos em contato em breve.
@@ -483,6 +506,17 @@
 </div>
 
 <script>
+
+// When the user clicks on <div>, open the popup
+    function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+    }
+function myFunction1() {
+    var popup = document.getElementById("myPopup1");
+    popup.classList.toggle("show");
+}
+
     var modal = document.getElementById('myModal2');
 
     var span = document.getElementsByClassName("close2")[0];

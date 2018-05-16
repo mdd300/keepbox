@@ -52,62 +52,61 @@ class Fo_api
 {
 
 
-    public static function sendSMS($dataMessage)
-    {
-
-        /*
-         *  Fornecedor : NEXMO
-         *  $dataMessage é um array que contem os seguintes indices
-         *  'to' = > numero do celular (int)
-         *  'from' => 'Origem' Titulo da Mensagem(string),
-         *  'text' => 'Corpo da Mensagem'(string)
-         */
-
-        $resposta = [];
-
-        if (gettype($dataMessage['to']) == 'integer' && gettype($dataMessage['from']) == 'string' && gettype($dataMessage['from']) == 'string') {
-            $basic = new \Nexmo\Client\Credentials\Basic('144a12d0', 'e6e9e46c9e433013');
-            $client = new \Nexmo\Client($basic);
-            $message = $client->message->send($dataMessage);
-            // echo print_r($message->getResponseData());
-            $resposta['sms'] = true;
-            $resposta['erro'] = '';
-        } else {
-            $resposta['sms'] = false;
-            $resposta['erro'] = 'Parametro Invalido';
-
-
-        }
-
-        return $resposta;
-    }
 
     //envia email com code para o usuario
-    public static function sendEmail($email, $code, $id)
+    public static function sendEmail($nome,$email, $code, $id)
     {
         $CI = &get_instance();
 
         $CI->load->library(['Fo_email']);
 
-        $msg = ''
-            . '<div style="text-align:center;">
-                <img style="height: 250px; width: 100%" src="'.base_url("public/assets/metronic/custom/img/LOGOTIPO.png").'">
-'
-            . '</div>'
-            . '<div style="width:100%;padding:15px;background:#a9d046;text-align:center;margin:0 auto;">'
-            . '<p style="color:#fff;font-size:23px;font-family:Multicolore;margin:0px;"><b>Seja bem vindo a Keepbox</b></p>'
-            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;"><b>Seu endereço é:</b></p>	'
-            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;">'
+
+        $msg = '<div style="width: 100%;">
+<div style="display: flex; justify-content: center; width: 100%; height: auto">
+    <img style="height: 80px; width: 20%" src="'.base_url("public/assets/metronic/custom/img/LOGOTIPO.png").'">
+
+</div>
+    <div style="
+    display: flex;
+     padding: 40px 0px;
+     font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: #a9d046;
+    font-family:Multicolore;">
+        Seja bem vindo
+    </div>
+
+<div style="display: flex; justify-content: center; width: 100%; height: auto">
+    <img style="height: 180px; width: 80%; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
+</div>
+
+</div>'
+            .'<div style=" width:80%; padding: 20px 0px;">'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;display: inline-flex""> Olá <div style="color: #a9d046; font-weight: bold;display: inline-flex; "> &nbsp;'.$nome.'</div></p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px; display: inline-flex">Seja bem vindo a <div style="color: #a9d046; font-weight: bold;display: inline-flex "> &nbsp;KEEPBOX</div></p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Nossa equipe recebeu seu cadastro e veio entregar as chaves</p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> para seu novo endereço  nos EUA. Confira abaixo e não se</p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;">esqueça de ativar sua conta</p>'
+            . '</p></div>'
+            . '<p style="color:#696969;    padding: 0px 0px 20px 0px;font-weight: bold;font-size:20px;font-family:Multicolore;margin:0px;"><b>Seu endereço é:</b></p>	'
+            . '<div style=" display: flex; justify-content: center; width: 100%; height: auto">'
+            .'<div style=" width:70%; background-color:#F8F8FF;border-radius: 10px; padding: 20px;">'
+            . '<p style="color:#696969;font-size:20px;font-family:Multicolore;margin:0px;">'
+
+            .'</p>'
+            . '<p style="color:#696969;font-size:20px;font-family:Multicolore;margin:0px;">'
             . $code
             .'</p>'
-            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;"> Street: 591 Lakeview Drive</p>'
-            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;"> City: Coral Springs</p>'
-            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;"> State: Florida (FL)</p>'
-            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;"> Zip Code: 33071 </p>'
-            . '<p style="color:#fff;font-size:20px;font-family:Multicolore;margin:0px;">Para acessar sua conta, finalize seu cadastro clicando aqui:</p>'
-            . '<a href="'.base_url("Home/cadastroFinal?id=").$id .'">' .base_url('Home/cadastroFinal?id=').$id . ' </a> '
-            . '</p></div>';
-
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Street: 591 Lakeview Drive</p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> City: Coral Springs</p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> State: Florida (FL)</p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Zip Code: 33071 </p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;">Para acessar sua conta, finalize seu cadastro clicando aqui:</p>'
+            . '<a href="'.base_url("Home/cadastroFinal?id=").$id .'">' .base_url('Home/cadastroFinal?id=').$id. ' </a> '
+            . '</p></div></div>';
         $Data['to'] = $email;
         $Data['name'] = 'QRGO';
         $Data['html'] = $msg;

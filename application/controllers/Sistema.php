@@ -94,6 +94,25 @@ class Sistema extends CI_Controller
 
         $retorno = $this->Home_model->finalizarEnvio($_SESSION['fashon_session']['user_id'],$Data );
 
+        if ($Output == true) {
+            echo json_encode($retorno);
+        } else {
+            return $retorno;
+        }
+    }
+
+    public function MandarLink($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $this->load->model('Home_model');
+
+        $retorno = $this->Home_model->setLink($_SESSION['fashon_session']['user_id'],$Data );
+
 
         if ($Output == true) {
             echo json_encode($retorno);

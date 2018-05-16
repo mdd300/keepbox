@@ -126,4 +126,12 @@ class Home_model extends CI_Model {
             $this->db->where("user_id_fk", $id);
            return $this->db->get("tb_compra_assistida")->result();
        }
+
+       public function setLink($id,$data){
+
+           $this->db->set($data);
+           $this->db->set("user_id_fk", $id);
+           return $this->db->insert("tb_link_compra");
+
+       }
   }

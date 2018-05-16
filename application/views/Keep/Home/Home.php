@@ -98,7 +98,9 @@
 <!--  style="     background-repeat: no-repeat;
         background-size: 900px 900px;
         background-position-x: right; background-image: url('public/assets/metronic/custom/img/photo/img_back_cad.png')"  -->
-    <div class="text-font-sans text-bold text-title color-text-green" style="margin: 80px" ng-show="finishCad">Obrigado por se cadastre, olhe seu E-mail para verificar suas informações!</div>
+    <div class="text-font-sans text-bold text-title color-text-green" style="
+    width: 30%;
+    padding: 200px 0px;padding-left: 324px;" ng-show="finishCad">Obrigado por se cadastre, olhe seu E-mail para verificar suas informações!</div>
 
     <div class="content-text-cadastro-module3" ng-show="step1">
         <div class="limit-text-cadastro text-bold color-text-roxo text-font-sans text-title">Pronto para
