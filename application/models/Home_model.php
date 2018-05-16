@@ -68,11 +68,11 @@ class Home_model extends CI_Model {
             $produtos[$key]->imgs = array($this->db->get("tb_produtos_img")->result());
 
             if($value->prod_status == 1){
-                $produtos[$key]->prod_status = "Guardado";
+                $produtos[$key]->prod_status = "Armazenado";
             }elseif ($value->prod_status == 2){
                 $produtos[$key]->prod_status = "Processando";
             }elseif ($value->prod_status == 3){
-                $produtos[$key]->prod_status = "Enviado";
+                $produtos[$key]->prod_status = "Transporte";
             }elseif ($value->prod_status == 4){
                 $produtos[$key]->prod_status = "Entregue";
             }
@@ -82,4 +82,48 @@ class Home_model extends CI_Model {
         return $produtos;
 
         }
+
+        public function finalizarEnvio($id, $data){
+
+        $this->db->set($data['Pedido']);
+        $this->db->set("user_id_fk",$id);
+        $this->db->insert("tb_pedido_envio");
+        $id_pedido = $this->db->insert_id();
+
+        foreach ($data['Produto'] as $decl){
+
+            $declaracao = array(
+                "declaracao_quantidade" => $decl['quant_decl'],
+                "declaracao_descricao" => $decl['desc_decl'],
+                "declaracao_valor" => $decl['valor_decl']
+            );
+
+            $this->db->set($declaracao);
+            $this->db->insert("tb_produto_declaracao");
+            $id_decl = $this->db->insert_id();
+
+            $prod_ped = array(
+                "produto_id_fk" =>  $decl['prod_id'],
+                "pedido_id_fk" => $id_pedido,
+                "declaracao_id_fk" => $id_decl
+            );
+
+            $this->db->set($prod_ped);
+            $this->db->insert("tb_pedido_x_produtos");
+
+            $this->db->where("prod_id", $decl['prod_id']);
+            $this->db->set("prod_status", 2);
+            $this->db->update("tb_produtos");
+
+
+        }
+
+            return true;
+
+        }
+
+        public function getCompra_model($id){
+            $this->db->where("user_id_fk", $id);
+           return $this->db->get("tb_compra_assistida")->result();
+       }
   }

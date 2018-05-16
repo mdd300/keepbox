@@ -794,6 +794,22 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$timeout', function ($scope, $http,$timeout) {
 
     $scope.img_show;
+    $scope.errorPlano = false;
+    $scope.showPage = 1;
+    $scope.PedidoEnvio = {
+        pedido_plano: 0,
+        pedido_seguro_keep: 0,
+        pedido_seguro_basico: 0,
+        pedido_etiqueta:0,
+        pedido_caixa: 0,
+        pedido_fatura:0,
+        pedido_adesivar:0,
+        pedido_acomodar:0,
+        pedido_anuncios:0,
+        pedido_comentario: ""
+    };
+    $scope.TotalFinal;
+
 
     var screenSize = $( window ).width() / 1920 * 100
 
@@ -806,8 +822,133 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         $('html').css({zoom: screenSize/100})
     }
 
-    $scope.produtosList;
+    $scope.produtosList = [];
+    $scope.compraList = [];
+    $scope.checkboxProd = [];
+    $scope.EnvioSoli = [];
 
+
+    $scope.range_simulator_home = 0;
+    $scope.valor_kg = 0;
+    $scope.range_simulator_home_kg = 0;
+    $scope.select_lbs_kg = '1';
+    function formataDinheiro(n) {
+        return "US$" + n.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.");
+    }
+    $scope.changeValue = function () {
+
+        if($scope.select_lbs_kg == 1) {
+            $scope.range_simulator_home_kg = $scope.range_simulator_home * 0.4536;
+            $scope.range_simulator_home_kg = $scope.range_simulator_home_kg.toFixed(1);
+        }else{
+            $scope.range_simulator_home = $scope.range_simulator_home_kg / 0.4536;
+            $scope.range_simulator_home = $scope.range_simulator_home.toFixed(0);
+        }
+        if ($scope.range_simulator_home < 6) {
+            var value1 = parseFloat($scope.range_simulator_home) * 4.35;
+            $scope.valor_plano_1 = 62.7 + value1;
+            $scope.valor_plano_1 = Number(($scope.valor_plano_1).toFixed(2));
+        }
+        else {
+            var value1 = (parseFloat($scope.range_simulator_home) - 5) * 4.45;
+            $scope.valor_plano_1 = 84.45 + value1;
+            $scope.valor_plano_1 = Number(($scope.valor_plano_1).toFixed(2));
+
+        }
+        if ($scope.range_simulator_home < 11) {
+            var value2 = parseFloat($scope.range_simulator_home) * 3.7;
+            $scope.valor_plano_2 = 41.25 + value2
+            $scope.valor_plano_2 = Number(($scope.valor_plano_2).toFixed(2));
+
+        } else {
+            var value2 = (parseFloat($scope.range_simulator_home) - 10) * 4.05;
+            $scope.valor_plano_2 = 78.25 + value2
+            $scope.valor_plano_2 = Number(($scope.valor_plano_2).toFixed(2));
+
+
+        }
+        if ($scope.range_simulator_home < 3) {
+            $scope.valor_plano_3 = 23.50
+
+        } else {
+            if ($scope.range_simulator_home == 3) {
+                $scope.valor_plano_3 = 34.75
+
+
+            } else {
+                $scope.valor_plano_3 = 51.50
+            }
+        }
+
+
+
+        $scope.valor_plano_1_taxa = $scope.valor_plano_1 + 12.90;
+        var porcValor_1 = ($scope.valor_plano_1_taxa * 0.06) ;
+        $scope.valor_plano_1_taxa =  porcValor_1;
+
+        $scope.valor_plano_2_taxa = $scope.valor_plano_2 + 12.90;
+        var porcValor_2 = ($scope.valor_plano_2_taxa * 0.06) ;
+        $scope.valor_plano_2_taxa =porcValor_2;
+
+        $scope.valor_plano_3_taxa = $scope.valor_plano_3 + 12.90;
+        var porcValor_3 = ($scope.valor_plano_3_taxa * 0.06) ;
+        $scope.valor_plano_3_taxa = porcValor_3;
+
+
+        $scope.total1 = $scope.valor_plano_1_taxa + 12.90 + $scope.valor_plano_1;
+        $scope.total2 = $scope.valor_plano_2_taxa + 12.90 + $scope.valor_plano_2;
+        $scope.total3 = $scope.valor_plano_3_taxa + 12.90 + $scope.valor_plano_3;
+
+
+        $scope.valor_plano_1_taxa = Number(($scope.valor_plano_1_taxa).toFixed(2));
+        $scope.valor_plano_2_taxa = Number(($scope.valor_plano_2_taxa).toFixed(2));
+        $scope.valor_plano_3_taxa = Number(($scope.valor_plano_3_taxa).toFixed(2));
+
+        $scope.total1 = Number(($scope.total1).toFixed(2));
+        $scope.total2 = Number(($scope.total2).toFixed(2));
+        $scope.total3 = Number(($scope.total3).toFixed(2));
+
+        $scope.valor_plano_1 =formataDinheiro($scope.valor_plano_1)
+        $scope.valor_plano_2 =formataDinheiro($scope.valor_plano_2)
+        $scope.valor_plano_3 =formataDinheiro($scope.valor_plano_3)
+
+        $scope.total1 =formataDinheiro($scope.total1)
+        $scope.total2 =formataDinheiro($scope.total2)
+        $scope.total3 =formataDinheiro($scope.total3)
+
+        $scope.valor_plano_1_taxa =formataDinheiro($scope.valor_plano_1_taxa)
+        $scope.valor_plano_2_taxa =formataDinheiro($scope.valor_plano_2_taxa)
+        $scope.valor_plano_3_taxa =formataDinheiro($scope.valor_plano_3_taxa)
+
+        if ($scope.range_simulator_home == 0){
+            $scope.valor_plano_1 = null;
+            $scope.valor_plano_2 = null;
+            $scope.valor_plano_3 = null;
+
+            $scope.valor_plano_1_taxa= null;
+            $scope.valor_plano_2_taxa= null;
+            $scope.valor_plano_3_taxa= null;
+
+        }
+    }
+
+
+    $http({
+
+        method: 'POST',
+        url: base_url + "Sistema/getCompra",
+        headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+    }).then(function (response) {
+
+
+        console.log(response.data)
+        $scope.compraList = response.data;
+
+
+
+        }
+    );
     $http({
 
         method: 'POST',
@@ -816,9 +957,11 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
 
     }).then(function (response) {
 
-        console.log(response.data)
+            console.log(response.data)
 
-        $scope.produtosList = response.data;
+            $scope.produtosList = response.data;
+
+
 
         }
     );
@@ -857,6 +1000,172 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
 
     }
 
+    $scope.solicitarEnvio = function () {
+
+        $scope.showPage = 2;
+
+        angular.forEach($scope.checkboxProd[0], function(value, key) {
+
+
+            var indexProd = $scope.produtosList.findIndex(function(obj) { return obj['prod_id'] === key;})
+            $scope.EnvioSoli.push( $scope.produtosList[indexProd]);
+        })
+        angular.forEach($scope.produtosList, function(value, key) {
+            value.prod_peso = value.prod_peso.replace(',', '.')
+            $scope.produtosList[key] = parseFloat(value.prod_peso);
+            console.log(value.prod_peso)
+        });
+
+        }
+    $scope.goToStep2 = function () {
+
+        var error = false;
+         $scope.quantidadeTotal = 0;
+        $scope.ValorDecTotal = 0;
+
+        angular.forEach($scope.EnvioSoli, function(value, key) {
+
+
+            if (value.quantidade_envio !== undefined && value.quantidade_envio !== null && value.quantidade_envio !== 0) {
+                $scope.EnvioSoli[key].errorQuant = false;
+
+                if (value.quant_decl !== undefined && value.quant_decl !== null && value.quant_decl !== 0) {
+                    $scope.EnvioSoli[key].errorQuantD = false;
+
+                    if (value.desc_decl !== undefined && value.desc_decl !== null && value.desc_decl !== "") {
+                        $scope.EnvioSoli[key].errorDesc = false;
+
+                        if (value.valor_decl !== undefined && value.valor_decl !== null && value.valor_decl !== 0) {
+                            $scope.EnvioSoli[key].errorValor = false;
+                            error = false;
+
+                            $scope.quantidadeTotal += (value.quantidade_envio * parseFloat(value.prod_peso));
+                            $scope.ValorDecTotal += value.valor_decl;
+
+                        }else{
+                            $scope.EnvioSoli[key].errorValor = true;
+                            error = true;
+                            $scope.quantidadeTotal = 0;
+                            $scope.ValorDecTotal = 0;
+                        }
+                    }else{
+                        $scope.EnvioSoli[key].errorDesc = true;
+                        error = true;
+                        $scope.quantidadeTotal = 0;
+                        $scope.ValorDecTotal = 0;
+                    }
+                }else{
+                    $scope.EnvioSoli[key].errorQuantD = true;
+                    error = true;
+                    $scope.quantidadeTotal = 0;
+                    $scope.ValorDecTotal = 0;
+
+                }
+            }else {
+                $scope.EnvioSoli[key].errorQuant = true;
+                error = true;
+                $scope.quantidadeTotal = 0;
+                $scope.ValorDecTotal = 0;
+
+            }
+
+
+        });
+
+        if (error == false) {
+
+            $scope.range_simulator_home = $scope.quantidadeTotal;
+
+
+            $scope.changeValue();
+            $scope.showPage = 3;
+        }
+    }
+
+    $scope.goToStep3 = function () {
+
+        if($scope.PedidoEnvio.pedido_plano == 0)
+        $scope.errorPlano = true
+        else{
+
+            $http({
+
+                method: 'POST',
+                url: base_url + "sistema/FinalizarPedidoEnvio",
+                data: $.param({Pedido: $scope.PedidoEnvio, Produto: $scope.EnvioSoli}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+            }).then(function (response) {
+
+
+                console.log(response.data)
+                    if(response.data == "true"){
+                        $scope.showPage = 1;
+                        var modal = document.getElementById('myModal2');
+
+                        modal.style.display = "block";
+
+
+                        $http({
+
+                            method: 'POST',
+                            url: base_url + "Sistema/getProdutos",
+                            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+                        }).then(function (response) {
+
+                                console.log(response.data)
+
+                                $scope.produtosList = response.data;
+
+
+
+                            }
+                        );
+                    }
+
+                }
+            );
+
+
+        }
+    }
+
+
+
+    $scope.selectPlano = function (plano) {
+
+        $scope.PedidoEnvio.pedido_plano = plano;
+
+        if (plano == 1){
+            $scope.TotalFinal = $scope.total1;
+        }else
+            if(plano ==2){
+                $scope.TotalFinal = $scope.total2;
+            }else{
+                $scope.TotalFinal = $scope.total3;
+            }
+
+    }
+
+    $scope.compraAssistida = {
+        link:"",
+        quantidade: ""
+    }
+    $scope.link_enviado = false;
+
+    $scope.enviarLink = function () {
+        $scope.compraAssistida = {
+            link:"",
+            quantidade: ""
+        }
+        $scope.link_enviado = true;
+
+        $timeout(function(){
+            $scope.link_enviado = false;
+        }, 3000);
+
+    }
 
 
 }]);
