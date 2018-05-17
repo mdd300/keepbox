@@ -76,7 +76,7 @@ class Fo_api
         Seja bem vindo
     </div>
 
-    <img style="margin-left 100px;height: 290px; width: 600px; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
+    <img style="margin-left 100px;max-height: 290px; max-width: 600px; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
 
 '
             .'<div style=" widt:80%; padding: 20px 0px;">'
