@@ -13,7 +13,7 @@
         <div class="text-font-sans text-bold text-title color-text-green" style="    margin: 50px;
     width: 50%;" ng-show="finishCad">Obrigado por se cadastrar, olhe seu e-mail para verificar suas informações!</div>
 
-        <form style=" padding-top: 150px" ng-show="step1">
+        <form style=" padding-top: 150px" ng-show="step1" autocomplete="off">
             <div class="text-font-sans text-bold text-title color-text-green" ng-show="step1" style="    margin: 30px;"> Crie sua conta</div>
             <div class="content-two-inputs-cad">
                 <input class="input-mini color-text-roxo text-font-sans text-1-sm" ng-class="{'error_cad': dataCadError.user_nome_error }" ng-model="dataCad.user_nome"
@@ -29,7 +29,7 @@
                 </button>
             </div>
         </form>
-        <form ng-show="step2" style=" padding-top: 30px" >
+        <form ng-show="step2" style=" padding-top: 30px" autocomplete="off">
             <div class="text-font-sans text-bold text-title color-text-green" ng-show="step2" style="    margin: 30px;"> Crie seu Login</div>
             <div class="content-two-inputs-cad">
             <input class="input color-text-roxo text-font-sans text-1-sm" placeholder="Seu endereço" ng-class="{'error_cad': dataCadError.user_endereco_error }"  ng-model="dataCad.user_endereco">
