@@ -1,6 +1,6 @@
 
 <div class="content-img-top-serv width_padrao">
-    <div class="img-top-serv" style=" background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_servicos.png')">
+    <div class="img-top-serv" style=" background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-servicos.png')">
     </div>
 </div>
 <div class="content-space-serv align-center">
