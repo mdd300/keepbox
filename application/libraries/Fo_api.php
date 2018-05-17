@@ -75,9 +75,7 @@ class Fo_api
     font-family:Multicolore;">
         Seja bem vindo
     </div>
-
-    <img style="margin-left 100px;max-height: 290px; width: 600px; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
-
+    <img height="290" width="800" style="margin-left 100px; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
 '
             .'<div style=" widt:80%; padding: 20px 0px;">'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;display: inline-flex""> Olá <div style="color: #a9d046; font-weight: bold;display: inline-flex; "> &nbsp;'.$nome.'</div></p>'
