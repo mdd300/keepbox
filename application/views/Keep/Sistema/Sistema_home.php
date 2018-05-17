@@ -91,7 +91,7 @@
                     <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_num_ped}}
 
                     </td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light " ng-class="{'align-y-center': produto.imgs[0].length > 0}" style="text-align: center; "
+                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light " ng-class="{'align-y-center': produto.imgs[0].length > 0, 'prod-align': produto.imgs[0].length > 0}" style="text-align: center; "
                         ng-mouseenter="hovering = true"
                         ng-mouseleave="hovering = false"
                         ng-click="hovering ? true : false"
@@ -123,13 +123,13 @@
             <div class="popup margin-top-1" style="    margin-right: 20px;" onclick="myFunction()"><img src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
                 <span class="popuptext" id="myPopup">Insira o link do produto que deseja comprar e a quantidade</span>
             </div>
-            <input class="input text-1 " style="padding-top: 0px !important;" placeholder="Link" ng-model="compraAssistida.link_enviado">
-            <input class="input-mini text-1" ng-model="compraAssistida.link_quantidade" style="padding-top: 0px !important;" type="number" placeholder="Quant">
+            <input class="input text-1-sm " style="padding-top: 0px !important;" placeholder="Link do produto" ng-model="compraAssistida.link_enviado">
+            <input class="input-mini text-1-sm" style="width: 120px !important;" ng-model="compraAssistida.link_quantidade" style="padding-top: 0px !important;" type="number" placeholder="Quant">
             <button class="btn-config-2 color-background-roxo color-text-white margin-top-1 text-1-sm" ng-click="enviarLink()">Enviar</button>
         </div>
         <div style="    float: left;
     margin-bottom: 40px;
-    margin-left: 80px;" class="margin-top-1 align-center text-1 color-text-green" ng-show="link_enviado">
+    margin-left: 80px;" class="margin-top-2 align-center text-1 color-text-green" ng-show="link_enviado">
             Seu link foi enviado com sucesso, entraremos em contato em breve.
         </div>
         <div class="content-table-produtos margin-top-3">
@@ -465,7 +465,7 @@
     <div class="content-data-endereco-right">
         <ul class="ul-data">
             <li class="li-data  color-text-green"     style=" padding: 10px 0px;"><a class="text-font-sans text-1 text-bold">Seu endereço nos EUA</a>
-                <div class="popup margin-top-2" style="    margin-left: 20px;" onclick="myFunction1()"><img src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
+                <div class="popup" style="    margin-left: 20px;" onclick="myFunction1()"><img src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
                     <span class="popuptext" id="myPopup1">Ao realizar suas compras, insira seu endereço exatamente assim.</span>
                 </div></li>
             <li class="li-data text-font-sans text-1-sm"><b>Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $user_suite." ".$user_nome." ".$user_sobrenome ?></div></li>

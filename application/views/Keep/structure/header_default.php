@@ -95,7 +95,7 @@ License: You must have a valid license purchased only from themeforest(the above
     </div>
 
     <div class="modal-login" ng-show="login_press">
-        <div class="text-font-sans text-title-sm color-text-green text-bold " style="float: left; width: 66%;margin: 20px;">Meu Acesso</div>
+        <div class="text-font-sans text-title-sm color-text-green text-bold " style="float: left; width: 66%;    margin: 5px 20px;">Meu Acesso</div>
         <div class="color-text-white text-bold color-background-roxo text-font-sans" style="
     border-radius: 200px;
     float: right;

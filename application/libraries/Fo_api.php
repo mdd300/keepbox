@@ -61,39 +61,34 @@ class Fo_api
         $CI->load->library(['Fo_email']);
 
 
-        $msg = '<div style="width: 100%;">
-<div style="display: flex; justify-content: center; width: 100%; height: auto">
-    <img style="height: 80px; width: 20%" src="'.base_url("public/assets/metronic/custom/img/LOGOTIPO.png").'">
+        $msg = '<div style="width: 800px">
+<img style="margin-left: 160px; height: 125px; width: 250px" src="'.base_url("public/assets/metronic/custom/img/LOGOTIPO.png").'">
 
-</div>
     <div style="
-    display: flex;
-     padding: 40px 0px;
+     padding: 30px 0px;
      font-size: 3rem;
     font-weight: bold;
-    justify-content: center;
     width: 100%;
+    margin-left: 120px;
     height: auto;
     color: #a9d046;
     font-family:Multicolore;">
         Seja bem vindo
     </div>
 
-<div style="display: flex; justify-content: center; width: 100%; height: auto">
-    <img style="height: 180px; width: 80%; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
-</div>
+    <img style="margin-left 100px;height: 290px; width: 600px; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
 
-</div>'
-            .'<div style=" width:80%; padding: 20px 0px;">'
+'
+            .'<div style=" widt:80%; padding: 20px 20px;">'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;display: inline-flex""> Olá <div style="color: #a9d046; font-weight: bold;display: inline-flex; "> &nbsp;'.$nome.'</div></p>'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px; display: inline-flex">Seja bem vindo a <div style="color: #a9d046; font-weight: bold;display: inline-flex "> &nbsp;KEEPBOX</div></p>'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Nossa equipe recebeu seu cadastro e veio entregar as chaves</p>'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> para seu novo endereço  nos EUA. Confira abaixo e não se</p>'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;">esqueça de ativar sua conta</p>'
             . '</p></div>'
-            . '<p style="color:#696969;    padding: 0px 0px 20px 0px;font-weight: bold;font-size:20px;font-family:Multicolore;margin:0px;"><b>Seu endereço é:</b></p>	'
+            . '<p style="color:#696969;    padding: 0px 20px 20px 0px;font-weight: bold;font-size:20px;font-family:Multicolore;margin:0px;"><b>Seu endereço é:</b></p>	'
             . '<div style=" display: flex; justify-content: center; width: 100%; height: auto">'
-            .'<div style=" width:70%; background-color:#F8F8FF;border-radius: 10px; padding: 20px;">'
+            .'<div style=" width:550px; background-color:#e1efbc;border-radius: 10px; padding: 20px;">'
             . '<p style="color:#696969;font-size:20px;font-family:Multicolore;margin:0px;">'
 
             .'</p>'
@@ -106,7 +101,7 @@ class Fo_api
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Zip Code: 33071 </p>'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;">Para acessar sua conta, finalize seu cadastro clicando aqui:</p>'
             . '<a href="'.base_url("Home/cadastroFinal?id=").$id .'">' .base_url('Home/cadastroFinal?id=').$id. ' </a> '
-            . '</p></div></div>';
+            . '</p></div></div></div>';
         $Data['to'] = $email;
         $Data['name'] = 'QRGO';
         $Data['html'] = $msg;
