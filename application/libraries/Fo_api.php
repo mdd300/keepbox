@@ -79,7 +79,7 @@ class Fo_api
     <img style="margin-left 100px;height: 290px; width: 600px; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
 
 '
-            .'<div style=" widt:80%; padding: 20px 20px;">'
+            .'<div style=" widt:80%; padding: 20px 0px;">'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;display: inline-flex""> Olá <div style="color: #a9d046; font-weight: bold;display: inline-flex; "> &nbsp;'.$nome.'</div></p>'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px; display: inline-flex">Seja bem vindo a <div style="color: #a9d046; font-weight: bold;display: inline-flex "> &nbsp;KEEPBOX</div></p>'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Nossa equipe recebeu seu cadastro e veio entregar as chaves</p>'
@@ -92,7 +92,7 @@ class Fo_api
             . '<p style="color:#696969;font-size:20px;font-family:Multicolore;margin:0px;">'
 
             .'</p>'
-            . '<p style="color:#696969;font-size:20px;font-family:Multicolore;margin:0px;">'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;">'
             . $code
             .'</p>'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Street: 591 Lakeview Drive</p>'

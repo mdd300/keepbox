@@ -23,7 +23,7 @@
         <span style="position: absolute;
     right: 5%; cursor: pointer" class="close pointer" ng-click="closeModal()">&times;</span>
 
-    <img style="width: 90%; height: 800px" src="<?= base_url('upload/produtos/img/') ?>{{img_show}}">
+    <img style="width: 100%;" src="<?= base_url('upload/produtos/img/') ?>{{img_show}}">
 
     </div>
 </div>
