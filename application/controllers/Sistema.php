@@ -26,7 +26,16 @@ class Sistema extends CI_Controller
         $this->load->model('Home_model');
 
 
+        if(isset($_SESSION['fashon_session']['user_id']))
         $data = $this->Home_model->getData_model($_SESSION['fashon_session']['user_id']);
+        else{
+            $data['selection'] = 1;
+
+
+            $this->load->view('Keep/structure/header_default', $data);
+            $this->load->view('Keep/Home/Home');
+            $this->load->view('Keep/structure/footer_default');
+        }
 
         $this->load->view('Keep/Sistema/Sistema_home',$data);
     }
