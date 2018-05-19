@@ -159,7 +159,7 @@
                         </div>
                         <div style="
                          width: 100%;
-    text-align: left;"
+    text-align: left;    max-height: 80px;"
                              class="text-title color-text-green text-font-sans text-bold">
                             (acima de US$1.000)
                         </div>
