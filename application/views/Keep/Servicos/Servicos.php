@@ -154,12 +154,11 @@
                         <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="   ">
                             U$7.90
                         </div>
-                        <div class="text-title color-text-green text-font-sans text-bold" style="    width: 109%;margin-top: 20px">
+                        <div class="text-title color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
                             +6% das compras
                         </div>
                         <div style=" width: 100%;
-    text-align: left;
-    margin-left: 25px;" class="text-title color-text-green text-font-sans text-bold">
+    text-align: left;" class="text-title color-text-green text-font-sans text-bold">
                             (acima de US$1.000)
                         </div>
                     </div>
