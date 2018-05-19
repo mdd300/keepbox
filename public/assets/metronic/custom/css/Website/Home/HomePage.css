@@ -413,11 +413,12 @@ body{
     height: 120px;
 }
 .content-text-and-btn-call{
-    width: 900px;
+    width: 1200px;
     height: 100%;
     /* margin-top: 50px; */
     display:  flex;
     align-items:  center;
+    justify-content:  center;
 }
 .content-simulator-module4{
     width: 100%;
@@ -452,8 +453,8 @@ body{
     width: 290px;
     background-position-y:  center;
 
-    -webkit-appearance: none;  /* Remove estilo padrÃ£o do Chrome */
-    -moz-appearance: none; /* Remove estilo padrÃ£o do FireFox */
+    -webkit-appearance: none;  /* Remove estilo padrÃƒÂ£o do Chrome */
+    -moz-appearance: none; /* Remove estilo padrÃƒÂ£o do FireFox */
     appearance: none
 }
 
@@ -461,8 +462,8 @@ body{
     height: 56px;
     width: 167px;
     float: left;
-    -webkit-appearance: none;  /* Remove estilo padrÃ£o do Chrome */
-    -moz-appearance: none; /* Remove estilo padrÃ£o do FireFox */
+    -webkit-appearance: none;  /* Remove estilo padrÃƒÂ£o do Chrome */
+    -moz-appearance: none; /* Remove estilo padrÃƒÂ£o do FireFox */
     appearance: none
 }
 
