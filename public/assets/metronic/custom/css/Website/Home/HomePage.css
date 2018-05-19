@@ -426,7 +426,7 @@ body{
     background-color:  #f9f9f9;
 }
 .content-simulator{
-    width: 75%;
+    width: 63%;
     height: auto;
     margin-top: 80px;
 }
@@ -574,7 +574,7 @@ body{
 .slider-margin{
     /* margin-left: 20%; */
     margin-top: 47px;
-    width: 500px;
+    width: 475px;
 }
 .modal-login{
     width: 25%;
