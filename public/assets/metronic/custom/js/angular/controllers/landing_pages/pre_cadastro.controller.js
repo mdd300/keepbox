@@ -177,6 +177,10 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
             $scope.valor_plano_2_taxa= null;
             $scope.valor_plano_3_taxa= null;
 
+            $scope.total1 = null;
+            $scope.total2 = null;
+            $scope.total3 = null;
+
         }
     }
 
