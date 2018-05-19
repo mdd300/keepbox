@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="content-data-user">
-            <div class="content-data-name-user text-font-sans text-1-sm color-text-grey-light text-bold">Victor oshiro
+            <div class="content-data-name-user text-font-sans text-1-sm color-text-grey-light text-bold"><?=$user_nome." ".$user_sobrenome?>
             </div>
             <div class=" pointer content-data-exit text-font-sans text-1-sm color-text-roxo" ng-click="logout()"><div class="loader-roxo" ng-show="loader_exit"></div>Sair</div>
         </div>
@@ -47,7 +47,7 @@
 
         <div class="content-bem-vindo text-font-sans text-title-xl color-text-grey-light">
             Olá
-            <div class="color-text-green" style="display: -webkit-inline-box;">Victor</div>
+            <div class="color-text-green" style="display: -webkit-inline-box;"><?= $user_nome ?></div>
         </div>
 
         <div class="content-text-produtos text-font-sans text-title color-text-roxo">
