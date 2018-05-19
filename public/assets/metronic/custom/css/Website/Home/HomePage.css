@@ -536,7 +536,7 @@ body{
     height: 100%;
     padding: 20px 0px;
     display: block;
-    margin-left: 78px;
+    /* margin-left: 78px; */
     float: left;
     background-color:  white;
 }
