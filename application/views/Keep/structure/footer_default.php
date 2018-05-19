@@ -10,20 +10,20 @@
     </div>
     <div class="content-footer-right " style="background-color: #626363">
 
-        <div class="content-footer-data">
-        <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 77px;
-    padding-left: 110px;">
-            Mapa do Site
-        </div>
-
-        <ul class="content-ul-footer">
-            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Quem somos</li>
-<!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Termos e Condições</li>-->
-<!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Privacidade e Segurança</li>-->
-            <li class="content-li-footer text-font-sans text-1-sm  color-text-white">Contato</li>
-
-        </ul>
-        </div>
+<!--        <div class="content-footer-data">-->
+<!--        <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 77px;-->
+<!--    padding-left: 110px;">-->
+<!--            Mapa do Site-->
+<!--        </div>-->
+<!---->
+<!--        <ul class="content-ul-footer">-->
+<!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Quem somos</li>-->
+<!--<!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Termos e Condições</li>-->-->
+<!--<!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Privacidade e Segurança</li>-->-->
+<!--            <li class="content-li-footer text-font-sans text-1-sm  color-text-white">Contato</li>-->
+<!---->
+<!--        </ul>-->
+<!--        </div>-->
 
         <div class="content-footer-data">
             <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 77px;
