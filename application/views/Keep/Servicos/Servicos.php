@@ -157,8 +157,10 @@
                         <div class="text-title color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
                             +6% das compras
                         </div>
-                        <div style=" width: 100%;
-    text-align: left;" class="text-title color-text-green text-font-sans text-bold">
+                        <div style="
+                         width: 100%;
+    text-align: left;"
+                             class="text-title color-text-green text-font-sans text-bold">
                             (acima de US$1.000)
                         </div>
                     </div>
