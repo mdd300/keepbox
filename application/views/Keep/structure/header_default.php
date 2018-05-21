@@ -138,10 +138,6 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </div>
 
-<div class="oferta-keep">
-    <img class="" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/oferta.png">
-</div>
-
 
 
 
