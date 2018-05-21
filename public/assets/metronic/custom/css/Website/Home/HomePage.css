@@ -671,6 +671,12 @@ body{
 .content-footer-data{
     display: inline-grid;
 }
+.oferta-keep{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 111111;
+}
 
 /*@media screen and (max-width: 2000px) {*/
 /*.content-video-module2{*/

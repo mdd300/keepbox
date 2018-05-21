@@ -47,6 +47,8 @@ License: You must have a valid license purchased only from themeforest(the above
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Servicos/Servicos.css" rel="stylesheet"
           type="text/css"/>
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Servicos/termos.css" rel="stylesheet"
+          type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Global/global.css" rel="stylesheet"
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Cadastro/Cadastro.css" rel="stylesheet"
@@ -136,6 +138,9 @@ License: You must have a valid license purchased only from themeforest(the above
 
 </div>
 
+<div class="oferta-keep">
+    <img class="" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/oferta.png">
+</div>
 
 
 

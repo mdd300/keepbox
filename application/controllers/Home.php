@@ -63,6 +63,17 @@ class Home extends CI_Controller {
 
     }
 
+    public function termos(){
+
+        $data['selection'] = 0;
+
+
+        $this->load->view('Keep/structure/header_default', $data);
+        $this->load->view('Keep/Servicos/Termos');
+        $this->load->view('Keep/structure/footer_default');
+
+    }
+
     public function funcionamento(){
 
         $data['selection'] = 3;
