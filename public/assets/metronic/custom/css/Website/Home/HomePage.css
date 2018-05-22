@@ -730,12 +730,12 @@ and (-webkit-device-pixel-ratio : 3) {
         margin: auto;
         /* padding: 20px; */
         /* border: 1px solid #888; */
-        width: 30%;
+        width: 50%;
         height: 100%;
         /* padding-bottom: 40px; */
         background-repeat:  no-repeat;
         background-color:  transparent;
-        background-position-x: center;
+        background-position-x: 20%;
         background-size:  contain;
         background-position-y: top;
     }
