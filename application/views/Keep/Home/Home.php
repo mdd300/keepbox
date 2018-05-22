@@ -465,7 +465,7 @@
     </div>
     </div>
     <!-- Modal content -->
-    <div ng-show="mobile" class="modal-content-jquery-ini-mo align-x-center" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_mobile.png')">
+    <div ng-show="mobile == true" class="modal-content-jquery-ini-mo align-x-center" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_mobile.png')">
         <div class="close-ini-mo">
 
         </div>
