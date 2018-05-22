@@ -459,13 +459,13 @@
 <div id="myModal-ini" class="modal-jquery-ini">
 
     <!-- Modal content -->
-    <div ng-show="mobile == false" class="modal-content-jquery-ini" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/desktop.png')">
+    <div ng-show="mobile == true" class="modal-content-jquery-ini" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/desktop.png')">
     <div class="close-ini pointer">
 
     </div>
     </div>
     <!-- Modal content -->
-    <div ng-show="mobile == true" class="modal-content-jquery-ini-mo align-x-center" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/mobile.png')">
+    <div ng-show="mobile == false" class="modal-content-jquery-ini-mo align-x-center" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/mobile.png')">
         <div class="close-ini-mo pointer">
 
         </div>
