@@ -525,10 +525,14 @@
 
     var span = document.getElementsByClassName("close-ini")[0];
     var modal = document.getElementById('myModal-ini');
+    var span1 = document.getElementsByClassName("close-ini-mo")[0];
 
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
+        modal.style.display = "none";
+    }
+    span1.onclick = function() {
         modal.style.display = "none";
     }
     // When the user clicks anywhere outside of the modal, close it
