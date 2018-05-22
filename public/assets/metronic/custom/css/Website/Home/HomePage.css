@@ -720,6 +720,7 @@ body{
     background-color:  transparent;
     background-position-x: center;
     background-size:  contain;
+    background-position-y: top;
 }
 .close-ini-mo{
     width: 100px;
