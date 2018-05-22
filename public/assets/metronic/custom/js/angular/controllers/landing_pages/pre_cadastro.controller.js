@@ -2,7 +2,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 
     var url = new URL(window.location.href);
 
-    $scope.mobile = false;
+    $scope.mobile ;
 
     if( typeof window.orientation !== 'undefined')
 
