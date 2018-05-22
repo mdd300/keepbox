@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    min-width: 980px
     /* width: 1024px; */
 }
 .container {
@@ -721,6 +722,24 @@ body{
     background-position-x: center;
     background-size:  contain;
     background-position-y: top;
+}
+@media only screen
+and (device-width : 375px)
+and (device-height : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+    .modal-content-jquery-ini-mo {
+        margin: auto;
+        /* padding: 20px; */
+        /* border: 1px solid #888; */
+        width: 50%;
+        height: 100%;
+        /* padding-bottom: 40px; */
+        background-repeat:  no-repeat;
+        background-color:  transparent;
+        background-position-x: center;
+        background-size:  contain;
+        background-position-y: top;
+    }
 }
 .close-ini-mo{
     width: 150px;
