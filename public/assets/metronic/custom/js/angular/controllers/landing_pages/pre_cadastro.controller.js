@@ -4,13 +4,18 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 
     $scope.mobile ;
 
-    if( typeof window.orientation !== 'undefined')
-
-    {
-        $scope.device = false;
+    if( navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+    ){
+        $scope.mobile = true;
     }
     else {
-        $scope.device = true;
+        $scope.mobile = false;
     }
 
     $scope.scrollSim = function () {
