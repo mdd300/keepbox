@@ -454,6 +454,23 @@
 
 </div>
 </div>
+
+<!-- The Modal -->
+<div id="myModal-ini" class="modal-jquery-ini">
+
+    <!-- Modal content -->
+    <div ng-show="mobile == false" class="modal-content-jquery-ini" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_desk_Arte.png')">
+    <div class="close-ini">
+
+    </div>
+    </div>
+    <!-- Modal content -->
+    <div ng-show="mobile" class="modal-content-jquery-ini-mo align-x-center" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner_mobile.png')">
+        <div class="close-ini-mo">
+
+        </div>
+    </div>
+</div>
 <!---->
 <!--<div style="padding-top: 45%">-->
 <!--    -->
@@ -505,7 +522,24 @@
 <!--</div>-->
 
 <script>
-//Slider Alguma duvida
+
+    var span = document.getElementsByClassName("close-ini")[0];
+    var modal = document.getElementById('myModal-ini');
+
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+
+    //Slider Alguma duvida
 var slideIndex = 1;
 showDivs(slideIndex);
 

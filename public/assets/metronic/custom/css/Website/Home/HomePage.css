@@ -453,8 +453,8 @@ body{
     width: 290px;
     background-position-y:  center;
 
-    -webkit-appearance: none;  /* Remove estilo padrÃƒÂ£o do Chrome */
-    -moz-appearance: none; /* Remove estilo padrÃƒÂ£o do FireFox */
+    -webkit-appearance: none;  /* Remove estilo padrÃƒÆ’Ã‚Â£o do Chrome */
+    -moz-appearance: none; /* Remove estilo padrÃƒÆ’Ã‚Â£o do FireFox */
     appearance: none
 }
 
@@ -462,8 +462,8 @@ body{
     height: 56px;
     width: 167px;
     float: left;
-    -webkit-appearance: none;  /* Remove estilo padrÃƒÂ£o do Chrome */
-    -moz-appearance: none; /* Remove estilo padrÃƒÂ£o do FireFox */
+    -webkit-appearance: none;  /* Remove estilo padrÃƒÆ’Ã‚Â£o do Chrome */
+    -moz-appearance: none; /* Remove estilo padrÃƒÆ’Ã‚Â£o do FireFox */
     appearance: none
 }
 
@@ -676,6 +676,54 @@ body{
     right: 0;
     top: 50%;
     z-index: 111111;
+}
+.modal-jquery-ini {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 165px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index:99999999;
+}
+
+/* Modal Content */
+.modal-content-jquery-ini {
+    margin: auto;
+    /* padding: 20px; */
+    /* border: 1px solid #888; */
+    width: 50%;
+    height: 70%;
+    /* padding-bottom: 40px; */
+    background-repeat:  no-repeat;
+    background-color:  transparent;
+    background-position-x: center;
+    background-size:  contain;
+}
+.close-ini{
+    float: right;
+    width: 80px;
+    height: 80px;
+}
+.modal-content-jquery-ini-mo {
+    margin: auto;
+    /* padding: 20px; */
+    /* border: 1px solid #888; */
+    width: 55%;
+    height: 90%;
+    /* padding-bottom: 40px; */
+    background-repeat:  no-repeat;
+    background-color:  transparent;
+    background-position-x: center;
+    background-size:  contain;
+}
+.close-ini-mo{
+    width: 100px;
+    height: 100px;
 }
 
 /*@media screen and (max-width: 2000px) {*/
