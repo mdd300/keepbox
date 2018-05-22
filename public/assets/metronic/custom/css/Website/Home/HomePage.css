@@ -730,7 +730,20 @@ and (-webkit-device-pixel-ratio : 3) {
         margin: auto;
         /* padding: 20px; */
         /* border: 1px solid #888; */
-        width: 70%;
+        width: 80%;
+        height: 100%;
+        /* padding-bottom: 40px; */
+        background-repeat:  no-repeat;
+        background-color:  transparent;
+        background-position-x: center;
+        background-size:  contain;
+        background-position-y: top;
+    }
+    .modal-content-jquery-ini-mo {
+        margin: auto;
+        /* padding: 20px; */
+        /* border: 1px solid #888; */
+        width: 100%;
         height: 100%;
         /* padding-bottom: 40px; */
         background-repeat:  no-repeat;
