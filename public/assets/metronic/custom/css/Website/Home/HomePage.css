@@ -735,7 +735,6 @@ and (-webkit-device-pixel-ratio : 3) {
         /* padding-bottom: 40px; */
         background-repeat:  no-repeat;
         background-color:  transparent;
-        background-position-x: 8%;
         background-size:  contain;
         background-position-y: top;
     }
