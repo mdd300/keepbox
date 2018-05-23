@@ -453,8 +453,8 @@ body{
     width: 290px;
     background-position-y:  center;
 
-    -webkit-appearance: none;  /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o do Chrome */
-    -moz-appearance: none; /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o do FireFox */
+    -webkit-appearance: none;  /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do Chrome */
+    -moz-appearance: none; /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do FireFox */
     appearance: none
 }
 
@@ -462,8 +462,8 @@ body{
     height: 56px;
     width: 167px;
     float: left;
-    -webkit-appearance: none;  /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o do Chrome */
-    -moz-appearance: none; /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o do FireFox */
+    -webkit-appearance: none;  /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do Chrome */
+    -moz-appearance: none; /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do FireFox */
     appearance: none
 }
 
@@ -696,7 +696,7 @@ body{
     margin: auto;
     /* padding: 20px; */
     /* border: 1px solid #888; */
-    width: 65%;
+    width: 58%;
     height: 90%;
     /* padding-bottom: 40px; */
     background-repeat:  no-repeat;
