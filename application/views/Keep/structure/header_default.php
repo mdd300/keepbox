@@ -31,6 +31,15 @@ License: You must have a valid license purchased only from themeforest(the above
             }
         });
     </script>
+    <style>
+            @font-face {
+            font-family: Circe;
+            src: url('http://keepboxbr.com/CirceRounded-ExtraLight.otf') format("opentype");
+    /*src: url('http://ec2-18-221-85-99.us-east-2.compute.amazonaws.com/keepbox/CirceRounded-ExtraLight.otf') format("opentype");*/
+
+    }
+    </style>
+
     <!--end::Web font -->
     <!--begin::Base Styles -->
     <!--begin::Page Vendors -->
