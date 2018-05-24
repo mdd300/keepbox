@@ -453,8 +453,8 @@ body{
     width: 290px;
     background-position-y:  center;
 
-    -webkit-appearance: none;  /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do Chrome */
-    -moz-appearance: none; /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do FireFox */
+    -webkit-appearance: none;  /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do Chrome */
+    -moz-appearance: none; /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do FireFox */
     appearance: none
 }
 
@@ -462,8 +462,8 @@ body{
     height: 56px;
     width: 167px;
     float: left;
-    -webkit-appearance: none;  /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do Chrome */
-    -moz-appearance: none; /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do FireFox */
+    -webkit-appearance: none;  /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do Chrome */
+    -moz-appearance: none; /* Remove estilo padrÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o do FireFox */
     appearance: none
 }
 
@@ -713,7 +713,7 @@ body{
     margin: auto;
     /* padding: 20px; */
     /* border: 1px solid #888; */
-    width: 100%;
+    width: 57%;
     height: 100%;
     /* padding-bottom: 40px; */
     background-repeat:  no-repeat;
@@ -721,6 +721,8 @@ body{
     background-position-x: center;
     background-size:  contain;
     background-position-y: top;
+    display: flex;
+    justify-content: flex-end;
 }
 @media only screen
 and (device-width : 375px)
@@ -730,18 +732,20 @@ and (-webkit-device-pixel-ratio : 3) {
         margin: 0;
         /* padding: 20px; */
         /* border: 1px solid #888; */
-        width: 70%;
+        width: 60%;
         height: 100%;
         /* padding-bottom: 40px; */
         background-repeat:  no-repeat;
         background-color:  transparent;
         background-size:  contain;
         background-position-y: top;
+        display: flex;
+        justify-content: flex-end;
     }
 }
 .close-ini-mo{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 /*@media screen and (max-width: 2000px) {*/
