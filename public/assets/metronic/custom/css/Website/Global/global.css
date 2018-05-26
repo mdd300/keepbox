@@ -12,17 +12,17 @@ a {
     width: 100%;
 }
 .text-font-sans{
-    font-family: Circe;
+    font-family: Circe !important;;
 }
 .text-1-sm{
-    font-size: 1.5em;
-    line-height: 27px;
-    font-family: Circe;
+    font-size: 1.5em !important;;
+    line-height: 27px !important;;
+    font-family: Circe !important;;
 }
 .text-1{
-    font-size: 1.9em;
-    line-height: 40px;
-    font-family: Circe;
+    font-size: 1.9em !important;;
+    line-height: 40px !important;;
+    font-family: Circe !important;;
 
 }
 .text-2{
@@ -42,13 +42,13 @@ a {
     line-height: 60px;
 }
 .text-title{
-    font-size: 3.13rem;
-    line-height: 60px;
-    font-family: Circe;
+    font-size: 3.13rem !important;;
+    line-height: 60px !important;;
+    font-family: Circe !important;;
 }
 .text-title-xl{
-    font-size: 3.8rem;
-    line-height: 80px;
+    font-size: 3.8rem !important;
+    line-height: 80px !important;;
 }
 .text-bold{
     font-weight: bold;

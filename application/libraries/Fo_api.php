@@ -62,7 +62,7 @@ class Fo_api
 
 
         $msg = '<div style="width: 800px">
-<img style="margin-left: 160px; height: 125px; width: 250px" src="'.base_url("public/assets/metronic/custom/img/LOGOTIPO.png").'">
+<img style="margin-left: 160px;" width="250" height="125" src="'.base_url("public/assets/metronic/custom/img/LOGOTIPO.png").'">
 
     <div style="
      padding: 30px 0px;
@@ -101,9 +101,50 @@ class Fo_api
             . '<a href="'.base_url("Home/cadastroFinal?id=").$id .'">' .base_url('Home/cadastroFinal?id=').$id. ' </a> '
             . '</p></div></div></div>';
         $Data['to'] = $email;
-        $Data['name'] = 'QRGO';
+        $Data['name'] = 'Keepbox';
         $Data['html'] = $msg;
         $Data['subject'] = 'Parabéns, você já pode fazer suas compras!';
+
+        $resp_email = Fo_email::from_system($Data);
+
+    }
+
+
+    public static function sendEmail_compra($nome,$email, $link, $quant)
+    {
+        $CI = &get_instance();
+
+        $CI->load->library(['Fo_email']);
+
+
+        $msg = '<div style="width: 800px">
+<img style="margin-left: 160px;" width="250" height="125" src="'.base_url("public/assets/metronic/custom/img/LOGOTIPO.png").'">
+
+    <div style="
+     padding: 30px 0px;
+     font-size: 3rem;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 120px;
+    height: auto;
+    color: #a9d046;
+    font-family:Multicolore;">
+        Seja bem vindo
+    </div>
+    <img height="290" width="600" style="margin-left 100px; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
+'
+            .'<div style=" widt:80%; padding: 20px 0px;">'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;display: inline-flex""> Olá <div style="color: #a9d046; font-weight: bold;display: inline-flex; "> &nbsp;'.$nome.'</div></p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Nós recebemos sua solicitação de compra assistida:</p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> '. $link .'</p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> '. $quant .'</p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;">Logo entraremos em contato, obrigado.</p>'
+            . '</p></div>'
+            . '</div></div>';
+        $Data['to'] = $email;
+        $Data['name'] = 'Keepbox';
+        $Data['html'] = $msg;
+        $Data['subject'] = 'Recebemos o seu link';
 
         $resp_email = Fo_email::from_system($Data);
 

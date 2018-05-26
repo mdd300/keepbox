@@ -831,6 +831,14 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 }]);
 angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$timeout', function ($scope, $http,$timeout) {
 
+    $scope.menuOpen = true;
+
+    $scope.openMenu = function () {
+        $scope.menuOpen = $scope.menuOpen ? false : true
+        $(".wrapper").toggleClass("active");
+
+    }
+
     $scope.img_show;
     $scope.errorPlano = false;
     $scope.showPage = 1;
@@ -849,16 +857,6 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
     $scope.TotalFinal;
     $scope.plano_selected;
 
-    var screenSize = $( window ).width() / 1920 * 100
-
-    $('html').css({zoom: screenSize/100})
-
-
-    window.onresize=function() {
-        screenSize = $( window ).width() / 1920 * 100
-
-        $('html').css({zoom: screenSize/100})
-    }
 
     $scope.produtosList = [];
     $scope.compraList = [];
@@ -1291,6 +1289,62 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
                 }
             );
         }
+
+        $scope.rastreamento ={
+            codigo: ""
+        }
+    $scope.ras_enviado = false;
+
+
+    $scope.setCodigoRast = function () {
+
+        $scope.ras_enviado = true;
+
+        $http({
+
+                method: 'POST',
+                url: base_url + "Sistema/CodigoRastreamento",
+                data: $.param($scope.rastreamento),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+            }).then(function (response) {
+
+                $scope.rastreamento ={
+                    codigo: ""
+                }
+
+                    $timeout(function(){
+                        $scope.ras_enviado = false;
+                    }, 3000);
+
+
+
+                }
+            );
+        }
+
+    $scope.ras_enviado = false;
+
+
+    $scope.setSolici = function () {
+
+        $scope.prod_enviado = true;
+
+        $http({
+
+            method: 'POST',
+            url: base_url + "Sistema/SolicitacaoEstoque",
+            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+        }).then(function (response) {
+
+                $timeout(function(){
+                    $scope.prod_enviado = false;
+                }, 3000);
+
+            }
+        );
+    }
 
 }]);
 

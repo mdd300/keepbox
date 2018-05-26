@@ -122,6 +122,9 @@ class Sistema extends CI_Controller
 
         $retorno = $this->Home_model->setLink($_SESSION['fashon_session']['user_id'],$Data );
 
+        $this->load->library('Fo_api');
+        if (Fo_api::sendEmail_compra($retorno->user_nome,$retorno->user_email, "Link: ".$Data['link_enviado'],"quant: ".$Data['link_quantidade']))
+            $retorno['success'] = true;
 
         if ($Output == true) {
             echo json_encode($retorno);
@@ -130,4 +133,41 @@ class Sistema extends CI_Controller
         }
     }
 
+    public function CodigoRastreamento($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $this->load->model('Home_model');
+
+        $retorno = $this->Home_model->RastreamentoModel($_SESSION['fashon_session']['user_id'],$Data );
+
+        if ($Output == true) {
+            echo json_encode($retorno);
+        } else {
+            return $retorno;
+        }
+    }
+
+    public function SolicitacaoEstoque($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $this->load->model('Home_model');
+
+        $retorno = $this->Home_model->SolicitacaoEstoqueModel($_SESSION['fashon_session']['user_id']);
+
+        if ($Output == true) {
+            echo json_encode($retorno);
+        } else {
+            return $retorno;
+        }
+    }
 }

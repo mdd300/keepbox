@@ -7,530 +7,171 @@
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Sistema/SistemaHome.css" rel="stylesheet"
           type="text/css"/>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <base_url value="<?= base_url() ?>"></base_url>
+    <style>
+        @font-face {
+            font-family: Circe;
+            src: url('<?=base_url()?>CirceRounded-ExtraLight.otf') format("opentype");
 
-</head>
-<body class="width_padrao" style="    background-color: #F8F8FF;" ng-controller="sistem_ctrl">
-
-<div id="myModal"  class="modal-jquery align-x-center">
-
-    <div style="position: absolute; width: 100%; height: 100%;  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */" ng-click="closeModal()">
-
-    </div>
-
-    <!-- Modal content -->
-    <div class="modal-content-jquery">
-        <span style="position: absolute;
-    right: 5%; cursor: pointer" class="close pointer" ng-click="closeModal()">&times;</span>
-
-    <img style="width: 100%;" src="<?= base_url('upload/produtos/img/') ?>{{img_show}}">
-
-    </div>
-</div>
-
-<div class="content-geral-sistema">
-    <div class="content-header-sistema shadow">
-        <div class="content-logo">
-            <div class="content-logo-header"
-                 style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/LOGOTIPO.png')">
-
-            </div>
-        </div>
-        <div class="content-data-user">
-            <div class="content-data-name-user text-font-sans text-1-sm color-text-grey-light text-bold"><?=$user_nome." ".$user_sobrenome?>
-            </div>
-            <div class=" pointer content-data-exit text-font-sans text-1-sm color-text-roxo" ng-click="logout()"><div class="loader-roxo" ng-show="loader_exit"></div>Sair</div>
-        </div>
-    </div>
-
-    <div class="content-sistema-left" ng-show="showPage == 1">
-
-        <div class="content-bem-vindo text-font-sans text-title-xl color-text-grey-light">
-            Olá
-            <div class="color-text-green" style="display: -webkit-inline-box;"><?= $user_nome ?></div>
-        </div>
-
-        <div class="content-text-produtos text-font-sans text-title color-text-roxo">
-            Seus Produtos
-        </div>
-        <div class="content-table-produtos ">
-            <table style="    min-width: 100%;">
-                <thead class="color-background-roxo">
-                <tr>
-                    <th>
-
-                    </th>
-                <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                    Cod.Produto
-                </th>
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Produto
-                    </th>
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Quantidade
-                    </th>
-                    <th class=" content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Data do cadastro
-                    </th>
-                <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                    Status do Pedido
-                </th>
-
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Peso
-                    </th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="tr-content-produtos color-background-white" ng-repeat="produto in produtosList">
-
-                    <td>
-                        <input type="checkbox" ng-model="checkboxProd[0][produto.prod_id]"  class="checkbox-sistema">
-                    </td>
-
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_num_ped}}
-
-                    </td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light " ng-class="{'align-y-center': produto.imgs[0].length > 0, 'prod-align': produto.imgs[0].length > 0}" style="text-align: center; "
-                        ng-mouseenter="hovering = true"
-                        ng-mouseleave="hovering = false"
-                        ng-click="hovering ? true : false"
-                    >
-                        <img class="img-prod" ng-show="produto.imgs[0][0]"  ng-click="clickPhoto(imgProd.img_link)" src="<?= base_url('upload/produtos/img/') ?>{{produto.imgs[0][0].img_link}}">
-                        <div class="pop-up-photo color-background-grey-light-2" ng-show="hovering && produto.imgs[0].length > 0">
-                            <div class="img-content-prod" id="myBtn" ng-repeat="imgProd in produto.imgs[0] ">
-                                <img class="img-prod"  ng-click="clickPhoto(imgProd.img_link)" src="<?= base_url('upload/produtos/img/') ?>{{imgProd.img_link}}">
-                            </div>
-                        </div>
-                        <div style="margin-left: 5px">{{produto.prod_nome}}</div></td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_quantidade}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_data}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_status}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_peso}} Lbs</td>
-                </tr>
-                </tbody>
-            </table>
-
-            <div class="align-x-center margin-top-3" style="justify-content: flex-end !important;">
-                <button class="btn-config-2 text-1 text-font-sans color-background-green color-text-white" ng-click="solicitarEnvio()">Solicitar envio</button>
-            </div>
-        </div>
-
-        <div class="content-text-produtos text-font-sans text-title color-text-green margin-top-3" style="float: left">
-            Compra assistida
-        </div>
-        <div style="float: right; display: inline-flex" class="align-y-center margin-top-5" >
-            <div class="popup margin-top-1" style="    margin-right: 20px;" onclick="myFunction()"><img src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
-                <span class="popuptext" id="myPopup">Insira o link do produto que deseja comprar e a quantidade</span>
-            </div>
-            <input class="input text-1-sm " style="padding-top: 0px !important;" placeholder="Link do produto" ng-model="compraAssistida.link_enviado">
-            <input class="input-mini text-1-sm" style="width: 120px !important;" ng-model="compraAssistida.link_quantidade" style="padding-top: 0px !important;" type="number" placeholder="Quant">
-            <button class="btn-config-2 color-background-roxo color-text-white margin-top-1 text-1-sm" ng-click="enviarLink()">Enviar</button>
-        </div>
-        <div style="    float: left;
-    margin-bottom: 40px;
-    margin-left: 80px;" class="margin-top-2 align-center text-1 color-text-green" ng-show="link_enviado">
-            Seu link foi enviado com sucesso, entraremos em contato em breve.
-        </div>
-        <div class="content-table-produtos margin-top-3">
-            <table class="margin-top-4" style="    min-width: 100%;">
-                <thead class="color-background-green">
-                <tr>
-                    <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Cod.Produto
-                    </th>
-                    <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Produto
-                    </th>
-                    <th class=" content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Data do cadastro
-                    </th>
-                    <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Status do Pedido
-                    </th>
-                    <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Total
-                    </th>
-                    <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Taxa Cambiais
-                    <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Serviços
-                    </th>
-                    <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Taxas
-                    </th>
-                    <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Frete
-                    </th>
-                    <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Frete p/ KeepBox
-                    </th>
-                    <th class="content-header-table-2 text-bold text-font-sans text-1-sm color-text-white">
-                        Total Geral
-                    </th>
-
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="tr-content-produtos color-background-white" ng-repeat="compra in compraList">
-
-
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_cod}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_produto}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_data}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_status}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_total}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_taxas_cambiais}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_servicos}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_taxa}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_frete}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_frete_keep}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{compra.compra_total_geral}}</td>
-                </tr>
-                </tbody>
-            </table>
-            <div style="height: 100px; width: 100%">
-
-            </div>
-        </div>
-
-    </div>
-
-
-<!--Cadastro envio-->
-
-    <div class="content-sistema-left" ng-show="showPage == 2">
-
-        <div class="content-envio-caixa">
-        <div class="content-step-by-step">
-            <div class="text-1-sm color-text-roxo text-bold">Informações dos Produtos&rarr;</div><div class="text-1-sm color-text-grey-light">Envio</div>
-        </div>
-
-        <div class="content-table-list-prod">
-            <table>
-                <thead class="color-background-roxo">
-                <tr>
-
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Cod.Produto
-                    </th>
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Produto
-                    </th>
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Quantidade
-                    </th>
-                    <th class=" content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Data do cadastro
-                    </th>
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Status do Pedido
-                    </th>
-
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Peso Unidade
-                    </th>
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Peso Total
-                    </th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="tr-content-produtos color-background-white" ng-repeat="produto in EnvioSoli">
-
-
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_num_ped}}
-
-                    </td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light " ng-class="{'align-y-center': produto.imgs[0].length > 0}" style="text-align: center; "
-                        ng-mouseenter="hovering = true"
-                        ng-mouseleave="hovering = false"
-                        ng-click="hovering ? true : false"
-                    >
-                        <img class="img-prod" ng-show="produto.imgs[0][0]"  ng-click="clickPhoto(imgProd.img_link)" src="<?= base_url('upload/produtos/img/') ?>{{produto.imgs[0][0].img_link}}">
-                        <div class="pop-up-photo color-background-grey-light-2" ng-show="hovering && produto.imgs[0].length > 0">
-                            <div class="img-content-prod" id="myBtn" ng-repeat="imgProd in produto.imgs[0] ">
-                                <img class="img-prod"  ng-click="clickPhoto(imgProd.img_link)" src="<?= base_url('upload/produtos/img/') ?>{{imgProd.img_link}}">
-                            </div>
-                        </div>
-                        <div style="margin-left: 5px">{{produto.prod_nome}}</div></td>
-                    <td class="text-bold text-font-sans color-text-grey-light" style="text-align: center; "><input ng-model="EnvioSoli[$index].quantidade_envio" ng-class="{'border-error': produto.errorQuant}"  style="height: 40px;" class="text-1" placeholder="Max: {{produto.prod_quantidade}}" type="number"></td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_data}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_status}}</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; ">{{produto.prod_peso}} Lbs</td>
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light" style="text-align: center; " > <a ng-show="produto.quantidade_envio">{{(produto.prod_peso * produto.quantidade_envio).toFixed(2)}} Lbs</a></td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="content-aduaneira">
-            <div class="text-title text-font-sans color-text-roxo">
-                Declaração Aduaneira
-            </div>
-            <table class="margin-top-2">
-                <thead class="color-background-roxo">
-                <tr>
-
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Foto
-                    </th>
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Quantidade Declarada
-                    </th>
-                    <th class="content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Descrição
-                    </th>
-                    <th class=" content-header-table text-bold text-font-sans text-1-sm color-text-white">
-                        Valor da Unidade
-                    </th>
-
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="tr-content-produtos color-background-white" ng-repeat="produto in EnvioSoli">
-
-                    <td class="text-bold text-font-sans text-1-sm color-text-grey-light " ng-class="{'align-y-center': produto.imgs[0].length > 0}" style="text-align: center; "
-                        ng-mouseenter="hovering = true"
-                        ng-mouseleave="hovering = false"
-                        ng-click="hovering ? true : false"
-                    >
-                        <img class="img-prod" ng-show="produto.imgs[0][0]"  ng-click="clickPhoto(imgProd.img_link)" src="<?= base_url('upload/produtos/img/') ?>{{produto.imgs[0][0].img_link}}">
-                    </td>
-
-                    <td class="text-bold text-font-sans color-text-grey-light" style="text-align: center; "><input ng-model="EnvioSoli[$index].quant_decl" ng-class="{'border-error': produto.errorQuantD}" style="height: 40px;" class="text-1" placeholder="Max: {{produto.prod_quantidade}}" type="number"></td>
-                    <td class="text-bold text-font-sans color-text-grey-light" style="text-align: center; "><input ng-model="EnvioSoli[$index].desc_decl" ng-class="{'border-error': produto.errorDesc}" style="height: 40px;" class="text-1" type="text" placeholder="Ex: Celular, Computador"></td>
-                    <td class="text-bold text-font-sans color-text-grey-light" style="text-align: center; "><input ng-model="EnvioSoli[$index].valor_decl" ng-class="{'border-error': produto.errorValor}" style="height: 40px;" class="text-1" placeholder="Ex: 12.50" type="number"></td>
-
-                </tr>
-                </tbody>
-            </table>
-        </div>
-            <div class="back-step-envio margin-top-3 align-y-center pointer" ng-click="goBack()">
-                <img
-                        style="-moz-transform: scaleX(-1);
-                        -o-transform: scaleX(-1);
-                        -webkit-transform: scaleX(-1);
-                        transform: scaleX(-1);"
-                        src="<?= base_url('public/assets/metronic/custom/img/icon/right-arrow.png') ?>">
-                <a class="text-1 text-font-sans color-text-green" style="margin-right: 20px">Voltar </a>
-            </div>
-            <div class="next-step-envio margin-top-3 align-y-center pointer" ng-click="goToStep2()">
-                <a class="text-1 text-font-sans color-text-green" style="margin-right: 20px">Próximo </a><img src="<?= base_url('public/assets/metronic/custom/img/icon/right-arrow.png') ?>">
-            </div>
-        </div>
-    </div>
-    <!--Fim Cadastro envio-->
-
-<!--  Envio e seguro  -->
-
-    <div class="content-sistema-left" ng-show="showPage == 3" style="height: 1500px">
-        <div class="content-envio-caixa">
-            <div class="content-step-by-step">
-                <div class="text-1-sm color-text-green pointer" ng-click="goBack()">Informações dos Produtos&rarr;</div><div class="text-1-sm color-text-roxo text-bold">Envio</div>
-            </div>
-
-            <div class="content-planos">
-
-                <div style="    padding-left: 40px;
-" class="text-title color-text-green text-font-sans">
-                    Selecione um plano
-                </div>
-
-                <div class="content-simulator-data-module4 align-center margin-top-3">
-
-                    <div class="content-border-simulator-shadow" ng-class="{'border-error-1': errorPlano}">
-                        <ul class="content-ul-simulator-data">
-                            <li class="content-li-simulator-data pointer" ng-click="selectPlano(1)" ng-class="{'plano-selected': PedidoEnvio.pedido_plano == 1}">
-                                <div class="text-1-sm text-font-sans text-bold color-text-grey" style="    height: 65px;">
-                                    Priority Mail Express International™
-                                </div>
-                                <div class="text-1-sm text-font-sans color-text-grey" style="">
-                                    Taxa Keepbox: <a ng-show="range_simulator_home > 0">US$12,90</a>
-                                </div>
-                                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
-                                    Taxa Paypal: {{valor_plano_1_taxa}}
-                                </div>
-                                <div class="text-1-sm text-font-sans color-text-grey" style="    padding-left: 1px;padding-top: 5px">
-                                    Envio: {{valor_plano_1}}
-                                </div>
-                                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
-                                    <b>Total:</b> {{total1}}
-                                </div>
-                            </li>
-                            <li class="content-li-simulator-data pointer" ng-click="selectPlano(2)" ng-class="{'plano-selected': PedidoEnvio.pedido_plano == 2}">
-                                <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 65px;">
-                                    Priority Mail International®
-                                </div>
-                                <div class="text-1-sm text-font-sans color-text-grey" style="">
-                                    Taxa Keepbox: <a ng-show="range_simulator_home > 0">US$12,90</a>
-                                </div>
-                                <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
-                                    Taxa Paypal: {{valor_plano_2_taxa}}
-                                </div>
-                                <div class="text-1-sm text-font-sans color-text-grey" style="    padding-left: 1px;padding-top: 5px">
-                                    Envio: {{valor_plano_2}}
-                                </div>
-                                <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
-                                    <b>Total:</b> {{total2}}
-                                </div>
-                            </li>
-                            <li ng-show="range_simulator_home < 5" class="content-li-simulator-data pointer" ng-click="selectPlano(3)" ng-class="{'plano-selected': PedidoEnvio.pedido_plano == 3}">
-                                <div  >
-                                    <div class="text-1-sm text-font-sans text-bold color-text-grey"style="    height: 65px;">
-                                        First-Class Package International Service™
-                                    </div>
-                                    <div class="text-1-sm text-font-sans color-text-grey" style="">
-                                        Taxa Keepbox: <a ng-show="range_simulator_home > 0">US$12,90</a>
-                                    </div>
-                                    <div class="text-1-sm text-font-sans color-text-grey" style="padding-top: 5px">
-                                        Taxa Paypal: {{valor_plano_3_taxa}}
-                                    </div>
-                                    <div class="text-1-sm text-font-sans color-text-grey" style="    padding-left: 1px;padding-top: 5px">
-                                        Envio: {{valor_plano_3}}
-                                    </div>
-                                    <div class="text-1 color-text-green color-text-green text-bold text-font-sans" style="padding-top: 35px">
-                                        <b>Total:</b> {{total3}}
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="content-adicional-information margin-top-3">
-                    <div class="text-title color-text-grey-light text-font-sans">
-                        Opções adicionais
-                    </div>
-                    <div class="content-two-inputs margin-top-2">
-                        <div class="content-check-envio align-y-center text-1-sm color-text-grey">
-                            <input type="checkbox" class="checkbox-sistema" ng-change="changeValue()" ng-model="PedidoEnvio.pedido_seguro_keep">Seguro KeepBox (3% do valor declarado)
-                        </div>
-                        <div class="content-check-envio align-y-center text-1-sm color-text-grey">
-                            <input type="checkbox" class="checkbox-sistema " ng-change="changeValue()" ng-model="PedidoEnvio.pedido_adesivar">Adesivar Toda  caixa/ Proteção completa (US$2,00)
-                        </div>
-                        <div class="content-check-envio align-y-center text-1-sm color-text-grey">
-                            <input type="checkbox" class="checkbox-sistema" ng-change="changeValue()" ng-model="PedidoEnvio.pedido_acomodar">Acomodar itens frágeis em plástico bolha (US$1,00)
-                        </div>
-                    </div>
-                    <div class="content-two-inputs margin-top-2">
-                        <div class="content-check-envio align-y-center text-1-sm color-text-grey">
-                            <input type="checkbox" class="checkbox-sistema " ng-model="PedidoEnvio.pedido_etiqueta">Retirar preços das etiquetas (GRÁTIS)
-                        </div>
-                        <div class="content-check-envio align-y-center text-1-sm color-text-grey">
-                            <input type="checkbox" class="checkbox-sistema" ng-model="PedidoEnvio.pedido_anuncios">Remover inserções, anúncios e extras da loja (GRÁTIS)
-                        </div>
-                        <div class="content-check-envio align-y-center text-1-sm color-text-grey">
-                            <input type="checkbox" class="checkbox-sistema " ng-model="PedidoEnvio.pedido_caixa">Retirar caixas originais (GRÁTIS)
-                        </div>
-                    </div>
-                    <div class="content-two-inputs margin-top-2">
-                        <div class="content-check-envio align-y-center text-1-sm color-text-grey">
-                            <input type="checkbox" class="checkbox-sistema" ng-model="PedidoEnvio.pedido_fatura">Retirar fatura original (Invoice) (GRÁTIS)
-                        </div>
-                        <div class="content-check-envio align-y-center text-1-sm color-text-grey" ng-show="ValorDecTotal <= 200">
-                            <input type="checkbox" class="checkbox-sistema " ng-model="PedidoEnvio.pedido_seguro_basico">Seguro Básico (GRÁTIS)
-                        </div>
-                    </div>
-
-                    <div class="text-1 color-text-grey text-font-sans margin-top-3">
-                        Comentários Extras
-                    </div>
-
-                    <textarea class="margin-top-2 text-1-sm text-font-sans color-text-grey textarea-information-envio-caixa" ng-model="PedidoEnvio.pedido_comentario"></textarea>
-                </div>
-            </div>
-            <div class="back-step-envio margin-top-3 align-y-center pointer" style="    margin-bottom: 180px;"ng-click="goBack()">
-                <img
-                        style="-moz-transform: scaleX(-1);
-                        -o-transform: scaleX(-1);
-                        -webkit-transform: scaleX(-1);
-                        transform: scaleX(-1);"
-                        src="<?= base_url('public/assets/metronic/custom/img/icon/right-arrow.png') ?>">
-                <a class="text-1 text-font-sans color-text-green" style="margin-right: 20px">Voltar </a>
-            </div>
-            <div class="next-step-envio margin-top-3 align-y-center pointer" style="    margin-bottom: 180px;" ng-click="goToStep3()">
-                <a class="text-1 text-font-sans color-text-green" style="margin-right: 20px">Total: {{TotalFinal}} | Finalizar</a> <img src="<?= base_url('public/assets/metronic/custom/img/icon/right-arrow.png') ?>">
-            </div>
-        </div>
-    </div>
-<!-- Fim envio e seguro -->
-
-    <!--  Confirmação  -->
-    <div class="content-sistema-left" ng-show="showPage == 4" style="height: 1500px">
-
-    </div>
-    <!--  Fim Confirmação  -->
-
-    <div class="content-data-endereco-right">
-        <ul class="ul-data">
-            <li class="li-data  color-text-green"     style=" padding: 10px 0px;"><a class="text-font-sans text-1 text-bold">Seu endereço nos EUA</a>
-                <div class="popup" style="    margin-left: 20px;" onclick="myFunction1()"><img src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
-                    <span class="popuptext" id="myPopup1">Ao realizar suas compras, insira seu endereço exatamente assim.</span>
-                </div></li>
-            <li class="li-data text-font-sans text-1-sm"><b>Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $user_suite." ".$user_nome." ".$user_sobrenome ?></div></li>
-            <li class="li-data text-font-sans text-1-sm"><b>Street: </b><div class="color-text-grey-light" style="display: inline-block">591 Lakeview Drive</div></li>
-            <li class="li-data text-font-sans text-1-sm"><b>City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
-            <li class="li-data text-font-sans text-1-sm"><b>State: </b><div class="color-text-grey-light" style="display: inline-block">Florida (FL)</div></li>
-            <li class="li-data text-font-sans text-1-sm"><b>Zip Code: </b><div class="color-text-grey-light" style="display: inline-block">33071</div></li>
-        </ul>
-    </div>
-</div>
-
-
-<!-- begin::Scroll Top -->
-<div class="m-scroll-top m-scroll-top--skin-top" data-toggle="m-scroll-top" data-scroll-offset="500"
-     data-scroll-speed="300">
-    <i class="la la-arrow-up"></i>
-</div>
-<!-- end::Scroll Top -->            <!-- begin::Quick Nav -->
-<!-- begin::Quick Nav -->
-<!--begin::Base Scripts -->
-<!--end::Base Scripts -->
-<!--begin::Page Vendors -->
-
-<!--end::Page Vendors -->
-<!--begin::Page Snippets -->
-
-<div id="myModal2" class="modal-jquery">
-
-    <!-- Modal content -->
-    <div class="modal-content-jquery">
-        <span class="close2 pointer">&times;</span>
-
-        <div class="align-center text-title color-text-green text-font-sans" style="    padding: 1px 250px;">
-            Seu Pedido de envio foi solicitado com sucesso, entraremos em contato em breve.
-        </div>
-
-    </div>
-</div>
-
-<script>
-
-// When the user clicks on <div>, open the popup
-    function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-    }
-function myFunction1() {
-    var popup = document.getElementById("myPopup1");
-    popup.classList.toggle("show");
-}
-
-    var modal = document.getElementById('myModal2');
-
-    var span = document.getElementsByClassName("close2")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
         }
+    </style>
+</head>
+
+<div class="width-content" ng-controller="sistem_ctrl">
+    <div class="row">
+        <div class="wrapper">
+            <div class="content-menu-superior">
+                <div class="content-logo-header"
+                     style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/KEEPBOX.png')"></div>
+                <div class="content-icon-sair color-background-green" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/sair.png')">
+
+                </div>
+            </div>
+            <div class="content-menu-text-superior width-content text-font-sans color-background-green color-text-roxo align-center center">
+                Aviso aos recém chegados,<br>
+                Devido ao nosso recente lançamento, informamos que nossa área administrativa (sua conta Keepbox)
+                ainda não está 100% finalizada. Em breve, muitas novidades chegando para você
+            </div>
+            <div class="side-bar color-background-roxo">
+                <ul>
+                    <li class="menu-head text-font-sans">
+                       <div class="text-nome-sis text-font-sans"> Olá <?=$user_nome?></div>
+                        <div class="text-nome-sis-conta text-font-sans"> Minha Conta</div>
+                        <a ng-click="openMenu()" class="push_menu pointer align-center">
+                            <span ng-show="menuOpen == true" class="glyphicon glyphicon-chevron-left pull-right"></span>
+                            <span ng-show="menuOpen == false" class="glyphicon glyphicon-chevron-right pull-right"></span>
+                        </a>
+                    </li>
+                    <div class="menu">
+                        <li class="text-1-sm">
+                            <a href="#" class="active">Inicio <span class="glyphicon pull-right"></span></a>
+                        </li>
+                        <li class="text-1-sm">
+                            <a href="#">Meus Endereços <span class="glyphicon pull-right "><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/endereco.png"></span></a>
+                        </li>
+
+                        <li class="text-1-sm">
+                            <a href="#">Produtos Recebidos<span class="glyphicon pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/prod.png"></span></a>
+                        </li>
+                        <li class="text-1-sm">
+                            <a href="#">Envios <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/envio.png"></span></a>
+                        </li>
+
+                        <li class="text-1-sm">
+                            <a href="#">Compra Assistida <span class="glyphicon pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/compra-assistida.png"></span></a>
+                        </li>
+                        <li class="text-1-sm">
+                            <a href="#">Ganhe Dinheiro <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/ganhe-dinheiro.png"></span></a>
+                        </li>
+                        <li class="text-1-sm">
+                            <a href="#">Afiliados <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/afiliados.png"></span></a>
+                        </li>
+                        <li class="text-1-sm">
+                            <a href="#">Créditos <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/creditos.png"></span></a>
+                        </li>
+                        <li class="text-1-sm">
+                            <a href="#">Histórico <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/historico.png"></span></a>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="content">
+
+                <div class="text-page-sis">
+                <div class=" text-1 margin-top-1 margin-left-2 color-text-grey-light">
+                    Inicio
+                </div>
+                </div>
+                <div class="content-title-welcome">
+                    <div class="text-title margin-left-2 color-text-grey">
+                       Olá <b class="color-text-green">Keeper</b>, por onde vamos começar?
+                    </div>
+                </div>
+
+                <ul class="content-ul-ini-sis margin-top-1">
+                    <li class="content-li-ini-sis">
+                        <ul class="ul-data" style="
+    margin:  0;
+    padding:  0;
+">
+                            <li class="li-data color-text-grey-light"     style=" padding: 10px 0px 10px 0px;"><div style="display: -webkit-inline-box" class="text-font-sans text-1 text-bold">Esses são seus dados</div>
+                                </li>
+                            <li class="li-data text-font-sans text-1-sm"><b>Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $user_suite." ".$user_nome." ".$user_sobrenome ?></div><div class="popup" style="    margin-left: 5px;" onclick="myFunction1()"><img width="15" height="15" src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
+                                    <span class="popuptext" id="myPopup1">Ao realizar suas compras, insira seu endereço exatamente assim.</span>
+                                </div></li>
+                            <li class="li-data text-font-sans text-1-sm"><b>Street: </b><div class="color-text-grey-light" style="display: inline-block">591 Lakeview Drive</div></li>
+                            <li class="li-data text-font-sans text-1-sm"><b>City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
+                            <li class="li-data text-font-sans text-1-sm"><b>State: </b><div class="color-text-grey-light" style="display: inline-block">Florida (FL)</div></li>
+                            <li class="li-data text-font-sans text-1-sm"><b>Zip Code: </b><div class="color-text-grey-light" style="display: inline-block">33071</div></li>
+                            <li class="li-data  text-font-sans color-text-green">Sempre inclua seu numero de registro Keepbox antes de seu nome na hora de preencher o Shipping Address (endereço de entrega) nas lojas online dos EUA. Somente assim, teremos comos identificar suas encomendas</li>
+                        </ul>
+                    </li>
+                    <li class="content-li-ini-sis border-ini-sis margin-left-1 shadow-li-sis">
+                        <div class="text-1 color-text-grey">
+                            <span class="glyphicon glyphicon-search" style="width: 40px; height: 40px; margin-right: 10px"></span> Rastreando suas compras
+                        </div>
+                        <div class="font-text-info justify color-text-grey-light">
+                            Sempre que realizar uma compra online nos sites americanos, você receberá um número ou código de rastreio (Tracking Number) para acompanhar suas compras até o nosso armazém, insira aqui todos os códigos que receber das lojas, para que a Keepbox te atualize sobre suas compras
+                        </div>
+                        <div class="margin-top-1">
+                            <input ng-model="rastreamento.codigo" class="input-sis-ini center color=text-grey-light" placeholder="Digite o código de rastreamento (tracking number)">
+                        </div>
+                        <div class="margin-top-1 content-btn-sis">
+                            <button  ng-click="setCodigoRast()" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Codigo</button>
+                        </div>
+                        <div style="float: left;" class="justify text-1-sm color-text-green" ng-show="ras_enviado">
+                            O codigo foi enviado, entraremos em contato em breve.
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="content-ul-ini-sis margin-top-2">
+                    <li class="content-li-ini-sis border-ini-sis shadow-li-sis" style="    height: 50%;">
+                        <div class="text-1 color-text-grey align-y-center">
+                            <span ><img width="25" height="25" src="<?= base_url()?>public/assets/metronic/custom/img/icon/armazenar.png"></span>
+                            <div class="margin-left-1" style="margin-top: 5px">Produtos em Estoque</div>
+                        </div>
+                        <div class="font-text-info justify color-text-grey-light">
+                            Essa é a quantidade de produtos que você tem em seu estoque Keepbox. Ou seja, itens que você comprou online e já chegaram em nosso armazém. Seus itens serão armazenados pela Keepbox até que você decida criar um envio para o Brasil. Confira seu estoque para mais informações.</div>
+                        <div class="margin-top-1 content-btn-sis">
+                            <button ng-click="setSolici()" class="btn-config-3 color-background-green color-text-white text-1-sm">Consultar Estoque</button>
+                        </div>
+                        <div style="    float: left;" class="justify text-1-sm color-text-green" ng-show="prod_enviado">
+                            A solicitação, entraremos em contato em breve.
+                        </div>
+                    </li>
+                    <li class="content-li-ini-sis border-ini-sis margin-left-1 shadow-li-sis">
+                        <div class="text-1 color-text-grey align-y-center">
+                            <span><img width="25" height="25" src="<?= base_url()?>public/assets/metronic/custom/img/icon/compra-assistida.png"></span>
+                            <div class="margin-left-1" style="margin-top: 5px; display: flex">Compra Assistida</div>
+                        </div>
+                        <div class="font-text-info justify color-text-grey-light">
+                            Quer fazer uma Compra Assistida? Insira aqui o link de cada produto que você deseja. Lembrando que você pode enviar quantos links de produtos quiser, nós iremos te enviar um orçamento com todos o produtos solicitados e depois de sua confirmação, compraremos tudo para você.</div>
+                        <div class="two-inputs-inline margin-top-1">
+                            <input ng-model="compraAssistida.link_enviado" class="input-sis-ini-compra center color=text-grey-light" placeholder="Digite o link do produto">
+                            <input ng-model="compraAssistida.link_quantidade" class="input-sis-ini-compra-2 margin-left-1 center color=text-grey-light" placeholder="Quant">
+                        </div>
+                        <div class="margin-top-1 content-btn-sis">
+                            <button ng-click="enviarLink()" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Link</button>
+                        </div>
+                        <div style="    float: left;" class="justify text-1-sm color-text-green" ng-show="link_enviado">
+                            O link foi enviado, entraremos em contato em breve.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function myFunction1() {
+        var popup = document.getElementById("myPopup1");
+        popup.classList.toggle("show");
     }
 </script>
 
@@ -554,5 +195,8 @@ function myFunction1() {
 <!--angular pré cadastro -->
 <script src="<?= base_url('public/assets/metronic/custom/js/angular/controllers/landing_pages/pre_cadastro.controller.js') ?>"
         type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
