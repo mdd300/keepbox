@@ -30,7 +30,7 @@
                     <label for="control-nav" class="control-nav"></label>
                     <div class="control-nav-close">X</div>
                 </div>
-                <div class="width-content shadow content-menu-superior-shadow" >
+                <div class="width-content content-menu-superior-shadow" >
 
                 <div class="content-menu-superior ">
                 <div class="content-logo-header"
@@ -88,6 +88,10 @@
                     </div>
 
                 </ul>
+<!--                <div class="font-text-info-menu" style="color: #cba4df">-->
+<!--                    Duvidas?<a>Click aqui!</a>-->
+<!--                    <div>Termos e Condições</div>-->
+<!--                </div>-->
             </nav>
 </div>
             <div class="content">
