@@ -115,14 +115,14 @@
 ">
                             <li class="li-data color-text-grey-light"     style=" padding: 10px 0px 10px 0px;"><div style="display: -webkit-inline-box" class="text-font-sans text-1 text-bold">Esses são seus dados</div>
                                 </li>
-                            <li class="li-data text-font-sans text-1-sm"><b>Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $user_suite." ".$user_nome." ".$user_sobrenome ?></div><div class="popup" style="    margin-left: 5px;" onclick="myFunction1()"><img width="15" height="15" src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
+                            <li class="li-data text-font-sans text-1-sm"><b class="color-text-grey-light">Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $user_suite." ".$user_nome." ".$user_sobrenome ?></div><div class="popup" style="    margin-left: 5px;" onclick="myFunction1()"><img width="15" height="15" src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
                                     <span class="popuptext" id="myPopup1">Ao realizar suas compras, insira seu endereço exatamente assim.</span>
                                 </div></li>
-                            <li class="li-data text-font-sans text-1-sm"><b>Street: </b><div class="color-text-grey-light" style="display: inline-block">591 Lakeview Drive</div></li>
-                            <li class="li-data text-font-sans text-1-sm"><b>City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
-                            <li class="li-data text-font-sans text-1-sm"><b>State: </b><div class="color-text-grey-light" style="display: inline-block">Florida (FL)</div></li>
-                            <li class="li-data text-font-sans text-1-sm"><b>Zip Code: </b><div class="color-text-grey-light" style="display: inline-block">33071</div></li>
-                            <li class="li-data margin-top-1 font-text-info text-font-sans color-text-green">Sempre inclua seu numero de registro Keepbox antes de seu nome na hora de preencher o Shipping Address (endereço de entrega) nas lojas online dos EUA. Somente assim, teremos comos identificar suas encomendas</li>
+                            <li class="li-data text-font-sans text-1-sm"><b class="color-text-grey-light">Street: </b><div class="color-text-grey-light" style="display: inline-block">591 Lakeview Drive</div></li>
+                            <li class="li-data text-font-sans text-1-sm"><b class="color-text-grey-light">City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
+                            <li class="li-data text-font-sans text-1-sm"><b class="color-text-grey-light">State: </b><div class="color-text-grey-light" style="display: inline-block">Florida (FL)</div></li>
+                            <li class="li-data text-font-sans text-1-sm"><b class="color-text-grey-light">Zip Code: </b><div class="color-text-grey-light" style="display: inline-block">33071</div></li>
+                            <li class="li-data margin-top-1 font-text-info text-font-sans color-text-roxo">Sempre inclua seu numero de registro Keepbox antes de seu nome na hora de preencher o Shipping Address (endereço de entrega) nas lojas online dos EUA. Somente assim, teremos comos identificar suas encomendas</li>
                         </ul>
                     </li>
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
