@@ -201,13 +201,13 @@ body{
     position: absolute;
     border-radius: 30px;
     width: 820px;
-    height: 460px;
+    height: 535px;
     float: right;
     /* right:  0; */
     /* top: 0; */
     margin-right: 38px;
     margin-left: 835px;
-    margin-top: 450px;
+    margin-top: 370px;
     box-shadow: 0px 14px 46px -10px rgba(0, 0, 0, 0.3);
 }
 
@@ -426,7 +426,7 @@ body{
     background-color:  #f9f9f9;
 }
 .content-simulator{
-    width: 63%;
+    width: 70%;
     height: auto;
     margin-top: 80px;
 }
@@ -504,7 +504,7 @@ body{
 }
 .content-border-simulator-shadow{
     background-color:  white;
-    width: 75%;
+    width: 86%;
     height: 100%;
     border-radius: 20px;
     box-shadow: 0px 5px 46px -10px rgba(0, 0, 0, 0.3);

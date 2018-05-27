@@ -172,6 +172,7 @@ class Home extends CI_Controller {
             $Output = false;
         }
 
+        session_set_cookie_params(PHP_INT_MAX);
         $this->load->library('Keepbox/Fo_login');
 
         $retorno = Fo_login::do_login($Data);

@@ -137,10 +137,10 @@
                 <li class=" content-li-serv left content-border-simulator-shadow" >
                     <div class="content-itens-li-serv">
                         <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="">
-                            U$7.90
+                            US$7.90
                         </div>
                         <div class="text-title color-text-green text-font-sans text-bold" style="    width: 109%;margin-top: 20px">
-                            +7% das compras
+                            + 7% do valor das compras
                         </div>
                         <div style="rgin-left: 20px;" class="text-title color-text-green text-font-sans text-bold">
                             (até US$1.000)
@@ -152,10 +152,10 @@
                     <div class="content-itens-li-serv">
 
                         <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="   ">
-                            U$7.90
+                            US$7.90
                         </div>
                         <div class="text-title color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
-                            +6% das compras
+                            + 6% do valor das compras
                         </div>
                         <div style="
                          width: 115%;

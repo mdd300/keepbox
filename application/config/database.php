@@ -76,9 +76,9 @@ $query_builder = TRUE;
 $db['default'] = array(
 
     'dsn'	=> '',
-    'hostname' => 'keepboxbr.com',
+    'hostname' => 'localhost',
     'username' => 'root',
-    'password' => 'Keep70site',
+    'password' => '',
     'database' => 'bd_keepbox',
     'dbdriver' => 'mysqli',
     'dbprefix' => '',

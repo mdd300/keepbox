@@ -25,17 +25,20 @@
     <div class="row">
         <div class="wrapper">
             <div class="fixed-sis">
+
                 <input type="checkbox" id="control-nav" style="    position: absolute;visibility: hidden"/>
+                <div class="color-background-roxo content-control-nax">
                 <label for="control-nav" class="control-nav"></label>
+                </div>
                 <label for="control-nav" class="control-nav-close"></label>
             <div class="content-menu-superior">
                 <div class="content-logo-header"
                      style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/KEEPBOX.png')"></div>
-                <div class="content-icon-sair color-background-green" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/sair.png')">
+                <div class="content-icon-sair color-background-green pointer" ng-click="logout()" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/sair.png')">
 
                 </div>
             </div>
-            <div class="content-menu-text-superior text-bold width-content text-1-sm text-font-sans color-background-green color-text-roxo align-center center">
+            <div class=" font-text content-menu-text-superior text-bold width-content text-font-sans color-background-green color-text-roxo align-center center">
                 Aviso aos recém chegados,<br>
                 Devido ao nosso recente lançamento, informamos que nossa área administrativa (sua conta Keepbox)
                 ainda não está 100% finalizada. Em breve, muitas novidades chegando para você
@@ -50,7 +53,7 @@
                             <span ng-show="menuOpen == false" class="glyphicon glyphicon-chevron-right pull-right"></span>
                         </a>
                     </li>
-                    <div class="menu">
+                    <div class="menu font-text-info">
                         <li>
                             <a href="#" class="active">Inicio <span class="glyphicon pull-right"></span></a>
                         </li>
@@ -129,7 +132,7 @@
                         <div class="margin-top-1 content-btn-sis">
                             <button  ng-click="setCodigoRast()" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Codigo</button>
                         </div>
-                        <div style="float: left;" class="justify text-1-sm color-text-green" ng-show="ras_enviado">
+                        <div style="float: left;" class="justify font-text color-text-green" ng-show="ras_enviado">
                             O codigo foi enviado, entraremos em contato em breve.
                         </div>
                     </li>
@@ -146,7 +149,7 @@
                         <div class="margin-top-1 content-btn-sis">
                             <button ng-click="setSolici()" class="btn-config-3 color-background-green color-text-white text-1-sm">Consultar Estoque</button>
                         </div>
-                        <div style="    float: left;" class="justify text-1-sm color-text-green" ng-show="prod_enviado">
+                        <div style="    float: left;" class="justify font-text color-text-green" ng-show="prod_enviado">
                             A solicitação, entraremos em contato em breve.
                         </div>
                     </li>
@@ -164,7 +167,7 @@
                         <div class="margin-top-1 content-btn-sis">
                             <button ng-click="enviarLink()" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Link</button>
                         </div>
-                        <div style="    float: left;" class="justify text-1-sm color-text-green" ng-show="link_enviado">
+                        <div style="    float: left;" class="justify font-text color-text-green" ng-show="link_enviado">
                             O link foi enviado, entraremos em contato em breve.
                         </div>
                     </li>

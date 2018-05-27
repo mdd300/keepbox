@@ -213,11 +213,6 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         $scope.loader_cad2 = false;
 
         $scope.dataCad = {
-            user_endereco: "",
-            user_numero: "",
-            user_complemento: "",
-            user_cidade: "",
-            user_estado: "",
             user_telefone: "",
             user_login: "",
             user_senha: "",
@@ -237,11 +232,6 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
                 user_senha_conf: false
             }
 
-
-            if ($scope.dataCad.user_endereco !== "") {
-                if ($scope.dataCad.user_numero !== "") {
-                    if ($scope.dataCad.user_cidade !== "") {
-                        if ($scope.dataCad.user_estado !== "") {
 
                             if ($scope.dataCad.user_login !== "") {
                                 if ($scope.dataCad.user_senha !== "") {
@@ -301,22 +291,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
                                 $scope.dataCadError.user_login_error = true;
                                 $scope.loader_login = false;
                             }
-                        } else {
-                            $scope.dataCadError.user_estado_error = true;
 
-                        }
-                    } else {
-                        $scope.dataCadError.user_cidade_error = true;
-
-                    }
-                } else {
-                    $scope.dataCadError.user_numero_error = true;
-
-                }
-            } else {
-                $scope.dataCadError.user_endereco_error = true;
-
-            }
         }
     } else {
 
@@ -829,8 +804,21 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
     }
 
 }]);
-angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$timeout', function ($scope, $http,$timeout) {
+angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$timeout','$window', function ($scope, $http,$timeout,$window) {
 
+    $scope.menuOpen = true;
+
+    angular.element($window).bind('resize', function(){
+
+        if($window.innerWidth > 767){
+            $scope.menuOpen = true;
+            console.log($scope.menuOpen)
+        }else {
+            $scope.menuOpen = null;
+            console.log($scope.menuOpen)
+        }
+
+    })
 
     function getWindowWidth() {
         var windowWidth = 0;
@@ -849,7 +837,6 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         }
         return windowWidth;
     }
-    $scope.menuOpen = true;
 
     $scope.openMenu = function () {
         if(getWindowWidth() > 767) {
@@ -866,18 +853,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         $scope.menuOpen = null;
 
     }
-    window.onresize=function() {
 
-        screenSize = getWindowWidth() / 1920 * 100
-
-        if(getWindowWidth() > 767){
-            $scope.menuOpen = true;
-
-        }else{
-            $scope.menuOpen = null;
-        }
-
-    }
 
     $scope.img_show;
     $scope.errorPlano = false;
