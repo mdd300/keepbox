@@ -270,6 +270,7 @@ body{
 .text-page-sis{
     border-bottom: 1px solid #a9d046;
     padding-bottom: 13px;
+    width: 100%;
 }
 .fixed-sis{
     position: fixed;
@@ -278,6 +279,9 @@ body{
     top: 0;
     left:  0;
     z-index: 1111;
+}
+.content-title-welcome{
+    width: auto;
 }
 @media screen and (max-width: 900px) {
     .content-ul-ini-sis {
