@@ -10,6 +10,7 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
     <base_url value="<?= base_url() ?>"></base_url>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -24,6 +25,9 @@
     <div class="row">
         <div class="wrapper">
             <div class="fixed-sis">
+                <input type="checkbox" id="control-nav" style="    position: absolute;visibility: hidden"/>
+                <label for="control-nav" class="control-nav"></label>
+                <label for="control-nav" class="control-nav-close"></label>
             <div class="content-menu-superior">
                 <div class="content-logo-header"
                      style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/KEEPBOX.png')"></div>
@@ -36,7 +40,7 @@
                 Devido ao nosso recente lançamento, informamos que nossa área administrativa (sua conta Keepbox)
                 ainda não está 100% finalizada. Em breve, muitas novidades chegando para você
             </div>
-            <div class="side-bar color-background-roxo">
+            <nav class="side-bar color-background-roxo hide-on-med-and-down">
                 <ul>
                     <li class="menu-head text-font-sans text-1-sm">
                        <div class="text-nome-sis text-font-sans"> Olá <?=$user_nome?></div>
@@ -79,7 +83,7 @@
                     </div>
 
                 </ul>
-            </div>
+            </nav>
 </div>
             <div class="content">
 
