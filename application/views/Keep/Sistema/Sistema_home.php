@@ -127,9 +127,9 @@
                     </li>
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
                         <div class="text-1 color-text-grey">
-                            <span class="glyphicon glyphicon-search" style="width: 40px; height: 40px; margin-right: 10px"></span> Rastreando suas compras
+                            <span class="glyphicon glyphicon-search" style="width: 25px; height: 40px; margin-right: 10px"></span> Rastreando suas compras
                         </div>
-                        <div class="font-text-info justify color-text-grey-light">
+                        <div class="font-text-info color-text-grey-light margin-top-sm" >
                             Sempre que realizar uma compra online nos sites americanos, você receberá um número ou código de rastreio (Tracking Number) para acompanhar suas compras até o nosso armazém, insira aqui todos os códigos que receber das lojas, para que a Keepbox te atualize sobre suas compras
                         </div>
                         <div class="margin-top-1">
@@ -147,10 +147,10 @@
                 <ul class="content-ul-ini-sis margin-top-2">
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis" style="    height: 200px;">
                         <div class="text-1 color-text-grey align-y-center">
-                            <span ><img width="25" height="25" src="<?= base_url()?>public/assets/metronic/custom/img/icon/armazenar.png"></span>
+                            <span ><img width="40" height="40" src="<?= base_url()?>public/assets/metronic/custom/img/icon/armazenar.png"></span>
                             <div class="margin-left-1" style="margin-top: 5px">Produtos em Estoque</div>
                         </div>
-                        <div class="font-text-info justify color-text-grey-light">
+                        <div class="font-text-info color-text-grey-light margin-top-sm">
                             Essa é a quantidade de produtos que você tem em seu estoque Keepbox. Ou seja, itens que você comprou online e já chegaram em nosso armazém. Seus itens serão armazenados pela Keepbox até que você decida criar um envio para o Brasil. Confira seu estoque para mais informações.</div>
                         <div class="margin-top-1 content-btn-sis">
                             <button ng-click="setSolici()" class="btn-config-3 color-background-green color-text-white text-1-sm">Consultar Estoque</button>
@@ -161,10 +161,10 @@
                     </li>
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
                         <div class="text-1 color-text-grey align-y-center">
-                            <span><img width="25" height="25" src="<?= base_url()?>public/assets/metronic/custom/img/icon/compra-assistida-quadro.png"></span>
+                            <span><img width="40" height="40" src="<?= base_url()?>public/assets/metronic/custom/img/icon/compra-assistida-quadro.png"></span>
                             <div class="margin-left-1" style="margin-top: 5px; display: flex">Compra Assistida</div>
                         </div>
-                        <div class="font-text-info justify color-text-grey-light">
+                        <div class="font-text-info color-text-grey-light margin-top-sm">
                             Quer fazer uma Compra Assistida? Insira aqui o link de cada produto que você deseja. Lembrando que você pode enviar quantos links de produtos quiser, nós iremos te enviar um orçamento com todos o produtos solicitados e depois de sua confirmação, compraremos tudo para você.</div>
                         <div class="two-inputs-inline margin-top-1">
                             <input ng-model="compraAssistida.link_enviado" class="input-sis-ini-compra center color=text-grey-light" placeholder="Digite o link do produto">
