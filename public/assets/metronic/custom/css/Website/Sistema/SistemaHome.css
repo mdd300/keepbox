@@ -130,7 +130,7 @@ body{
 .content
 {
     padding-left: 220px;
-    margin-top: 152px;
+    margin-top: 148px;
     transition: padding-left 0.5s;
 }
 
@@ -300,7 +300,7 @@ body{
 }
 .text-page-sis{
     border-bottom: 1px solid #a9d046;
-    padding-bottom: 13px;
+    padding-bottom: 0px;
     width: 100%;
 }
 .fixed-sis{
@@ -314,6 +314,7 @@ body{
 }
 .content-title-welcome{
     width: auto;
+    padding-left: 73px;
 }
 .content-li-ini-sis{
     display: block !important;

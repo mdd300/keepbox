@@ -41,9 +41,9 @@
             </div>
                 </div>
             <div class=" font-text content-menu-text-superior text-bold width-content text-font-sans color-background-green color-text-roxo align-center center">
-                Aviso aos recém chegados,<br>
+                <b>Aviso aos recém chegados,<br>
                 Devido ao nosso recente lançamento, informamos que nossa área administrativa (sua conta Keepbox)
-                ainda não está 100% finalizada. Em breve, muitas novidades chegando para você
+                ainda não está 100% finalizada. Em breve, muitas novidades chegando para você</b>
             </div>
             <nav class="side-bar color-background-roxo hide-on-med-and-down">
                 <ul>
@@ -97,12 +97,12 @@
             <div class="content">
 
                 <div class="text-page-sis">
-                <div class=" text-1 margin-top-1 margin-left-2 color-text-grey-light">
+                <div class=" text-1 margin-left-2 color-text-grey-light">
                     Inicio
                 </div>
                 </div>
-                <div class="content-title-welcome">
-                    <div style="    line-height: 45px !important;" class="text-bold text-title margin-left-2 color-text-grey">
+                <div class="content-title-welcome margin-top-1">
+                    <div style="    line-height: 45px !important;" class="text-bold text-title  color-text-grey">
                        Olá <b class="color-text-green">Keeper</b>, por onde vamos começar?
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                     </li>
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
                         <div class="text-1 color-text-grey align-y-center">
-                            <span><img width="25" height="25" src="<?= base_url()?>public/assets/metronic/custom/img/icon/compra-assistida.png"></span>
+                            <span><img width="25" height="25" src="<?= base_url()?>public/assets/metronic/custom/img/icon/compra-assistida-quadro.png"></span>
                             <div class="margin-left-1" style="margin-top: 5px; display: flex">Compra Assistida</div>
                         </div>
                         <div class="font-text-info justify color-text-grey-light">
