@@ -290,7 +290,7 @@ body{
         /* max-width: 490px; */
         min-height: 240px;
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
 @media screen and (max-width: 826px) {
@@ -306,7 +306,7 @@ body{
         /* max-width: 490px; */
         min-height: 240px;
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
 @media screen and (max-width: 553px) {
@@ -322,7 +322,7 @@ body{
         /* max-width: 490px; */
         min-height: 240px;
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
 @media screen and (max-width: 439px) {
@@ -339,6 +339,6 @@ body{
         /* max-width: 490px; */
         min-height: 240px;
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 }
