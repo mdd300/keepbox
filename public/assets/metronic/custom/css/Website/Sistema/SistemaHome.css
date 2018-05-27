@@ -336,6 +336,9 @@ body{
     }
 }
 @media screen and (max-width: 890px) {
+    .text-align-mob{
+        text-align: center;
+    }
     .content-title-welcome {
         width: auto;
         padding-left: 12%;
