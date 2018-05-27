@@ -15,7 +15,6 @@
         @font-face {
             font-family: Circe;
             src: url('<?=base_url()?>CirceRounded-ExtraLight.otf') format("opentype");
-
         }
     </style>
 </head>
@@ -23,6 +22,7 @@
 <div class="width-content" ng-controller="sistem_ctrl">
     <div class="row">
         <div class="wrapper">
+            <div class="fixed-sis">
             <div class="content-menu-superior">
                 <div class="content-logo-header"
                      style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/KEEPBOX.png')"></div>
@@ -30,14 +30,14 @@
 
                 </div>
             </div>
-            <div class="content-menu-text-superior width-content text-font-sans color-background-green color-text-roxo align-center center">
+            <div class="content-menu-text-superior text-bold width-content text-1-sm text-font-sans color-background-green color-text-roxo align-center center">
                 Aviso aos recém chegados,<br>
                 Devido ao nosso recente lançamento, informamos que nossa área administrativa (sua conta Keepbox)
                 ainda não está 100% finalizada. Em breve, muitas novidades chegando para você
             </div>
             <div class="side-bar color-background-roxo">
                 <ul>
-                    <li class="menu-head text-font-sans">
+                    <li class="menu-head text-font-sans text-1-sm">
                        <div class="text-nome-sis text-font-sans"> Olá <?=$user_nome?></div>
                         <div class="text-nome-sis-conta text-font-sans"> Minha Conta</div>
                         <a ng-click="openMenu()" class="push_menu pointer align-center">
@@ -46,40 +46,40 @@
                         </a>
                     </li>
                     <div class="menu">
-                        <li class="text-1-sm">
+                        <li>
                             <a href="#" class="active">Inicio <span class="glyphicon pull-right"></span></a>
                         </li>
-                        <li class="text-1-sm">
+                        <li>
                             <a href="#">Meus Endereços <span class="glyphicon pull-right "><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/endereco.png"></span></a>
                         </li>
 
-                        <li class="text-1-sm">
+                        <li >
                             <a href="#">Produtos Recebidos<span class="glyphicon pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/prod.png"></span></a>
                         </li>
-                        <li class="text-1-sm">
+                        <li >
                             <a href="#">Envios <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/envio.png"></span></a>
                         </li>
 
-                        <li class="text-1-sm">
+                        <li >
                             <a href="#">Compra Assistida <span class="glyphicon pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/compra-assistida.png"></span></a>
                         </li>
-                        <li class="text-1-sm">
+                        <li>
                             <a href="#">Ganhe Dinheiro <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/ganhe-dinheiro.png"></span></a>
                         </li>
-                        <li class="text-1-sm">
+                        <li >
                             <a href="#">Afiliados <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/afiliados.png"></span></a>
                         </li>
-                        <li class="text-1-sm">
+                        <li >
                             <a href="#">Créditos <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/creditos.png"></span></a>
                         </li>
-                        <li class="text-1-sm">
+                        <li>
                             <a href="#">Histórico <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/historico.png"></span></a>
                         </li>
                     </div>
 
                 </ul>
             </div>
-
+</div>
             <div class="content">
 
                 <div class="text-page-sis">
@@ -111,7 +111,7 @@
                             <li class="li-data  text-font-sans color-text-green">Sempre inclua seu numero de registro Keepbox antes de seu nome na hora de preencher o Shipping Address (endereço de entrega) nas lojas online dos EUA. Somente assim, teremos comos identificar suas encomendas</li>
                         </ul>
                     </li>
-                    <li class="content-li-ini-sis border-ini-sis margin-left-1 shadow-li-sis">
+                    <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
                         <div class="text-1 color-text-grey">
                             <span class="glyphicon glyphicon-search" style="width: 40px; height: 40px; margin-right: 10px"></span> Rastreando suas compras
                         </div>
@@ -131,7 +131,7 @@
                 </ul>
 
                 <ul class="content-ul-ini-sis margin-top-2">
-                    <li class="content-li-ini-sis border-ini-sis shadow-li-sis" style="    height: 50%;">
+                    <li class="content-li-ini-sis border-ini-sis shadow-li-sis" style="    height: 200px;">
                         <div class="text-1 color-text-grey align-y-center">
                             <span ><img width="25" height="25" src="<?= base_url()?>public/assets/metronic/custom/img/icon/armazenar.png"></span>
                             <div class="margin-left-1" style="margin-top: 5px">Produtos em Estoque</div>
@@ -145,7 +145,7 @@
                             A solicitação, entraremos em contato em breve.
                         </div>
                     </li>
-                    <li class="content-li-ini-sis border-ini-sis margin-left-1 shadow-li-sis">
+                    <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
                         <div class="text-1 color-text-grey align-y-center">
                             <span><img width="25" height="25" src="<?= base_url()?>public/assets/metronic/custom/img/icon/compra-assistida.png"></span>
                             <div class="margin-left-1" style="margin-top: 5px; display: flex">Compra Assistida</div>

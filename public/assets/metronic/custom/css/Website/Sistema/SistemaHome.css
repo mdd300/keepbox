@@ -14,7 +14,7 @@ body{
 .side-bar
 {
     position:absolute;
-    height: auto;
+    height: 550%;
     width: 215px;
     color:#fff;
     transition: margin-left 0.5s;
@@ -34,13 +34,13 @@ body{
     color:#cba4df;
 }
 .text-nome-sis-conta{
-    margin: 5px 30px 20px 30px;
+    margin: 0px 30px 10px 30px;
     color:#fff;
     width: 40%;
     float:  left;
 }
 .text-nome-sis{
-    margin: 20px 30px 0px 30px;
+    margin: 10px 30px 0px 30px;
     color:#cba4df;
     width: 40%;
     float:  left;
@@ -51,7 +51,7 @@ body{
 {
     color:#fff;
     text-decoration:none;
-    height: 73px;
+    height: 75px;
     width: 24%;
     float:  right;
     background-color: #49155c;
@@ -78,6 +78,7 @@ body{
     padding-top:10px;
     padding-bottom:10px;
     font-family: Circe;
+    opacity: 0.7;
 }
 
 .side-bar ul .menu li  a:hover
@@ -91,6 +92,8 @@ body{
     padding-left:17px;
     background:#50126e;
     border-left:3px solid #ECECEA;
+    font-weight: bold;
+    opacity: 1;
 }
 
 .side-bar ul .menu li  a.active:before {
@@ -109,47 +112,48 @@ body{
 
 .content
 {
-    padding-left: 200px;
+    padding-left: 205px;
+    margin-top: 143px;
     transition: padding-left 0.5s;
 }
 
-.active > .side-bar
+.active > .fixed-sis .side-bar
 {
-    margin-left:-150px;
-    transition: margin-left 0.5s;
+    margin-left: -165px;
+    transition: margin-left 0.8s;
 }
 
 .active > .content
 {
     padding-left:50px;
-    transition: padding-left 0.5s;
+    transition: padding-left 0.8s;
 }
 .content-menu-superior{
     width: 100%;
-    height: 10%;
+    height: 30%;
     background-color: white;
 }
 .content-icon-sair{
-    width: 66px;
+    width: 50px;
     height: 100%;
     float: right;
     background-repeat: no-repeat;
     background-size: 41%;
     background-position-y: center;
-    background-position-x: 40%;
+    background-position-x: center;
 }
 .content-logo-header{
     float: left;
     background-repeat: no-repeat;
     background-size: contain;
     background-position:  center;
-    width: 7%;
+    width: 80px;
     height: 100%;
     /* margin-top: 14px; */
-    margin-left: 10%;
+    margin-left: 6%;
 }
 .content-menu-text-superior{
-    height: 15%;
+    height: auto;
     padding: 0px 15%;
 }
 .content-ul-ini-sis{
@@ -160,6 +164,9 @@ body{
     display: block !important;
     position: relative;
     width: 45%;
+    max-width: 490px;
+    min-height: 240px;
+    margin-left: 20px;
 }
 .cotent-li-ini-sis{
 
@@ -189,7 +196,7 @@ body{
     bottom: 125%;
     left: 50%;
     margin-left: -80px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* Popup arrow */
@@ -261,6 +268,77 @@ body{
     box-shadow: 0px 14px 46px 0px rgba(0, 0, 0, 0.3);
 }
 .text-page-sis{
-    border-bottom: 1px solid #696969;
+    border-bottom: 1px solid #a9d046;
     padding-bottom: 13px;
+}
+.fixed-sis{
+    position: fixed;
+    width:  100%;
+    height: 150px;
+    top: 0;
+    left:  0;
+    z-index: 1111;
+}
+@media screen and (max-width: 900px) {
+    .content-ul-ini-sis {
+        display: block;
+    }
+    .content-li-ini-sis {
+        display: block !important;
+        position: relative;
+        width: 500px;
+        /* max-width: 490px; */
+        min-height: 240px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 826px) {
+    .content {
+        padding-left: 205px;
+        margin-top: 168px;
+        transition: padding-left 0.5s;
+    }
+    .content-li-ini-sis {
+        display: block !important;
+        position: relative;
+        width: 500px;
+        /* max-width: 490px; */
+        min-height: 240px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 553px) {
+    .content {
+        padding-left: 205px;
+        margin-top: 195px;
+        transition: padding-left 0.5s;
+    }
+    .content-li-ini-sis {
+        display: block !important;
+        position: relative;
+        width: 400px;
+        /* max-width: 490px; */
+        min-height: 240px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 439px) {
+    .content {
+        padding-left: 205px;
+        margin-top: 220px;
+        transition: padding-left 0.5s;
+
+    }
+    .content-li-ini-sis {
+        display: block !important;
+        position: relative;
+        width: 300px;
+        /* max-width: 490px; */
+        min-height: 240px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
