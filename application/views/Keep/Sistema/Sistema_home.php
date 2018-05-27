@@ -98,7 +98,7 @@
                 </div>
                 </div>
                 <div class="content-title-welcome">
-                    <div style="    line-height: 45px !important;" class="text-title margin-left-2 color-text-grey">
+                    <div style="    line-height: 45px !important;" class="text-bold text-title margin-left-2 color-text-grey">
                        Olá <b class="color-text-green">Keeper</b>, por onde vamos começar?
                     </div>
                 </div>
