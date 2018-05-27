@@ -138,7 +138,7 @@
                         <div class="margin-top-1 content-btn-sis">
                             <button  ng-click="setCodigoRast()" ng-class="{'btn-opacity': rastreamento.codigo == ''}" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Codigo</button>
                         </div>
-                        <div style="float: left; margin-top: 2px" class="justify font-text color-text-green">
+                        <div style="float: left; margin-top: 0.5%" class="justify font-text color-text-green">
                             O codigo foi enviado, entraremos em contato em breve.
                         </div>
                     </li>
