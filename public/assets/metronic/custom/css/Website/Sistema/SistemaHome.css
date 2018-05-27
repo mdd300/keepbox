@@ -379,12 +379,7 @@ body{
         margin-left: 0%;
         /* top: 0; */
     }
-    .content {
-        padding-left: 0px;
-        margin-top: 220px;
-        transition: padding-left 0.5s;
 
-    }
     .fixed-sis .control-nav {
         position: absolute;
         left: 20px;
