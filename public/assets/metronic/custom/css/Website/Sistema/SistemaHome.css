@@ -17,7 +17,7 @@ body{
 .side-bar
 {
     position:absolute;
-    height: 550%;
+    height: 1050%;
     width: 215px;
     color:#fff;
     transition: margin-left 0.5s;
