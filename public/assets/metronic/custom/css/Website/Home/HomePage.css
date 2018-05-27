@@ -199,6 +199,8 @@ body{
 }
 .content-video-module2{
     position: absolute;
+    webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     border-radius: 30px;
     width: 820px;
     height: 535px;
@@ -214,6 +216,8 @@ body{
 .content-video-module2-2{
     position: absolute;
     border-radius: 30px;
+    webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
     width: 607px;
     height: 351px;
     float: left;
