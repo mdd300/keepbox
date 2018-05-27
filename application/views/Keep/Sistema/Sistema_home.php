@@ -122,7 +122,7 @@
                             <li class="li-data text-font-sans text-1-sm"><b>City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
                             <li class="li-data text-font-sans text-1-sm"><b>State: </b><div class="color-text-grey-light" style="display: inline-block">Florida (FL)</div></li>
                             <li class="li-data text-font-sans text-1-sm"><b>Zip Code: </b><div class="color-text-grey-light" style="display: inline-block">33071</div></li>
-                            <li class="li-data font-text-info text-font-sans color-text-green">Sempre inclua seu numero de registro Keepbox antes de seu nome na hora de preencher o Shipping Address (endereço de entrega) nas lojas online dos EUA. Somente assim, teremos comos identificar suas encomendas</li>
+                            <li class="li-data margin-top-1 font-text-info text-font-sans color-text-green">Sempre inclua seu numero de registro Keepbox antes de seu nome na hora de preencher o Shipping Address (endereço de entrega) nas lojas online dos EUA. Somente assim, teremos comos identificar suas encomendas</li>
                         </ul>
                     </li>
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
