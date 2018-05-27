@@ -42,13 +42,13 @@ a {
     line-height: 60px;
 }
 .text-title{
-    font-size: 3.13rem !important;;
-    line-height: 60px !important;;
-    font-family: Circe !important;;
+    font-size: 3.13rem ;
+    line-height: 60px ;
+    font-family: Circe ;
 }
 .text-title-xl{
-    font-size: 3.8rem !important;
-    line-height: 80px !important;;
+    font-size: 3.8rem ;
+    line-height: 80px ;
 }
 .text-bold{
     font-weight: bold;

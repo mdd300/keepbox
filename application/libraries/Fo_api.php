@@ -129,7 +129,7 @@ class Fo_api
     height: auto;
     color: #a9d046;
     font-family:Multicolore;">
-        Seja bem vindo
+        Obrigado!
     </div>
     <img height="290" width="600" style="margin-left 100px; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
 '

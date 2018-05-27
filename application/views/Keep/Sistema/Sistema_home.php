@@ -25,19 +25,21 @@
     <div class="row">
         <div class="wrapper">
             <div class="fixed-sis">
-
                 <input type="checkbox" id="control-nav" style="    position: absolute;visibility: hidden"/>
                 <div class="color-background-roxo content-control-nax">
-                <label for="control-nav" class="control-nav"></label>
+                    <label for="control-nav" class="control-nav"></label>
+                    <div class="control-nav-close">X</div>
                 </div>
-                <label for="control-nav" class="control-nav-close"></label>
-            <div class="content-menu-superior">
+                <div class="width-content shadow content-menu-superior-shadow" >
+
+                <div class="content-menu-superior ">
                 <div class="content-logo-header"
                      style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/KEEPBOX.png')"></div>
                 <div class="content-icon-sair color-background-green pointer" ng-click="logout()" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/sair.png')">
 
                 </div>
             </div>
+                </div>
             <div class=" font-text content-menu-text-superior text-bold width-content text-font-sans color-background-green color-text-roxo align-center center">
                 Aviso aos recém chegados,<br>
                 Devido ao nosso recente lançamento, informamos que nossa área administrativa (sua conta Keepbox)
@@ -53,7 +55,7 @@
                             <span ng-show="menuOpen == false" class="glyphicon glyphicon-chevron-right pull-right"></span>
                         </a>
                     </li>
-                    <div class="menu font-text-info">
+                    <div class="menu font-text-info-menu">
                         <li>
                             <a href="#" class="active">Inicio <span class="glyphicon pull-right"></span></a>
                         </li>
@@ -96,7 +98,7 @@
                 </div>
                 </div>
                 <div class="content-title-welcome">
-                    <div class="text-title margin-left-2 color-text-grey">
+                    <div style="    line-height: 45px !important;" class="text-title margin-left-2 color-text-grey">
                        Olá <b class="color-text-green">Keeper</b>, por onde vamos começar?
                     </div>
                 </div>
@@ -116,7 +118,7 @@
                             <li class="li-data text-font-sans text-1-sm"><b>City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
                             <li class="li-data text-font-sans text-1-sm"><b>State: </b><div class="color-text-grey-light" style="display: inline-block">Florida (FL)</div></li>
                             <li class="li-data text-font-sans text-1-sm"><b>Zip Code: </b><div class="color-text-grey-light" style="display: inline-block">33071</div></li>
-                            <li class="li-data  text-font-sans color-text-green">Sempre inclua seu numero de registro Keepbox antes de seu nome na hora de preencher o Shipping Address (endereço de entrega) nas lojas online dos EUA. Somente assim, teremos comos identificar suas encomendas</li>
+                            <li class="li-data font-text-info text-font-sans color-text-green">Sempre inclua seu numero de registro Keepbox antes de seu nome na hora de preencher o Shipping Address (endereço de entrega) nas lojas online dos EUA. Somente assim, teremos comos identificar suas encomendas</li>
                         </ul>
                     </li>
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
@@ -130,7 +132,7 @@
                             <input ng-model="rastreamento.codigo" class="input-sis-ini center color=text-grey-light" placeholder="Digite o código de rastreamento (tracking number)">
                         </div>
                         <div class="margin-top-1 content-btn-sis">
-                            <button  ng-click="setCodigoRast()" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Codigo</button>
+                            <button  ng-click="setCodigoRast()" ng-class="{'btn-opacity': rastreamento.codigo == ''}" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Codigo</button>
                         </div>
                         <div style="float: left;" class="justify font-text color-text-green" ng-show="ras_enviado">
                             O codigo foi enviado, entraremos em contato em breve.
@@ -165,7 +167,7 @@
                             <input ng-model="compraAssistida.link_quantidade" class="input-sis-ini-compra-2 margin-left-1 center color=text-grey-light" placeholder="Quant">
                         </div>
                         <div class="margin-top-1 content-btn-sis">
-                            <button ng-click="enviarLink()" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Link</button>
+                            <button ng-click="enviarLink()" ng-class="{'btn-opacity': compraAssistida.link_enviado == '' || compraAssistida.link_quantidade == ''}" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Link</button>
                         </div>
                         <div style="    float: left;" class="justify font-text color-text-green" ng-show="link_enviado">
                             O link foi enviado, entraremos em contato em breve.

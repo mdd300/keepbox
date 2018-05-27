@@ -1245,28 +1245,30 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
     $scope.enviarLink = function () {
 
         $scope.link_enviado = true;
+        if ($scope.compraAssistida.link_enviado != "" && $scope.compraAssistida.link_quantidade != "") {
 
-        $http({
+            $http({
 
-            method: 'POST',
-            url: base_url + "Sistema/MandarLink",
-            data: $.param($scope.compraAssistida),
-            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+                method: 'POST',
+                url: base_url + "Sistema/MandarLink",
+                data: $.param($scope.compraAssistida),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
 
-        }).then(function (response) {
+            }).then(function (response) {
 
-            $scope.compraAssistida = {
-                link_enviado:"",
-                link_quantidade: ""
-            }
-            $timeout(function(){
-                $scope.link_enviado = false;
-            }, 3000);
+                    $scope.compraAssistida = {
+                        link_enviado: "",
+                        link_quantidade: ""
+                    }
+                    $timeout(function () {
+                        $scope.link_enviado = false;
+                    }, 3000);
 
 
-            }
-        );
+                }
+            );
 
+        }
     }
 
         $scope.goBack = function () {
@@ -1316,7 +1318,8 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
 
         $scope.ras_enviado = true;
 
-        $http({
+        if ($scope.rastreamento.codigo != "") {
+            $http({
 
                 method: 'POST',
                 url: base_url + "Sistema/CodigoRastreamento",
@@ -1325,19 +1328,19 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
 
             }).then(function (response) {
 
-                $scope.rastreamento ={
-                    codigo: ""
-                }
+                    $scope.rastreamento = {
+                        codigo: ""
+                    }
 
-                    $timeout(function(){
+                    $timeout(function () {
                         $scope.ras_enviado = false;
                     }, 3000);
-
 
 
                 }
             );
         }
+    }
 
     $scope.ras_enviado = false;
 
