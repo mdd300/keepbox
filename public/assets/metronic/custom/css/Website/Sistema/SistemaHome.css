@@ -336,6 +336,11 @@ body{
     }
 }
 @media screen and (max-width: 890px) {
+    .align-mob{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .content-btn-sis {
         float: right;
         position: absolute;

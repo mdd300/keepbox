@@ -126,7 +126,7 @@
                         </ul>
                     </li>
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
-                        <div class="text-1 color-text-grey align-center">
+                        <div class="align-mob text-1 color-text-grey align-y-center">
                             <span class="glyphicon glyphicon-search" style="width: 25px; height: 40px; margin-right: 10px"></span> Rastreando suas compras
                         </div>
                         <div class="font-text-info color-text-grey-light margin-top-sm" >
@@ -146,7 +146,7 @@
 
                 <ul class="content-ul-ini-sis margin-top-2">
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis" style="    height: 200px;">
-                        <div class="text-1 color-text-grey align-center">
+                        <div class="align-mob text-1 color-text-grey align-y-center">
                             <span ><img width="40" height="40" src="<?= base_url()?>public/assets/metronic/custom/img/icon/armazenar.png"></span>
                             <div class="margin-left-1" style="margin-top: 5px">Produtos em Estoque</div>
                         </div>
@@ -160,7 +160,7 @@
                         </div>
                     </li>
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
-                        <div class="text-1 color-text-grey align-center">
+                        <div class=" align-mob text-1 color-text-grey align-y-center">
                             <span><img width="40" height="40" src="<?= base_url()?>public/assets/metronic/custom/img/icon/compra-assistida-quadro.png"></span>
                             <div class="margin-left-1" style="margin-top: 5px; display: flex">Compra Assistida</div>
                         </div>
