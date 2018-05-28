@@ -43,7 +43,7 @@
             <div class=" font-text content-menu-text-superior text-bold width-content text-font-sans color-background-green color-text-roxo align-center center">
                 <b>Aviso aos recém chegados,<br>
                 Devido ao nosso recente lançamento, informamos que nossa área administrativa (sua conta Keepbox)
-                ainda não está 100% finalizada. Em breve, muitas novidades chegando para você</b>
+                ainda não está 100% finalizada.<br> Em breve, muitas novidades chegando para você</b>
             </div>
 <!--            <nav class="side-bar color-background-roxo hide-on-med-and-down">-->
 <!--                <ul>-->
@@ -112,7 +112,7 @@
                             <li class="li-data color-text-grey-light"     style=" padding: 10px 0px 10px 0px;"><div style="display: -webkit-inline-box" class="text-font-sans text-1 text-bold">Esses são seus dados</div>
                                 </li>
                             <li class="li-data text-font-sans text-1-sm"><b class="color-text-grey-light">Name: </b><div class="color-text-grey-light" style="display: inline-block"><?= $user_suite." ".$user_nome." ".$user_sobrenome ?></div><div class="popup" style="    margin-left: 5px;" onclick="myFunction1()"><img width="15" height="15" src="<?= base_url('public/assets/metronic/custom/img/icon/info.png') ?>">
-                                    <span class="popuptext" id="myPopup1">Ao realizar suas compras, insira seu endereço exatamente assim.</span>
+                                    <span class="popuptext" id="myPopup1">Para que a Keepbox consiga identificar suas compras, insira seu nome exatamente assim. Incluindo seu código numérico antes de seu primeiro nome. Com isso você ajuda a Keepbox a identificar com facilidade os produtos de cada usuário</span>
                                 </div></li>
                             <li class="li-data text-font-sans text-1-sm"><b class="color-text-grey-light">Street: </b><div class="color-text-grey-light" style="display: inline-block">591 Lakeview Drive</div></li>
                             <li class="li-data text-font-sans text-1-sm"><b class="color-text-grey-light">City: </b><div class="color-text-grey-light" style="display: inline-block">Coral Springs</div></li>
@@ -126,8 +126,7 @@
                             <span><img width="40" height="40" src="<?= base_url()?>public/assets/metronic/custom/img/icon/search.png"></span><div class="margin-left-1"> Rastreando suas compras</div>
                         </div>
                         <div class="text-align-mob font-text-info color-text-grey-light margin-top-sm" >
-                            Sempre que realizar uma compra online nos sites americanos, você receberá um número ou código de rastreio (Tracking Number) para acompanhar suas compras até o nosso armazém, insira aqui todos os códigos que receber das lojas, para que a Keepbox te atualize sobre suas compras
-                        </div>
+                            Sempre que realizar suas compras online nos sites americanos, você receberá os códigos de rastreamento (tracking number) para acompanhar o envio de suas encomendas até o nosso armazém. Assim que receber esses códigos, nos informe abaixo. Assim acompanhamos suas entregas e o manteremos informado também. </div>
                         <div class="margin-top-1">
                             <input ng-model="rastreamento.codigo" class="input-sis-ini center color=text-grey-light" placeholder="Digite o código de rastreamento (tracking number)">
                         </div>
@@ -152,7 +151,7 @@
                             <button ng-click="setSolici()" class="btn-config-3 color-background-green color-text-white text-1-sm">Consultar Estoque</button>
                         </div>
                         <div style="    float: left;" class="justify font-text color-text-green" ng-show="prod_enviado">
-                            A solicitação, entraremos em contato em breve.
+                            A solicitação foi realizada, entraremos em contato em breve.
                         </div>
                     </li>
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
