@@ -224,8 +224,8 @@ body{
     position: absolute;
     z-index: 1;
     bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
+    left: 0%;
+    margin-left: -122px;
     font-size: 1rem;
 }
 
