@@ -133,7 +133,7 @@ body{
 .content
 {
     /* padding-left: 220px; */
-    margin-top: 148px;
+    margin-top: 168px;
     transition: padding-left 0.5s;
 }
 
@@ -485,7 +485,7 @@ body{
     }
     .content {
         padding-left: 0px;
-        margin-top: 126px;
+        margin-top: 136px;
         transition: padding-left 0.5s;
     }
 
