@@ -127,7 +127,7 @@
                     </li>
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis">
                         <div class="align-mob text-1 color-text-grey align-y-center">
-                            <span class="glyphicon glyphicon-search" style="width: 25px; height: 40px; margin-right: 10px"></span> Rastreando suas compras
+                            <span><img width="40" height="40" src="<?= base_url()?>public/assets/metronic/custom/img/icon/search.png"></span><div class="margin-left-1"> Rastreando suas compras</div>
                         </div>
                         <div class="text-align-mob font-text-info color-text-grey-light margin-top-sm" >
                             Sempre que realizar uma compra online nos sites americanos, você receberá um número ou código de rastreio (Tracking Number) para acompanhar suas compras até o nosso armazém, insira aqui todos os códigos que receber das lojas, para que a Keepbox te atualize sobre suas compras
@@ -138,7 +138,7 @@
                         <div class="margin-top-1 content-btn-sis">
                             <button  ng-click="setCodigoRast()" ng-class="{'btn-opacity': rastreamento.codigo == ''}" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Codigo</button>
                         </div>
-                        <div style="float: left; margin-top: 0.5%" class="justify font-text color-text-green">
+                        <div style="float: left; margin-top: 0.5%" ng-show="ras_enviado" class="justify font-text color-text-green">
                             O codigo foi enviado, entraremos em contato em breve.
                         </div>
                     </li>
