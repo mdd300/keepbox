@@ -26,9 +26,9 @@
         <div class="wrapper">
             <div class="fixed-sis">
                 <input type="checkbox" id="control-nav" style="    position: absolute;visibility: hidden"/>
+                <label for="control-nav" class="control-nav-close"></label>
                 <div class="color-background-roxo content-control-nax">
                     <label for="control-nav" class="control-nav"></label>
-                    <label for="control-nav" class="control-nav-close"></label>
                 </div>
                 <div class="width-content content-menu-superior-shadow" >
 

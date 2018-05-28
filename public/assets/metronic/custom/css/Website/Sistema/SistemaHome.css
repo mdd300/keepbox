@@ -458,7 +458,7 @@ body{
         bottom: 0;
         left: 0;
         display: block;
-        z-index: 1;
+        z-index: -11111;
         background: rgba(0,0,0,0.4);
         -webkit-transform: translate(-100%, 0);
         -ms-transform: translate(-100%, 0);
@@ -470,7 +470,7 @@ body{
         overflow-x: auto;
         top: 0;
         height: 1050%;
-        z-index: 2;
+        z-index: 222222;
         -webkit-transition: all 500ms ease;
         transition: all 500ms ease;
         -webkit-transform: translate(-100%, 0);
@@ -479,7 +479,7 @@ body{
     }
     .content {
         padding-left: 0px;
-        margin-top: 135px;
+        margin-top: 126px;
         transition: padding-left 0.5s;
     }
 
@@ -501,9 +501,9 @@ body{
 
 }
 #control-nav:checked ~ .control-nav-close {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0) !important;
+    -ms-transform: translate(0, 0) !important;
+    transform: translate(0, 0) !important;
 }
 
 #control-nav:checked ~ nav {
