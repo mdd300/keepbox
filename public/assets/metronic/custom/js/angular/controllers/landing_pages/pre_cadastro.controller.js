@@ -812,10 +812,8 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
 
         if($window.innerWidth > 767){
             $scope.menuOpen = true;
-            console.log($scope.menuOpen)
         }else {
             $scope.menuOpen = null;
-            console.log($scope.menuOpen)
         }
 
     })
