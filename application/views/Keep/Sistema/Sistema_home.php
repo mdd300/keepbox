@@ -80,7 +80,7 @@
                             <a href="#">Afiliados <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/afiliados.png"></span></a>
                         </li>
                         <li >
-                            <a href="#">Créditos <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/creditos.png"></span></a>
+                            <a href="#">Créditos <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/credito.png"></span></a>
                         </li>
                         <li>
                             <a href="#">Histórico <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/historico.png"></span></a>
