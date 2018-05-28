@@ -28,7 +28,7 @@
                 <input type="checkbox" id="control-nav" style="    position: absolute;visibility: hidden"/>
                 <div class="color-background-roxo content-control-nax">
                     <label for="control-nav" class="control-nav"></label>
-                    <div class="control-nav-close">X</div>
+                    <label for="control-nav" class="control-nav-close"></label>
                 </div>
                 <div class="width-content content-menu-superior-shadow" >
 
@@ -50,7 +50,7 @@
                     <li class="menu-head text-font-sans text-1-sm">
                        <div class="text-nome-sis text-font-sans"> Olá <?=$user_nome?></div>
                         <div class="text-nome-sis-conta text-font-sans"> Minha Conta</div>
-                        <a ng-click="openMenu()" class="push_menu pointer align-center">
+                        <a ng-click="openMenu()" ng-hide="menuOpen == null" class="push_menu pointer align-center">
                             <span ng-show="menuOpen == true" class="glyphicon glyphicon-chevron-left pull-right"></span>
                             <span ng-show="menuOpen == false" class="glyphicon glyphicon-chevron-right pull-right"></span>
                         </a>

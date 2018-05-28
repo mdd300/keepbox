@@ -336,6 +336,19 @@ body{
     }
 }
 @media screen and (max-width: 890px) {
+    .side-bar
+    {
+        position:absolute;
+        height: 1050%;
+        width: 86%;
+        color:#fff;
+        transition: margin-left 0.5s;
+        z-index:  11;
+    }
+    .font-text-info-menu{
+        font-size: 1.5rem !important;
+        font-family: Circe;
+    }
     .text-align-mob{
         text-align: center;
     }
