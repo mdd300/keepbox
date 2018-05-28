@@ -1,6 +1,9 @@
 body{
     font-size: unset !important;
 }
+.ini-mob-padd{
+    margin-left: 73px;
+}
 .font-text-info{
     font-size: 1.5rem !important;
     font-family: Circe;
@@ -129,7 +132,7 @@ body{
 
 .content
 {
-    padding-left: 220px;
+    /* padding-left: 220px; */
     margin-top: 148px;
     transition: padding-left 0.5s;
 }
@@ -336,6 +339,9 @@ body{
     }
 }
 @media screen and (max-width: 890px) {
+    .ini-mob-padd{
+        margin-left: 12%;
+    }
     .side-bar
     {
         position:absolute;

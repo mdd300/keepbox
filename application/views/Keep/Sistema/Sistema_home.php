@@ -25,11 +25,11 @@
     <div class="row">
         <div class="wrapper">
             <div class="fixed-sis">
-                <input type="checkbox" id="control-nav" style="    position: absolute;visibility: hidden"/>
-                <label for="control-nav" class="control-nav-close"></label>
-                <div class="color-background-roxo content-control-nax">
-                    <label for="control-nav" class="control-nav"></label>
-                </div>
+<!--                <input type="checkbox" id="control-nav" style="    position: absolute;visibility: hidden"/>-->
+<!--                <label for="control-nav" class="control-nav-close"></label>-->
+<!--                <div class="color-background-roxo content-control-nax">-->
+<!--                    <label for="control-nav" class="control-nav"></label>-->
+<!--                </div>-->
                 <div class="width-content content-menu-superior-shadow" >
 
                 <div class="content-menu-superior ">
@@ -45,60 +45,56 @@
                 Devido ao nosso recente lançamento, informamos que nossa área administrativa (sua conta Keepbox)
                 ainda não está 100% finalizada. Em breve, muitas novidades chegando para você</b>
             </div>
-            <nav class="side-bar color-background-roxo hide-on-med-and-down">
-                <ul>
-                    <li class="menu-head text-font-sans text-1-sm">
-                       <div class="text-nome-sis text-font-sans"> Olá <?=$user_nome?></div>
-                        <div class="text-nome-sis-conta text-font-sans"> Minha Conta</div>
-                        <a ng-click="openMenu()" ng-hide="menuOpen == null" class="push_menu pointer align-center">
-                            <span ng-show="menuOpen == true" class="glyphicon glyphicon-chevron-left pull-right"></span>
-                            <span ng-show="menuOpen == false" class="glyphicon glyphicon-chevron-right pull-right"></span>
-                        </a>
-                    </li>
-                    <div class="menu font-text-info-menu">
-                        <li>
-                            <a href="#" class="active">Inicio <span class="glyphicon pull-right"></span></a>
-                        </li>
-                        <li>
-                            <a href="#">Meus Endereços <span class="glyphicon pull-right "><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/endereco.png"></span></a>
-                        </li>
-
-                        <li >
-                            <a href="#">Produtos Recebidos<span class="glyphicon pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/prod.png"></span></a>
-                        </li>
-                        <li >
-                            <a href="#">Envios <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/envio.png"></span></a>
-                        </li>
-
-                        <li >
-                            <a href="#">Compra Assistida <span class="glyphicon pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/compra-assistida.png"></span></a>
-                        </li>
-                        <li>
-                            <a href="#">Ganhe Dinheiro <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/ganhe-dinheiro.png"></span></a>
-                        </li>
-                        <li >
-                            <a href="#">Afiliados <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/afiliados.png"></span></a>
-                        </li>
-                        <li >
-                            <a href="#">Créditos <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/credito.png"></span></a>
-                        </li>
-                        <li>
-                            <a href="#">Histórico <span class="glyphicon  pull-right"><img width="20" height="20" src="<?= base_url()?>public/assets/metronic/custom/img/icon/historico.png"></span></a>
-                        </li>
-                    </div>
-
-                </ul>
-<!--                <div class="font-text-info-menu" style="color: #cba4df">-->
-<!--                    Duvidas?<a>Click aqui!</a>-->
-<!--                    <div>Termos e Condições</div>-->
-<!--                </div>-->
-            </nav>
+<!--            <nav class="side-bar color-background-roxo hide-on-med-and-down">-->
+<!--                <ul>-->
+<!--                    <li class="menu-head text-font-sans text-1-sm">-->
+<!--                       <div class="text-nome-sis text-font-sans"> Olá --><?//=$user_nome?><!--</div>-->
+<!--                        <div class="text-nome-sis-conta text-font-sans"> Minha Conta</div>-->
+<!--                        <a ng-click="openMenu()" ng-hide="menuOpen == null" class="push_menu pointer align-center">-->
+<!--                            <span ng-show="menuOpen == true" class="glyphicon glyphicon-chevron-left pull-right"></span>-->
+<!--                            <span ng-show="menuOpen == false" class="glyphicon glyphicon-chevron-right pull-right"></span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <div class="menu font-text-info-menu">-->
+<!--                        <li>-->
+<!--                            <a href="#" class="active">Início <span class="glyphicon pull-right"></span></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#">Meus Endereços <span class="glyphicon pull-right "><img width="20" height="20" src="--><?//= base_url()?><!--public/assets/metronic/custom/img/icon/endereco.png"></span></a>-->
+<!--                        </li>-->
+<!---->
+<!--                        <li >-->
+<!--                            <a href="#">Produtos Recebidos<span class="glyphicon pull-right"><img width="20" height="20" src="--><?//= base_url()?><!--public/assets/metronic/custom/img/icon/prod.png"></span></a>-->
+<!--                        </li>-->
+<!--                        <li >-->
+<!--                            <a href="#">Envios <span class="glyphicon  pull-right"><img width="20" height="20" src="--><?//= base_url()?><!--public/assets/metronic/custom/img/icon/envio.png"></span></a>-->
+<!--                        </li>-->
+<!---->
+<!--                        <li >-->
+<!--                            <a href="#">Compra Assistida <span class="glyphicon pull-right"><img width="20" height="20" src="--><?//= base_url()?><!--public/assets/metronic/custom/img/icon/compra-assistida.png"></span></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#">Ganhe Dinheiro <span class="glyphicon  pull-right"><img width="20" height="20" src="--><?//= base_url()?><!--public/assets/metronic/custom/img/icon/ganhe-dinheiro.png"></span></a>-->
+<!--                        </li>-->
+<!--                        <li >-->
+<!--                            <a href="#">Afiliados <span class="glyphicon  pull-right"><img width="20" height="20" src="--><?//= base_url()?><!--public/assets/metronic/custom/img/icon/afiliados.png"></span></a>-->
+<!--                        </li>-->
+<!--                        <li >-->
+<!--                            <a href="#">Créditos <span class="glyphicon  pull-right"><img width="20" height="20" src="--><?//= base_url()?><!--public/assets/metronic/custom/img/icon/credito.png"></span></a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#">Histórico <span class="glyphicon  pull-right"><img width="20" height="20" src="--><?//= base_url()?><!--public/assets/metronic/custom/img/icon/historico.png"></span></a>-->
+<!--                        </li>-->
+<!--                    </div>-->
+<!---->
+<!--                </ul>-->
+<!--            </nav>-->
 </div>
             <div class="content">
 
                 <div class="text-page-sis">
-                <div class=" text-1 margin-left-2 color-text-grey-light">
-                    Inicio
+                <div class="ini-mob-padd text-1 color-text-grey-light">
+                    Início
                 </div>
                 </div>
                 <div class="content-title-welcome margin-top-1">
