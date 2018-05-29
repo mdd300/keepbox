@@ -147,15 +147,15 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 
 
         $scope.valor_plano_1_taxa = $scope.valor_plano_1 + 12.90;
-        var porcValor_1 = ($scope.valor_plano_1_taxa * 0.06) ;
+        var porcValor_1 = ($scope.valor_plano_1_taxa * 0.05) ;
         $scope.valor_plano_1_taxa =  porcValor_1;
 
         $scope.valor_plano_2_taxa = $scope.valor_plano_2 + 12.90;
-        var porcValor_2 = ($scope.valor_plano_2_taxa * 0.06) ;
+        var porcValor_2 = ($scope.valor_plano_2_taxa * 0.05) ;
         $scope.valor_plano_2_taxa =porcValor_2;
 
         $scope.valor_plano_3_taxa = $scope.valor_plano_3 + 12.90;
-        var porcValor_3 = ($scope.valor_plano_3_taxa * 0.06) ;
+        var porcValor_3 = ($scope.valor_plano_3_taxa * 0.05) ;
         $scope.valor_plano_3_taxa = porcValor_3;
 
 
@@ -939,15 +939,15 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
 
 
         $scope.valor_plano_1_taxa = $scope.valor_plano_1 + 12.90;
-        var porcValor_1 = ($scope.valor_plano_1_taxa * 0.06) ;
+        var porcValor_1 = ($scope.valor_plano_1_taxa * 0.05) ;
         $scope.valor_plano_1_taxa =  porcValor_1;
 
         $scope.valor_plano_2_taxa = $scope.valor_plano_2 + 12.90;
-        var porcValor_2 = ($scope.valor_plano_2_taxa * 0.06) ;
+        var porcValor_2 = ($scope.valor_plano_2_taxa * 0.05) ;
         $scope.valor_plano_2_taxa =porcValor_2;
 
         $scope.valor_plano_3_taxa = $scope.valor_plano_3 + 12.90;
-        var porcValor_3 = ($scope.valor_plano_3_taxa * 0.06) ;
+        var porcValor_3 = ($scope.valor_plano_3_taxa * 0.05) ;
         $scope.valor_plano_3_taxa = porcValor_3;
 
 
