@@ -160,10 +160,9 @@
                             <div class="margin-left-1" style="margin-top: 5px; display: flex">Compra Assistida</div>
                         </div>
                         <div class="text-align-mob font-text-info color-text-grey-light margin-top-sm">
-                            Quer fazer uma Compra Assistida? Insira aqui o link de cada produto que você deseja. Lembrando que você pode enviar quantos links de produtos quiser, nós iremos te enviar um orçamento com todos o produtos solicitados e depois de sua confirmação, compraremos tudo para você.</div>
-
+                            Quer fazer uma Compra Assistida? Crie um orçamento e nos envie os links dos produtos que deseja. Lembrando que você pode enviar quantos links de produtos você quiser, nós iremos te enviar um orçamento com todos os produtos solicitados e depois de sua confirmação, compraremos tudo para você!
                         <div class="margin-top-1 content-btn-sis">
-                            <button id="myBtn" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Link</button>
+                            <button id="myBtn" class="btn-config-3 color-background-green color-text-white text-1-sm">Criar orçamento</button>
                         </div>
                         <div style="    float: left;" class="justify font-text color-text-green" ng-show="link_enviado">
                             O link foi enviado, entraremos em contato em breve.
@@ -189,7 +188,7 @@
             </div>
             <button class="config-btn-add-more text-1-sm color-text-grey align-center" ng-click="addMoreLink()">+ Adicionar mais um link</button>
             <div>
-                <button ng-click="enviarLink()" style="float: right"  class="btn-config-3 color-background-green text-1-sm color-text-white align-center">Enviar compra</button>
+                <button ng-click="enviarLink()" style="float: right"  class="btn-config-3 color-background-green text-1-sm color-text-white align-center">Enviar</button>
             </div>
         </div>
     </div>
