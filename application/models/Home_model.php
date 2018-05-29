@@ -138,10 +138,15 @@ class Home_model extends CI_Model {
 
        public function setLink($id,$data){
 
-           $this->db->set($data);
-           $this->db->set("user_id_fk", $id);
-           $this->db->insert("tb_link_compra");
-
+           foreach ( $data as $valor) {
+               $insert = array(
+                    "link_enviado" => $valor["link_enviado"],
+                    "link_quantidade" => $valor["link_quantidade"]
+               );
+               $this->db->set($insert);
+               $this->db->set("user_id_fk", $id);
+               $this->db->insert("tb_link_compra");
+           }
            $this->db->where("user_id", $id);
            return $this->db->get("tb_user")->result()[0];
        }

@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://keepboxbr.com/' ;
+$config['base_url'] = 'http://ec2-18-221-85-99.us-east-2.compute.amazonaws.com/keepbox/' ;
 
 /*
 |--------------------------------------------------------------------------

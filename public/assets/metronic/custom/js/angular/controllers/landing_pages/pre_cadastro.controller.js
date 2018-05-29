@@ -807,7 +807,13 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$timeout','$window', function ($scope, $http,$timeout,$window) {
 
     $scope.menuOpen = true;
+    $scope.compraAssistida = [
+        {
+        link_enviado:"",
+        link_quantidade: ""
+        },
 
+    ];
     angular.element($window).bind('resize', function(){
 
         if($window.innerWidth > 767){
@@ -1234,31 +1240,33 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
 
     }
 
-    $scope.compraAssistida = {
-        link_enviado:"",
-        link_quantidade: ""
-    }
+
     $scope.link_enviado = false;
 
     $scope.enviarLink = function () {
 
         $scope.link_enviado = true;
-        if ($scope.compraAssistida.link_enviado != "" && $scope.compraAssistida.link_quantidade != "") {
+        if ($scope.compraAssistida[0].link_enviado != "" && $scope.compraAssistida[0].link_quantidade != "") {
 
             $http({
 
                 method: 'POST',
                 url: base_url + "Sistema/MandarLink",
-                data: $.param($scope.compraAssistida),
+                data: $.param({compra: $scope.compraAssistida}),
                 headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
 
             }).then(function (response) {
 
-                    $scope.compraAssistida = {
+                    $scope.compraAssistida = [
+                        {
                         link_enviado: "",
                         link_quantidade: ""
-                    }
-                    $timeout(function () {
+                        },
+                    ]
+                var modal = document.getElementById('myModal');
+                modal.style.display = "none";
+
+                $timeout(function () {
                         $scope.link_enviado = false;
                     }, 3000);
 
@@ -1361,6 +1369,16 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
 
             }
         );
+    }
+
+    $scope.addMoreLink =  function () {
+
+        $scope.compraAssistida.push( {
+            link_enviado:"",
+            link_quantidade: ""
+        });
+
+        console.log($scope.compraAssistida)
     }
 
 }]);

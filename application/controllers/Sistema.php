@@ -118,13 +118,14 @@ class Sistema extends CI_Controller
             $Output = false;
         }
 
+
         $this->load->model('Home_model');
 
-        $retorno = $this->Home_model->setLink($_SESSION['fashon_session']['user_id'],$Data );
+        $retorno = $this->Home_model->setLink($_SESSION['fashon_session']['user_id'],$Data['compra'] );
 
         $this->load->library('Fo_api');
-        if (Fo_api::sendEmail_compra($retorno->user_nome,$retorno->user_email, "Link: ".$Data['link_enviado'],"quant: ".$Data['link_quantidade']))
-            $retorno['success'] = true;
+//        if (Fo_api::sendEmail_compra($retorno->user_nome,$retorno->user_email, $Data['compra']))
+//            $retorno['success'] = true;
 
         if ($Output == true) {
             echo json_encode($retorno);

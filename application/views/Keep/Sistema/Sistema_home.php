@@ -161,12 +161,9 @@
                         </div>
                         <div class="text-align-mob font-text-info color-text-grey-light margin-top-sm">
                             Quer fazer uma Compra Assistida? Insira aqui o link de cada produto que você deseja. Lembrando que você pode enviar quantos links de produtos quiser, nós iremos te enviar um orçamento com todos o produtos solicitados e depois de sua confirmação, compraremos tudo para você.</div>
-                        <div class="two-inputs-inline margin-top-1">
-                            <input ng-model="compraAssistida.link_enviado" class="input-sis-ini-compra center color=text-grey-light" placeholder="Digite o link do produto">
-                            <input ng-model="compraAssistida.link_quantidade" class="input-sis-ini-compra-2 margin-left-1 center color=text-grey-light" placeholder="Quant">
-                        </div>
+
                         <div class="margin-top-1 content-btn-sis">
-                            <button ng-click="enviarLink()" ng-class="{'btn-opacity': compraAssistida.link_enviado == '' || compraAssistida.link_quantidade == ''}" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Link</button>
+                            <button id="myBtn" class="btn-config-3 color-background-green color-text-white text-1-sm">Enviar Link</button>
                         </div>
                         <div style="    float: left;" class="justify font-text color-text-green" ng-show="link_enviado">
                             O link foi enviado, entraremos em contato em breve.
@@ -176,11 +173,65 @@
             </div>
         </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal-jquery">
+
+        <!-- Modal content -->
+        <div class="modal-content-jquery">
+            <span class="close">&times;</span>
+            <div class="text-title text-font-sans color-text-roxo  ">
+                Compra Assistida
+            </div>
+            <div ng-repeat="compra in compraAssistida" class="two-inputs-inline margin-top-1">
+                <input ng-model="compraAssistida[$index].link_enviado" class="input-sis-ini-compra center color=text-grey-light" placeholder="Digite o link do produto">
+                <input ng-model="compraAssistida[$index].link_quantidade" class="input-sis-ini-compra-2 margin-left-1 center color=text-grey-light" placeholder="Quant">
+            </div>
+            <button class="config-btn-add-more text-1-sm color-text-grey align-center" ng-click="addMoreLink()">+ Adicionar mais um link</button>
+            <div>
+                <button ng-click="enviarLink()" style="float: right"  class="btn-config-3 color-background-green text-1-sm color-text-white align-center">Enviar compra</button>
+            </div>
+        </div>
+    </div>
 </div>
 <script>
     function myFunction1() {
         var popup = document.getElementById("myPopup1");
         popup.classList.toggle("show");
+    }
+</script>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    var close = document.getElementsByClassName("close-modal")[0];
+
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    // When the user clicks on <span> (x), close the modal
+    close.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     }
 </script>
 

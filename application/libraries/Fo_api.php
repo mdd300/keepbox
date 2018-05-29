@@ -110,7 +110,7 @@ class Fo_api
     }
 
 
-    public static function sendEmail_compra($nome,$email, $link, $quant)
+    public static function sendEmail_compra($nome,$email, $Data)
     {
         $CI = &get_instance();
 
@@ -136,9 +136,13 @@ class Fo_api
             .'<div style=" widt:80%; padding: 20px 0px;">'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;display: inline-flex""> Olá <div style="color: #a9d046; font-weight: bold;display: inline-flex; "> &nbsp;'.$nome.'</div></p>'
             . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Nós recebemos sua solicitação de compra assistida:</p>'
-            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> '. $link .'</p>'
-            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> '. $quant .'</p>'
-            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;">Logo entraremos em contato, obrigado.</p>'
+            ;
+        foreach ( $Data as $valor) {
+            $msg = $msg
+                    . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> '. $valor["link_enviado"] .'</p>'
+                    . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> '. $valor["link_quantidade"] .'</p>';
+             } ;
+        $msg = $msg . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;">Logo entraremos em contato, obrigado.</p>'
             . '</p></div>'
             . '</div></div>';
         $Data['to'] = $email;
