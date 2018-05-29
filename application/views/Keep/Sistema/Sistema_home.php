@@ -139,7 +139,7 @@
                     </li>
                 </ul>
 
-                <ul class="content-ul-ini-sis margin-top-2">
+                <ul class="content-ul-ini-sis margin-top-2" style="    padding-bottom: 52px;">
                     <li class="content-li-ini-sis border-ini-sis shadow-li-sis" style="    height: 200px;">
                         <div class="align-mob text-1 color-text-grey align-y-center">
                             <span ><img width="40" height="40" src="<?= base_url()?>public/assets/metronic/custom/img/icon/armazenar.png"></span>
