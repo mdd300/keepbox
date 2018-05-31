@@ -50,7 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/lib/font-awesome/font-awesome.css" rel="stylesheet"
           type="text/css"/>
-    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/HomePage.css" rel="stylesheet"
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/HomePage.css?v=1457636631802" rel="stylesheet"
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Como_Funciona/Como_Funciona.css" rel="stylesheet"
           type="text/css"/>
@@ -65,6 +65,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Duvidas/Duvidas.css" rel="stylesheet"
           type="text/css"/>
     <base_url value="<?= base_url() ?>"></base_url>
+
 
 </head>
 <!-- end::Head -->
