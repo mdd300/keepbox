@@ -1,7 +1,3 @@
-<div class="oferta-keep">
-    <img class="" src="<?= base_url() ?>public/assets/metronic/custom/img/photo/oferta.png">
-</div>
-
 
 <div class="content-img-top-home width_padrao">
     <div class="img-top-home"  style=" background-image:  url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal.png')"></div>
