@@ -34,23 +34,23 @@
 
 </div>
 
-<div class="content-more-about-text ">
-    <div class="text-1-sm text-font-sans color-text-grey-light padding-text" style="    text-align: justify;">
-        Pesquisas apontam o crescente desejo dos brasileiros em comprar em lojas online dos EUA. Prova disso é que os turistas do Brasil já ocupam o 3° lugar na lista dos países que mais consumem na América.
-        O fato é que muitas lojas online dos EUA não entregam compras no Brasil.
-        A KeepBox surge para solucionar esta questão!
-        Viabilizamos para quem mora no Brasil a oportunidade de aproveitar todas as vantagens do mercado americano e receber suas compras onde quiser com amplo conforto, economia e segurança.
-        Compre o que desejar em qualquer loja online dos EUA.
-        A KeepBox recebe e envia tudo para você!
-    </div>
-    <div class="content-btn-more-about">
-        <a href="<?= base_url('home/servico' )?>">
-
-        <button class="btn-config color-background-green  color-text-white text-1-sm">
-            Veja mais sobre nós
-        </button>
-        </a>
-    </div>
+<div class="content-more-about-text " style="background-image: url('<?=base_url()?>public/assets/metronic/custom/img/photo/banner_home.png')">
+<!--    <div class="text-1-sm text-font-sans color-text-grey-light padding-text" style="    text-align: justify;">-->
+<!--        Pesquisas apontam o crescente desejo dos brasileiros em comprar em lojas online dos EUA. Prova disso é que os turistas do Brasil já ocupam o 3° lugar na lista dos países que mais consumem na América.-->
+<!--        O fato é que muitas lojas online dos EUA não entregam compras no Brasil.-->
+<!--        A KeepBox surge para solucionar esta questão!-->
+<!--        Viabilizamos para quem mora no Brasil a oportunidade de aproveitar todas as vantagens do mercado americano e receber suas compras onde quiser com amplo conforto, economia e segurança.-->
+<!--        Compre o que desejar em qualquer loja online dos EUA.-->
+<!--        A KeepBox recebe e envia tudo para você!-->
+<!--    </div>-->
+<!--    <div class="content-btn-more-about">-->
+<!--        <a href="--><?//= base_url('home/servico' )?><!--">-->
+<!---->
+<!--        <button class="btn-config color-background-green  color-text-white text-1-sm">-->
+<!--            Veja mais sobre nós-->
+<!--        </button>-->
+<!--        </a>-->
+<!--    </div>-->
 </div>
 
     <iframe class="content-video-module2 " src="https://www.youtube.com/embed/BT3z50zcA-g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
