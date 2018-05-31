@@ -17,6 +17,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=1960">
+    <meta http-equiv="pragma" content="no-cache">
     <meta name="google-site-verification" content="gJupZ3IAxhkzShW-a0VDNkb4MiX9oPps_DgcOYJg_QI" />
     <title>
         KeepBox
