@@ -37,7 +37,7 @@
         z-index: 111;
     }
     .content-servi{
-        width: 93%;
+        width: 90%;
         /* margin-top: 80px; */
     }
     .content-servi.basico {
@@ -86,7 +86,7 @@
         text-decoration: none !important;
         float: left;
         width: 100%;
-        padding: 50px 80px;
+        padding: 50px 20px;
         margin: 50px 25px;
     }
     .content-li-serv.left{

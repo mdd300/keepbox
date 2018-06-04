@@ -46,14 +46,14 @@
     </div>
 </div>
 
-<div class="responsive-center content-servi">
+<div class="content-servi">
 <div class="align-x-center align-x-center-responsive">
-<div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 80px;">
+<div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 80px; padding-left: 4%">
     Serviços Extras
 </div>
 </div>
-<div class="align-x-center align-x-center-responsive">
-    <div  class="color-text-grey-light text-1-sm padding-text text-font-sans li-serv-text"style="padding-top: 15px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
+<div class="align-x-center align-x-center-responsive content-servi">
+    <div  class=" color-text-grey-light text-1-sm padding-text text-font-sans li-serv-text"style="padding-top: 15px; padding-left: 4%" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
 
 </div>
 <div class="content-servi-basicos align-x-center align-x-center-responsive">
@@ -136,13 +136,13 @@
             <ul class="content-ul-assist-data">
                 <li class=" content-li-serv left content-border-simulator-shadow" >
                     <div class="content-itens-li-serv">
-                        <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="">
+                        <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans" style="">
                             US$7.90
                         </div>
-                        <div class="text-title color-text-green text-font-sans text-bold" style="    width: 109%;margin-top: 20px">
+                        <div class="text-title-sm color-text-green text-font-sans text-bold" style="    width: 109%;margin-top: 20px">
                             + 7% do valor das compras
                         </div>
-                        <div style="rgin-left: 20px;" class="text-title color-text-green text-font-sans text-bold">
+                        <div style="margin-left: 20px;" class="text-title color-text-green text-font-sans text-bold">
                             (até US$1.000)
                         </div>
                     </div>
@@ -151,16 +151,16 @@
                 <li class=" content-li-serv right content-border-simulator-shadow" style="  ">
                     <div class="content-itens-li-serv">
 
-                        <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="   ">
+                        <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans" style="   ">
                             US$7.90
                         </div>
-                        <div class="text-title color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
+                        <div class="text-title-sm color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
                             + 6% do valor das compras
                         </div>
                         <div style="
                          width: 115%;
     text-align: left;    max-height: 80px;"
-                             class="text-title color-text-green text-font-sans text-bold">
+                             class="text-title-sm color-text-green text-font-sans text-bold">
                             (acima de US$1.000)
                         </div>
                     </div>
