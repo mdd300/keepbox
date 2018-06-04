@@ -9,7 +9,7 @@
 </div>
 </div>
 
-<div class="content-servi basico align-x-center">
+<div class="content-servi basico align-x-center align-x-center-off">
     <div class="content-title-left-serv">
         <div class="text-title-serv text-title-xl text-bold text-font-sans color-text-green">
             Serviços Básicos
@@ -46,7 +46,7 @@
     </div>
 </div>
 
-<div class="align-x-center">
+<div class="align-x-center align-x-center-off">
 <div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 80px;">
     Serviços Extras
 </div>
