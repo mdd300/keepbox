@@ -1,4 +1,4 @@
-<div class="width_padrao">
+
 
 <div class="content-header-duvidas align-center" style="    background-image: url('<?= base_url()?>public/assets/metronic/custom/img/photo/banner_duvidas.jpeg') ;">
     <div class="content-text-header-duvidas">
@@ -45,7 +45,7 @@
         <button class="btn-config color-background-roxo color-text-white text-1" ng-click="limitplus()" ng-show="limitPerguntas < 43 && numRowsDuvidas.length > 0 && loaderPesquisa == false"> Carregar Mais</button>
     </div>
 </div>
-</div>
+
 <script>
     document.getElementById("search-duvidas").focus();
 </script>
