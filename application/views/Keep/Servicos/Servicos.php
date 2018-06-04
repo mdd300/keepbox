@@ -46,18 +46,18 @@
     </div>
 </div>
 
+<div class="responsive-center content-servi">
 <div class="align-x-center align-x-center-responsive">
 <div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 80px;">
     Serviços Extras
 </div>
 </div>
 <div class="align-x-center align-x-center-responsive">
-    <div style="padding: 20px 400px;
-    text-align: center;" class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 15px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
+    <div  class="color-text-grey-light text-1-sm padding-text text-font-sans li-serv-text"style="padding-top: 15px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
 
 </div>
 <div class="content-servi-basicos align-x-center align-x-center-responsive">
-    <div class="content-title-left-serv" style="margin: 10px 100px !important;">
+    <div class="content-text-right-serv" >
         <ul class="ul-serv-text">
 
             <li class="li-serv-text">
@@ -110,7 +110,7 @@
         </ul>
     </div>
 </div>
-
+</div>
 
 <!---->
 <!--<div class="align-x-center" style="     padding-top: 100px;">-->
