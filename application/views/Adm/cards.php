@@ -249,17 +249,26 @@
 
             <!-- Text input-->
             <div class="form-inline col-md-12">
+                <div class=" col-md-12">
+
                 <label class="col-md-1 control-label" for="Quantidade">Quantidade</label>
                 <div class="col-md-2">
                     <input id="Quantidade" ng-model="produto.quantidadeProd" name="Quantidade" type="text" placeholder="Quantidade" class="form-control input-md" required="">
 
                 </div>
+                </div>
 
             <!-- Text input-->
-                <label class="col-md-1 control-label" for="Peso">Peso</label>
-                    <input id="Peso" ng-model="produto.pesoProd" name="Peso" type="text" placeholder="Peso" class="form-control input-md" required="">
+                <div class="col-md-12">
 
+                <label class="col-md-1 control-label" for="Peso">Peso</label>
+                <div class="col-md-2">
+
+                <input id="Peso" ng-model="produto.pesoProd" name="Peso" type="text" placeholder="Peso" class="form-control input-md" required="">
+                </div>
             </div>
+            </div>
+
 
 
             <div class="container p-5">
