@@ -133,33 +133,33 @@
     <div class=" align-center display-block-responsive" style="    margin-top: 60px;">
         <div class="">
             <ul class="content-ul-assist-data display-block-responsive">
-                <li class=" content-li-serv left content-border-simulator-shadow" >
+                <li class=" content-li-serv content-li-serv-responsive left content-border-simulator-shadow" >
                     <div class="content-itens-li-serv">
                         <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="">
                             US$7.90
                         </div>
-                        <div class="text-title color-text-green text-font-sans text-bold" style="    width: 109%;margin-top: 20px">
+                        <div class="text-title text-title-responsive color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
                             + 7% do valor das compras
                         </div>
-                        <div style="rgin-left: 20px;" class="text-title color-text-green text-font-sans text-bold">
+                        <div style="rgin-left: 20px;" class="text-title text-title-responsive color-text-green text-font-sans text-bold">
                             (até US$1.000)
                         </div>
                     </div>
                 </li>
 
-                <li class=" content-li-serv right content-border-simulator-shadow" style="  ">
+                <li class=" content-li-serv content-li-serv-responsive right content-border-simulator-shadow" style="  ">
                     <div class="content-itens-li-serv">
 
                         <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="   ">
                             US$7.90
                         </div>
-                        <div class="text-title color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
+                        <div class="text-title text-title-responsive color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
                             + 6% do valor das compras
                         </div>
                         <div style="
                          width: 115%;
     text-align: left;    max-height: 80px;"
-                             class="text-title color-text-green text-font-sans text-bold">
+                             class="text-title text-title-responsive color-text-green text-font-sans text-bold">
                             (acima de US$1.000)
                         </div>
                     </div>

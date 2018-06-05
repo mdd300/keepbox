@@ -3,6 +3,12 @@
 
      .content-img-top-serv{height: 700px;position: absolute}
 
+     .text-title-responsive{
+        font-size: 2.5rem !important ;
+        line-height: 60px ;
+        font-family: Circe ;
+    }
+
      .display-block-responsive {
         display: block !important;
      }
@@ -11,6 +17,13 @@
         padding: 20px 5%;
         text-align: center;
         width: 50%;
+     }
+
+     .content-li-serv-responsive{
+        padding: 50px 10% !important;
+        margin: 50px 25px;
+        text-align: left !important;
+
      }
 
      .margin-servi-extra-resposive{
