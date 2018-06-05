@@ -4,18 +4,18 @@
      .content-img-top-serv{height: 700px;position: absolute}
 
      .text-title-responsive{
-        font-size: 2.2rem !important ;
+        font-size: 2.0rem !important ;
         line-height: 40px ;
         font-family: Circe ;
     }
 
     .text-title-sm-responsive{
-        font-size: 1.7rem !important ;
+        font-size: 1.5rem !important ;
         font-family: Circe ;
     }
 
     .text-md-responsive{
-        font-size: 1.0rem !important ;
+        font-size: 0.8rem !important ;
         font-family: Circe ;
     }
 

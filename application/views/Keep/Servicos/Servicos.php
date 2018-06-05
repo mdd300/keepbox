@@ -18,7 +18,7 @@
     <div class="content-text-right-serv full-width-responsive" style="    margin-left: 5% !important;">
         <ul class="ul-serv-text ">
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1 text-font-sans">Recebimento de Encomendas <b>(GRÁTIS)</b> </div>
+                <div class="color-text-green text-bold text-1 text-title-sm-responsive text-font-sans">Recebimento de Encomendas <b>(GRÁTIS)</b> </div>
                 <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px">A KeepBox não cobra por pacotes recebidos. Fique à vontade para comprar o quanto quiser nas diversas lojas online dos EUA.</div>
 
             </li>
