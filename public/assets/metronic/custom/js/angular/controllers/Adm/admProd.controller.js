@@ -57,7 +57,8 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
                 $image.cropper('destroy');
 
                 $image.cropper({
-                    aspectRatio: 1,
+                    dragMode: "crop",
+                    aspectRatio: 16 / 9,
                     responsive: true,
                     mouseWheelZoom: true,
                     touchDragZoom: true,
@@ -70,6 +71,7 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
                         // console.log(event.detail.rotate);
                         // console.log(event.detail.scaleX);
                         // console.log(event.detail.scaleY);
+                        console.log(this.cropper.crop());
                     }
                 });
 

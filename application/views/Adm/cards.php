@@ -248,8 +248,8 @@
             </div>
 
             <!-- Text input-->
-            <div class="form-inline col-md-12">
-                <div class=" col-md-12">
+            <div class="ml-4 form-inline col-xl-1">
+                <div class=" col-md-6">
 
                 <label class="col-md-1 control-label" for="Quantidade">Quantidade</label>
                 <div class="col-md-2">
@@ -259,7 +259,7 @@
                 </div>
 
             <!-- Text input-->
-                <div class="col-md-12">
+                <div class="col-md-6">
 
                 <label class="col-md-1 control-label" for="Peso">Peso</label>
                 <div class="col-md-2">
@@ -276,7 +276,7 @@
             <div class="col-md-5" >
                 <input type="file" id="picField">
                 <div class="mt-4">
-                <img id="image-crop" name="img" class="col-xl-12" src="">
+                <img ng-show="produto.img" id="image-crop" width="500" height="400" name="img" >
                 </div>
             </div>
 

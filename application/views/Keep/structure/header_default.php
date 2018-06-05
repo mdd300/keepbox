@@ -12,11 +12,11 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
 License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
 -->
-<html class="width_padrao" lang="en" ng-app="app_landing">
+<html lang="en" ng-app="app_landing">
 <!-- begin::Head -->
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=1960">
+    <meta name="viewport" ng-show="screenSizeMob == false" content="width=1960">
     <meta http-equiv="pragma" content="no-cache">
     <meta name="google-site-verification" content="gJupZ3IAxhkzShW-a0VDNkb4MiX9oPps_DgcOYJg_QI" />
     <title>

@@ -5,6 +5,8 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 
     $scope.mobile ;
 
+    $scope.screenSizeMob = true
+
     if( navigator.userAgent.match(/Android/i)
         || navigator.userAgent.match(/webOS/i)
         || navigator.userAgent.match(/iPhone/i)
@@ -85,7 +87,9 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
     if(getWindowWidth() > 769){
         var screenSize = getWindowWidth() / 1920 * 100
         $('html').css({zoom: screenSize/100})
+        $scope.screenSizeMob =  false;
     }
+
 
 
     window.onresize=function() {
@@ -93,8 +97,12 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         if(getWindowWidth() > 769){
             var screenSize = getWindowWidth() / 1920 * 100
             $('html').css({zoom: screenSize/100})
+            $scope.screenSizeMob =  false;
+
         }else{
             $('html').css({zoom: 0})
+            $scope.screenSizeMob =  true;
+
         }
 
     }
