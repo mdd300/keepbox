@@ -1,1 +1,1 @@
-angular.module('app_login', []);
+angular.module('app_landing', []);

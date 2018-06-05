@@ -42,4 +42,17 @@ class Fo_users
 
     }
 
+    public static function check_exists_adm($user_login)
+    {
+
+        $CI = &get_instance();
+
+        $CI->db->from('tb_adm_login');
+        $CI->db->where('user_login', $user_login);
+        $CI->db->or_where('user_email', $user_login);
+        $User = $CI->db->get()->result();
+
+        return (empty($User) ? false : $User[0]); // Se não existir, retorna false, se existir, retorna o registro do banco
+
+    }
 }

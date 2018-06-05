@@ -206,6 +206,42 @@ class Home extends CI_Controller {
     }
 
     public function changePass($Data = null){
+
+    }
+
+    public function Adm (){
+        $this->load->view('Adm/login');
+    }
+    public function admIndex (){
+        $this->load->view('Adm/index');
+    }
+    public function admProd (){
+        $this->load->view('Adm/cards');
+    }
+    public function easyPost (){
+        $this->load->view('Adm/easyPost');
+    }
+
+    public function LoginAdm($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        session_set_cookie_params(PHP_INT_MAX);
+        $this->load->library('Keepbox/Fo_login');
+
+        $retorno = Fo_login::do_login_adm($Data);
+
+        if ($Output == true) {
+            echo json_encode($retorno);
+        } else {
+            return $retorno;
+        }
+    }
+    public function getUsers($Data = null){
         if ($Data == null) {
             $Output = true;
             $Data = $this->input->post();
@@ -214,6 +250,9 @@ class Home extends CI_Controller {
         }
 
 
+        $this->load->model('Adm_model');
+
+        $retorno = $this->Adm_model->getUsers_model($Data);
 
         if ($Output == true) {
             echo json_encode($retorno);
@@ -222,5 +261,75 @@ class Home extends CI_Controller {
         }
     }
 
+    public function easypost_setTrack($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
 
+
+        require_once("./public/assets/metronic/vendors/easypost/lib/easypost.php");
+
+        \EasyPost\EasyPost::setApiKey("1xY09nysF4aof0ZqqSrvxw");
+
+        $tracker = \EasyPost\Tracker::create(array(
+            "tracking_code" => $Data["track"],
+            "carrier" => "USPS"
+        ));
+        if ($Output == true) {
+            echo json_encode($tracker);
+        } else {
+            return $tracker;
+        }
+    }
+
+    public function easypost_getTrack($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        require_once("./public/assets/metronic/vendors/easypost/lib/easypost.php");
+
+        \EasyPost\EasyPost::setApiKey("1xY09nysF4aof0ZqqSrvxw");
+
+        $trackers = \EasyPost\Tracker::all(array(
+            "page_size" => 100,
+            "end_datetime" => "2018-06-01T00:00:00Z"
+        ));
+
+        if ($Output == true) {
+            echo json_encode($trackers);
+        } else {
+            return $trackers;
+        }
+    }
+
+    public function setProduto($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        list($type, $Data['img']) = explode(';', $Data['img']);
+        list(, $Data['img'])      = explode(',', $Data['img']);
+        $Data['img'] = base64_decode($Data['img']);
+
+        $nome = uniqid();
+
+        file_put_contents("./upload/produtos/img/".$nome.'.png', $Data['img']);
+        $return = true;
+
+        if ($Output == true) {
+            echo json_encode($return);
+        } else {
+            return $return;
+        }
+    }
 }

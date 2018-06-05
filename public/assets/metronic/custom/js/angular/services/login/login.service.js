@@ -1,4 +1,4 @@
-angular.module('app_fashon').service('loginService', ['$http', function($http){
+angular.module('app_landing').service('loginService', ['$http', function($http){
 
     var _doLogin = function(params){
 
