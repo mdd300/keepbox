@@ -9,14 +9,14 @@
 </div>
 </div>
 
-<div class="content-servi basico align-x-center align-x-center-responsive">
+<div class="content-servi basico align-x-center display-block-responsive ">
     <div class="content-title-left-serv">
         <div class="text-title-serv text-title-xl text-bold text-font-sans color-text-green">
             Serviços Básicos
         </div>
     </div>
-    <div class="content-text-right-serv" style="    margin-right: 0 !important;">
-        <ul class="ul-serv-text">
+    <div class="content-text-right-serv full-width-responsive" style="    margin-right: 0 !important;">
+        <ul class="ul-serv-text ">
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans">Recebimento de Encomendas <b>(GRÁTIS)</b> </div>
                 <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px">A KeepBox não cobra por pacotes recebidos. Fique à vontade para comprar o quanto quiser nas diversas lojas online dos EUA.</div>
@@ -46,19 +46,18 @@
     </div>
 </div>
 
-<div class="content-servi">
-<div class="align-x-center align-x-center-responsive">
-<div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 80px; padding-left: 4%">
+<div class="align-x-center display-block-responsive">
+<div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 80px;">
     Serviços Extras
 </div>
 </div>
-<div class="align-x-center align-x-center-responsive content-servi">
-    <div  class=" color-text-grey-light text-1-sm padding-text text-font-sans li-serv-text"style="padding-top: 15px; padding-left: 4%" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
+<div class="align-x-center display-block-responsive">
+    <div  class="color-text-grey-light text-1-sm padding-text text-font-sans servi-extra-text servi-extra-text-responsive full-width-responsive" style="padding-top: 15px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
 
 </div>
-<div class="content-servi-basicos align-x-center align-x-center-responsive">
-    <div class="content-text-right-serv" >
-        <ul class="ul-serv-text">
+<div class="content-servi-basicos  align-x-center display-block-responsive">
+    <div class="content-title-left-serv full-width-responsive margin-servi-extra margin-servi-extra-resposive" >
+        <ul class="ul-serv-text ">
 
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans">Adesivar toda a Caixa / Proteção completa <b>(US$2,00)</b> </div>
@@ -84,7 +83,7 @@
             </li>
         </ul>
     </div>
-    <div class="content-text-right-serv" style="margin-top: 10px !important;">
+    <div class="content-text-right-serv full-width-responsive" style="margin-top: 10px !important;">
         <ul class="ul-serv-text">
 
             <li class="li-serv-text">
@@ -110,7 +109,7 @@
         </ul>
     </div>
 </div>
-</div>
+
 
 <!---->
 <!--<div class="align-x-center" style="     padding-top: 100px;">-->
@@ -131,36 +130,36 @@
 
     </div>
 
-    <div class=" align-center" style="    margin-top: 60px;">
+    <div class=" align-center display-block-responsive" style="    margin-top: 60px;">
         <div class="">
-            <ul class="content-ul-assist-data">
-                <li class=" content-li-serv left content-border-simulator-shadow" >
+            <ul class="content-ul-assist-data display-block-responsive">
+                <li class=" content-li-serv content-li-serv-responsive left content-border-simulator-shadow" >
                     <div class="content-itens-li-serv">
-                        <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans" style="">
+                        <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="">
                             US$7.90
                         </div>
-                        <div class="text-title-sm color-text-green text-font-sans text-bold" style="    width: 109%;margin-top: 20px">
+                        <div class="text-title text-title-responsive color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
                             + 7% do valor das compras
                         </div>
-                        <div style="margin-left: 20px;" class="text-title color-text-green text-font-sans text-bold">
+                        <div style="rgin-left: 20px;" class="text-title text-title-responsive color-text-green text-font-sans text-bold">
                             (até US$1.000)
                         </div>
                     </div>
                 </li>
 
-                <li class=" content-li-serv right content-border-simulator-shadow" style="  ">
+                <li class=" content-li-serv content-li-serv-responsive right content-border-simulator-shadow" style="  ">
                     <div class="content-itens-li-serv">
 
-                        <div class="text-title-sm color-text-green color-text-green text-bold text-font-sans" style="   ">
+                        <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="   ">
                             US$7.90
                         </div>
-                        <div class="text-title-sm color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
+                        <div class="text-title text-title-responsive color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
                             + 6% do valor das compras
                         </div>
                         <div style="
                          width: 115%;
     text-align: left;    max-height: 80px;"
-                             class="text-title-sm color-text-green text-font-sans text-bold">
+                             class="text-title text-title-responsive color-text-green text-font-sans text-bold">
                             (acima de US$1.000)
                         </div>
                     </div>
