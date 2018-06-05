@@ -80,17 +80,17 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         }
         return windowWidth;
     }
+    //
+    // var screenSize = getWindowWidth() / 1920 * 100
+    //
+    // $('html').css({zoom: screenSize/100})
 
-    var screenSize = getWindowWidth() / 1920 * 100
 
-    $('html').css({zoom: screenSize/100})
-
-
-    window.onresize=function() {
+    /*window.onresize=function() {
         screenSize = getWindowWidth() / 1920 * 100
 
         $('html').css({zoom: screenSize/100})
-    }
+    }*/
 
     $scope.range_simulator_home = 0;
     $scope.valor_kg = 0;
@@ -814,7 +814,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         },
 
     ];
-    angular.element($window).bind('resize', function(){
+   /* angular.element($window).bind('resize', function(){
 
         if($window.innerWidth > 767){
             $scope.menuOpen = true;
@@ -822,7 +822,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
             $scope.menuOpen = null;
         }
 
-    })
+    })*/
 
     function getWindowWidth() {
         var windowWidth = 0;
