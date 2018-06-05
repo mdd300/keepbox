@@ -1,42 +1,81 @@
 
 
+
+
+
+
 <div class="content-footer width_padrao">
-    <div class="content-footer-left " style="    background-color: #313131;">
-        <a href="<?= base_url()?>">
 
-            <div class="content-logo-footer"
-                 style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/LOGOTIPO.png')"></div>
-        </a>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 0;height: 100%">
+        <div class="content-footer-left " style="background-color: #313131;width: 100%">
+            <a href="<?= base_url()?>">
+
+                <div class="content-logo-footer"
+                     style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/LOGOTIPO.png')"></div>
+            </a>
+        </div>
+
     </div>
-    <div class="content-footer-right " style="background-color: #626363">
+    <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs" style="padding: 0;height: 100%">
+        <div class="content-footer-right " style="background-color: #626363;width: 100%">
+            <div class="content-footer-data">
+                <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 77px;
+        padding-left: 110px;" id="mapa_site">
+                    Mapa do Site
+                </div>
 
-        <div class="content-footer-data">
-        <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 77px;
-    padding-left: 110px;">
-            Mapa do Site
+                <ul class="content-ul-footer">
+                    <!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Quem somos</li>-->
+                    <a href="<?= base_url() ?>home/termos"><li   class="content-li-footer text-font-sans text-1-sm color-text-white">Termos e Condições</li></a>
+                    <!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Privacidade e Segurança</li>-->
+                    <!--            <li class="content-li-footer text-font-sans text-1-sm  color-text-white">Contato</li>-->
+
+                </ul>
+            </div>
+
+            <div class="content-footer-data">
+                <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 77px;
+        padding-left: 110px;">
+                    Siga a KeepBox
+                </div>
+
+                <ul class="content-ul-footer">
+                    <li class="content-li-footer text-font-sans text-1-sm text-bold color-text-white"><img src="<?=base_url()?>public/assets/metronic/custom/img/icon/instagram.png" style="padding-right: 10px">@keepboxbr</li>
+
+                </ul>
+            </div>
         </div>
 
-        <ul class="content-ul-footer">
-<!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Quem somos</li>-->
-            <a href="<?= base_url() ?>home/termos"><li class="content-li-footer text-font-sans text-1-sm color-text-white">Termos e Condições</li></a>
-<!--            <li class="content-li-footer text-font-sans text-1-sm color-text-white">Privacidade e Segurança</li>-->
-<!--            <li class="content-li-footer text-font-sans text-1-sm  color-text-white">Contato</li>-->
+    </div>
 
-        </ul>
-        </div>
 
-        <div class="content-footer-data">
-            <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 77px;
-    padding-left: 110px;">
+    <div class="hidden-lg hidden-md hidden-sm col-xs-12" style="padding: 0;height: 200px">
+        <div  style="background-color: #626363;width: 100%;height: 300px;">
+
+            <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 77px;" id="mapa_site">
+                Mapa do Site
+            </div>
+            <a href="<?= base_url() ?>home/termos" style="width: 100%;text-align: center;color: #fff;margin-top: 20px;">
+                <p class="text-font-sans text-1-sm color-text-white" style="text-align: center;">Termos e Condições</li>
+            </a>
+
+
+            <div class="text-bold text-font-sans text-1 color-text-white" style="padding-top: 67px;
+        padding-left: 110px;" id="mapa_site">
                 Siga a KeepBox
             </div>
 
-            <ul class="content-ul-footer">
-                <li class="content-li-footer text-font-sans text-1-sm text-bold color-text-white"><img src="<?=base_url()?>public/assets/metronic/custom/img/icon/instagram.png" style="padding-right: 10px">@keepboxbr</li>
+            <p class="text-font-sans text-1-sm text-bold color-text-white" style="text-align: center;width: 100%;margin-top: 20px;">
+                <img src="<?=base_url()?>public/assets/metronic/custom/img/icon/instagram.png" style="padding-right: 10px">@keepboxbr
+            </p>
 
-            </ul>
         </div>
+
     </div>
+
+
+
+
 </div>
 
 
@@ -64,6 +103,7 @@
 
 <script src="<?= base_url('public/assets/metronic/custom/js/angular/modules/Keepbox.module.js') ?>"
         type="text/javascript"></script>
+
 <script src="<?= base_url('public/assets/metronic/custom/js/angular/constants/config.constant.js') ?>"
         type="text/javascript"></script>
 

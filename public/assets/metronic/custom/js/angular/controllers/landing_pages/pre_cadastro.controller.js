@@ -1,3 +1,4 @@
+
 angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$timeout', function ($scope, $http,$timeout) {
 
     var url = new URL(window.location.href);
@@ -28,7 +29,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 
         }
 
-     }
+    }
 
     $scope.scrollCom = function () {
 
@@ -63,6 +64,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
     $scope.valor_plano_3_taxa
 
 
+
     function getWindowWidth() {
         var windowWidth = 0;
         if (typeof(window.innerWidth) == 'number') {
@@ -80,17 +82,22 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         }
         return windowWidth;
     }
-    //
-    // var screenSize = getWindowWidth() / 1920 * 100
-    //
-    // $('html').css({zoom: screenSize/100})
-
-
-    /*window.onresize=function() {
-        screenSize = getWindowWidth() / 1920 * 100
-
+    if(getWindowWidth() > 769){
+        var screenSize = getWindowWidth() / 1920 * 100
         $('html').css({zoom: screenSize/100})
-    }*/
+    }
+
+
+    window.onresize=function() {
+
+        if(getWindowWidth() > 769){
+            var screenSize = getWindowWidth() / 1920 * 100
+            $('html').css({zoom: screenSize/100})
+        }else{
+            $('html').css({zoom: 0})
+        }
+
+    }
 
     $scope.range_simulator_home = 0;
     $scope.valor_kg = 0;
@@ -233,64 +240,64 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
             }
 
 
-                            if ($scope.dataCad.user_login !== "") {
-                                if ($scope.dataCad.user_senha !== "") {
-                                    if ($scope.dataCad.user_senha.length > 5) {
-                                        if ($scope.dataCad.user_senha == $scope.dataCad.user_confirmar_senha) {
+            if ($scope.dataCad.user_login !== "") {
+                if ($scope.dataCad.user_senha !== "") {
+                    if ($scope.dataCad.user_senha.length > 5) {
+                        if ($scope.dataCad.user_senha == $scope.dataCad.user_confirmar_senha) {
 
 
-                                            $http({
+                            $http({
 
-                                                method: 'POST',
-                                                url: base_url + "home/cadastroFinalizar",
-                                                data: $.param({id: $scope.idCliente, Data: $scope.dataCad}),
-                                                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+                                method: 'POST',
+                                url: base_url + "home/cadastroFinalizar",
+                                data: $.param({id: $scope.idCliente, Data: $scope.dataCad}),
+                                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
 
-                                            }).then(function (response) {
+                            }).then(function (response) {
 
-                                                    $scope.loader_cad2 = false;
+                                    $scope.loader_cad2 = false;
 
-                                                    $scope.singIn = {
-                                                        user_login: $scope.dataCad.user_login,
-                                                        user_senha: $scope.dataCad.user_senha
-                                                    }
-                                                    $http({
-
-                                                        method: 'POST',
-                                                        url: base_url + "home/Login",
-                                                        data: $.param($scope.singIn),
-                                                        headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
-
-                                                    }).then(function (response) {
-                                                            $scope.loader_login = false;
-
-                                                            if (response.data.success) {
-
-                                                                window.location.href = base_url + "Sistema/system";
-                                                            }
-
-                                                        }
-                                                    );
-
-
-                                                }
-                                            );
-                                        } else {
-                                            $scope.dataCadError.user_senha_conf = true;
-                                            $scope.loader_login = false;
-                                        }
-                                    } else {
-                                        $scope.dataCadError.user_senha_length = true;
-                                        $scope.loader_login = false;
+                                    $scope.singIn = {
+                                        user_login: $scope.dataCad.user_login,
+                                        user_senha: $scope.dataCad.user_senha
                                     }
-                                } else {
-                                    $scope.dataCadError.user_senha_error = true;
-                                    $scope.loader_login = false;
+                                    $http({
+
+                                        method: 'POST',
+                                        url: base_url + "home/Login",
+                                        data: $.param($scope.singIn),
+                                        headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+                                    }).then(function (response) {
+                                            $scope.loader_login = false;
+
+                                            if (response.data.success) {
+
+                                                window.location.href = base_url + "Sistema/system";
+                                            }
+
+                                        }
+                                    );
+
+
                                 }
-                            } else {
-                                $scope.dataCadError.user_login_error = true;
-                                $scope.loader_login = false;
-                            }
+                            );
+                        } else {
+                            $scope.dataCadError.user_senha_conf = true;
+                            $scope.loader_login = false;
+                        }
+                    } else {
+                        $scope.dataCadError.user_senha_length = true;
+                        $scope.loader_login = false;
+                    }
+                } else {
+                    $scope.dataCadError.user_senha_error = true;
+                    $scope.loader_login = false;
+                }
+            } else {
+                $scope.dataCadError.user_login_error = true;
+                $scope.loader_login = false;
+            }
 
         }
     } else {
@@ -402,7 +409,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 
         }).then(function (response) {
 
-            console.log(response.data)
+                console.log(response.data)
 
                 if (response.data.success == true) {
                     window.location.href = base_url + "Sistema/system";
@@ -480,12 +487,12 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         {
             id:9,
             pergunta: "O que é o “meu endereço KeepBox”?",
-            resposta: "Ao se cadastrar, você recebe um endereço KeepBox pessoal. Sempre que indicar este endereço ao comprar nas lojas online nos EUA, fisicamente suas compras serão enviadas para o armazém da KeepBox, mas você terá um código só seu que facilitará a identificação de seus objetos e o armazenamento dos mesmos em sua suíte individual. Com seu endereço KeepBox, você pode realizar compras nas lojas online americanas, o que não seria possível sem um endereço nos EUA, afinal muitas lojas americanas não enviam para endereços no Brasil. ",
+            resposta: "Ao se cadastrar, você recebe um endereço KeepBox pessoal. Sempre que indicar este endereço ao comprar nas lojas online nos EUA, fisicamente suas compras serão enviadas para o armazém da KeepBox, mas você terá um código só seu que facilitará a identificação de seus objetos e o armazenamento dos mesmos em sua suíte individual. Com seu endereço KeepBox, você pode realizar compras nas lojas online americanas, o que não seria possível sem um endereço nos EUA, afinal muitas lojas americanas não enviam para endereços no Brasil. ",
         },
         {
             id:10,
             pergunta: "O que é Shipping Address (Endereço de Envio)?",
-            resposta: "Shipping Address (Endereço de Envio) é o endereço onde suas compras realizadas nas lojas online serão entregues nos EUA. Nos sites das lojas online, Shipping Address é onde você preenche o seu endereço KeepBox. Assim, suas encomendas serão enviadas para nosso armazém e, posteriormente, remetemos para o seu endereço no Brasil.",
+            resposta: "Shipping Address (Endereço de Envio) é o endereço onde suas compras realizadas nas lojas online serão entregues nos EUA. Nos sites das lojas online, Shipping Address é onde você preenche o seu endereço KeepBox. Assim, suas encomendas serão enviadas para nosso armazém e, posteriormente, remetemos para o seu endereço no Brasil.",
         },
         {
             id:11,
@@ -542,7 +549,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
             id:20,
             pergunta: "Se eu não puder efetuar a compra, a KeepBox pode realizar a comprar para mim?",
             resposta: "Sim! A KeepBox realizar as compras para você. Para isso, basta nos enviar o link dos produtos desejados, acompanhado dos detalhes como cor, tamanho, etc. Este serviço é o Compra Assistida.  Veja detalhes no site na aba Compra Assistida. \n" +
-            "Observação: Não existe limite de lojas para você nos solicitar a realização de suas compras. \n" +
+            "Observação: Não existe limite de lojas para você nos solicitar a realização de suas compras. \n" +
             "A KeepBox comprará quantos produtos desejar em qualquer loja dos EUA.",
         },
         {
@@ -648,16 +655,16 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
             "Você pode escolher a modalidade mais conveniente consultando a nossa Calculadora de Envio. O Priority Mail é o mais usado em função do melhor custo benefício. Todas as opções geram código de rastreamento (tracking number) para acompanhamento do envio. \n" +
             "Veja detalhes abaixo:\n" +
             "\n" +
-            "› USPS First Class: A modalidade de baixo custo e usada apenas para pacotes com até 4 Libras (1,8kg). \n" +
+            "› USPS First Class: A modalidade de baixo custo e usada apenas para pacotes com até 4 Libras (1,8kg). \n" +
             "Tempo médio de entrega: de 30-50 dias úteis - Serviço com código de rastreamento. \n" +
             "O envio via First Class não oferece a opção de seguro para a encomenda e não permite abrir reclamações no site da USPS no caso de extravio ou roubo.\n" +
             "\n" +
-            "› USPS Priority Mail: A modalidade de médio custo (melhor custo benefício). \n" +
+            "› USPS Priority Mail: A modalidade de médio custo (melhor custo benefício). \n" +
             "É o frete mais usado e recomendado.\n" +
             "Tempo médio de entrega: 12-20 dias úteis - Serviço com código de rastreamento. \n" +
             "Pode ser contratado seguro com adicional de 5% sobre o valor declarado.\n" +
             "\n" +
-            "› USPS Express Mail: A modalidade mais rápida em solo americano para saída ao destino \n" +
+            "› USPS Express Mail: A modalidade mais rápida em solo americano para saída ao destino \n" +
             "(no país de entrega pode ter o mesmo procedimento de tempo de trânsito que o Priority Mail). Tempo médio de entrega é em média 8-10 dias úteis - Serviço com código de rastreamento. \n" +
             "Pode ser contratado seguro com adicional de 5% em cima do valor declarado.\n" +
             "Nesta modalidade o pagamento dos tributos alfandegários são certos de acontecerem. \n" +
@@ -809,12 +816,12 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
     $scope.menuOpen = true;
     $scope.compraAssistida = [
         {
-        link_enviado:"",
-        link_quantidade: ""
+            link_enviado:"",
+            link_quantidade: ""
         },
 
     ];
-   /* angular.element($window).bind('resize', function(){
+    angular.element($window).bind('resize', function(){
 
         if($window.innerWidth > 767){
             $scope.menuOpen = true;
@@ -822,7 +829,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
             $scope.menuOpen = null;
         }
 
-    })*/
+    })
 
     function getWindowWidth() {
         var windowWidth = 0;
@@ -961,15 +968,15 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
             $scope.total3 = $scope.total3 + ($scope.total3 * 0.03)
 
         } if($scope.PedidoEnvio.pedido_adesivar == true){
-                $scope.total1 = $scope.total1 + 2;
-                $scope.total2 = $scope.total2 + 2;
-                $scope.total3 = $scope.total3 + 2;
+            $scope.total1 = $scope.total1 + 2;
+            $scope.total2 = $scope.total2 + 2;
+            $scope.total3 = $scope.total3 + 2;
 
-            } if($scope.PedidoEnvio.pedido_acomodar == true){
+        } if($scope.PedidoEnvio.pedido_acomodar == true){
             $scope.total1 = $scope.total1 + 1;
             $scope.total2 = $scope.total2 + 1;
             $scope.total3 = $scope.total3 + 1;
-            }
+        }
 
 
         $scope.valor_plano_1_taxa = Number(($scope.valor_plano_1_taxa).toFixed(2));
@@ -1015,8 +1022,8 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
     }).then(function (response) {
 
 
-        console.log(response.data)
-        $scope.compraList = response.data;
+            console.log(response.data)
+            $scope.compraList = response.data;
 
 
 
@@ -1064,7 +1071,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
-            modal.style.display = "block";
+        modal.style.display = "block";
     }
     $scope.closeModal = function () {
         var modal = document.getElementById('myModal');
@@ -1089,11 +1096,11 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
             $scope.produtosList[key] = parseFloat(value.prod_peso);
         });
 
-        }
+    }
     $scope.goToStep2 = function () {
 
         var error = false;
-         $scope.quantidadeTotal = 0;
+        $scope.quantidadeTotal = 0;
         $scope.ValorDecTotal = 0;
 
         angular.forEach($scope.EnvioSoli, function(value, key) {
@@ -1158,7 +1165,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
     $scope.goToStep3 = function () {
 
         if($scope.PedidoEnvio.pedido_plano == 0)
-        $scope.errorPlano = true
+            $scope.errorPlano = true
         else{
 
             $http({
@@ -1171,7 +1178,7 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
             }).then(function (response) {
 
 
-                console.log(response.data)
+                    console.log(response.data)
                     if(response.data == "true"){
                         $scope.showPage = 1;
                         var modal = document.getElementById('myModal2');
@@ -1230,13 +1237,13 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
             $scope.plano_selected = 1
             $scope.TotalFinal = $scope.total1;
         }else
-            if(plano ==2){
-                $scope.plano_selected = 2
-                $scope.TotalFinal = $scope.total2;
-            }else{
-                $scope.plano_selected = 3
-                $scope.TotalFinal = $scope.total3;
-            }
+        if(plano ==2){
+            $scope.plano_selected = 2
+            $scope.TotalFinal = $scope.total2;
+        }else{
+            $scope.plano_selected = 3
+            $scope.TotalFinal = $scope.total3;
+        }
 
     }
 
@@ -1259,14 +1266,14 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
 
                     $scope.compraAssistida = [
                         {
-                        link_enviado: "",
-                        link_quantidade: ""
+                            link_enviado: "",
+                            link_quantidade: ""
                         },
                     ]
-                var modal = document.getElementById('myModal');
-                modal.style.display = "none";
+                    var modal = document.getElementById('myModal');
+                    modal.style.display = "none";
 
-                $timeout(function () {
+                    $timeout(function () {
                         $scope.link_enviado = false;
                     }, 3000);
 
@@ -1277,46 +1284,46 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
         }
     }
 
-        $scope.goBack = function () {
-            $scope.showPage -= 1;
+    $scope.goBack = function () {
+        $scope.showPage -= 1;
 
-            $http({
+        $http({
 
-                method: 'POST',
-                url: base_url + "Sistema/getCompra",
-                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+            method: 'POST',
+            url: base_url + "Sistema/getCompra",
+            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
 
-            }).then(function (response) {
-
-
-                    console.log(response.data)
-                    $scope.compraList = response.data;
+        }).then(function (response) {
 
 
-
-                }
-            );
-            $http({
-
-                method: 'POST',
-                url: base_url + "Sistema/getProdutos",
-                headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
-
-            }).then(function (response) {
-
-                    console.log(response.data)
-
-                    $scope.produtosList = response.data;
+                console.log(response.data)
+                $scope.compraList = response.data;
 
 
 
-                }
-            );
-        }
+            }
+        );
+        $http({
 
-        $scope.rastreamento ={
-            codigo: ""
-        }
+            method: 'POST',
+            url: base_url + "Sistema/getProdutos",
+            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+        }).then(function (response) {
+
+                console.log(response.data)
+
+                $scope.produtosList = response.data;
+
+
+
+            }
+        );
+    }
+
+    $scope.rastreamento ={
+        codigo: ""
+    }
     $scope.ras_enviado = false;
 
 
@@ -1382,5 +1389,3 @@ angular.module('app_landing').controller('sistem_ctrl', ['$scope', '$http','$tim
     }
 
 }]);
-
-
