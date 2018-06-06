@@ -130,11 +130,11 @@
 
     </div>
 
-    <div class=" align-center display-block-responsive" style="    margin-top: 60px;">
+    <div class=" align-center display-block-responsive" style="padding-left: 5%;     margin-top: 60px;">
         <div class="">
             <ul class="content-ul-assist-data display-block-responsive">
                 <li class=" content-li-serv content-li-serv-responsive left content-border-simulator-shadow" >
-                    <div class="content-itens-li-serv">
+                    <div class="content-itens-li-serv content-itens-li-serv-responsive">
                         <div class="text-title-xl text-title-responsive color-text-green color-text-green text-bold text-font-sans" style="">
                             US$7.90
                         </div>
@@ -148,7 +148,7 @@
                 </li>
 
                 <li class=" content-li-serv content-li-serv-responsive right content-border-simulator-shadow" style="  ">
-                    <div class="content-itens-li-serv">
+                    <div class="content-itens-li-serv content-itens-li-serv-responsive">
 
                         <div class="text-title-xl text-title-responsive color-text-green color-text-green text-bold text-font-sans" style="  ">
                             US$7.90
@@ -159,7 +159,7 @@
                         <div style="
                          width: 100%;
     text-align: left;    max-height: 80px;"
-                             class="text-title text-title-sm-responsive color-text-green text-font-sans text-bold">
+                             class="center-text-responsive text-title text-title-sm-responsive color-text-green text-font-sans text-bold">
                             (acima de US$1.000)
                         </div>
                     </div>
