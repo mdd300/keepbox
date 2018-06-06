@@ -2,7 +2,8 @@
     /* For mobile: */
 
      .content-img-top-serv{height: 700px;position: absolute;
-        background-size: cover !important;
+        width: 100%;
+        background-size: cover;
      }
 
      .text-title-responsive{
@@ -27,6 +28,13 @@
         display: block !important;
         text-align: center;
      }
+
+         .img-top-serv-responsive{
+       
+        
+        background-size: cover !important;
+        
+    }
 
      .servi-extra-text-responsive{
         padding: 1% 5%;
