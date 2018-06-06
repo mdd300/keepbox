@@ -50,7 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/lib/font-awesome/font-awesome.css" rel="stylesheet"
           type="text/css"/>
-    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/HomePage.css?v=1457636631802" rel="stylesheet"
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/HomePage.css?v=1457636631803" rel="stylesheet"
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Como_Funciona/Como_Funciona.css" rel="stylesheet"
           type="text/css"/>
@@ -96,7 +96,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 </div>
                 <nav class="content-menu">
                     <ul class="menu-ul">
-                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>"> cial</a></li>
+                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>"> Início</a></li>
                         <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 2,'text-bold': <?=$selection?> == 2 , 'color-text-grey-light': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a></li>
                         <!--                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': --><?//=$selection?><!-- == 3,'text-bold': --><?//=$selection?><!-- == 3 , 'color-text-grey-light': --><?//=$selection?><!-- !== 3}"  href="--><?//= base_url('home/funcionamento')?><!--">Como Funciona</a></li>-->
                         <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 4,'text-bold': <?=$selection?> == 4 , 'color-text-grey-light': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>

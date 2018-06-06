@@ -1,6 +1,582 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <style type="text/css">
+    html{
+        overflow-x: hidden;
+    }
+    .slide-content-width{
+        width: 100% !important;
+    }
+    /* Correções de layout */
+    @media screen and (max-width: 768px){
+
+
+        /*MODAL*/
+        .content-login .text-1{
+            margin-top: 0px !important;
+        }
+        .content-login .input{
+            width: 100% !important;
+        }
+        .align-y-center{
+            display: block !important;
+        }
+        #botao_1{
+            width: 94% !important;
+        }
+        #botao_2{
+            width: 94%;
+            padding: 16px 58px !important;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .modal-login {
+            width: 90%  !important;
+            height: 500px;
+            margin-right: 5% !important;
+        }
+        /*FIM MODAL*/
+
+        .width_padrao{
+            width: 100% !important;
+        }
+        #topo{
+            width: 100% !important;
+        }
+
+        /* para mobile */
+        .legt-5{
+            margin-left: 5% !important;
+        }
+        .padding-10{
+            padding-bottom: 10px !important;
+        }
+
+        .header-ul{
+            width: 100%;
+            padding-right: 0%;
+            padding-left: 0%;
+        }
+        .content-logo-header{
+            width: 80px;
+            margin-top: 30px;
+            height: 80px;
+            margin-left: 5px;
+        }
+        .content-btn-header-menu{
+            padding: 0;
+            padding-right: 5px;
+        }
+        .menu-ul{
+            padding-right: 0;
+        }
+
+        #banner{
+            background: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal.png') center center no-repeat !important;
+            background-size: cover !important;
+            background-position-y: 130px !important;
+        }
+
+        .content-right-menu{
+            margin-right: 0;
+            width: 80%;
+        }
+        .content-menu{
+            padding-right: 0 !important;
+        }
+        .menu-li{
+            padding: 14px 10px !important;
+            font-size: 14px !important;
+        }
+        #meu_acesso_botao{
+            font-size: 13px !important;
+            margin-top: 20px !important;
+        }
+        #frase_titulo{
+            width: 80% !important;
+            line-height: 40px;
+            margin-bottom: -20px;
+            margin-top: 120px;
+            font-size: 30px;
+        }
+        .content-module-2{
+            margin-top: 100px;
+        }
+        .content-more-about-text{
+            width: 80%;
+            margin:4px 0px 0px 5%;
+        }
+
+        #clique_aqui{
+            font-size: 12px !important;
+        }
+        #clique_aqui_ancora{
+            margin-top: -60px !important;
+        }
+
+        .content-video-module2{
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 239px;
+            height: 400px;
+
+        }
+
+        .content-text-module2{
+            margin-left: 10%;
+            position: absolute;
+            float: left;
+            line-height: 10px;
+            text-align: center;
+            margin-top: 680px;
+            width: 80%;
+
+        }
+        #como_funciona_keep{
+            line-height: 60px;
+            font-size: 40px;
+        }
+
+        /* Arruma os blocos */
+        .ul-tutorial{
+            display: block !important;
+        }
+        .align-center{
+            display: table !important;
+        }
+        .content-text-and-btn-call{
+            display: block !important;
+        }
+
+
+        #bloco_crie_imagem{
+            background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/online-shop.png') center center no-repeat !important; background-size: 25% !important;
+        }
+        #bloco_mande_imagem{
+            background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/packages.png') center center no-repeat !important; background-size: 25% !important;
+        }
+        #bloco_recebemos_imagem{
+            background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/package.png') center center no-repeat !important; background-size: 25% !important;
+        }
+        #bloco_enviamos_imagem{
+            background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/aviao_entrega.png') center center no-repeat !important; background-size: 25% !important;
+        }
+        .step-icon{
+            height: 60% !important;
+        }
+        .content-module-2{
+            height: 1850px !important;
+        }
+        .content-cadastro-space-modulo2{
+            height: 1850px !important;
+        }
+        .li-step-module2{
+            height: 180px;
+        }
+
+        .ul-step-module2{
+            display: table !important;
+        }
+
+
+
+        .text-1{
+            margin-top: -30px;
+            font-size: 15px !important;
+            line-height: 20px !important;
+        }
+        .slider-margin .text-1{
+            margin-top: 0px !important;
+        }
+
+        #block_display{
+            display: block !important;
+        }
+
+
+
+        .content-text-cadastro-module3{
+            background: #fff !important;
+        }
+
+        .content-align-menu{
+            width: 100%;
+        }
+
+        .text-title-xl{
+            margin-top: 20px;
+            font-size: 25px;
+        }
+        #botao_garanta{
+            width: 95% !important;
+        }
+        #bloco_garanta{
+            background: #fff !important;
+        }
+        #bloco_roxo{
+            margin-top: 320px;
+        }
+        #botao_inscrever{
+            margin: 0 auto !important;
+            font-size: 16px !important;
+        }
+        .content-text-and-btn-call{
+            width: 100% !important;
+        }
+
+        #texto_economizar{
+            width: 100% !important;
+            text-align: center;
+            /*margin-left: 5%;*/
+        }
+
+
+
+
+        .content-simulator{
+            margin-top: 10px !important;
+            width: 95% !important;
+        }
+        .content-left-simulator{
+            width: 100% !important;
+        }
+        .content-right-simulator{
+            width: 95% !important;
+            height: 100px !important;
+            margin-top: -140px;
+        }
+
+
+        .styled-select select{
+            margin-top: 13px !important;
+        }
+        .content-simulator-data-module4{
+            margin-top: 40px !important;
+        }
+        #lbs_margin{
+            margin-top: -40px !important;
+        }
+
+        .content-ul-simulator-data{
+            display: block !important;
+        }
+        .content-li-simulator-data{
+            width: 100% !important;
+        }
+        #alguma_duvida{
+            padding: 0 !important;
+        }
+
+
+        .slide-content-width{
+            width: 80% !important;
+            margin: 0 auto;
+        }
+        .fonte_slide{
+            font-size: 15px !important;
+            text-align: center !important;
+        }
+        .step-icon-2{
+            width: 20px !important;
+        }
+
+        .content-li-info-data{
+            margin-left: 5px !important;
+            width: 80% !important;
+        }
+
+
+        .ytp-cued-thumbnail-overlay-image{
+            background-size: 90%;
+            background-color: #fff !important;
+        }
+
+        #como_funciona_bloco{
+            margin-left: 5%;
+            margin-top: 800px;
+            width: 90% !important;
+        }
+        .content-text-cadastro-module3{
+            padding-left: 24px;
+            margin-top: -260px !important;
+        }
+        .input-cadastro-mini{
+            width: 95% !important;
+        }
+        .input-cadastro{
+            width: 95% !important;
+        }
+
+        .text-title{
+            width: 100%;
+            line-height: 30px;
+        }
+
+
+
+        #outras_duvidas{
+            padding: 0 !important;
+            width: 100%;
+            text-align: center;
+        }
+        .content-outras-duvidas{
+            display: block !important;
+        }
+        #confira_aqui {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 20px;
+        }
+
+
+        .content-video-module2-2{
+            margin-left: 5%;
+            width: 407px;
+            height: 250px;
+        }
+
+
+
+
+        .content-news-banner{
+            margin-left: 0px;
+            margin-top: 246px !important;
+            width: 90% !important;
+            margin-left: 5%;
+        }
+
+        .fique_pordentro_cor{
+            margin-top: -10px;
+            color: #fff !important;
+        }
+        #veja_ultimas{
+            width: 100% !important;
+            margin-top: -60px !important;
+            margin-bottom: -40px !important;
+        }
+
+
+
+
+        .content-footer{
+            height: 300px;
+        }
+        .content-logo-footer{
+            float: right;
+            margin-left: 0;
+            width: 50%;
+            margin-right: 25%;
+        }
+
+        .select_primeiro{
+            width: 35% !important;
+            margin-right: 10px !important;
+            margin-top: -60px !important;
+        }
+        .select_segundo{
+            float: right;
+            width: 60% !important;
+            margin-top: -60px !important;
+        }
+        .content-left-simulator{
+            width: 55%;
+        }
+        .slider-margin{
+            width: 100%;
+        }
+
+        .li-step-module2{
+            width: 100% !important;
+        }
+        .li-step-tutorial{
+            width: 100% !important;
+        }
+        #mapa_site{
+            padding-left: 0 !important;
+            text-align: center;
+        }
+        #termo_condicoes{
+            margin-left: 0;
+            float: left;
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .content-logo-footer{
+            background-position: center !important;
+        }
+        #a_keep{
+            width: 90%
+        }
+    }
+
+
+    @media screen and (max-width: 480px){
+        .img-menu-superior{
+            margin-left: 0 !important;
+        }
+        .header-li a {
+            font-size: 12px !important;
+            padding: 0 !important;
+        }
+        #meu_acesso_botao{
+            margin-top: 30px !important;
+        }
+        .content-logo-header{
+            width: 60px !important;
+            margin-left: 3px;
+        }
+        .content-right-menu{
+            margin-right: 0;
+            width: 80%;
+        }
+        .btn-header-menu {
+            padding: 2px 8px !important;
+        }
+        .content-btn-header-menu{
+            padding-right: 0 !important;
+        }
+        .menu-li{
+            padding: 14px 10px !important;
+            font-size: 13px !important;
+        }
+
+        .content-img-icon-menu{
+            display: none;
+        }
+        .content-more-about-text{
+            width: 100%;
+            margin: 4px 0px 0px 0%;
+        }
+        .content-video-module2 {
+            width: 95%;
+            margin-left: 2.5%;
+            margin-top: 160px;
+            height: 250px;
+        }
+        .text-title-xl{
+            margin-top: 20px;
+            font-size: 19px;
+        }
+        #a_keep {
+            width: 100%;
+        }
+
+        #clique_aqui {
+            padding: 23px 20px;
+            font-size: 13px !important;
+        }
+
+        .ytp-cued-thumbnail-overlay-image{
+            background-size: 100%;
+        }
+        #como_funciona_keep{
+            margin-top: -200px;
+        }
+        .li-step-module2{
+            width: 100% !important;
+        }
+        #como_funciona_bloco {
+            margin-left: 5%;
+            margin-top: 650px;
+            width: 90% !important;
+        }
+        .content-module-2{
+            height: 1700px !important;
+        }
+        .content-cadastro-space-modulo2{
+            height: 1700px !important;
+        }
+        .width100{
+            width: 100% !important;
+        }
+        .li-step-tutorial{
+            width: 100% !important;
+            margin-top: 10px !important;
+        }
+        .font-size-13{
+            font-size: 13px !important;
+            line-height: 20px !important;
+        }
+
+        .li-step-tutorial{
+            padding: 0 !important;
+        }
+        #carteiira{
+            padding: 0 !important;
+        }
+        #fotos_img{
+            margin-left: 3% !important;
+        }
+
+        #bloco_roxo{
+            margin-top: 420px !important;
+        }
+        .content-text-and-btn-call{
+            width: 100% !important;
+        }
+        .legt-5{
+            margin-left: 1% !important;
+        }
+        #outras_duvidas{
+            font-size: 2rem;
+            line-height: 30px;
+            margin-left: 10px;
+        }
+        .content-video-module2-2 {
+            margin-left: 2.5% !important;
+            width: 95% !important;
+            height: 250px !important;
+        }
+        .fique_pordentro_cor{
+            margin-top: 15px;
+            color: #fff !important;
+        }
+        .content-news-banner{
+            margin-top: 219px !important;
+        }
+        #mapa_site{
+            padding-left: 0 !important;
+            text-align: center;
+        }
+        #termo_condicoes{
+            margin-left: 0;
+            float: left;
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        @media screen and (max-width: 400px){
+            .menu-li{
+                padding: 14px 10px !important;
+                font-size: 12px !important;
+            }
+            .content-logo-header{
+                width: 0px !important;
+            }
+            .content-right-menu{
+                margin-right: 0;
+                width: 98%;
+            }
+        }
+
+        @media screen and (max-width: 365px){
+            .content-module-2-sm{
+                height: 400px !important;
+                margin-top: 140px !important;
+            }
+            .content-video-module2-2{
+                margin-top: 30px !important;
+            }
+            .fique_pordentro_cor {
+                margin-top: -20px !important;
+            }
+        }
+
+    }
+
+    /* FIm Correções de layout */
 
 </style>
 

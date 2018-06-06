@@ -938,18 +938,6 @@ html{
     }
 
 
-    #bloco_crie_imagem{
-        background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/online-shop.png') center center no-repeat !important; background-size: 25% !important;
-    }
-    #bloco_mande_imagem{
-        background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/packages.png') center center no-repeat !important; background-size: 25% !important;
-    }
-    #bloco_recebemos_imagem{
-        background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/package.png') center center no-repeat !important; background-size: 25% !important;
-    }
-    #bloco_enviamos_imagem{
-        background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/aviao_entrega.png') center center no-repeat !important; background-size: 25% !important;
-    }
     .step-icon{
         height: 60% !important;
     }
