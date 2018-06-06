@@ -2,22 +2,85 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
 
     $scope.produto = {
         "user": "",
-        "nomeProd": "",
-        "quantidadeProd": "",
-        "pesoProd": "",
+        "prod_nome": "",
+        "prod_quantidade": "",
+        "prod_peso": "",
         "img": ""
 
     }
 
-    $scope.users = []
+    $scope.users = [];
+    $scope.Prods = [];
+
+
+    $http({
+
+        method: 'POST',
+        url: "getProds",
+        headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+    }).then(function (response) {
+
+        $timeout(function () {
+            $('#dataTable').DataTable();
+
+        }, 200)
+
+        $scope.Prods = response.data;
+
+
+        }
+    );
+
+    var $image;
+    var vanilla
+    document.getElementById('picField').onchange = function (evt) {
+        var tgt = evt.target || window.event.srcElement,
+            files = tgt.files;
+
+        // FileReader support
+        if (FileReader && files && files.length) {
+            var fr = new FileReader();
+            fr.onload = function () {
+                document.getElementById("image-crop").src = fr.result;
+                $image = $('#image-crop')[0];
+
+
+                vanilla = new Croppie($image, {
+                    viewport: { width: 300, height: 300 },
+                    boundary: { width: 500, height: 500 },
+                    showZoomer: false,
+                    enableResize: true,
+                    enableOrientation: true,
+                    mouseWheelZoom: 'ctrl'
+                });
+
+
+            }
+            fr.readAsDataURL(files[0]);
+        }
+
+        // Not supported
+        else {
+            // fallback -- perhaps submit the input to an iframe and temporarily store
+            // them on the server until the user's session ends.
+        }
+    }
 
     $scope.setProd = function () {
 
-        console.log($image.data('cropper'))
+        vanilla.result('base64', 'viewport', 'png',1,false).then(function(img) {
+            $scope.produto.img = img;
 
-        $scope.produto.img = $image.data('cropper').url;
+        });
+        $timeout(function(){
+
+
+        $scope.produto.user = $("#user").val();
+
 
         // $scope.produto.img = $scope.produto.img.replace("data:", "")
+
 
         var form_data = new FormData();
 
@@ -36,58 +99,15 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
 
         }).then(function (response) {
 
+            window.location.href = "admProd";
 
             }
         );
+        }, 400);
+
     }
 
-    var $image;
 
-    document.getElementById('picField').onchange = function (evt) {
-        var tgt = evt.target || window.event.srcElement,
-            files = tgt.files;
-
-        // FileReader support
-        if (FileReader && files && files.length) {
-            var fr = new FileReader();
-            fr.onload = function () {
-                document.getElementById("image-crop").src = fr.result;
-                $image = $('#image-crop');
-
-                $image.cropper('destroy');
-
-                $image.cropper({
-                    dragMode: "crop",
-                    aspectRatio: 16 / 9,
-                    responsive: true,
-                    mouseWheelZoom: true,
-                    touchDragZoom: true,
-                    modal: true,
-                    crop: function(event) {
-                        // console.log(event.detail.x);
-                        // console.log(event.detail.y);
-                        // console.log(event.detail.width);
-                        // console.log(event.detail.height);
-                        // console.log(event.detail.rotate);
-                        // console.log(event.detail.scaleX);
-                        // console.log(event.detail.scaleY);
-                        console.log(this.cropper.crop());
-                    }
-                });
-
-// Get the Cropper.js instance after initialized
-
-
-            }
-            fr.readAsDataURL(files[0]);
-        }
-
-        // Not supported
-        else {
-            // fallback -- perhaps submit the input to an iframe and temporarily store
-            // them on the server until the user's session ends.
-        }
-    }
 
 
     $http({

@@ -9,6 +9,7 @@ class Fo_login
      * @var string
      */
     public static $session_name = "fashon_session";
+    public static $session_name2 = "adm_session";
 
     /**
      * Nome da sessão para o nível de acesso de usuário
@@ -238,6 +239,9 @@ class Fo_login
                     $Result['user'] = $checkedUser->user_nome . $checkedUser->user_sobrenome;
                     $Result['id'] = $checkedUser->user_id;
 
+                    $CI->session->set_userdata(self::$session_name2, [
+                        'user_id' => $checkedUser->user_id
+                    ]);
 
                 } else {
                     $Result['text'] = "Usuário ou senha incorretos!";

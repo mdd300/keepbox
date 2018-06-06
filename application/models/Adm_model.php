@@ -20,4 +20,48 @@ class Adm_model extends CI_Model {
             return $this->db->get("tb_user")->result();
     }
 
+    public function getProds_model($data = null){
+
+        $this->db->join("tb_user as u", "u.user_id = prod_user_id_fk");
+        return $this->db->get("tb_produtos")->result();
+
+    }
+
+    public function setProds_model($data = null, $img){
+
+        $user = substr($data['user'],0,5);
+
+
+
+        $this->db->select("user_id");
+        $this->db->where("user_suite", $user);
+        $user = $this->db->get("tb_user")->result();
+
+
+        $insert = array(
+          "prod_nome" => $data['prod_nome'],
+          "prod_quantidade" => $data["prod_quantidade"],
+          "prod_peso" => $data["prod_peso"],
+          "prod_data" => date("d/m/Y"),
+          "prod_user_id_fk" => $user[0]->user_id
+        );
+
+        $this->db->set($insert);
+        $this->db->insert("tb_produtos");
+
+        $prod_id = $this->db->insert_id();
+
+        $img = array(
+            "img_prod_fk" => $prod_id,
+            "img_link" => $img
+        );
+
+        $this->db->set($img);
+        return $this->db->insert("tb_produtos_img");
+    }
+
+    public function getCompra_model ($data){
+        $this->db->join("tb_user as u", "u.user_id = user_id_fk");
+        return $this->db->get("tb_link_compra")->result();
+    }
 }
