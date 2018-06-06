@@ -232,7 +232,7 @@ class Home extends CI_Controller {
     }
     public function easyPost (){
         if(isset($_SESSION['adm_session']['user_id']))
-            $this->load->view('Adm/easyPost');
+            $this->load->view('Adm/easypost');
 
         else {
             $this->load->view('Adm/login');
