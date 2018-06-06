@@ -5,6 +5,8 @@ angular.module('app_landing').controller('index_adm_ctrl', ['$scope', '$http','$
 
     $http({
 
+
+
         method: 'POST',
         url: "getUsers",
         data: $.param({like: $scope.searchUsers, select: ""}),
