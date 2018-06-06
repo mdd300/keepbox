@@ -187,7 +187,7 @@
   <script src="<?= base_url('public/assets/metronic/custom/js/angular/services/pre_cadastro.service.js') ?>"
           type="text/javascript"></script>
   <!--angular pré cadastro -->
-  <script src="<?= base_url('public/assets/metronic/custom/js/angular/controllers/Adm/adminicio.controller.js') ?>"
+  <script src="<?= base_url('public/assets/metronic/custom/js/angular/controllers/Adm/admInicio.controller.js') ?>"
           type="text/javascript"></script>
   </div>
 </body>
