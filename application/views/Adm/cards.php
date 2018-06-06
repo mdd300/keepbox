@@ -139,21 +139,23 @@
             </div>
 
             <!-- Text input-->
-            <div class="ml-4 form-inline col-xl-1">
+            <div class="ml-4 form-group ">
                 <div class=" col-md-6">
 
-                <label class="col-md-1 control-label" for="Quantidade">Quantidade</label>
-                <div class="col-md-2">
+                <label class="col-md-4 control-label" for="Quantidade">Quantidade</label>
+                <div class="col-md-5">
                     <input id="Quantidade" ng-model="produto.prod_quantidade" name="Quantidade" type="text" placeholder="Quantidade" class="form-control input-md" required="">
 
                 </div>
                 </div>
+            </div>
+                <div class="ml-4 form-group ">
 
             <!-- Text input-->
                 <div class="col-md-6">
 
-                <label class="col-md-1 control-label" for="Peso">Peso</label>
-                <div class="col-md-2">
+                <label class="col-md-4 control-label" for="Peso">Peso</label>
+                <div class="col-md-5">
 
                 <input id="Peso" ng-model="produto.prod_peso" name="Peso" type="text" placeholder="Peso" class="form-control input-md" required="">
                 </div>
