@@ -2,7 +2,7 @@
 
 <div class="content-header-duvidas align-center" style="    background-image: url('<?= base_url()?>public/assets/metronic/custom/img/photo/banner_duvidas.jpeg') ;">
     <div class="content-text-header-duvidas">
-    <div class="color-text-white text-title-xl text-font-sans center" >
+    <div class="color-text-white text-title-xl text-title-responsive text-font-sans center" >
         Qual sua dúvida?
     </div>
         <form autocomplete="off">

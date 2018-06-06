@@ -1,6 +1,6 @@
 
 <div class="content-img-top-serv width_padrao">
-    <div class="img-top-serv" style=" background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-servicos.png')">
+    <div class="img-top-serv img-top-serv-responsive" style=" background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-servicos.png')">
     </div>
 </div>
 <div class="content-space-serv align-center">
@@ -9,16 +9,16 @@
 </div>
 </div>
 
-<div class="content-servi basico align-x-center display-block-responsive ">
-    <div class="content-title-left-serv">
-        <div class="text-title-serv text-title-xl text-bold text-font-sans color-text-green">
+<div class="content-servi basico align-x-center display-block-responsive full-width-responsive ">
+    <div class="content-title-left-serv full-width-responsive">
+        <div class="text-title-serv text-title-xl text-title-responsive text-bold text-font-sans color-text-green ">
             Serviços Básicos
         </div>
     </div>
-    <div class="content-text-right-serv full-width-responsive" style="    margin-right: 0 !important;">
+    <div class="content-text-right-serv full-width-responsive" style="    margin-left: 5% !important;">
         <ul class="ul-serv-text ">
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1 text-font-sans">Recebimento de Encomendas <b>(GRÁTIS)</b> </div>
+                <div class="color-text-green text-bold text-1 text-title-sm-responsive text-font-sans">Recebimento de Encomendas <b>(GRÁTIS)</b> </div>
                 <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px">A KeepBox não cobra por pacotes recebidos. Fique à vontade para comprar o quanto quiser nas diversas lojas online dos EUA.</div>
 
             </li>
@@ -47,7 +47,7 @@
 </div>
 
 <div class="align-x-center display-block-responsive">
-<div class="text-title-xl text-bold text-font-sans color-text-green" style="    padding-top: 80px;">
+<div class="text-title-xl text-title-responsive text-bold text-font-sans color-text-green" style="    padding-top: 80px;">
     Serviços Extras
 </div>
 </div>
@@ -84,7 +84,7 @@
         </ul>
     </div>
     <div class="content-text-right-serv full-width-responsive" style="margin-top: 10px !important;">
-        <ul class="ul-serv-text">
+        <ul class="ul-serv-text ">
 
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1 text-font-sans" >Remover inserções, anúncios e extras da loja (GRÁTIS) </div>
@@ -125,41 +125,41 @@
 <div>
     <div style="    margin-top: 100px;">
 
-        <div class="color-text-roxo text-title-xl text-font-sans text-bold center">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
-        <div class="color-text-roxo text-2 text-font-sans center" style="    padding-top: 20px;"> Vamos às compras para você</div>
+        <div class="color-text-roxo text-title-xl text-title-responsive text-font-sans text-bold center">COMPRA ASSISTIDA / PERSONAL SHOPPER</div>
+        <div class="color-text-roxo text-2 text-title-sm-responsive text-font-sans center" style="    padding-top: 20px;"> Vamos às compras para você</div>
 
     </div>
 
-    <div class=" align-center display-block-responsive" style="    margin-top: 60px;">
+    <div class=" align-center display-block-responsive" style="padding-left: 5%;     margin-top: 60px;">
         <div class="">
             <ul class="content-ul-assist-data display-block-responsive">
                 <li class=" content-li-serv content-li-serv-responsive left content-border-simulator-shadow" >
-                    <div class="content-itens-li-serv">
-                        <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="">
+                    <div class="content-itens-li-serv content-itens-li-serv-responsive">
+                        <div class="text-title-xl text-title-responsive color-text-green color-text-green text-bold text-font-sans" style="">
                             US$7.90
                         </div>
-                        <div class="text-title text-title-responsive color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
+                        <div class="text-title text-title-sm-responsive color-text-green text-font-sans text-bold" style="    width: 95%;margin-top: 20px">
                             + 7% do valor das compras
                         </div>
-                        <div style="rgin-left: 20px;" class="text-title text-title-responsive color-text-green text-font-sans text-bold">
+                        <div style="rgin-left: 20px;" class="text-title text-title-sm-responsive color-text-green text-font-sans text-bold">
                             (até US$1.000)
                         </div>
                     </div>
                 </li>
 
                 <li class=" content-li-serv content-li-serv-responsive right content-border-simulator-shadow" style="  ">
-                    <div class="content-itens-li-serv">
+                    <div class="content-itens-li-serv content-itens-li-serv-responsive">
 
-                        <div class="text-title-xl color-text-green color-text-green text-bold text-font-sans" style="   ">
+                        <div class="text-title-xl text-title-responsive color-text-green color-text-green text-bold text-font-sans" style="  ">
                             US$7.90
                         </div>
-                        <div class="text-title text-title-responsive color-text-green text-font-sans text-bold" style="    width: 100%;margin-top: 20px">
+                        <div class="text-title text-title-sm-responsive color-text-green text-font-sans text-bold" style="    width: 95%;margin-top: 20px">
                             + 6% do valor das compras
                         </div>
                         <div style="
-                         width: 115%;
+                         width: 100%;
     text-align: left;    max-height: 80px;"
-                             class="text-title text-title-responsive color-text-green text-font-sans text-bold">
+                             class="center-text-responsive text-title text-title-sm-responsive color-text-green text-font-sans text-bold">
                             (acima de US$1.000)
                         </div>
                     </div>
@@ -169,7 +169,7 @@
     </div>
 
     <div style=" margin-top: 40px;" class="width-content align-x-center">
-        <div style="width: 65%" class="text-font-sans center  color-text-grey-light text-1 padding-text">
+        <div style="width: 75%" class="text-font-sans center  color-text-grey-light text-1 text-md-responsive padding-text">
             Pensando em seu conforto, se preferir, realizamos as compras para você! Basta nos enviar os links dos produtos desejados.
 <br><br>
             A Compra Assistida é o método preferido dos clientes que ainda não possuem cartão de crédito internacional ou têm dificuldades com o inglês e/ou com os sites internacionais ou, simplesmente, não querem perder tempo com as pesquisas e burocracias das compras.
@@ -177,37 +177,37 @@
     </div>
 
     <div style=" margin-top: 80px;"  class="width-content align-x-center">
-        <div style=" width: 65%" class="width-content align-x-center">
-            <div class="color-text-roxo center text-bold text-title text-font-sans">Como funciona o serviço <br> Compra Assistida (Personal Shopper)</div>
+        <div style=" width: 75%" class="width-content align-x-center">
+            <div class="color-text-roxo center text-bold text-title text-title-sm-responsive text-font-sans">Como funciona o serviço <br> Compra Assistida (Personal Shopper)</div>
         </div>
     </div>
 
     <div style=" margin-top: 20px;"  class="width-content align-x-center">
-        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
-            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>1 - </b>Você nos envia quais itens deseja comprar, quantidade e tamanho.</div>
+        <div style=" margin-top: 20px;width: 75%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1 text-md-responsive  center padding-text text-font-sans" style="padding-top: 10px"><b>1 - </b>Você nos envia quais itens deseja comprar, quantidade e tamanho.</div>
         </div>
     </div>
 
     <div style=" margin-top: 20px;" id="compra-assistida" class="width-content align-x-center">
-        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
-            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>2 - </b>Nós faremos um orçamento completo para você e lhe enviaremos para aprovação.</div>
+        <div style=" margin-top: 20px;width: 75%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1 text-md-responsive center padding-text text-font-sans" style="padding-top: 10px"><b>2 - </b>Nós faremos um orçamento completo para você e lhe enviaremos para aprovação.</div>
         </div>
     </div>
 
     <div style=" margin-top: 20px;" class="width-content align-x-center">
-        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
-            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>3 - </b>Após sua aprovação, iremos às compras para você! Compraremos tudo que você pediu e cadastramos tudo em sua conta KeepBox para você conferir e acompanhar suas compras.</div>
+        <div style=" margin-top: 20px;width: 75%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1 text-md-responsive  center padding-text text-font-sans" style="padding-top: 10px"><b>3 - </b>Após sua aprovação, iremos às compras para você! Compraremos tudo que você pediu e cadastramos tudo em sua conta KeepBox para você conferir e acompanhar suas compras.</div>
         </div>
     </div>
 
     <div style=" margin-top: 20px;" class="width-content align-x-center">
-        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
-            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><b>4 - </b>Então, unificaremos tudo que você desejar em uma só caixa, você seleciona os serviços extras que deseja e nós enviamos tudo para seu endereço no Brasil.</div>
+        <div style=" margin-top: 20px;width: 75%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1 text-md-responsive  center padding-text text-font-sans" style="padding-top: 10px"><b>4 - </b>Então, unificaremos tudo que você desejar em uma só caixa, você seleciona os serviços extras que deseja e nós enviamos tudo para seu endereço no Brasil.</div>
         </div>
     </div>
 
     <div style=" margin-top: 20px;" class="width-content align-x-center">
-        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
+        <div style=" margin-top: 20px;width: 75%" class="width-content align-x-center">
             <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><a class="color-text-green text-bold" ng-click="verifySession()" style="cursor: pointer">Acesse sua conta</a> ou <a  style="cursor: pointer" class="color-text-roxo text-bold" href="<?= base_url('home/cadastroPage')?>">Cadastre-se</a> para começar sua Compra Assistida</div>
         </div>
     </div>
@@ -215,28 +215,28 @@
 
     <div style=" margin-top: 140px;" class="width-content align-x-center">
 
-    <div style=" width: 65%" class="width-content align-x-center">
-        <div class="color-text-roxo center text-bold text-title text-font-sans">Retirada de Encomendas em nosso armazém  <br>(US$3,00 por pacote recebido) </div>
+    <div style=" width: 75%" class="width-content align-x-center">
+        <div class="color-text-roxo center text-bold text-title text-title-sm-responsive text-font-sans">Retirada de Encomendas em nosso armazém  <br>(US$3,00 por pacote recebido) </div>
     </div>
     </div>
 
     <div style=" margin-top: 20px;" class="width-content align-x-center">
 
-    <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
-        <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px">Você pode retirar suas compras pessoalmente em nosso endereço (Florida, USA) até 60 dias após o recebimento da primeira encomenda. Assim, você pode começar suas compras antes de viajar e retira-las com segurança ao chegar nos EUA. Muitos hotéis não recebem compras de hóspedes, e quando recebem, cobram caro por este serviço. </div>
+    <div style=" margin-top: 20px;width: 75%" class="width-content align-x-center">
+        <div class="color-text-grey-light text-1 text-md-responsive center padding-text text-font-sans" style="padding-top: 10px">Você pode retirar suas compras pessoalmente em nosso endereço (Florida, USA) até 60 dias após o recebimento da primeira encomenda. Assim, você pode começar suas compras antes de viajar e retira-las com segurança ao chegar nos EUA. Muitos hotéis não recebem compras de hóspedes, e quando recebem, cobram caro por este serviço. </div>
     </div>
     </div>
 
                 <div style=" margin-top: 20px;" class="width-content align-x-center">
 
-                <div style=" margin-top: 40px;width: 65%" class="width-content align-x-center">
-        <div class="color-text-roxo text-bold center text-title text-font-sans" >Entregamos em seu hotel</div>
+                <div style=" margin-top: 40px;width: 75%" class="width-content align-x-center">
+        <div class="color-text-roxo text-bold center text-title text-title-sm-responsive text-font-sans" >Entregamos em seu hotel</div>
     </div>
                 </div>
     <div style=" margin-top: 20px;" class="width-content align-x-center">
 
-        <div style=" margin-top: 20px;width: 65%" class="width-content align-x-center">
-            <div class="color-text-grey-light text-1 center padding-text text-font-sans"style="padding-top: 10px" >Consulte-nos disponibilidade e valores.</div>
+        <div style=" margin-top: 20px;width: 75%" class="width-content align-x-center">
+            <div class="color-text-grey-light text-1 text-md-responsive center padding-text text-font-sans"style="padding-top: 10px" >Consulte-nos disponibilidade e valores.</div>
         </div>
     </div>
 
