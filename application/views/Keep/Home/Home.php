@@ -9,7 +9,12 @@
     }
     /* Correções de layout */
     @media screen and (max-width: 768px){
-
+        .alinhar_centro{
+            text-align: center;
+        }
+        .content-footer{
+            margin-top: 540px !important;
+        }
 
         /*MODAL*/
         .content-login .text-1{
@@ -50,7 +55,7 @@
             margin-left: 5% !important;
         }
         .padding-10{
-            padding-bottom: 10px !important;
+            padding-bottom: 25px !important;
         }
 
         .header-ul{
@@ -97,20 +102,20 @@
             width: 80% !important;
             line-height: 40px;
             margin-bottom: -20px;
-            margin-top: 120px;
+            margin-top: 160px;
             font-size: 30px;
         }
         .content-module-2{
-            margin-top: 100px;
+            height: 400px !important;
         }
         .content-more-about-text{
             width: 80%;
-            margin:4px 0px 0px 5%;
+            margin:100px 0px 0px 5%;
         }
 
-        #clique_aqui{
+        /*#clique_aqui{
             font-size: 12px !important;
-        }
+        }*/
         #clique_aqui_ancora{
             margin-top: -60px !important;
         }
@@ -118,7 +123,7 @@
         .content-video-module2{
             width: 80%;
             margin-left: 10%;
-            margin-top: 239px;
+            margin-top: 300px;
             height: 400px;
 
         }
@@ -134,6 +139,7 @@
 
         }
         #como_funciona_keep{
+            margin-top: 50px;
             line-height: 60px;
             font-size: 40px;
         }
@@ -183,8 +189,8 @@
 
         .text-1{
             margin-top: -30px;
-            font-size: 15px !important;
-            line-height: 20px !important;
+            font-size: 1.5em !important;
+            line-height: 25px !important;
         }
         .slider-margin .text-1{
             margin-top: 0px !important;
@@ -194,7 +200,10 @@
             display: block !important;
         }
 
-
+        .content-text-tutorial {
+            padding: 25px 0px !important;
+            padding-left: 32px !important;
+        }
 
         .content-text-cadastro-module3{
             background: #fff !important;
@@ -205,6 +214,7 @@
         }
 
         .text-title-xl{
+            text-align: center;
             margin-top: 20px;
             font-size: 25px;
         }
@@ -220,6 +230,7 @@
         #botao_inscrever{
             margin: 0 auto !important;
             font-size: 16px !important;
+            padding: 16px 40px !important;
         }
         .content-text-and-btn-call{
             width: 100% !important;
@@ -232,6 +243,12 @@
         }
 
 
+        #venha_conhecer{
+            margin: 0 auto !important;
+            margin-top: 70px  !important;
+            width: 80%  !important;
+            margin-left: 10%  !important;
+        }
 
 
         .content-simulator{
@@ -255,6 +272,7 @@
             margin-top: 40px !important;
         }
         #lbs_margin{
+            text-align: center;
             margin-top: -40px !important;
         }
 
@@ -274,7 +292,7 @@
             margin: 0 auto;
         }
         .fonte_slide{
-            font-size: 15px !important;
+            font-size: 1.5em !important;
             text-align: center !important;
         }
         .step-icon-2{
@@ -282,7 +300,9 @@
         }
 
         .content-li-info-data{
-            margin-left: 5px !important;
+            width: 100% !important;
+        }
+        #slide{
             width: 80% !important;
         }
 
@@ -299,7 +319,7 @@
         }
         .content-text-cadastro-module3{
             padding-left: 24px;
-            margin-top: -260px !important;
+            margin-top: -160px !important;
         }
         .input-cadastro-mini{
             width: 95% !important;
@@ -331,8 +351,9 @@
 
 
         .content-video-module2-2{
-            margin-left: 5%;
-            width: 407px;
+            margin-top: 30px !important;
+            margin-left: 10%;
+            width: 80%;
             height: 250px;
         }
 
@@ -347,10 +368,12 @@
         }
 
         .fique_pordentro_cor{
-            margin-top: -10px;
+            text-align: center;
+            margin-top: -35px;
             color: #fff !important;
         }
         #veja_ultimas{
+            text-align: center;
             width: 100% !important;
             margin-top: -60px !important;
             margin-bottom: -40px !important;
@@ -360,24 +383,25 @@
 
 
         .content-footer{
-            height: 300px;
+            height: 200px;
         }
         .content-logo-footer{
             float: right;
             margin-left: 0;
             width: 50%;
             margin-right: 25%;
+            margin-top: 50px !important;
         }
 
         .select_primeiro{
             width: 35% !important;
             margin-right: 10px !important;
-            margin-top: -60px !important;
+            margin-top: -45px !important;
         }
         .select_segundo{
             float: right;
             width: 60% !important;
-            margin-top: -60px !important;
+            margin-top: -45px !important;
         }
         .content-left-simulator{
             width: 55%;
@@ -408,6 +432,9 @@
         }
         #a_keep{
             width: 90%
+        }
+        .content-li-info-data{
+            text-align: center !important;
         }
     }
 
@@ -447,32 +474,36 @@
         }
         .content-more-about-text{
             width: 100%;
-            margin: 4px 0px 0px 0%;
+            margin: 100px 0px 0px 0%;
         }
         .content-video-module2 {
             width: 95%;
             margin-left: 2.5%;
-            margin-top: 160px;
+            margin-top: 260px;
             height: 250px;
         }
         .text-title-xl{
             margin-top: 20px;
-            font-size: 19px;
+            font-size: 3.8rem;
+            margin-bottom: 30px;
         }
         #a_keep {
             width: 100%;
         }
 
         #clique_aqui {
-            padding: 23px 20px;
-            font-size: 13px !important;
+            margin-top: 100px;
+            margin-left: 5%;
+            width: 90%;
+            padding: 23px 40px;
+            /* font-size: 13px !important;*/
         }
 
         .ytp-cued-thumbnail-overlay-image{
             background-size: 100%;
         }
         #como_funciona_keep{
-            margin-top: -200px;
+            margin-top: -140px;
         }
         .li-step-module2{
             width: 100% !important;
@@ -496,8 +527,8 @@
             margin-top: 10px !important;
         }
         .font-size-13{
-            font-size: 13px !important;
-            line-height: 20px !important;
+            font-size: 1.5em !important;
+            line-height: 27px !important;
         }
 
         .li-step-tutorial{
@@ -530,11 +561,12 @@
             height: 250px !important;
         }
         .fique_pordentro_cor{
+            text-align: center;
             margin-top: 15px;
             color: #fff !important;
         }
         .content-news-banner{
-            margin-top: 219px !important;
+            margin-top: 190px !important;
         }
         #mapa_site{
             padding-left: 0 !important;
@@ -548,6 +580,12 @@
             text-align: center;
         }
         @media screen and (max-width: 400px){
+            #bloco_roxo {
+                margin-top: 480px !important;
+            }
+            .fique_pordentro_cor{
+                margin-top: 5px !important
+            }
             .menu-li{
                 padding: 14px 10px !important;
                 font-size: 12px !important;
@@ -562,16 +600,20 @@
         }
 
         @media screen and (max-width: 365px){
+            #bloco_roxo{
+                margin-top: 550px !important;
+            }
             .content-module-2-sm{
                 height: 400px !important;
-                margin-top: 140px !important;
+                margin-top: 300px !important;
             }
             .content-video-module2-2{
                 margin-top: 30px !important;
             }
-            .fique_pordentro_cor {
-                margin-top: -20px !important;
-            }
+            .fique_pordentro_cor
+            text-align: center; {
+            margin-top: -20px !important;
+        }
         }
 
     }
@@ -848,7 +890,7 @@
                 </div>
             </div>
             <div class="content-right-simulator ">
-                <div style="    margin-top: 38px; " class="color-text-roxo text-1-sm text-font-sans"> {{range_simulator_home}} Lbs = {{range_simulator_home_kg}} Kg</div>
+                <div style="    margin-top: 38px; " class="alinhar_centro color-text-roxo text-1-sm text-font-sans"> {{range_simulator_home}} Lbs = {{range_simulator_home_kg}} Kg</div>
                 <div class="slider-margin" >
                     <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 1" id="lbs_margin" style="padding: 0px 0px; width: auto;     background-color: #f9f9f9 !important;"> {{range_simulator_home}} Lbs</li>
                     <li class="li-step-tutorial text-1" ng-show="select_lbs_kg == 1" style="float: right; padding: 0px 0px;     background-color: #f9f9f9 !important; width: auto"> 66</li>
@@ -986,7 +1028,7 @@
             <div  class="text-1 color-text-white"  style="    padding-top: 60px;
         width: 700px;" id="veja_ultimas"> Veja as últimas notícias sobre os segredos das importações no Youtube da KeepBox </div>
 
-            <button style="margin-top: 45px;" class="btn-config-2 shadow-btn-roxo color-background-roxo color-text-white text-1-sm" >Venha conhecer </button>
+            <button style="margin-top: 45px;" class="btn-config-2 shadow-btn-roxo color-background-roxo color-text-white text-1-sm" id="venha_conhecer">Venha conhecer </button>
         </div>
 
 
