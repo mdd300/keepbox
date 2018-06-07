@@ -4,18 +4,18 @@
     </div>
 </div>
 <div class="content-space-serv align-center">
-<div class="text-title-serv text-title-xl color-text-white text-font-sans">
+<div class="text-title-serv text-title-xl color-text-white text-font-sans title-fix" >
     <b>Serviços</b> & <b>Preços</b>
 </div>
 </div>
 
-<div class="content-servi basico align-x-center display-block-responsive full-width-responsive ">
+<div class="content-servi basico align-x-center display-block-responsive full-width-responsive  ">
     <div class="content-title-left-serv content-title-left-serv-responsive full-width-responsive">
         <div class="text-title-serv text-title-xl text-title-serv-responsive text-bold text-font-sans color-text-green ">
             Serviços Básicos
         </div>
     </div>
-    <div class="content-text-right-serv full-width-responsive" style="    margin-left: 5% !important;">
+    <div class="content-text-right-serv full-width-responsive padding-top-1-responsive" style="    margin-left: 5% ;">
         <ul class="ul-serv-text ">
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1-sm text-font-sans">Recebimento de Encomendas <b>(GRÁTIS)</b> </div>
@@ -51,7 +51,7 @@
     Serviços Extras
 </div>
 </div>
-<div class="align-x-center display-block-responsive ">
+<div class="padding-top-2-responsive align-x-center display-block-responsive ">
     <div  class="color-text-grey-light text-1-sm padding-text text-font-sans servi-extra-text servi-extra-text-responsive full-width-2-responsive
     padding-left-2-responsive" style="padding-top: 15px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
 
