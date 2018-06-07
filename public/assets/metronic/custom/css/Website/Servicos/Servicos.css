@@ -6,8 +6,8 @@
         background-size: cover;
      }
 
-     .text-title-responsive{
-        font-size: 3.8rem !important ;
+     .text-title-serv-responsive{
+        font-size: 2.5rem !important ;
         line-height: 40px !important;
         font-family: Circe ;
     }
@@ -37,6 +37,10 @@
 
        .padding-top-1-responsive{
         padding-top:1% !important;
+    }
+
+    .padding-left-1-responsive{
+        padding-left: 6% !important;
     }
      .padding-left-2-responsive{
         padding-left: 10% !important;
@@ -96,6 +100,10 @@
     }
     .full-width-responsive{
         width: 95% !important;
+        /* margin-top: 80px; */
+    }
+    .full-width-2-responsive{
+        width: 80% !important;
         /* margin-top: 80px; */
     }
     .content-servi.basico {
