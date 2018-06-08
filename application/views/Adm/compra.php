@@ -110,7 +110,7 @@
                 </tr>
               </tfoot>
               <tbody>
-                <tr class="pointer" ng-repeat="link in compra" data-toggle="modal" data-target="#CompraAssistida" ng-click="selectUser(link.user_id, link.link_id)">
+                <tr style="cursor: pointer" class="pointer" ng-repeat="link in compra" data-toggle="modal" data-target="#CompraAssistida" ng-click="selectUser(link.user_id, link.link_id)">
                   <td class="pointer">{{link.user_suite+" "+link.user_nome + " " + link.user_sobrenome}}</td>
                   <td class="pointer">{{link.user_email}}</td>
                   <td class="pointer">{{link.link_enviado}}</td>
