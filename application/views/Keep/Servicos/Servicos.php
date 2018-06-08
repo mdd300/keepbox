@@ -18,26 +18,26 @@
     <div class="content-text-right-serv full-width-responsive padding-top-1-responsive" style="    margin-left: 5% ;">
         <ul class="ul-serv-text ">
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans">Recebimento de Encomendas <b>(GRÁTIS)</b> </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px">A KeepBox não cobra por pacotes recebidos. Fique à vontade para comprar o quanto quiser nas diversas lojas online dos EUA.</div>
+                <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans">Recebimento de Encomendas <b>(GRÁTIS)</b> </div>
+                <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans" style="padding-top: 10px">A KeepBox não cobra por pacotes recebidos. Fique à vontade para comprar o quanto quiser nas diversas lojas online dos EUA.</div>
 
             </li>
 
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans" >Armazenamento de Encomendas <b>(GRÁTIS)</b></div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"
+                <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans" >Armazenamento de Encomendas <b>(GRÁTIS)</b></div>
+                <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans" style="padding-top: 10px"
                 >A KeepBox recebe e armazena suas compras por até 60 dias completamente grátis.
                     <br> <br> - Se precisar de mais 30 dias, contrate o Armazenamento Extra (Taxa fixa: US$5 + US$1 por dia)
                     <br>- Após 90 dias, as encomendas serão vendidas, doadas ou descartadas.</div>
             </li>
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans" >Empacotamento de Encomendas <b>(GRÁTIS)</b> </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
+                <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans" >Empacotamento de Encomendas <b>(GRÁTIS)</b> </div>
+                <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans"style="padding-top: 10px" >A KeepBox junta as suas compras em um único pacote para você economizar no frete, pagando um único envio.</div>
 
             </li>
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans" >Envio de Encomendas </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >Taxa KeepBox: Apenas US$12,90<br>
+                <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans" >Envio de Encomendas </div>
+                <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans"style="padding-top: 10px" >Taxa KeepBox: Apenas US$12,90<br>
                     FRETE USPS: Tabela padrão da USPS (Correio Americano)<br>
                     Simule o preço do envio em nossa <div class="color-text-green text-bold" style="cursor: pointer;     display: initial;" id="myBtn">CALCULADORA DE ENVIO</div> </div>
 
@@ -52,7 +52,7 @@
 </div>
 </div>
 <div class="padding-top-2-responsive align-x-center display-block-responsive ">
-    <div  class="color-text-grey-light text-1-sm padding-text text-font-sans servi-extra-text servi-extra-text-responsive full-width-2-responsive
+    <div  class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans servi-extra-text servi-extra-text-responsive full-width-2-responsive
     padding-left-2-responsive" style="padding-top: 15px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
 
 </div>
@@ -62,26 +62,30 @@ padding-left-2-responsive">
         <ul class="ul-serv-text ">
 
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans">Adesivar toda a Caixa / Proteção completa <b>(US$2,00)</b> </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px">Previne que suas mercadorias se molhem e que a caixa se danifique durante a viagem.</div>
+                <div class="color-text-green text-bold text-1-sm 
+                text-title-sm-responsive text-font-sans">Adesivar toda a Caixa / Proteção completa <b>(US$2,00)</b> </div>
+                <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans" style="padding-top: 10px">Previne que suas mercadorias se molhem e que a caixa se danifique durante a viagem.</div>
             </li>
 
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans" >Acomodar itens frágeis em plástico bolha <b>(US$1,00)</b>
+                <div class="color-text-green text-bold text-1-sm 
+                text-title-sm-responsive text-font-sans" >Acomodar itens frágeis em plástico bolha <b>(US$1,00)</b>
                 </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans" style="padding-top: 10px"
+                <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans" style="padding-top: 10px"
                 >Evita prejuízos, afinal sua caixa passará por muitos caminhos até chegar ao seu destino.</div>
 
             </li>
 
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans" >Seguro KeepBox <b>(3% do valor declarado)</b> </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >Mais segurança às suas compras e garantia de cobertura do valor declarado.</div>
+                <div class="color-text-green text-bold text-1-sm 
+                text-title-sm-responsive
+                text-font-sans" >Seguro KeepBox <b>(3% do valor declarado)</b> </div>
+                <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans"style="padding-top: 10px" >Mais segurança às suas compras e garantia de cobertura do valor declarado.</div>
 
             </li>
 
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans" >Retirar preços das etiquetas <b>(GRÁTIS)</b> </div>
+                <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans" >Retirar preços das etiquetas <b>(GRÁTIS)</b> </div>
             </li>
         </ul>
     </div>
@@ -89,23 +93,23 @@ padding-left-2-responsive">
         <ul class="ul-serv-text ">
 
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans" >Remover inserções, anúncios e extras da loja (GRÁTIS) </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >Reduz o peso da sua caixa, tornando o frete mais econômico.</div>
+                <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans" >Remover inserções, anúncios e extras da loja (GRÁTIS) </div>
+                <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans"style="padding-top: 10px" >Reduz o peso da sua caixa, tornando o frete mais econômico.</div>
             </li>
 
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans" >Retirar caixas originais (GRÁTIS) </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >Também reduz o peso do frete além de facilitar a acomodação de demais itens.</div>
+                <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans" >Retirar caixas originais (GRÁTIS) </div>
+                <div class="color-text-grey-light text-1-sm  text-text-sm-responsive padding-text text-font-sans"style="padding-top: 10px" >Também reduz o peso do frete além de facilitar a acomodação de demais itens.</div>
             </li>
 
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans" >Retirar fatura original (Invoice) (GRÁTIS) </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >Retirar a fatura, poupará espaço na sua caixa e não lhe trará nenhum problema, afinal, este é o mesmo documento que você recebe da loja online no momento da compra</div>
+                <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans" >Retirar fatura original (Invoice) (GRÁTIS) </div>
+                <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans"style="padding-top: 10px" >Retirar a fatura, poupará espaço na sua caixa e não lhe trará nenhum problema, afinal, este é o mesmo documento que você recebe da loja online no momento da compra</div>
             </li>
 
             <li class="li-serv-text">
-                <div class="color-text-green text-bold text-1-sm text-font-sans" >Seguro Básico (GRÁTIS)  </div>
-                <div class="color-text-grey-light text-1-sm padding-text text-font-sans"style="padding-top: 10px" >Este seguro cobre apenas caixas com valor declarado de até US$200,00 (Seguro oferecido pela USPS)</div>
+                <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans" >Seguro Básico (GRÁTIS)  </div>
+                <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans"style="padding-top: 10px" >Este seguro cobre apenas caixas com valor declarado de até US$200,00 (Seguro oferecido pela USPS)</div>
             </li>
 
         </ul>
