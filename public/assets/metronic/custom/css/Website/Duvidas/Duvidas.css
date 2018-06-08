@@ -8,7 +8,7 @@
 
     .text-title-2-responsive{
         font-size: 1.5rem !important ;
-        line-height: 30px !important;
+        line-height: 20px !important;
         font-family: Circe ;
     }
 
@@ -20,8 +20,8 @@
 
 
     .title-fix-duv{
-        margin-top: 60% !important;
-        padding-left: 20% !important;
+        margin-top: 70% !important;
+        padding-left: 6% !important;
     }
 
     .content-header-duvidas{
@@ -109,7 +109,7 @@
     .input-duvidas{
         border: 0px solid;
         border-bottom: 1px solid white;
-        width: 80%;
+        width: 90%;
         margin-top: 100px;
         text-align: center;background: transparent;
     }
