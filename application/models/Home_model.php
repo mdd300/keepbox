@@ -145,6 +145,8 @@ class Home_model extends CI_Model {
                );
                $this->db->set($insert);
                $this->db->set("user_id_fk", $id);
+               $this->db->set("link_status", "Aguardando Orçamento");
+               $this->db->set("link_data", date('d/m/Y ', time()));
                $this->db->insert("tb_link_compra");
            }
            $this->db->where("user_id", $id);

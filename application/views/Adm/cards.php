@@ -108,7 +108,7 @@
                             <td>{{prod.prod_nome}}</td>
                             <td>{{prod.prod_data}}</td>
                             <td>{{prod.prod_quantidade}}</td>
-                            <td>{{prod.prod_peso}}</td>
+                            <td>{{prod.prod_peso}} Lbs</td>
                         </tr>
 
                         </tbody>

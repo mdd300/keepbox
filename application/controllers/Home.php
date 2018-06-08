@@ -401,4 +401,28 @@ class Home extends CI_Controller {
             return $return;
         }
     }
+
+    public function setCompraValor($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $this->load->model('Adm_model');
+
+        $return = $this->Adm_model->setCompraValor_model($Data);
+
+
+        $this->load->library('Fo_api');
+        if (Fo_api::sendEmail_compraValor($return->user_nome, $return->user_email, $Data))
+            $retorno['success'] = true;
+
+        if ($Output == true) {
+            echo json_encode($return);
+        } else {
+            return $return;
+        }
+    }
 }

@@ -64,4 +64,17 @@ class Adm_model extends CI_Model {
         $this->db->join("tb_user as u", "u.user_id = user_id_fk");
         return $this->db->get("tb_link_compra")->result();
     }
+
+    public function setCompraValor_model($data){
+        $this->db->set($data);
+        $this->db->set("compra_cod", uniqid());
+        $this->db->insert("tb_compra_assistida");
+
+        $this->db->where("link_id",$data['link_id_fk']);
+        $this->db->set("link_status","Orçamento Realizado");
+        $this->db->update("tb_link_compra");
+
+        $this->db->where("user_id",$data['user_id_fk']);
+        return $this->db->get("tb_user")->result()[0];
+    }
 }

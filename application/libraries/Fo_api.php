@@ -154,6 +154,51 @@ class Fo_api
 
     }
 
+    public static function sendEmail_compraValor($nome,$email, $Data)
+    {
+        $CI = &get_instance();
+
+        $CI->load->library(['Fo_email']);
+
+
+        $msg = '<div style="width: 800px">
+<img style="margin-left: 160px;" width="250" height="125" src="'.base_url("public/assets/metronic/custom/img/LOGOTIPO.png").'">
+
+    <div style="
+     padding: 30px 0px;
+     font-size: 3rem;
+    font-weight: bold;
+    width: 100%;
+    margin-left: 120px;
+    height: auto;
+    color: #a9d046;
+    font-family:Multicolore;">
+        Obrigado!
+    </div>
+    <img height="290" width="600" style="margin-left 100px; border-radius: 20px" src="'.base_url("public/assets/metronic/custom/img/photo/banner_email.jpg").'">
+'
+            .'<div style=" widt:80%; padding: 20px 0px;">'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;display: inline-flex""> Olá <div style="color: #a9d046; font-weight: bold;display: inline-flex; "> &nbsp;'.$nome.'</div></p>'
+            . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Aqui esta o orçamento da sua compra assistida:</p>'
+        ;
+            $msg = $msg
+                . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Produto: '. $Data["compra_produto"] .'</p>'
+                . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Taxas Cambiais: R$'. $Data["compra_taxas_cambiais"] .'</p>'
+                . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Taxa de Comra: R$'. $Data["compra_taxa"] .'</p>'
+                . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Frete Keepbox: R$'. $Data["compra_frete_keep"] .'</p>'
+                . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;"> Total: R$'. $Data["compra_total"] .'</p>';
+        $msg = $msg . '<p style="color:#696969;font-size:15px;font-family:Multicolore;margin:0px;">Obrigado por escolher a Keepbox.</p>'
+            . '</p></div>'
+            . '</div></div>';
+        $Data['to'] = $email;
+        $Data['name'] = 'Keepbox';
+        $Data['html'] = $msg;
+        $Data['subject'] = 'Recebemos o seu link';
+
+        $resp_email = Fo_email::from_system($Data);
+
+    }
+
     public static function novo_cod($email, $code)
     {
 

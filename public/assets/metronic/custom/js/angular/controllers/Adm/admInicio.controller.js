@@ -107,6 +107,19 @@ angular.module('app_landing').controller('compra_adm_ctrl', ['$scope', '$http','
 
 
     $scope.compra = [];
+    $scope.userSelected = "";
+    $scope.linkSelected = "";
+    $scope.compraSet = {
+        "compra_produto": "",
+        "compra_taxas_cambiais": "",
+        "compra_taxa": "",
+        "compra_frete_keep": "",
+        "compra_total": "",
+        "user_id_fk": $scope.userSelected,
+        "link_id_fk": $scope.linkSelected
+    };
+
+
 
     $http({
 
@@ -128,6 +141,30 @@ angular.module('app_landing').controller('compra_adm_ctrl', ['$scope', '$http','
         }
     );
 
+    $scope.selectUser = function (id,link) {
+        $scope.userSelected = id;
+        $scope.linkSelected = link;
 
+        console.log($scope.userSelected)
+
+    }
+
+    $scope.sendCompra = function () {
+        $scope.compraSet.user_id_fk = $scope.userSelected;
+            $scope.compraSet.link_id_fk =   $scope.linkSelected
+        $http({
+
+            method: 'POST',
+            url: "setCompraValor",
+            data: $.param($scope.compraSet),
+            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+        }).then(function (response) {
+
+                window.location.href = "CompraAssistida";
+
+            }
+        )
+    }
 
 }]);

@@ -95,6 +95,8 @@
                     <th>E-mail</th>
                     <th>Link</th>
                   <th>Quantidade</th>
+                    <th>Status</th>
+                    <th>Data</th>
                 </tr>
               </thead>
               <tfoot>
@@ -103,14 +105,18 @@
                     <th>E-mail</th>
                     <th>Link</th>
                     <th>Quantidade</th>
+                    <th>Status</th>
+                    <th>Data</th>
                 </tr>
               </tfoot>
               <tbody>
-                <tr ng-repeat="link in compra">
-                  <td>{{+link.user_suite+" "+link.user_nome + " " + link.user_sobrenome}}</td>
-                  <td>{{link.user_email}}</td>
-                  <td>{{link.link_enviado}}</td>
-                    <td>{{link.link_quantidade}}</td>
+                <tr class="pointer" ng-repeat="link in compra" data-toggle="modal" data-target="#CompraAssistida" ng-click="selectUser(link.user_id, link.link_id)">
+                  <td class="pointer">{{link.user_suite+" "+link.user_nome + " " + link.user_sobrenome}}</td>
+                  <td class="pointer">{{link.user_email}}</td>
+                  <td class="pointer">{{link.link_enviado}}</td>
+                  <td class="pointer">{{link.link_quantidade}}</td>
+                    <td class="pointer">{{link.link_status}}</td>
+                    <td class="pointer">{{link.link_data}}</td>
 
                 </tr>
 
@@ -151,6 +157,73 @@
         </div>
       </div>
     </div>
+
+      <div class="modal fade" id="CompraAssistida" tabindex="-1" role="dialog" aria-labelledby="CompraAssistida" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+          <form class="form-horizontal">
+              <fieldset>
+
+                  <!-- Form Name -->
+                  <legend>Compra Assistida</legend>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                      <label class="col-md-4 control-label" for="compra_produto">Nome do Produto</label>
+                      <div class="col-md-6">
+                          <input ng-model="compraSet.compra_produto" name="compra_produto" type="text" placeholder="Nome" class="form-control input-md" required="">
+                      </div>
+                  </div>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                      <label class="col-md-4 control-label" for="compra_taxas_cambiais">Taxas Cambiais</label>
+                      <div class="col-md-6">
+                          <input ng-model="compraSet.compra_taxas_cambiais" name="compra_taxas_cambiais" type="text" placeholder="Taxas" class="form-control input-md">
+
+                      </div>
+                  </div>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                      <label class="col-md-4 control-label" for="compra_taxa">Taxa de Compra</label>
+                      <div class="col-md-6">
+                          <input ng-model="compraSet.compra_taxa" name="compra_taxa" type="text" placeholder="Compra" class="form-control input-md">
+
+                      </div>
+                  </div>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                      <label class="col-md-4 control-label" for="compra_frete_keep">Frete Keepbox</label>
+                      <div class="col-md-6">
+                          <input ng-model="compraSet.compra_frete_keep" name="compra_frete_keep" type="text" placeholder="Frete" class="form-control input-md">
+
+                      </div>
+                  </div>
+
+                  <!-- Text input-->
+                  <div class="form-group">
+                      <label class="col-md-4 control-label" for="compra_total">Total</label>
+                      <div class="col-md-6">
+                          <input ng-model="compraSet.compra_total" name="compra_total" type="text" placeholder="Total" class="form-control input-md" required="">
+
+                      </div>
+                  </div>
+
+                  <!-- Button -->
+                  <div class="form-group">
+                      <label class="col-md-4 control-label" for="EnviarCompra"></label>
+                      <div class="col-md-4">
+                          <button id="EnviarCompra" ng-click="sendCompra()" name="EnviarCompra" class="btn btn-success">Enviar</button>
+                      </div>
+                  </div>
+
+              </fieldset>
+          </form>
+              </div>
+          </div>
+      </div>
       <script src="<?= base_url('public/assets/metronic/custom/js/lib/jquery-3.3.1.min.js')?>"></script>
       <script src="<?= base_url('public/assets/metronic/custom/js/lib/angular.min.js')?>"></script>
     <!-- Bootstrap core JavaScript-->
