@@ -113,7 +113,7 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: 101% 1100px;
-        background-position-x: -4px;
+        background-position: center !important;
         filter: brightness(0.5);
     }
 

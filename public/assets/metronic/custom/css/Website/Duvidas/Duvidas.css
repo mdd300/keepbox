@@ -8,7 +8,7 @@
 
     .text-title-2-responsive{
         font-size: 1.5rem !important ;
-        line-height: 20px !important;
+        line-height: 35px !important;
         font-family: Circe ;
     }
 
@@ -32,10 +32,11 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
+         background-position: center !important;
     }
     .content-duvidas{
         z-index:  111111;
-        padding: 100px 0 0 16%;
+        padding: 7% 0 0 16%;
         width: 68%;
         cursor: pointer !important;
     }
@@ -47,7 +48,7 @@
         width: 100%;
         border-bottom:  1px solid #383838;
         cursor: pointer !important;
-        line-height: 60px !important;
+        line-height: 60px ;
     }
     .content-pergunta-duvidas:hover{
         color: #7d1daf;
