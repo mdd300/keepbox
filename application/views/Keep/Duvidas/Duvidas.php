@@ -29,13 +29,13 @@
 
     <div ng-mouseenter="hovering = true"
          ng-mouseleave="hovering = false"
-         class="content-pergunta-duvidas text-title-sm color-text-grey text-font-sans text-bold " ng-click="openDuvida(duvida.id)">
+         class="content-pergunta-duvidas text-title-sm text-title-2-responsive color-text-grey text-font-sans text-bold " ng-click="openDuvida(duvida.id)">
         {{duvida.pergunta}}
         <span class="seta-baixo" ng-show="!duvidas[duvida.id]" ng-class="{'seta-baixo-green':hovering}"></span>
         <span class="seta-cima" ng-show="duvidas[duvida.id]" ng-class="{'seta-cima-green':hovering}"
               ></span>
     </div>
-    <div class="content-resposta-duvida text-1-sm color-text-grey-light color-text-grey text-font-sans " ng-show="duvidas[duvida.id]">
+    <div class="content-resposta-duvida text-1-sm text-1-responsive color-text-grey-light color-text-grey text-font-sans " ng-show="duvidas[duvida.id]">
         {{duvida.resposta}}
     </div>
 
