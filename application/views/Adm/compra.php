@@ -113,7 +113,7 @@
                 <tr style="cursor: pointer" class="pointer" ng-repeat="link in compra" data-toggle="modal" data-target="#CompraAssistida" ng-click="selectUser(link.user_id, link.link_id)">
                   <td class="pointer">{{link.user_suite+" "+link.user_nome + " " + link.user_sobrenome}}</td>
                   <td class="pointer">{{link.user_email}}</td>
-                  <td class="pointer">{{link.link_enviado}}</td>
+                    <td class="pointer"><a href="{{link.link_enviado}}" target="_blank">{{link.link_enviado}}</a></td>
                   <td class="pointer">{{link.link_quantidade}}</td>
                     <td class="pointer">{{link.link_status}}</td>
                     <td class="pointer">{{link.link_data}}</td>
