@@ -16,10 +16,10 @@
     </div>
     <div class="align-x-center" ng-show="numRowsDuvidas.length == 0 && loaderPesquisa == false" style="padding-top: 50px">
         <div class=" content-error-duvidas justify text-font-sans " style="    display: initial;
-"> <div class="text-title-xl color-text-grey" style="    display: initial;
+"> <div class="text-title-xl text-title-responsive color-text-grey" style="    display: initial;
 ">Não encontramos um resultado</div><div style="    display: initial;
-" class="text-title color-text-grey"> para a pesquisa '{{searchPergunta}}' :( <br> Procure digitar uma palavra por vez para ver o resultado e tente usar palavras chave para otimizar o resultado da sua busca. Caso não tenha encontrado mande um email para nós e retornaremos sua dúvida:</div>
-            <div class="text-title color-text-green text-bold" style="    display: initial;
+" class="text-title text-title-responsive  color-text-grey"> para a pesquisa '{{searchPergunta}}' :( <br> Procure digitar uma palavra por vez para ver o resultado e tente usar palavras chave para otimizar o resultado da sua busca. Caso não tenha encontrado mande um email para nós e retornaremos sua dúvida:</div>
+            <div class="text-title text-title-responsive color-text-green text-bold" style="    display: initial;
 "> yannrodrigues20@gmail.com</div></div>
     </div>
 
