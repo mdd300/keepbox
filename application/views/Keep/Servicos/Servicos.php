@@ -39,7 +39,7 @@
                 <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans" >Envio de Encomendas </div>
                 <div class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans"style="padding-top: 10px" >Taxa KeepBox: Apenas US$12,90<br>
                     FRETE USPS: Tabela padrão da USPS (Correio Americano)<br>
-                    Simule o preço do envio em nossa <div class="color-text-green text-bold" style="cursor: pointer;     display: initial;" id="myBtn">CALCULADORA DE ENVIO</div> </div>
+                    Simule o preço do envio em nossa <div class="color-text-green text-bold" style="cursor: pointer;     display: initial;" id="myBtn">Calculadora de Envio</div> </div>
 
             </li>
         </ul>
