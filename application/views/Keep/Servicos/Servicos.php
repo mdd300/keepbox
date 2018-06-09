@@ -4,7 +4,7 @@
     </div>
 </div>
 <div class="content-space-serv align-center">
-<div class="text-title-serv text-title-xl color-text-white text-font-sans title-fix" >
+<div class="text-title-serv text-title-xl title-xl-serv-responsive  color-text-white text-font-sans title-fix" >
     <b>Serviços</b> & <b>Preços</b>
 </div>
 </div>
