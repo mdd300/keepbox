@@ -50,7 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/lib/font-awesome/font-awesome.css" rel="stylesheet"
           type="text/css"/>
-    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/HomePage.css?v=1457636631803" rel="stylesheet"
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/HomePage.css?v=1457636631802" rel="stylesheet"
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Como_Funciona/Como_Funciona.css" rel="stylesheet"
           type="text/css"/>
@@ -96,7 +96,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 </div>
                 <nav class="content-menu">
                     <ul class="menu-ul">
-                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>"> Início</a></li>
+                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>"> cial</a></li>
                         <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 2,'text-bold': <?=$selection?> == 2 , 'color-text-grey-light': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a></li>
                         <!--                        <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': --><?//=$selection?><!-- == 3,'text-bold': --><?//=$selection?><!-- == 3 , 'color-text-grey-light': --><?//=$selection?><!-- !== 3}"  href="--><?//= base_url('home/funcionamento')?><!--">Como Funciona</a></li>-->
                         <li class="menu-li text-1-sm text-bold" ><a  ng-class="{'color-text-green': <?=$selection?> == 4,'text-bold': <?=$selection?> == 4 , 'color-text-grey-light': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a></li>
@@ -148,6 +148,116 @@ License: You must have a valid license purchased only from themeforest(the above
 <div class="load-inicial" id="loading">
 
 </div>
+
+
+
+
+
+<script src="<?= base_url('public/assets/metronic/custom/js/lib/jquery-3.3.1.min.js')?>"></script>
+
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+<style type="text/css">
+    @media screen and (max-width: 768px){
+        #topo{
+            display: none;
+        }
+        .navbar{
+            min-height: 80px !important;
+        }
+        .navbar-inverse{
+            position: absolute;
+            z-index: 999;
+            background-color: #fff !important;
+            border-color: #fff !important;
+            border-radius: 0px !important;
+        }
+        .container-fluid {
+            margin-top: 14px !important;
+        }
+        .navbar-toggle:hover{
+            background: none !important;
+            opacity: .80;
+        }
+        .navbar-inverse .navbar-nav>li>a {
+            text-align: center;
+            font-size: 17px !important;
+            color: #383838;
+        }
+        .navbar-inverse .navbar-nav>li>a:hover{
+            font-size: 17px !important;
+            color: #a9d046;
+        }
+        .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+            border-color: transparent; !important;
+        }
+        .navbar-nav{
+            margin-top: 20px;
+        }
+        .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a{
+            background: transparent;
+            box-shadow: none;
+            color: #a9d046 !important;
+        }
+        .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.open>a:hover{
+            background: transparent;
+            box-shadow: none;
+            color: #a9d046 !important;
+        }
+    }
+</style>
+
+
+<nav class="navbar navbar-inverse hidden-lg hidden-md hidden-sm col-xs-12" style="background: #fff">
+    <div class="container-fluid" style="background: #fff">
+        <div class="navbar-header" style="background: #fff">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="border:none;">
+                <span class="icon-bar" style="background: #000"></span>
+                <span class="icon-bar" style="background: #000"></span>
+                <span class="icon-bar" style="background: #000"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <div class="content-logo-header" style="background-image: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/KEEPBOX.png')"></div>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav" style="margin-top: ">
+                <li class="active"><a  href="">
+                        Inicio</a>
+                </li>
+                <li><a ng-click="scrollCom()" href="">
+                        Compra Assistida</a>
+                </li>
+                <li><a ng-click="scrollSim()" href="">
+                        Calculadora de Envio</a>
+                </li>
+                <li class="text-1-sm text-bold" >
+                    <a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>"> cial</a>
+                </li>
+                <li class="text-1-sm text-bold" >
+                    <a  ng-class="{'color-text-green': <?=$selection?> == 2,'text-bold': <?=$selection?> == 2 , 'color-text-grey-light': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a>
+                </li>
+
+                <li class="text-1-sm text-bold" >
+                    <a  ng-class="{'color-text-green': <?=$selection?> == 4,'text-bold': <?=$selection?> == 4 , 'color-text-grey-light': <?=$selection?> !== 4}"  href="<?= base_url('home/duvidas')?>">Dúvidas</a>
+                </li>
+                <li style="background: #a9d046;border-radius: 30px;margin-bottom: 20px;"><a href="#" style="color: #fff !important"> <span class="glyphicon glyphicon-user"></span> Meu acesso</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
 
 
 

@@ -1,4 +1,8 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+
+
 
 <style type="text/css">
     html{
@@ -65,7 +69,7 @@
         }
         .content-logo-header{
             width: 80px;
-            margin-top: 30px;
+            margin-top: -8px;
             height: 80px;
             margin-left: 5px;
         }
@@ -78,6 +82,7 @@
         }
 
         #banner{
+            margin-top: -160px !important;
             background: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal.png') center center no-repeat !important;
             background-size: cover !important;
             background-position-y: 130px !important;
@@ -452,7 +457,7 @@
         }
         .content-logo-header{
             width: 60px !important;
-            margin-left: 3px;
+            margin-left: 10px;
         }
         .content-right-menu{
             margin-right: 0;
@@ -488,7 +493,8 @@
             margin-bottom: 30px;
         }
         #a_keep {
-            width: 100%;
+            font-size: 2.2rem !important;
+            width: 90%;
         }
 
         #clique_aqui {
@@ -580,6 +586,10 @@
             text-align: center;
         }
         @media screen and (max-width: 400px){
+            #a_keep{
+                font-size: 2.2rem !important;
+                width: 100% !important;
+            }
             #bloco_roxo {
                 margin-top: 480px !important;
             }
@@ -591,7 +601,7 @@
                 font-size: 12px !important;
             }
             .content-logo-header{
-                width: 0px !important;
+
             }
             .content-right-menu{
                 margin-right: 0;
@@ -600,6 +610,10 @@
         }
 
         @media screen and (max-width: 365px){
+            #a_keep{
+                font-size: 1.9rem !important;
+                width: 100% !important;
+            }
             #bloco_roxo{
                 margin-top: 550px !important;
             }

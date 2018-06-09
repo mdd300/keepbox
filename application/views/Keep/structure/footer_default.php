@@ -95,7 +95,7 @@
 
 
 
-<script src="<?= base_url('public/assets/metronic/custom/js/lib/jquery-3.3.1.min.js')?>"></script>
+
 <script src="<?= base_url('public/assets/metronic/custom/js/lib/angular.min.js')?>"></script>
 <script src="<?= base_url('public/assets/metronic/custom/js/lib/parallax.js')?>"></script>
 
