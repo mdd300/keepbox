@@ -54,11 +54,17 @@
         padding-top:11% !important;
     }
 
+
+
     .padding-left-1-responsive{
         padding-left: 6% !important;
     }
      .padding-left-2-responsive{
         padding-left: 10% !important;
+    }
+
+    .padding-left-3-responsive{
+        padding-left: 27% !important;
     }
 
     .padding-bottom-1-responsive{
@@ -139,7 +145,7 @@
         margin-top: 18% !important;
     }
     .content-text-right-serv{
-        
+        background-color: #f9f9f9 !important;
         width: 38%;
         height: auto;
         margin-top: 60px;
@@ -284,6 +290,7 @@
         z-index: 111;
     }
     .content-servi{
+
         width: 100%;
         /* margin-top: 80px; */
     }

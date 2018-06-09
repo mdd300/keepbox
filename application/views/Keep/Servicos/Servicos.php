@@ -53,7 +53,7 @@
 </div>
 <div class="padding-top-2-responsive align-x-center display-block-responsive ">
     <div  class="color-text-grey-light text-1-sm text-text-sm-responsive padding-text text-font-sans servi-extra-text servi-extra-text-responsive full-width-2-responsive
-    padding-left-2-responsive" style="padding-top: 15px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
+    padding-left-3-responsive" style="padding-top: 15px" >Serviços adicionais podem ser importantes para suas encomendas. Eles são definidos individualmente e opcionais.  Os preços dos serviços adicionais estão disponíveis na sua conta KeepBox.</div>
 
 </div>
 <div class="content-servi-basicos  align-x-center display-block-responsive
