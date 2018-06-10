@@ -8,7 +8,7 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
         "img": ""
 
     }
-
+    $scope.img_prod_selected = "";
     $scope.users = [];
     $scope.Prods = [];
 
@@ -32,6 +32,12 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
         }
     );
 
+    $scope.imgModalSelect = function (img) {
+
+        $scope.img_prod_selected = img
+
+    }
+
     var $image;
     var vanilla
     document.getElementById('picField').onchange = function (evt) {
@@ -49,13 +55,39 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
                 vanilla = new Croppie($image, {
                     viewport: { width: 300, height: 300 },
                     boundary: { width: 500, height: 500 },
-                    showZoomer: false,
+                    showZoomer: true,
                     enableResize: true,
                     enableOrientation: true,
                     mouseWheelZoom: 'ctrl'
                 });
 
 
+
+                $( "#rotateLeft" ).click(function() {
+                    vanilla.bind({
+                        url: fr.result,
+                        orientation: 8
+                    });
+                });
+
+                $( "#rotateRight" ).click(function() {
+                    vanilla.bind({
+                        url: fr.result,
+                        orientation: 6
+                    });
+                });
+                $( "#rotateDown" ).click(function() {
+                    vanilla.bind({
+                        url: fr.result,
+                        orientation: 3
+                    });
+                });
+                $( "#rotateUp" ).click(function() {
+                    vanilla.bind({
+                        url: fr.result,
+                        orientation: 1
+                    });
+                });
             }
             fr.readAsDataURL(files[0]);
         }
@@ -66,6 +98,8 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
             // them on the server until the user's session ends.
         }
     }
+
+
 
     $scope.setProd = function () {
 

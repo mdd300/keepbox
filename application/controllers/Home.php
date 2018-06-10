@@ -356,7 +356,7 @@ class Home extends CI_Controller {
         file_put_contents($file, $data);
 
         $this->load->model('Adm_model');
-        $return = $this->Adm_model->setProds_model($Data, $nome.'.png');
+        $return = $this->Adm_model->setProds_model($Data, $nome);
 
         if ($Output == true) {
             echo json_encode($return);

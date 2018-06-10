@@ -23,6 +23,7 @@ class Adm_model extends CI_Model {
     public function getProds_model($data = null){
 
         $this->db->join("tb_user as u", "u.user_id = prod_user_id_fk");
+        $this->db->join("tb_produtos_img as img", "img.img_prod_fk = prod_id");
         return $this->db->get("tb_produtos")->result();
 
     }
@@ -31,12 +32,9 @@ class Adm_model extends CI_Model {
 
         $user = substr($data['user'],0,5);
 
-
-
         $this->db->select("user_id");
         $this->db->where("user_suite", $user);
         $user = $this->db->get("tb_user")->result();
-
 
         $insert = array(
           "prod_nome" => $data['prod_nome'],

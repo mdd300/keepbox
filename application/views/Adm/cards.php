@@ -102,7 +102,7 @@
                         </tr>
                         </tfoot>
                         <tbody>
-                        <tr ng-repeat="prod in Prods">
+                        <tr ng-repeat="prod in Prods" data-toggle="modal" data-target="#imgModal" ng-click="imgModalSelect(prod.img_link)">
                             <td>{{prod.user_suite + " "  + prod.user_nome + " " + prod.user_sobrenome}}</td>
                             <td>{{prod.user_email}}</td>
                             <td>{{prod.prod_nome}}</td>
@@ -131,7 +131,7 @@
 
             <!-- Text input-->
             <div class="form-group p-2">
-                <label class="col-md-4 control-label" for="Nome">Nome</label>
+                <label class="col-md-4 control-label" for="Nome">Nome do Produto</label>
                 <div class="col-md-4">
                     <input id="Nome" name="Nome" ng-model="produto.prod_nome" type="text" placeholder="Nome" class="form-control input-md" required="">
 
@@ -170,6 +170,11 @@
                 <input type="file" id="picField">
                 <div class="mt-4">
                 <img id="image-crop" name="img" >
+                    <button type="button" id="rotateLeft" data-rotate="-90">Esquerda</button>
+                    <button type="button" id="rotateRight" data-rotate="-90">Direita</button>
+                    <button type="button" id="rotateUp" data-rotate="-90">Cima</button>
+                    <button type="button" id="rotateDown" data-rotate="-90">Baixo</button>
+
                 </div>
             </div>
 
@@ -214,6 +219,21 @@
       </div>
     </div>
 
+            <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="<?=base_url()?>/upload/produtos/img/{{img_prod_selected}}">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
       <script src="<?= base_url('public/assets/metronic/custom/js/lib/jquery-3.3.1.min.js')?>"></script>
       <script src="<?= base_url('public/assets/metronic/custom/js/lib/angular.min.js')?>"></script>
