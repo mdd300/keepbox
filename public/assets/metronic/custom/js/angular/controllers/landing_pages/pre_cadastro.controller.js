@@ -335,6 +335,9 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
                 if ($scope.dataCad.user_nome !== "") {
                     if ($scope.dataCad.user_sobrenome !== "") {
 
+                    $scope.dataCad.user_nome = $scope.dataCad.user_nome.toUpperCase();
+                        $scope.dataCad.user_sobrenome = $scope.dataCad.user_sobrenome.toUpperCase();
+
 
                         $http({
 
