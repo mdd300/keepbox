@@ -15,7 +15,7 @@
             Serviços Básicos
         </div>
     </div>
-    <div class="content-text-right-serv full-width-responsive padding-top-1-responsive" style="    margin-left: 5% ;">
+    <div class="content-text-right-serv full-width-responsive padding-top-1-responsive" style="    margin-left: 7% ;">
         <ul class="ul-serv-text ">
             <li class="li-serv-text">
                 <div class="color-text-green text-bold text-1-sm text-title-sm-responsive text-font-sans">Recebimento de Encomendas <b>(GRÁTIS)</b> </div>
