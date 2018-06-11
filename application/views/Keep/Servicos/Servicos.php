@@ -141,7 +141,7 @@ padding-left-2-responsive">
             <ul class="content-ul-assist-data display-block-responsive">
                 <li class=" content-li-serv content-li-serv-responsive left content-border-simulator-shadow" >
                     <div class="content-itens-li-serv content-itens-li-serv-responsive">
-                        <div class="text-title-xl text-title-responsive  color-text-roxo text-bold text-font-sans" style="">
+                        <div class="text-title-xl text-title-sm-responsive  color-text-roxo text-bold text-font-sans" style="">
                             US$7.90
                         </div>
                         <div class="text-title text-title-sm-responsive color-text-green text-font-sans text-bold" style="    width: 95%;margin-top: 20px">
@@ -156,7 +156,7 @@ padding-left-2-responsive">
                 <li class=" content-li-serv content-li-serv-responsive right content-border-simulator-shadow" style="  ">
                     <div class="content-itens-li-serv content-itens-li-serv-responsive">
 
-                        <div class="text-title-xl text-title-responsive  color-text-roxo text-bold text-font-sans" style="  ">
+                        <div class="text-title-xl text-title-sm-responsive  color-text-roxo text-bold text-font-sans" style="  ">
                             US$7.90
                         </div>
                         <div class="text-title text-title-sm-responsive color-text-green text-font-sans text-bold" style="    width: 95%;margin-top: 20px">
@@ -214,7 +214,7 @@ padding-left-2-responsive">
 
     <div style=" margin-top: 20px;" class="width-content align-x-center">
         <div style=" margin-top: 20px;width: 75%" class="width-content align-x-center">
-            <div class="color-text-grey-light text-1  center padding-text text-font-sans" style="padding-top: 10px"><a class="color-text-green text-bold" ng-click="verifySession()" style="cursor: pointer">Acesse sua conta</a> ou <a  style="cursor: pointer" class="color-text-roxo text-bold" href="<?= base_url('home/cadastroPage')?>">Cadastre-se</a> para começar sua Compra Assistida</div>
+            <div class="color-text-grey-light text-1 text-title-sm-responsive  center padding-text text-font-sans" style="padding-top: 10px"><a class="color-text-green text-bold" ng-click="verifySession()" style="cursor: pointer">Acesse sua conta</a> ou <a  style="cursor: pointer" class="color-text-roxo text-bold" href="<?= base_url('home/cadastroPage')?>">Cadastre-se</a> para começar sua Compra Assistida</div>
         </div>
     </div>
 
