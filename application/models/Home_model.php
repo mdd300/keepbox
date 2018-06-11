@@ -157,6 +157,7 @@ class Home_model extends CI_Model {
 
            $this->db->set($data);
            $this->db->set("user_id_fk", $id);
+           $this->db->set("codigo_data", date('d/m/Y h:i ', time()));
            return $this->db->insert("tb_rastreamento");
 
        }

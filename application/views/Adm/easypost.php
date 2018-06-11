@@ -98,17 +98,19 @@
                       <tr>
                           <th>Usuario</th>
                           <th>Codigo</th>
+                          <th>Data</th>
                       </tr>
                       </thead>
                       <tfoot>
                       <th>Usuario</th>
                       <th>Codigo</th>
-
+                      <th>Data</th>
                       </tfoot>
                       <tbody>
                       <tr ng-repeat="code in Codes">
                           <td>{{code.user_suite + " " + code.user_nome + " "+ code.user_sobrenome}}</td>
                           <td>{{code.codigo}}</td>
+                          <td>{{code.codigo_data}}</td>
                       </tr>
 
                       </tbody>
