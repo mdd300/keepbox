@@ -116,7 +116,7 @@
         type="text/javascript"></script>
 
 <!--angular pré cadastro -->
-<script src="<?= base_url('public/assets/metronic/custom/js/angular/controllers/landing_pages/pre_cadastro.controller.js?updated=1234567890') ?>"
+<script src="<?= base_url('public/assets/metronic/custom/js/angular/controllers/landing_pages/pre_cadastro.controller.js?updated=1234567891') ?>"
         type="text/javascript"></script>
 </body>
 <!-- end::Body -->
