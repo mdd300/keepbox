@@ -84,7 +84,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         }
         return windowWidth;
     }
-    if(getWindowWidth() > 869){
+    if(getWindowWidth() > 969){
         var screenSize = getWindowWidth() / 1920 * 100
         $('html').css({zoom: screenSize/100})
         $scope.screenSizeMob =  false;
@@ -94,7 +94,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
 
     window.onresize=function() {
 
-        if(getWindowWidth() > 869){
+        if(getWindowWidth() > 969){
             var screenSize = getWindowWidth() / 1920 * 100
             $('html').css({zoom: screenSize/100})
             $scope.screenSizeMob =  false;
