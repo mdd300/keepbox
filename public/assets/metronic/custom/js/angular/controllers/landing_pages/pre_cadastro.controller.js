@@ -84,28 +84,7 @@ angular.module('app_landing').controller('landing_ctrl', ['$scope', '$http','$ti
         }
         return windowWidth;
     }
-    if(getWindowWidth() > 969){
-        var screenSize = getWindowWidth() / 1920 * 100
-        $('html').css({zoom: screenSize/100})
-        $scope.screenSizeMob =  false;
-    }
 
-
-
-    window.onresize=function() {
-
-        if(getWindowWidth() > 969){
-            var screenSize = getWindowWidth() / 1920 * 100
-            $('html').css({zoom: screenSize/100})
-            $scope.screenSizeMob =  false;
-
-        }else{
-            $('html').css({zoom: 0})
-            $scope.screenSizeMob =  true;
-
-        }
-
-    }
 
     $scope.range_simulator_home = 0;
     $scope.valor_kg = 0;
