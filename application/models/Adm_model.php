@@ -75,4 +75,9 @@ class Adm_model extends CI_Model {
         $this->db->where("user_id",$data['user_id_fk']);
         return $this->db->get("tb_user")->result()[0];
     }
+
+    public function get_Code_rast_model($data){
+        $this->db->join("tb_user as u", 'u.user_id = user_id_fk');
+        return $this->db->get("tb_rastreamento")->result();
+    }
 }

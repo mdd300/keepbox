@@ -425,4 +425,23 @@ class Home extends CI_Controller {
             return $return;
         }
     }
+
+    public function get_codeRastreamento ($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        $this->load->model('Adm_model');
+
+        $return = $this->Adm_model->get_Code_rast_model($Data);
+
+        if ($Output == true) {
+            echo json_encode($return);
+        } else {
+            return $return;
+        }
+    }
 }

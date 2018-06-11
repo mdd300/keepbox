@@ -90,7 +90,36 @@
 
       <div class="card mb-3">
           <div class="card-header">
-              <i class="fa fa-table"></i> Data Table Example</div>
+              <i class="fa fa-table"></i> Codigos Enviados</div>
+          <div class="card-body">
+              <div class="table-responsive">
+                  <table datatable="ng" dt-options="dtOptions" class="table table-bordered" id="dataTable2" width="100%" cellspacing="0">
+                      <thead>
+                      <tr>
+                          <th>Usuario</th>
+                          <th>Codigo</th>
+                      </tr>
+                      </thead>
+                      <tfoot>
+                      <th>Usuario</th>
+                      <th>Codigo</th>
+
+                      </tfoot>
+                      <tbody>
+                      <tr ng-repeat="track in tracking">
+                          <td>{{code.user_suite + " " + code.user_nome + " "+ code.user_sobrenome}}</td>
+                          <td>{{code.codigo}}</td>
+                      </tr>
+
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+
+      <div class="card mb-3">
+          <div class="card-header">
+              <i class="fa fa-table"></i> Easypost</div>
           <div class="card-body">
               <div class="table-responsive">
                   <table datatable="ng" dt-options="dtOptions" class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

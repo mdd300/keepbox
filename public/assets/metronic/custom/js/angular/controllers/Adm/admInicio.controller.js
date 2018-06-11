@@ -52,6 +52,28 @@ angular.module('app_landing').controller('easypost_adm_ctrl', ['$scope', '$http'
     $scope.tracking = [];
     $scope.key = "1xY09nysF4aof0ZqqSrvxw";
     $scope.TrackingCode = "";
+    $scope.Code = "";
+
+
+    $http({
+
+        method: 'POST',
+        url: "get_codeRastreamento",
+        headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+    }).then(function (response) {
+
+            console.log(response.data)
+
+            $timeout(function () {
+                $('#dataTable2').DataTable();
+
+            }, 200)
+
+            $scope.Code = response.data;
+
+        }
+    );
 
     $scope.sendTracking = function () {
         $http({
