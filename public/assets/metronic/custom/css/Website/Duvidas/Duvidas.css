@@ -7,14 +7,14 @@
     }
 
     .text-title-2-responsive{
-        font-size: 1.5rem !important ;
+        font-size: 1.5em !important ;
         line-height: 35px !important;
         font-family: Circe ;
     }
 
     .text-1-responsive{
-        font-size: 1.3rem !important ;
-        line-height: 20px !important;
+        font-size: 1.5em !important ;
+        line-height: 30px !important;
         font-family: Circe ;
     }
 
