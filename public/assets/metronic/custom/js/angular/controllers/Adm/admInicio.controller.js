@@ -52,7 +52,7 @@ angular.module('app_landing').controller('easypost_adm_ctrl', ['$scope', '$http'
     $scope.tracking = [];
     $scope.key = "1xY09nysF4aof0ZqqSrvxw";
     $scope.TrackingCode = "";
-    $scope.Code = "";
+    $scope.Codes = [];
 
 
     $http({
@@ -70,7 +70,7 @@ angular.module('app_landing').controller('easypost_adm_ctrl', ['$scope', '$http'
 
             }, 200)
 
-            $scope.Code = response.data;
+            $scope.Codes = response.data;
 
         }
     );

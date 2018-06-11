@@ -106,7 +106,7 @@
 
                       </tfoot>
                       <tbody>
-                      <tr ng-repeat="track in tracking">
+                      <tr ng-repeat="Code in Codes">
                           <td>{{code.user_suite + " " + code.user_nome + " "+ code.user_sobrenome}}</td>
                           <td>{{code.codigo}}</td>
                       </tr>
