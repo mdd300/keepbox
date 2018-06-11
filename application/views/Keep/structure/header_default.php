@@ -52,7 +52,7 @@ License: You must have a valid license purchased only from themeforest(the above
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/HomePage.css?v=1457636631803" rel="stylesheet"
           type="text/css"/>
-    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Como_Funciona/Como_Funciona.css?v=1457636631802" rel="stylesheet"
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Como_Funciona/Como_Funciona.css" rel="stylesheet"
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Servicos/Servicos.css?v=1457636631802" rel="stylesheet"
           type="text/css"/>
@@ -218,6 +218,57 @@ License: You must have a valid license purchased only from themeforest(the above
 </style>
 
 
+
+<style type="text/css">
+    html{
+        overflow-x: hidden;
+    }
+    .slide-content-width{
+        width: 100% !important;
+    }
+    @media screen and (max-width: 768px){
+
+        .content-logo-header{
+            width: 80px;
+            margin-top: -8px;
+            height: 80px;
+            margin-left: 5px;
+        }
+        .content-btn-header-menu{
+            padding: 0;
+            padding-right: 5px;
+        }
+
+        .content-logo-footer{
+            float: right;
+            margin-left: 0;
+            width: 50%;
+            margin-right: 25%;
+            margin-top: 50px !important;
+        }
+        .content-logo-footer{
+            background-position: center !important;
+        }
+    }
+
+
+    @media screen and (max-width: 480px){
+
+        .content-logo-header{
+            width: 60px !important;
+            margin-left: 10px;
+        }
+    }
+
+
+
+    /* FIm Correções de layout */
+
+</style>
+
+
+
+
 <nav class="navbar navbar-inverse hidden-lg hidden-md hidden-sm col-xs-12" style="background: #fff">
     <div class="container-fluid" style="background: #fff">
         <div class="navbar-header" style="background: #fff">
@@ -232,18 +283,20 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav" style="margin-top: ">
-                <li class="active"><a  href="">
-                        Inicio</a>
-                </li>
-                <li><a ng-click="scrollCom()" href="">
+
+                <li  style="background: #f7f7f7;text-shadow: none"><a  ng-click="scrollCom()" href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_cart.png">
                         Compra Assistida</a>
                 </li>
-                <li><a ng-click="scrollSim()" href="">
+                <li style="background: #f7f7f7;text-shadow: none" ><a  ng-click="scrollSim()" href=""><img class="img-menu-superior" src="<?= base_url() ?>public/assets/metronic/custom/img/icon/menu_calculadora.png">
                         Calculadora de Envio</a>
                 </li>
-                <li class="text-1-sm text-bold" >
-                    <a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>"> Inicial</a>
+
+                <li><a  href="">
+                        Inicio</a>
                 </li>
+                <!-- <li class="text-1-sm text-bold" >
+            <a  ng-class="{'color-text-green': <?=$selection?> == 1,'text-bold': <?=$selection?> == 1 ,  'color-text-grey-light': <?=$selection?> !== 1} " href="<?= base_url()?>"> Inicial</a>
+        </li> -->
                 <li class="text-1-sm text-bold" >
                     <a  ng-class="{'color-text-green': <?=$selection?> == 2,'text-bold': <?=$selection?> == 2 , 'color-text-grey-light': <?=$selection?> !== 2}"  href="<?= base_url('home/servico')?>">Serviços & Preços</a>
                 </li>
