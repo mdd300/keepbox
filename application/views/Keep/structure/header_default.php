@@ -52,9 +52,9 @@ License: You must have a valid license purchased only from themeforest(the above
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Home/HomePage.css?v=1457636631803" rel="stylesheet"
           type="text/css"/>
-    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Como_Funciona/Como_Funciona.cssv=1457636631803" rel="stylesheet"
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Como_Funciona/Como_Funciona.css?v=1457636631802" rel="stylesheet"
           type="text/css"/>
-    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Servicos/Servicos.cssv=1457636631803" rel="stylesheet"
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Servicos/Servicos.css?v=1457636631802" rel="stylesheet"
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Servicos/termos.css" rel="stylesheet"
           type="text/css"/>
@@ -62,7 +62,7 @@ License: You must have a valid license purchased only from themeforest(the above
           type="text/css"/>
     <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Cadastro/Cadastro.css" rel="stylesheet"
           type="text/css"/>
-    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Duvidas/Duvidas.cssv=1457636631803" rel="stylesheet"
+    <link href="<?= base_url() ?>public/assets/metronic/custom/css/Website/Duvidas/Duvidas.css?v=1457636631802" rel="stylesheet"
           type="text/css"/>
     <base_url value="<?= base_url() ?>"></base_url>
 
