@@ -16,6 +16,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- begin::Head -->
 <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, use-scalable=no">
     <meta name="viewport" ng-show="screenSizeMob == false" content="width=1960">
     <meta http-equiv="pragma" content="no-cache">
     <meta name="google-site-verification" content="gJupZ3IAxhkzShW-a0VDNkb4MiX9oPps_DgcOYJg_QI" />
