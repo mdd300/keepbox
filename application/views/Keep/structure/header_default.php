@@ -291,7 +291,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         Calculadora de Envio</a>
                 </li>
 
-                <li><a  href="">
+                <li><a  href="<?= base_url()?>">
                         Inicio</a>
                 </li>
                 <!-- <li class="text-1-sm text-bold" >
