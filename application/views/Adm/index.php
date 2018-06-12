@@ -157,6 +157,8 @@
                   <th>Nome</th>
                   <th>E-mail</th>
                   <th>Numero</th>
+                    <th>Telefone</th>
+
                 </tr>
               </thead>
               <tfoot>
@@ -164,6 +166,8 @@
                   <th>Nome</th>
                   <th>E-mail</th>
                   <th>Numero</th>
+                    <th>Telefone</th>
+
                 </tr>
               </tfoot>
               <tbody>
@@ -171,6 +175,7 @@
                   <td>{{user.user_nome + " " + user.user_sobrenome}}</td>
                   <td>{{user.user_email}}</td>
                   <td>{{user.user_suite}}</td>
+                    <td>{{user.user_telefone}}</td>
                 </tr>
 
               </tbody>
