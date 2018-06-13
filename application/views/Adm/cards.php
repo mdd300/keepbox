@@ -102,7 +102,7 @@
                         </tr>
                         </tfoot>
                         <tbody>
-                        <tr ng-repeat="prod in Prods" data-toggle="modal" data-target="#imgModal" ng-click="imgModalSelect(prod)">
+                        <tr ng-repeat="prod in Prods" style="cursor: pointer" data-toggle="modal" data-target="#imgModal" ng-click="imgModalSelect(prod)">
                             <td>{{prod.user_suite + " "  + prod.user_nome + " " + prod.user_sobrenome}}</td>
                             <td>{{prod.user_email}}</td>
                             <td>{{prod.prod_nome}}</td>
@@ -228,6 +228,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
+                            <button id="deleteProd" name="deleteProd" style="float: right" ng-click="DeleteProd(prod_selected.prod_id)" class="btn btn-danger">Apagar Produto</button>
                             <div class="form-group p-2">
                                 <label class="col-md-4 control-label" for="Nome">Cliente</label>
                                 <div class="col-md-7">

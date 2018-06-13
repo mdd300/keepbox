@@ -104,4 +104,9 @@ class Adm_model extends CI_Model {
         $this->db->set($img);
         return $this->db->update("tb_produtos_img");
     }
+
+    public function deleteProd_model($id){
+        $this->db->where("prod_id",$id);
+        return $this->db->delete("tb_produtos");
+    }
 }

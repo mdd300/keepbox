@@ -472,4 +472,23 @@ class Home extends CI_Controller {
             return $return;
         }
     }
+
+    public function deleteProd($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+
+        $this->load->model('Adm_model');
+        $return = $this->Adm_model->deleteProd_model($Data['prod_id']);
+
+        if ($Output == true) {
+            echo json_encode($return);
+        } else {
+            return $return;
+        }
+    }
 }

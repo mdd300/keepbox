@@ -228,6 +228,23 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
         }
     );
 
+    $scope.DeleteProd = function (id) {
+        $http({
+
+            method: 'POST',
+            url: "deleteProd",
+            data: $.param({prod_id: id}),
+            headers: {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}
+
+
+        }).then(function (response) {
+
+                window.location.href = "admProd";
+
+            }
+        );
+    };
+
     $scope.setProdUpdate = function () {
 
         vanilla2.result('base64', 'viewport', 'png',1,false).then(function(img) {
