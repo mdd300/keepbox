@@ -1,9 +1,5 @@
 
 
-
-
-
-
 <style type="text/css">
     html{
         overflow-x: hidden;
@@ -19,7 +15,6 @@
         .content-footer{
             margin-top: 540px !important;
         }
-
         /*MODAL*/
         .content-login .text-1{
             margin-top: 0px !important;
@@ -39,21 +34,18 @@
             margin-top: 10px;
             margin-left: 10px;
         }
-
         .modal-login {
             width: 90%  !important;
             height: 500px;
             margin-right: 5% !important;
         }
         /*FIM MODAL*/
-
         .width_padrao{
             width: 100% !important;
         }
         #topo{
             width: 100% !important;
         }
-
         /* para mobile */
         .legt-5{
             margin-left: 5% !important;
@@ -61,7 +53,6 @@
         .padding-10{
             padding-bottom: 25px !important;
         }
-
         .header-ul{
             width: 100%;
             padding-right: 0%;
@@ -80,14 +71,12 @@
         .menu-ul{
             padding-right: 0;
         }
-
         #banner{
             margin-top: -160px !important;
             background: url('<?= base_url() ?>public/assets/metronic/custom/img/photo/banner-principal.png') center center no-repeat !important;
             background-size: cover !important;
             background-position-y: 130px !important;
         }
-
         .content-right-menu{
             margin-right: 0;
             width: 80%;
@@ -117,22 +106,18 @@
             width: 80%;
             margin:100px 0px 0px 5%;
         }
-
         /*#clique_aqui{
             font-size: 12px !important;
         }*/
         #clique_aqui_ancora{
             margin-top: -60px !important;
         }
-
         .content-video-module2{
             width: 80%;
             margin-left: 10%;
             margin-top: 300px;
             height: 400px;
-
         }
-
         .content-text-module2{
             margin-left: 10%;
             position: absolute;
@@ -141,14 +126,12 @@
             text-align: center;
             margin-top: 680px;
             width: 80%;
-
         }
         #como_funciona_keep{
             margin-top: 50px;
             line-height: 60px;
             font-size: 40px;
         }
-
         /* Arruma os blocos */
         .ul-tutorial{
             display: block !important;
@@ -159,8 +142,6 @@
         .content-text-and-btn-call{
             display: block !important;
         }
-
-
         #bloco_crie_imagem{
             background: url('<?= base_url() ?>public/assets/metronic/custom/img/icon/online-shop.png') center center no-repeat !important; background-size: 25% !important;
         }
@@ -185,13 +166,9 @@
         .li-step-module2{
             height: 180px;
         }
-
         .ul-step-module2{
             display: table !important;
         }
-
-
-
         .text-1{
             margin-top: -30px;
             font-size: 1.5em !important;
@@ -200,24 +177,19 @@
         .slider-margin .text-1{
             margin-top: 0px !important;
         }
-
         #block_display{
             display: block !important;
         }
-
         .content-text-tutorial {
             padding: 25px 0px !important;
             padding-left: 32px !important;
         }
-
         .content-text-cadastro-module3{
             background: #fff !important;
         }
-
         .content-align-menu{
             width: 100%;
         }
-
         .text-title-xl{
             text-align: center;
             margin-top: 20px;
@@ -240,22 +212,17 @@
         .content-text-and-btn-call{
             width: 100% !important;
         }
-
         #texto_economizar{
             width: 100% !important;
             text-align: center;
             /*margin-left: 5%;*/
         }
-
-
         #venha_conhecer{
             margin: 0 auto !important;
             margin-top: 70px  !important;
             width: 80%  !important;
             margin-left: 10%  !important;
         }
-
-
         .content-simulator{
             margin-top: 10px !important;
             width: 95% !important;
@@ -268,8 +235,6 @@
             height: 100px !important;
             margin-top: -140px;
         }
-
-
         .styled-select select{
             margin-top: 13px !important;
         }
@@ -280,7 +245,6 @@
             text-align: center;
             margin-top: -40px !important;
         }
-
         .content-ul-simulator-data{
             display: block !important;
         }
@@ -290,8 +254,6 @@
         #alguma_duvida{
             padding: 0 !important;
         }
-
-
         .slide-content-width{
             width: 80% !important;
             margin: 0 auto;
@@ -303,20 +265,16 @@
         .step-icon-2{
             width: 20px !important;
         }
-
         .content-li-info-data{
             width: 100% !important;
         }
         #slide{
             width: 80% !important;
         }
-
-
         .ytp-cued-thumbnail-overlay-image{
             background-size: 90%;
             background-color: #fff !important;
         }
-
         #como_funciona_bloco{
             margin-left: 5%;
             margin-top: 800px;
@@ -332,14 +290,10 @@
         .input-cadastro{
             width: 95% !important;
         }
-
         .text-title{
             width: 100%;
             line-height: 30px;
         }
-
-
-
         #outras_duvidas{
             padding: 0 !important;
             width: 100%;
@@ -353,25 +307,18 @@
             margin-left: 10%;
             margin-top: 20px;
         }
-
-
         .content-video-module2-2{
             margin-top: 30px !important;
             margin-left: 10%;
             width: 80%;
             height: 250px;
         }
-
-
-
-
         .content-news-banner{
             margin-left: 0px;
             margin-top: 246px !important;
             width: 90% !important;
             margin-left: 5%;
         }
-
         .fique_pordentro_cor{
             text-align: center;
             margin-top: -35px;
@@ -383,10 +330,6 @@
             margin-top: -60px !important;
             margin-bottom: -40px !important;
         }
-
-
-
-
         .content-footer{
             height: 200px;
         }
@@ -397,7 +340,6 @@
             margin-right: 25%;
             margin-top: 50px !important;
         }
-
         .select_primeiro{
             width: 35% !important;
             margin-right: 10px !important;
@@ -414,7 +356,6 @@
         .slider-margin{
             width: 100%;
         }
-
         .li-step-module2{
             width: 100% !important;
         }
@@ -442,8 +383,6 @@
             text-align: center !important;
         }
     }
-
-
     @media screen and (max-width: 480px){
         .img-menu-superior{
             margin-left: 0 !important;
@@ -473,7 +412,6 @@
             padding: 14px 10px !important;
             font-size: 13px !important;
         }
-
         .content-img-icon-menu{
             display: none;
         }
@@ -496,7 +434,6 @@
             font-size: 2.2rem !important;
             width: 90%;
         }
-
         #clique_aqui {
             margin-top: 100px;
             margin-left: 5%;
@@ -504,7 +441,6 @@
             padding: 23px 40px;
             /* font-size: 13px !important;*/
         }
-
         .ytp-cued-thumbnail-overlay-image{
             background-size: 100%;
         }
@@ -536,7 +472,6 @@
             font-size: 1.5em !important;
             line-height: 27px !important;
         }
-
         .li-step-tutorial{
             padding: 0 !important;
         }
@@ -546,7 +481,6 @@
         #fotos_img{
             margin-left: 3% !important;
         }
-
         #bloco_roxo{
             margin-top: 420px !important;
         }
@@ -601,15 +535,24 @@
                 font-size: 12px !important;
             }
             .content-logo-header{
-
             }
             .content-right-menu{
                 margin-right: 0;
                 width: 98%;
             }
         }
-
         @media screen and (max-width: 365px){
+            #como_funciona_bloco {
+                margin-left: 5%;
+                margin-top: 720px;
+                width: 90% !important;
+            }
+            .content-video-module2-2 {
+                margin-top: 20px !important;
+            }
+            .content-news-banner {
+                margin-top: 170px !important;
+            }
             #a_keep{
                 font-size: 1.9rem !important;
                 width: 100% !important;
@@ -619,7 +562,7 @@
             }
             .content-module-2-sm{
                 height: 400px !important;
-                margin-top: 300px !important;
+                margin-top: 140px !important;
             }
             .content-video-module2-2{
                 margin-top: 30px !important;
@@ -629,11 +572,8 @@
             margin-top: -20px !important;
         }
         }
-
     }
-
     /* FIm Correções de layout */
-
 </style>
 
 
@@ -1118,12 +1058,9 @@
 <!--</div>-->
 <script src="<?= base_url('public/assets/metronic/custom/js/lib/jquery-3.3.1.min.js')?>"></script>
 <script>
-
     var span = document.getElementsByClassName("close-ini")[0];
     var modal = document.getElementById('myModal-ini');
     var span1 = document.getElementsByClassName("close-ini-mo")[0];
-
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
@@ -1137,12 +1074,6 @@
             modal.style.display = "none";
         }
     }
-
-
-
-
-
-
     $(document).ready(function(){
         if(window.innerWidth < 768){
             $('#slide').html('<div class="mySlides slide-content-width" style="display: flex;justify-content: center;width: 100%"><li class="content-li-info-data"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1">O endereço KeepBox é um P.O. box (similar a caixa postal do Brasil)?</div> <div class=" text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">O “seu endereço KeepBox” é uma suíte física e real em nosso armazém dedicada às suas encomendas, ou seja, o seu endereço KeepBox não é um P.O. box.Observação: Muitas lojas não enviam para P.O. box, por isso o seu endereço KeepBox não poderia ser um P.O. box.</div></li></div><div class="mySlides slide-content-width" style="display: flex;justify-content: center;width: 100%"><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1">O método utilizado pela KeepBox é legal?</div><div class="text-font-sans justify color-text-grey text-1-sm fonte_slide" style="      line-height: 30px !important;  padding-top: 50px;">Sim! A KeepBox funciona como um amigo ou parente que mora nos EUA e envia encomendas para você — ou seja, é totalmente legal. Utilizamos o Serviço Postal Nacional dos Estados Unidos (USPS) para o frete das mercadorias ao Brasil por serem extremamente seguros e por praticarem as melhores tarifas de envio do mercado americano.</div></li></div><div class="mySlides slide-content-width" style="display: flex;justify-content: center;width: 100%"><li class="content-li-info-data"><div class="  color-text-green text-bold text-font-sans text-1"><b>Como efetuo meu cadastro na KeepBox?</b></div><div class=" text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">Para se cadastrar gratuitamente na KeepBox é muito fácil. Clique aqui e preencha seu Nome, Sobrenome e e-mail. Simples assim!</div></li></div><div class="mySlides slide-content-width" style="display: flex;justify-content: center;width: 100%"><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1 text-font-sans"><b>Pago alguma taxa para me cadastrar na KeepBox?</b></div><div class="text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">O cadastro é totalmente gratuito! Registre-se agora e receba seu endereço KeepBox nos EUA imediatamente!</div></li></div><div class="mySlides slide-content-width" style=" display: flex;justify-content: center;width: 100%"><li class="content-li-info-data"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1 "><b>Tenho que pagar alguma taxa mensal ou anual à KeepBox depois que me inscrevo?</b></div><div class="text-font-sans justify color-text-grey text-1-sm fonte_slide" style="      line-height: 30px !important;  padding-top: 50px;">Não! Não cobramos taxa de inscrição, mensalidade ou anuidade.Além disso, seus dados de cartão de crédito não são exigidos para sua inscrição. Quando decidir enviar suas encomendas ao Brasil, você pagará apenas uma taxa única e reduzida pelos serviços da KeepBox.</div></li></div><div class="mySlides slide-content-width" style="display: flex;justify-content: center;width: 100%"><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green color-text-green  text-bold text-font-sans text-1" ><b>Como funciona os serviços da KeepBox?</b></div><div class="text-font-sans color-text-grey justify text-1-sm fonte_slide" style="    line-height: 30px !important;    padding-top: 50px;">A KeepBox disponibiliza um endereço nos EUA para você armazenar suas compras realizadas nas lojas online do EUA. Posteriormente juntamos tudo e enviamos suas encomendas para o endereço que você nos indicar.Tudo isso sem que você precise sair da sua casa e por uma taxa KeepBox única e reduzida.</div></li></div>');
@@ -1151,52 +1082,31 @@
         else{
             $('#slide').html('<div class="mySlides slide-content-width" style="    display: flex; justify-content: center;"><li class="content-li-info-data"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1">O endereço KeepBox é um P.O. box (similar a caixa postal do Brasil)?</div><div class=" text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">O “seu endereço KeepBox” é uma suíte física e real em nosso armazém dedicada às suas encomendas, ou seja, o seu endereço KeepBox não é um P.O. box. Observação: Muitas lojas não enviam para P.O. box, por isso o seu endereço KeepBox não poderia ser um P.O. box.</div></li><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1">O método utilizado pela KeepBox é legal?</div><div class=" text-font-sans justify color-text-grey text-1-sm fonte_slide" style="      line-height: 30px !important;  padding-top: 50px;">Sim! A KeepBox funciona como um amigo ou parente que mora nos EUA e envia encomendas para você — ou seja, é totalmente legal. Utilizamos o Serviço Postal Nacional dos Estados Unidos (USPS) para o frete das mercadorias ao Brasil por serem extremamente seguros e por praticarem as melhores tarifas de envio do mercado americano.</div></li></div><div class="mySlides slide-content-width" style="        display: flex;justify-content: center;"><li class="content-li-info-data"><div class="  color-text-green text-bold text-font-sans text-1"><b>Como efetuo meu cadastro na KeepBox?</b></div><div class=" text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">Para se cadastrar gratuitamente na KeepBox é muito fácil. Clique aqui e preencha seu Nome, Sobrenome e e-mail. Simples assim!</div></li><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1 text-font-sans"><b>Pago alguma taxa para me cadastrar na KeepBox?</b></div><div class="text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">O cadastro é totalmente gratuito! Registre-se agora e receba seu endereço KeepBox nos EUA imediatamente!</div></li></div><div class="mySlides slide-content-width" style="     display: flex;justify-content: center;"><li class="content-li-info-data"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1 "><b>Tenho que pagar alguma taxa mensal ou anual à KeepBox depois que me inscrevo?</b></div><div class="text-font-sans justify color-text-grey text-1-sm fonte_slide" style="      line-height: 30px !important;  padding-top: 50px;">Não! Não cobramos taxa de inscrição, mensalidade ou anuidade.Além disso, seus dados de cartão de crédito não são exigidos para sua inscrição. Quando decidir enviar suas encomendas ao Brasil, você pagará apenas uma taxa única e reduzida pelos serviços da KeepBox.</div></li><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green color-text-green  text-bold text-font-sans text-1" ><b>Como funciona os serviços da KeepBox?</b></div><div class="text-font-sans color-text-grey justify text-1-sm fonte_slide" style="    line-height: 30px !important;    padding-top: 50px;">A KeepBox disponibiliza um endereço nos EUA para você armazenar suas compras realizadas nas lojas online do EUA. Posteriormente juntamos tudo e enviamos suas encomendas para o endereço que você nos indicar.Tudo isso sem que você precise sair da sua casa e por uma taxa KeepBox única e reduzida.</div></li></div>');
             plusDivs(3);
-
         }
     });
-
-
-
-
     console.log(window.innerWidth);
-
     $( window ).resize(function() {
         if(window.innerWidth < 768){
             $('#slide').html('<div class="mySlides slide-content-width" style="display: flex;justify-content: center;width: 100%"><li class="content-li-info-data"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1">O endereço KeepBox é um P.O. box (similar a caixa postal do Brasil)?</div> <div class=" text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">O “seu endereço KeepBox” é uma suíte física e real em nosso armazém dedicada às suas encomendas, ou seja, o seu endereço KeepBox não é um P.O. box.Observação: Muitas lojas não enviam para P.O. box, por isso o seu endereço KeepBox não poderia ser um P.O. box.</div></li></div><div class="mySlides slide-content-width" style="display: flex;justify-content: center;width: 100%"><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1">O método utilizado pela KeepBox é legal?</div><div class="text-font-sans justify color-text-grey text-1-sm fonte_slide" style="      line-height: 30px !important;  padding-top: 50px;">Sim! A KeepBox funciona como um amigo ou parente que mora nos EUA e envia encomendas para você — ou seja, é totalmente legal. Utilizamos o Serviço Postal Nacional dos Estados Unidos (USPS) para o frete das mercadorias ao Brasil por serem extremamente seguros e por praticarem as melhores tarifas de envio do mercado americano.</div></li></div><div class="mySlides slide-content-width" style="display: flex;justify-content: center;width: 100%"><li class="content-li-info-data"><div class="  color-text-green text-bold text-font-sans text-1"><b>Como efetuo meu cadastro na KeepBox?</b></div><div class=" text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">Para se cadastrar gratuitamente na KeepBox é muito fácil. Clique aqui e preencha seu Nome, Sobrenome e e-mail. Simples assim!</div></li></div><div class="mySlides slide-content-width" style="display: flex;justify-content: center;width: 100%"><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1 text-font-sans"><b>Pago alguma taxa para me cadastrar na KeepBox?</b></div><div class="text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">O cadastro é totalmente gratuito! Registre-se agora e receba seu endereço KeepBox nos EUA imediatamente!</div></li></div><div class="mySlides slide-content-width" style=" display: flex;justify-content: center;width: 100%"><li class="content-li-info-data"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1 "><b>Tenho que pagar alguma taxa mensal ou anual à KeepBox depois que me inscrevo?</b></div><div class="text-font-sans justify color-text-grey text-1-sm fonte_slide" style="      line-height: 30px !important;  padding-top: 50px;">Não! Não cobramos taxa de inscrição, mensalidade ou anuidade.Além disso, seus dados de cartão de crédito não são exigidos para sua inscrição. Quando decidir enviar suas encomendas ao Brasil, você pagará apenas uma taxa única e reduzida pelos serviços da KeepBox.</div></li></div><div class="mySlides slide-content-width" style="display: flex;justify-content: center;width: 100%"><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green color-text-green  text-bold text-font-sans text-1" ><b>Como funciona os serviços da KeepBox?</b></div><div class="text-font-sans color-text-grey justify text-1-sm fonte_slide" style="    line-height: 30px !important;    padding-top: 50px;">A KeepBox disponibiliza um endereço nos EUA para você armazenar suas compras realizadas nas lojas online do EUA. Posteriormente juntamos tudo e enviamos suas encomendas para o endereço que você nos indicar.Tudo isso sem que você precise sair da sua casa e por uma taxa KeepBox única e reduzida.</div></li></div>');
             plusDivs(6);
         }
+
         else{
             $('#slide').html('<div class="mySlides slide-content-width" style="    display: flex; justify-content: center;"><li class="content-li-info-data"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1">O endereço KeepBox é um P.O. box (similar a caixa postal do Brasil)?</div><div class=" text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">O “seu endereço KeepBox” é uma suíte física e real em nosso armazém dedicada às suas encomendas, ou seja, o seu endereço KeepBox não é um P.O. box. Observação: Muitas lojas não enviam para P.O. box, por isso o seu endereço KeepBox não poderia ser um P.O. box.</div></li><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1">O método utilizado pela KeepBox é legal?</div><div class=" text-font-sans justify color-text-grey text-1-sm fonte_slide" style="      line-height: 30px !important;  padding-top: 50px;">Sim! A KeepBox funciona como um amigo ou parente que mora nos EUA e envia encomendas para você — ou seja, é totalmente legal. Utilizamos o Serviço Postal Nacional dos Estados Unidos (USPS) para o frete das mercadorias ao Brasil por serem extremamente seguros e por praticarem as melhores tarifas de envio do mercado americano.</div></li></div><div class="mySlides slide-content-width" style="        display: flex;justify-content: center;"><li class="content-li-info-data"><div class="  color-text-green text-bold text-font-sans text-1"><b>Como efetuo meu cadastro na KeepBox?</b></div><div class=" text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">Para se cadastrar gratuitamente na KeepBox é muito fácil. Clique aqui e preencha seu Nome, Sobrenome e e-mail. Simples assim!</div></li><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1 text-font-sans"><b>Pago alguma taxa para me cadastrar na KeepBox?</b></div><div class="text-font-sans justify color-text-grey text-1-sm fonte_slide" style="     line-height: 30px !important;   padding-top: 50px;">O cadastro é totalmente gratuito! Registre-se agora e receba seu endereço KeepBox nos EUA imediatamente!</div></li></div><div class="mySlides slide-content-width" style="     display: flex;justify-content: center;"><li class="content-li-info-data"><div class=" color-text-green  color-text-green text-bold text-font-sans text-1 "><b>Tenho que pagar alguma taxa mensal ou anual à KeepBox depois que me inscrevo?</b></div><div class="text-font-sans justify color-text-grey text-1-sm fonte_slide" style="      line-height: 30px !important;  padding-top: 50px;">Não! Não cobramos taxa de inscrição, mensalidade ou anuidade.Além disso, seus dados de cartão de crédito não são exigidos para sua inscrição. Quando decidir enviar suas encomendas ao Brasil, você pagará apenas uma taxa única e reduzida pelos serviços da KeepBox.</div></li><li class="content-li-info-data" style="    margin-left: 78px;"><div class=" color-text-green color-text-green  text-bold text-font-sans text-1" ><b>Como funciona os serviços da KeepBox?</b></div><div class="text-font-sans color-text-grey justify text-1-sm fonte_slide" style="    line-height: 30px !important;    padding-top: 50px;">A KeepBox disponibiliza um endereço nos EUA para você armazenar suas compras realizadas nas lojas online do EUA. Posteriormente juntamos tudo e enviamos suas encomendas para o endereço que você nos indicar.Tudo isso sem que você precise sair da sua casa e por uma taxa KeepBox única e reduzida.</div></li></div>');
             plusDivs(3);
-
         }
     });
-
-
-
-
-
-
-
-
-
-
-
-
     //Slider Alguma duvida
     var slideIndex = 1;
     showDivs(slideIndex);
-
     function plusDivs(n) {
         showDivs(slideIndex += n);
     }
-
     function showDivs(n) {
         var i;
         var x = document.getElementsByClassName("mySlides");
         if (n > x.length) {slideIndex = 1}
         if (n < 1) {slideIndex = x.length}
-
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
