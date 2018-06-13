@@ -8,7 +8,7 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
         "img": ""
 
     }
-    $scope.img_prod_selected = "";
+    $scope.prod_selected = [];
     $scope.users = [];
     $scope.Prods = [];
 
@@ -34,12 +34,14 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
 
     $scope.imgModalSelect = function (img) {
 
-        $scope.img_prod_selected = img
+        $scope.prod_selected = img
 
     }
 
     var $image;
     var vanilla
+    var vanilla2
+
     document.getElementById('picField').onchange = function (evt) {
         var tgt = evt.target || window.event.srcElement,
             files = tgt.files;
@@ -99,7 +101,64 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
         }
     }
 
+    document.getElementById('picFieldChange').onchange = function (evt) {
+        var tgt = evt.target || window.event.srcElement,
+            files = tgt.files;
 
+        // FileReader support
+        if (FileReader && files && files.length) {
+            var fr = new FileReader();
+            fr.onload = function () {
+                document.getElementById("image-cropChange").src = fr.result;
+                $image = $('#image-cropChange')[0];
+
+
+                vanilla2 = new Croppie($image, {
+                    viewport: { width: 300, height: 300 },
+                    boundary: { width: 450, height: 450 },
+                    showZoomer: true,
+                    enableResize: true,
+                    enableOrientation: true,
+                    mouseWheelZoom: 'ctrl'
+                });
+
+
+
+                $( "#rotateLeft2" ).click(function() {
+                    vanilla2.bind({
+                        url: fr.result,
+                        orientation: 8
+                    });
+                });
+
+                $( "#rotateRight2" ).click(function() {
+                    vanilla2.bind({
+                        url: fr.result,
+                        orientation: 6
+                    });
+                });
+                $( "#rotateDown2" ).click(function() {
+                    vanilla2.bind({
+                        url: fr.result,
+                        orientation: 3
+                    });
+                });
+                $( "#rotateUp2" ).click(function() {
+                    vanilla2.bind({
+                        url: fr.result,
+                        orientation: 1
+                    });
+                });
+            }
+            fr.readAsDataURL(files[0]);
+        }
+
+        // Not supported
+        else {
+            // fallback -- perhaps submit the input to an iframe and temporarily store
+            // them on the server until the user's session ends.
+        }
+    }
 
     $scope.setProd = function () {
 
@@ -141,7 +200,11 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
 
     }
 
+    $scope.deleteImage = function () {
 
+        $scope.prod_selected.img_link = '';
+
+    }
 
 
     $http({
@@ -164,6 +227,46 @@ angular.module('app_landing').controller('prod_adm_ctrl', ['$scope', '$http','$t
 
         }
     );
+
+    $scope.setProdUpdate = function () {
+
+        vanilla2.result('base64', 'viewport', 'png',1,false).then(function(img) {
+            $scope.prod_selected.img = img;
+
+        });
+        $timeout(function(){
+
+
+            $scope.prod_selected.user = $("#user").val();
+
+
+            // $scope.produto.img = $scope.produto.img.replace("data:", "")
+
+
+            var form_data = new FormData();
+
+            for ( var key in $scope.prod_selected ) {
+                form_data.append(key, $scope.prod_selected[key]);
+            }
+
+            $http({
+
+                method: 'POST',
+                url: "setProdutoUpdate",
+                data: form_data,
+                headers: {
+                    'Content-Type': undefined
+                }
+
+            }).then(function (response) {
+
+                    window.location.href = "admProd";
+
+                }
+            );
+        }, 400);
+
+    }
 
     function autocomplete(inp, arr) {
         /*the autocomplete function takes two arguments,

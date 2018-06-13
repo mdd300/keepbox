@@ -80,4 +80,28 @@ class Adm_model extends CI_Model {
         $this->db->join("tb_user as u", 'u.user_id = user_id_fk');
         return $this->db->get("tb_rastreamento")->result();
     }
+
+    public function setProdsUpdate_model($data, $img){
+
+        $insert = array(
+            "prod_nome" => $data['prod_nome'],
+            "prod_quantidade" => $data["prod_quantidade"],
+            "prod_peso" => $data["prod_peso"],
+            "prod_data" => date("d/m/Y"),
+            "prod_user_id_fk" => $data['user_id']
+        );
+
+        $this->db->where("prod_id", $data['prod_id']);
+        $this->db->set($insert);
+        $this->db->update("tb_produtos");
+
+        $prod_id = $this->db->insert_id();
+
+        $img = array(
+            "img_link" => $img
+        );
+        $this->db->where("img_prod_fk", $data['prod_id']);
+        $this->db->set($img);
+        return $this->db->update("tb_produtos_img");
+    }
 }

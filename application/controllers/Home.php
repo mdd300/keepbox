@@ -444,4 +444,32 @@ class Home extends CI_Controller {
             return $return;
         }
     }
+
+    public function setProdutoUpdate ($Data = null){
+        if ($Data == null) {
+            $Output = true;
+            $Data = $this->input->post();
+        } else {
+            $Output = false;
+        }
+
+        define('UPLOAD_DIR', './upload/produtos/img/');
+        $img = $Data['img'];
+        $img = str_replace('data:image/png;base64,', '', $img);
+        $img = str_replace(' ', '+', $img);
+        $data = base64_decode($img);
+        $nome = uniqid() .".png";
+        $file = UPLOAD_DIR . $nome;
+
+        file_put_contents($file, $data);
+
+        $this->load->model('Adm_model');
+        $return = $this->Adm_model->setProdsUpdate_model($Data, $nome);
+
+        if ($Output == true) {
+            echo json_encode($return);
+        } else {
+            return $return;
+        }
+    }
 }

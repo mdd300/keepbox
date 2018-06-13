@@ -102,7 +102,7 @@
                         </tr>
                         </tfoot>
                         <tbody>
-                        <tr ng-repeat="prod in Prods" data-toggle="modal" data-target="#imgModal" ng-click="imgModalSelect(prod.img_link)">
+                        <tr ng-repeat="prod in Prods" data-toggle="modal" data-target="#imgModal" ng-click="imgModalSelect(prod)">
                             <td>{{prod.user_suite + " "  + prod.user_nome + " " + prod.user_sobrenome}}</td>
                             <td>{{prod.user_email}}</td>
                             <td>{{prod.prod_nome}}</td>
@@ -228,7 +228,65 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img src="<?=base_url()?>/upload/produtos/img/{{img_prod_selected}}">
+                            <div class="form-group p-2">
+                                <label class="col-md-4 control-label" for="Nome">Cliente</label>
+                                <div class="col-md-7">
+                                        <input id="user" value="{{prod_selected.user_suite + ' '  + prod_selected.user_nome + ' ' + prod_selected.user_sobrenome}}" name="user" type="text" placeholder="Cliente" readonly class="form-control input-md" required="">
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group p-2">
+                                <label class="col-md-4 control-label" for="Nome">Nome do Produto</label>
+                                <div class="col-md-7">
+                                    <input id="Nome" name="Nome" ng-model="prod_selected.prod_nome" type="text" placeholder="Nome" class="form-control input-md" required="">
+
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="ml-4 form-group ">
+                                <div class=" col-md-12">
+
+                                    <label class="col-md-4 control-label" for="Quantidade">Quantidade</label>
+                                    <div class="col-md-7">
+                                        <input id="Quantidade" ng-model="prod_selected.prod_quantidade" name="Quantidade" type="text" placeholder="Quantidade" class="form-control input-md" required="">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-4 form-group ">
+
+                                <!-- Text input-->
+                                <div class="col-md-12">
+
+                                    <label class="col-md-4 control-label" for="Peso">Peso</label>
+                                    <div class="col-md-7">
+
+                                        <input id="Peso" ng-model="prod_selected.prod_peso" name="Peso" type="text" placeholder="Peso" class="form-control input-md" required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <img ng-show="prod_selected.img_link != ''" src="<?=base_url()?>/upload/produtos/img/{{prod_selected.img_link}}">
+                            <button ng-show="prod_selected.img_link != ''" type="button" id="DeleteImage" ng-click="deleteImage()" >Apagar Imagem</button>
+
+
+                            <div class="pt-5" ng-show="prod_selected.img_link == ''">
+                                        <input type="file" id="picFieldChange">
+                                        <div class="mt-4">
+                                            <img id="image-cropChange" name="img" class="col-md-2 mt-4">
+                                            <div class="form-inline">
+                                            <button type="button" id="rotateLeft2" data-rotate="-90">Esquerda</button>
+                                            <button type="button" id="rotateRight2" data-rotate="-90">Direita</button>
+                                            <button type="button" id="rotateUp2" data-rotate="-90">Cima</button>
+                                            <button type="button" id="rotateDown2" data-rotate="-90">Baixo</button>
+                                            </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button id="Enviar" ng-click="setProdUpdate()" name="Enviar" class="btn btn-success">Enviar</button>
+                            </div>
                         </div>
 
                     </div>
